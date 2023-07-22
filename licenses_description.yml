@@ -1,0 +1,136 @@
+--- # List of Dict
+- # We first list the supported usages and their required rights here.
+  copy: [use]
+  use: [use]
+  share: [redistribute, sublicense]
+  sell: [redistribute, sublicense, commercial_use]
+  modify: [modify]
+  train: [use, modify]
+  combine: [use, merge]
+  amalgamate: [use, modify]
+  distill: [use]
+  generate: [use]
+  embed: [use, modify]
+  stat: [use]
+
+
+- # Belows are metadata of licenses
+  full_name: Apache License 2.0
+  short_id: Apache-2.0
+  url: https://www.apache.org/licenses/LICENSE-2.0
+  version: 2
+  available: true
+  categories: [public, software, permissive]
+  labels: [OSI Approved]
+  rights: [use, modify, merge, redistribute, sublicense, commercial_use, patent_use]
+  reserved_rights: [trademark_use, copyright, patent, trademark]
+  rights_prefix: [perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable]
+  coverage: [duplicate, derivative, modification]
+  terms: # Definition of use methods and according terms
+    - usages: [use, copy]
+      forms: [raw, binary]
+      result: duplicate
+      restrictions: [include_license]
+      relicense: false
+    - usages: [combine]
+      forms: [raw, binary]
+      result: independent
+      keywords: [separable, link, interface]
+      relicense: true
+    - usages: [amalgamate, modify, train]
+      forms: [raw, binary]
+      result: derivative
+      restrictions: [state_changes, include_notice, include_license]
+      keywords: [revision, modification]
+      relicense: true
+    - usages: [distill, generate]
+      forms: [raw, binary]
+      result: NODEF
+
+- # We also use Unlicese to represented those works w/o any restrictions (such as independent work)
+  full_name: The Unlicense 
+  short_id: Unlicense
+  url: https://opensource.org/license/unlicense/
+  version: null
+  available: true
+  categories: [public, software, permissive]
+  labels: [Public Domain]
+  rights: [use, modify, merge, redistribute, commercial_use, copyright]
+  reserved_rights: ['']
+  rights_prefix: ['']
+  coverage: ['']
+  terms:
+    - usages: [use, copy, modify]
+      forms: [raw, binary, saas]
+      result: NODEF
+
+- 
+  full_name: Creative Commons Attribution Share Alike 3.0
+  short_id: CC-BY-SA-3.0
+  url: https://creativecommons.org/licenses/by-sa/3.0/
+  version: 3
+  available: true
+  categories: [public, data, copyleft]
+  labels: [Creative Commons]
+  rights: [use, modify, merge, redistribute, commercial_use]
+  reserved_rights: [sublicense, trademark_use, patent_use, copyright, patent, trademark]
+  rights_prefix: [perpetual, worldwide, non-exclusive, royalty-free]
+  coverage: [duplicate, derivative, modification, translation]
+  terms:
+    - usages: [use, copy]
+      forms: [raw, binary]
+      result: duplicate
+      restrictions: [include_license]
+      relicense: false
+    - usages: [combine, amalgamate]
+      forms: [raw, binary]
+      result: derivative
+      restrictions: [state_changes, include_license]
+      keywords: [reproduce, adaptation, collection]
+      relicense: false
+    - usages: [embed]
+      forms: [raw, binary]
+      result: translation
+      restrictions: [state_changes, include_license]
+      keywords: [adaptation, translation]
+      relicense: false
+    - usages: [augment, modify, train]
+      forms: [raw, binary]
+      result: modification
+      restrictions: [state_changes, include_license]
+      keywords: [reproduce, adaptation]
+      relicense: false
+    - usages: [distill, generate, stat]
+      forms: [raw, binary]
+      result: NODEF
+
+- 
+  full_name: CreativeML Open RAIL-M
+  short_id: CreativeML-OpenRAIL-M
+  url: https://huggingface.co/spaces/CompVis/stable-diffusion-license
+  version: null
+  available: true
+  categories: [public, model, permissive]
+  labels: [OpenRAIL, Responsible AI, Use Restriction]
+  rights: [use, modify, merge, redistribute, sublicense, commercial_use, patent_use]
+  reserved_rights: [trademark_use, copyright, patent, trademark]
+  rights_prefix: [perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable]
+  coverage: [duplicate, derivative]
+  terms:
+    - usages: [use, copy]
+      forms: [raw, binary, saas]
+      required_rights: [use]
+      result: duplicate
+      restrictions: [include_license, include_use_restriction, include_runtime_restriction]
+      relicense: false
+      copyleft: true
+    - usages: [combine, amalgamate, modify, distill, generate, train]
+      forms: [raw, binary, saas]
+      required_rights: [use, modify, merge]
+      result: derivative
+      restrictions: [state_changes, include_license, include_notice, include_use_restriction, include_runtime_restriction]
+      keywords: [transfer, modification]
+      relicense: true
+      copyleft: true
+
+...

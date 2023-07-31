@@ -42,6 +42,16 @@ class License(object):
             return True
         return False
     
+    def is_disclose(self):
+        if "disclose" in self.meta["categories"]:
+            return True
+        return False
+    
+    def is_auto_relicensing(self):
+        if 'auto-relicensing' in self.meta["categories"]:
+            return True
+        return False
+    
     def is_permissive(self):
         if "permissive" in self.meta["categories"]:
             return True
@@ -70,6 +80,11 @@ class License(object):
         elif type in self.meta["categories"]:
             return True
         return False
+    
+    def get_share_coverage(self) -> list:
+        if 'coverage' in self.meta:
+            return self.meta['coverage']
+        return []
     
     # Generate a summary of this license
     def summary(self):
@@ -132,7 +147,7 @@ class Parser(object):
 
     
     # Register license for the work or a list of works
-    def register_license(self, work, relicense=False):
+    def register_license(self, work:Work, relicense=False):
         if isinstance(work, list):    
             licenses = [self.register_license(w) for w in work]
             return licenses
@@ -161,7 +176,7 @@ class Parser(object):
 
 
     # Return a copy of license by name, return none if no found
-    def clone_license(self, license_name):
+    def clone_license(self, license_name) -> License:
         match_license = self.__find_matching_license(license_name)
         if match_license:
             logging.debug(f"Find the matching license: {match_license}")
@@ -200,8 +215,10 @@ class Parser(object):
         self.rights_granting_analysis(work, open_policy)
 
         # 3, Check the restrictions involved by relied works
-        self.restrictions_analysis(work)
-
+        self.restrictions_analysis(work, open_policy)
+        
+        # 4, Finnal check for disclose and redistribute requirements
+        self.redistribution_analysis(work, open_policy)
         return  
 
     """
@@ -254,7 +271,8 @@ class Parser(object):
                 exclude_unlicense = [w.license.short_id for w in permissives if w.license.short_id != 'Unlicense']
                 if all(pli == exclude_unlicense[0] for pli in exclude_unlicense):
                     # All relied work under same permissive license (exclude Unlicense)
-                    aim_license_name = exclude_unlicense[0]
+                    #aim_license_name = exclude_unlicense[0]
+                    aim_license_name = 'Unlicense'
                 else:
                     aim_license_name = 'Unlicense' # Register as 'Unlicense' if relied works contain multiple permissive licenses
                     logging.debug(f'Mulitiple permissive licenses exist in work {TBD_work.name}, use Unlicense by default')
@@ -315,6 +333,8 @@ class Parser(object):
             for right in req_rights:
                 is_granted = rw.license.is_granted_right(right)
                 if is_granted == False:
+                    if right == 'sublicense' and rw.license.is_auto_relicensing() == True:
+                        continue # Skip the check of sublicense right if this work has an auto-relicesing mechanism
                     work.add_event(EVENT.RIGHT_NO_GRANT_ERROR(rw.name, right))
                     logging.error(f"The required {right} right is not granted by Work {rw.name}")
                 elif is_granted == 'NODEF':
@@ -322,11 +342,35 @@ class Parser(object):
                     logging.warn(f"The required {right} right is not explicity granted by Work {rw.name}")
         return
 
-    def restrictions_analysis(self, work:Work):
+    def restrictions_analysis(self, work:Work, open_policy:str=''): # open_plicy -> no use
         for rw, ru in work.find_relied_works(): 
             # Gather corresponding terms for this work
             term = self.find_applied_term(rw, ru)
             if 'restrictions' in term:
                 for res in term.get('restrictions'):
                     work.add_event(getattr(EVENT, res.upper())(rw.name, rw.license_name))
+        return
+    
+    def redistribution_analysis(self, work:Work, open_policy:str):
+        # Add the redistribution requirements of the relied works and this work if it will be shared
+        if open_policy in ['share', 'sell']:
+            for w, u in work.find_shared_works() + [(work, 'copy')]: # This 'work' be shared as copy
+                term = self.find_applied_term(w, u)
+                
+                if w.license.is_disclose() == True and w.type != 'raw': # Disclose Source Check, only check for shared works
+                    work.add_event(EVENT.LICENSE_DISCLOSE_SELF_WARNING(w.name, w.license_name))
+                
+                if term['result'] and term['result'] not in w.license.get_share_coverage(): # Sharing Coverage Check 
+                    work.add_event(EVENT.LICENSE_SHARING_PROHIBITED_ERROR(w.name, w.license_name)) # This work canot be shared according its license
+                    continue
+                if term['result'] and term['result'] not in ['independent', 'NODEF']: # Sharing Requirement Check
+                    for req in w.license.meta['redistribute']:
+                        work.add_event(getattr(EVENT, req.upper())(w.name, w.license_name)) # The redistribution requreiments from all shared works (e.g. mixworks and subworks)
+            
+        # Disclose Source Check
+        '''
+        for w in [rw for rw, _ in work.find_relied_works()] + [work]:
+            if w.license.is_disclose() == True and w.type != 'raw':
+                work.add_event(EVENT.LICENSE_DISCLOSE_SELF_WARNING(w.name, w.license_name))
+        '''
         return

@@ -12,13 +12,14 @@ Record the warnings, errors and conflicts during analysis of work
 Evn = namedtuple('Event', ['type', 'info'])
 class EVENT(object):
 
-    
     PERSONAL_OPEN_POLICY = Evn('policy', 'The desired release scenario of $WNAME$ is for PERSONAL')
     SHARE_OPEN_POLICY = Evn('policy', 'The desired release scenario of $WNAME$ is for FREE SHARING')
     SELL_OPEN_POLICY = Evn('policy', 'The desired release scenario of $WNAME$ is for SELLING')
 
     LICENSE_TYPE_MISMATCH_WARNING = Evn('licenses warning', 'License $LNAME$ is NO suitable for $WNAME$ ($WTYPE$) licensing')
+    LICENSE_DISCLOSE_SELF_WARNING = lambda work_name, license_name: Evn('licenses warning', f"Work {work_name} must remain OPEN SOURCE (raw) or provide a READABLE COPY of source code according to license {license_name}")
     LICENSE_NO_FOUND_ERROR = lambda path : Evn("licenses error", f"License $LNAME$ could NOT be located in the parser file {path}")
+    LICENSE_SHARING_PROHIBITED_ERROR = lambda work_name, license_name: Evn("licenses error", f"Work {work_name} CONNOT BE SHARED due to the prohibition of license {license_name}")
     
     MIXWORKS_NO_FOUND_WARNING = Evn('analysis warning', 'Work $WNAME$ does NOT have mixworks as expected')
     MULTIPLE_COPYLEFT_ERROR = lambda copylefts: Evn("analysis error", f"Work $WNAME$ has a license conflict as it involves multiple copyleft licenses: {', '.join(copylefts)}")
@@ -26,13 +27,12 @@ class EVENT(object):
     RIGHT_NO_GRANT_WARNING = lambda work_name, right_name: Evn('rights warning', f'Work {work_name} does NOT EXPLICITLY grant you the right to {right_name.upper()}')
     RIGHT_NO_GRANT_ERROR = lambda work_name, right_name: Evn('rights error', f'Work {work_name} does NOT grant you the right to {right_name.upper()}')
     
-    STATE_CHANGES = lambda work_name, license_name: Evn("restriction", f"Work $WNAME$ must STATE the changes according to {license_name} of {work_name}")
+    STATE_CHANGES = lambda work_name, license_name: Evn("restriction", f"Work $WNAME$ must STATE the CHANGES according to {license_name} of {work_name}")
     INCLUDE_LICENSE = lambda work_name, license_name: Evn("restriction", f"Work $WNAME$ must RETAIN the ORIGINAL LICENSE file according to {license_name} of {work_name}")
-    INCLUDE_NOTICE = lambda work_name, license_name: Evn("restriction", f"Work $WNAME$ must RETAIN the NOTICE file to indicate your modification according to {license_name} of {work_name}")
+    INCLUDE_NOTICE = lambda work_name, license_name: Evn("restriction", f"Work $WNAME$ must RETAIN all NOTICE files (e.g. copyright, patent, trademark, and attribution) from the source form of {work_name} according to {license_name}")
+    INCLUDE_ORIGINAL = lambda work_name, license_name: Evn("restriction", f"Work $WNAME$ must include the copies of the original work or the instructions to obtain copies of {work_name} according to {license_name}")
     INCLUDE_USE_RESTRICTION = lambda work_name, license_name: Evn("restriction", f"Work $WNAME$ must comply with the USE restriction terms according to {license_name} of {work_name}")
     INCLUDE_RUNTIME_RESTRICTION = lambda work_name, license_name: Evn("restriction", f"Work $WNAME$ must comply with the RUNTIME restriction terms according to {license_name} of {work_name}")
-
-
 
 class Work(object):
     def __init__(self, name:str, type:str, form:str, license_name:str='TBD'):
@@ -88,10 +88,11 @@ class Work(object):
         if isinstance(event, Evn):
             self.caution.append(event)
 
-    def has_relied_work(self, exclude_aux=False):
-        coverage = self.mixworks + self.subworks
-        if exclude_aux is False:
-            coverage += self.auxworks
+    def has_relied_work(self, exclude=[]):
+        coverage = []
+        for _type, _works in zip(['aux', 'mix', 'sub'], [self.auxworks, self.mixworks, self.subworks]):
+            if _type not in exclude:
+                coverage = coverage + _works
         if len(coverage) > 0:
             return True
         return False
@@ -102,24 +103,39 @@ class Work(object):
             return True
         return False
     
-    # Recursion
-    def find_relied_works(self, exclude_aux=False):
+    # Recursion, you can exclude 'aux', 'mix', 'sub' works
+    def find_relied_works(self, exclude=[]) -> list:
         relied_works = []
-        coverage = self.mixworks + self.subworks
-        if exclude_aux is False:
-            coverage += self.auxworks
+        coverage = []
+        for _type, _works in zip(['aux', 'mix', 'sub'], [self.auxworks, self.mixworks, self.subworks]):
+            if _type not in exclude:
+                coverage = coverage + _works
         
         for work, usage in coverage:
-            if work.has_relied_work(exclude_aux):
+            if work.has_relied_work(exclude):
                 # Recursively find the relied works
-                relied_works = work.find_relied_works(exclude_aux) + [(work, usage)] # Insert new found works from left
+                relied_works = work.find_relied_works(exclude) + [(work, usage)] # Insert new found works from left
             else:
                 relied_works = relied_works + [(work, usage)] 
         return relied_works
     
     # The relied works exlcude aux works will be share with this work (subworks, mixworks and this work)
     def find_shared_works(self):
-        return self.find_relied_works(exclude_aux=True)
+        return self.find_relied_works(exclude=['aux'])
+    
+    # Find all mixworks of this work
+    def find_mixworks(self):
+        return self.find_relied_works(exclude=['aux', 'sub'])
+    
+    # ??? Removal of redundancies, priority of work retained: mixworks > subworks > auxworks
+    # deduplicate event???
+    def deduplicate_relied_works(self, exclude=[]):
+        all_relied_works = {
+            'mix' : self.find_relied_works(exclude=['aux', 'sub']),
+            'sub' : self.find_relied_works(exclude=['aux', 'mix']),
+            'aux' : self.find_relied_works(exclude=['mix', 'sub'])
+        }
+        return
     
     # Return the name of open policy by searching from the events in self.caution
     def find_open_policy(self):
@@ -154,16 +170,13 @@ class Work(object):
 
     # Summary of this work, including license information, conflicts and restrictions
     def summary(self):
-        print(f"The base information of {self.name}:")
-        # Summary the basic information of this work
-        data = [
+        # The basic information of this work
+        work_data = [
             ["Work Name",       self.name],
             ["Type & Form",     self.type.title() + ', ' + self.form.title()],
             ["License Name",    self.license.short_id],
             ["Relied Works",    ', '.join([w.name for w,_ in self.find_relied_works()])]
         ]
-        print(tabulate(data, tablefmt="grid"))
-        print()
 
         # Search the open policy information
         opevent, opname = self.find_open_policy()
@@ -173,14 +186,25 @@ class Work(object):
             print(f"{self.replace_placeholder(opevent.info)}.")
         
         warnings, errors, restrictions = self.filter_events_by_type('warning'), self.filter_events_by_type('error'), self.filter_events_by_type('restriction')
-        print(f"To {opname} this work in compliance, you must take into account the following Warnings({len(warnings)}), Errors({len(errors)}), Restrictions({len(restrictions)}).")
-        data = []
+        remove_duplicate_events = lambda events: [e for i, e in enumerate(events) if e not in events[:i]]
+        warnings, errors, restrictions  = remove_duplicate_events(warnings), remove_duplicate_events(errors), remove_duplicate_events(restrictions) # Remove the duplicate events
+        restrictions_data = []
         for events in [warnings, errors, restrictions]:
             for idx, e in enumerate(events):
-                data.append([f"{e.type.title()} - {idx+1}", self.replace_placeholder(e.info)])
-        print(tabulate(data, tablefmt="grid"))
+                restrictions_data.append([f"{e.type.title()} - {idx+1}", self.replace_placeholder(e.info)])
+        
+        # Summary the basic information of this work
+        print(f"The base information of {self.name}:")
+        print(tabulate(work_data, tablefmt="grid"))
         print()
 
-        print("The information of the license of this work is:")
+        # Print open policy information
+        print(f"To {opname} this work in compliance, you must take into account the following Warnings({len(warnings)}), Errors({len(errors)}), Restrictions({len(restrictions)}).")
+        # Print the restrictions information of this work and all relied works
+        print(tabulate(restrictions_data, tablefmt="grid"))
+        print()
+
+        # Print the license information of this work
+        print(f"The information of {self.license_name} license of this work is:")
         self.license.summary()
         return

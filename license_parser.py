@@ -209,7 +209,9 @@ class Parser(object):
         # Then, determine license for 'TBD' works by call license_analysis
         works_sequence = [w for w, _ in work.find_relied_works() if w.license_name == 'TBD'] + [work]
         for alys_work in works_sequence:
-            self.license_analysis(alys_work)
+            if self.license_analysis(alys_work) == False:
+                logging.error('License analysis failed, the final license type could not be determined.')
+                exit(1) # failure
         
         # 2, Check the rights granting for reuse and open (such as share, sell)
         self.rights_granting_analysis(work, open_policy)
@@ -219,7 +221,7 @@ class Parser(object):
         
         # 4, Finnal check for disclose and redistribute requirements
         self.redistribution_analysis(work, open_policy)
-        return  
+        return True
 
     """
         Register new license for TBD work, the default license is 'Unlicense'.
@@ -240,10 +242,14 @@ class Parser(object):
         # MAIN FUNCTION. license_name == TBD, this work has relied works (first level), and all these works are registered
         elif all(rw.is_registered() == True for rw, _ in TBD_work.mixworks + TBD_work.subworks + TBD_work.auxworks):
             relied_works = TBD_work.mixworks + TBD_work.subworks + TBD_work.auxworks # First level relied works
+            relied_works_wo_aux = TBD_work.mixworks + TBD_work.subworks # W/O auxworks
+            
             # Find applied term in each relied work
             terms = {rw: self.find_applied_term(rw, ru) for rw, ru in relied_works}
-            copylefts = [rw for rw, _ in relied_works if rw.license.is_copyleft() == True] # Relied works that under copyleft licenses
-            permissives = [rw for rw, _ in relied_works if rw.license.is_permissive() == True] # Relied works that under permissive licenses
+            terms_wo_aux = {rw: self.find_applied_term(rw, ru) for rw, ru in relied_works_wo_aux}
+
+            copylefts = [rw for rw, _ in relied_works_wo_aux if rw.license.is_copyleft() == True] # Relied works (w/o aux) that under copyleft licenses
+            permissives = [rw for rw, _ in relied_works_wo_aux if rw.license.is_permissive() == True] # Relied works (w/o aux) that under permissive licenses
             # Find triggered copylefts works that result in copyleft license proliferation 
             triggered_copylefts = [rw for rw in copylefts if terms[rw]['result'] not in ['independent', 'NODEF']]
 
@@ -262,7 +268,7 @@ class Parser(object):
                     aim_license_name = aim_copyleft_license_name
                 else: # Two or more copyleft licenses
                     TBD_work.add_event(EVENT.MULTIPLE_COPYLEFT_ERROR(copylefts))
-                    logging.error(f'Mulitiple copyleft licenses exist in work {TBD_work.name}')
+                    logging.error(f'Mulitiple copyleft licenses exist in work {TBD_work.name}: {[cp.license_name for cp in copylefts]}')
                     return False
             
             # Deal with all permissive and no license assignment situation 
@@ -277,12 +283,14 @@ class Parser(object):
                     aim_license_name = 'Unlicense' # Register as 'Unlicense' if relied works contain multiple permissive licenses
                     logging.debug(f'Mulitiple permissive licenses exist in work {TBD_work.name}, use Unlicense by default')
 
-            # From these need relicese works, check the availability of relicesing
-            need_relicense = [rw for rw, _ in relied_works if rw.license.short_id != aim_license_name]
+            # From these need relicese works (exclude auxworks), check the availability of relicesing
+            need_relicense = [rw for rw, _ in relied_works_wo_aux if rw.license.short_id != aim_license_name]
             cannot_relicense = []
             for rw in need_relicense: 
-                if terms[rw].get('relicense') == False and terms[rw].get('result') not in ['independent', 'NODEF']:
+                if terms_wo_aux[rw].get('relicense') == False and terms_wo_aux[rw].get('result') not in ['independent', 'NODEF']:
                     cannot_relicense.append(rw)
+
+            if len(cannot_relicense) > 0: pass # TODO: We can deal with the exception of license compatibility here.
 
             if len(cannot_relicense) == 0:
                 # The aiming license is given and relicensing to different license of reused results is allowed
@@ -298,8 +306,7 @@ class Parser(object):
             else: # Some relied work do not allow relicensing of reused results
                 for w in cannot_relicense:
                     TBD_work.add_event(EVENT.RIGHT_NO_GRANT_ERROR(w.name, 'relicense'))
-                    logging.error(f'Work {TBD_work.name} canot be licensed as {aim_license_name} \
-                                  due to {w.name} does not grant the relicense rights')
+                    logging.error(f'Work {TBD_work.name} canot be licensed as {aim_license_name} due to {w.name} does not grant the relicense rights')
                 return False
         return False
 
@@ -309,6 +316,9 @@ class Parser(object):
             # Matching requirements: 1) usage is in definition; 2) work form is also in definition.
             if usage in t['usages'] and work.form in t['forms']:
                 return t # Return the first found term
+        for t in terms: 
+            if usage.split('_')[0] in t['usages'] and work.form in t['forms']:
+                return t # Return match like 'combine_mix' -> 'combine' if only 'combine' has been defined
         return defaultdict(list)
 
     # Analysis rights granting
@@ -357,20 +367,20 @@ class Parser(object):
             for w, u in work.find_shared_works() + [(work, 'copy')]: # This 'work' be shared as copy
                 term = self.find_applied_term(w, u)
                 
-                if w.license.is_disclose() == True and w.type != 'raw': # Disclose Source Check, only check for shared works
+                if w.license.is_disclose() == True and w.form != 'raw': # Disclose Source Check, only check for shared works
                     work.add_event(EVENT.LICENSE_DISCLOSE_SELF_WARNING(w.name, w.license_name))
                 
-                if term['result'] and term['result'] not in w.license.get_share_coverage(): # Sharing Coverage Check 
-                    work.add_event(EVENT.LICENSE_SHARING_PROHIBITED_ERROR(w.name, w.license_name)) # This work canot be shared according its license
-                    continue
-                if term['result'] and term['result'] not in ['independent', 'NODEF']: # Sharing Requirement Check
-                    for req in w.license.meta['redistribute']:
-                        work.add_event(getattr(EVENT, req.upper())(w.name, w.license_name)) # The redistribution requreiments from all shared works (e.g. mixworks and subworks)
+                if term['result']:
+                    if term['result'] not in (['independent', 'NODEF'] + w.license.get_share_coverage()):
+                        work.add_event(EVENT.LICENSE_SHARING_PROHIBITED_ERROR(w.name, w.license_name)) # This work canot be shared according its license
+                    else:
+                        for req in w.license.meta['redistribute']:
+                            work.add_event(getattr(EVENT, req.upper())(w.name, w.license_name)) # The redistribution requreiments from all shared works (e.g. mixworks and subworks)
             
         # Disclose Source Check
         '''
         for w in [rw for rw, _ in work.find_relied_works()] + [work]:
-            if w.license.is_disclose() == True and w.type != 'raw':
+            if w.license.is_disclose() == True and w.form != 'raw':
                 work.add_event(EVENT.LICENSE_DISCLOSE_SELF_WARNING(w.name, w.license_name))
         '''
         return

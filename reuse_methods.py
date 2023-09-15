@@ -67,7 +67,11 @@ def combine(works:list, license_name:str=None) -> Work:
     # The license name will not be set here, remain 'TBD', call analysis
     new_work = new_reused_work(works, 'C', license_name)
 
-    new_work.mixworks = [(w, 'combine') for w in works] # Recursive mixworks are not be included
+    for w in works:
+        if new_work.type == 'mix':
+            new_work.mixworks.append((w, 'combine_mix')) # use 'combine_mix' if the resulting work is a combination with mix types, this distinction is useful for copyleft data licenses.
+        else:
+            new_work.mixworks.append((w, 'combine')) # Recursive mixworks are not be included
     logging.debug(f"Combine {','.join([w.name for w in works])}")
 
     return new_work
@@ -140,15 +144,21 @@ def generate(works, aux_works=None, output_as:Work=None, license_name:str=None) 
     logging.debug(f"Generate {','.join([w.name for w in works])} with auxworks {','.join([aw.name for aw in aux_works])}")
     return new_work
 
-def embed(works, output_as:Work=None, license_name:str=None) -> Work:
+# Embed works (corpus, image or other data samples) using aux_works (model or algorithm)
+def embed(works, aux_works=None, output_as:Work=None, license_name:str=None) -> Work:
     if isinstance(works, Work):
         works = [works] # Convert to list
+    if isinstance(aux_works, Work):
+        aux_works = [aux_works]
     if output_as is None:
         output_as = Work('dummy', 'data', 'raw') # Default output as raw data
     new_work = new_reused_work(works, 'E', license_name, output_as)
     
     for w in works:
-        new_work.auxworks += reuse_method_spread(w, 'embed') # 'use' of this work relied on the 'use' of all mixworks
+        new_work.subworks += reuse_method_spread(w, 'embed') # 'embed' of this work relied on the 'embed' of all mixworks
+    if aux_works: # Model like feature extractor, translator
+        for aw in aux_works:
+            new_work.auxworks += reuse_method_spread(aw, 'use')
     return new_work
 
 def train(works, dest_work:Work=None, aux_works=None, license_name:str=None) -> Work:

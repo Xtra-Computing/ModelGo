@@ -22,7 +22,7 @@ class EVENT(object):
     LICENSE_SHARING_PROHIBITED_ERROR = lambda work_name, license_name: Evn("licenses error", f"Work {work_name} CONNOT BE SHARED due to the prohibition of license {license_name}")
     
     MIXWORKS_NO_FOUND_WARNING = Evn('analysis warning', 'Work $WNAME$ does NOT have mixworks as expected')
-    MULTIPLE_COPYLEFT_ERROR = lambda copylefts: Evn("analysis error", f"Work $WNAME$ has a license conflict as it involves multiple copyleft licenses: {', '.join(copylefts)}")
+    MULTIPLE_COPYLEFT_ERROR = lambda copylefts: Evn("analysis error", f"Work $WNAME$ has a license conflict as it involves multiple copyleft licenses: {', '.join([l.license_name for l in copylefts])}")
     
     RIGHT_NO_GRANT_WARNING = lambda work_name, right_name: Evn('rights warning', f'Work {work_name} does NOT EXPLICITLY grant you the right to {right_name.upper()}')
     RIGHT_NO_GRANT_ERROR = lambda work_name, right_name: Evn('rights error', f'Work {work_name} does NOT grant you the right to {right_name.upper()}')
@@ -114,9 +114,9 @@ class Work(object):
         for work, usage in coverage:
             if work.has_relied_work(exclude):
                 # Recursively find the relied works
-                relied_works = work.find_relied_works(exclude) + [(work, usage)] # Insert new found works from left
+                relied_works += work.find_relied_works(exclude) + [(work, usage)] # Insert new found works from left
             else:
-                relied_works = relied_works + [(work, usage)] 
+                relied_works += [(work, usage)] 
         return relied_works
     
     # The relied works exlcude aux works will be share with this work (subworks, mixworks and this work)

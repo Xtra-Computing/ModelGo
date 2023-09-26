@@ -2,6 +2,7 @@ from works import Work
 from license_parser import Parser
 from collections import defaultdict
 import logging
+from copy import deepcopy
 
 """ <reuse_methods.py>
     This file contains the definitions of reuse methods. 
@@ -98,13 +99,16 @@ def distill(works, dest_work:Work=None, aux_works=None, license_name:str=None):
         works = [works] # Convert to list
     if isinstance(aux_works, Work):
         aux_works = [aux_works]
-    if dest_work:
+
+    if dest_work: # The target model for distillation
         if dest_work.type != 'model':
             logging.error("The type of destination work of distillation must be a model")
             return
         else:
-            new_work = dest_work # The distilled knowledge directly transfered to the destination model
+            new_work = deepcopy(dest_work) # The distilled knowledge directly transfered to the destination model
             new_work.name = get_new_work_name(works+[dest_work], 'D') # Rename the dest_work, for example, D_work1_work2
+            new_work.subworks += reuse_method_spread(dest_work, 'train') # Add the dest_work to the subworks of new work
+            new_work.license_name = 'TBD' # Reset the license name of new work
     else:
         if all(w.type != 'model' for w in works):
             logging.error("At least one of the works used for distillation needs to be 'model' type")
@@ -161,6 +165,8 @@ def embed(works, aux_works=None, output_as:Work=None, license_name:str=None) -> 
             new_work.auxworks += reuse_method_spread(aw, 'use')
     return new_work
 
+# NOTE: To prevent loop, destination model should not be in works.
+# You can just leave dest_work=None to create a new work
 def train(works, dest_work:Work=None, aux_works=None, license_name:str=None) -> Work:
     if isinstance(works, Work):
         works = [works] # Convert to list
@@ -171,8 +177,11 @@ def train(works, dest_work:Work=None, aux_works=None, license_name:str=None) -> 
             logging.error("The type of destination work of train must be a model")
             return
         else:
-            new_work = dest_work # This training procedure is applied to the destination model
-            new_work.name = get_new_work_name(works+[dest_work], 'T') # Rename the dest_work, for example, D_work1_work2
+            new_work = deepcopy(dest_work) # This training procedure is applied to the destination model
+            new_work.name = get_new_work_name(works+[dest_work], 'T') # Rename the dest_work, for example, T_work1_work2
+            new_work = deepcopy(dest_work) # The distilled knowledge directly transfered to the destination model
+            new_work.subworks += reuse_method_spread(dest_work, 'modify') # Add the dest_work to the subworks of new work
+            new_work.license_name = 'TBD' # Reset the license name of new work
     else:
         dummy_model_works = Work('dummy', 'model', 'raw') # We suppose the new work is a raw form model if the dest_model is not provided
         new_work = new_reused_work(works, 'T', license_name, dummy_model_works) 
@@ -189,6 +198,11 @@ def train(works, dest_work:Work=None, aux_works=None, license_name:str=None) -> 
             new_work.auxworks += reuse_method_spread(aw, 'train')
 
     return new_work
+
+# Finetune is a kind of train
+def finetune(work, data, aux_works=None):
+    aux_works = [data] + aux_works if aux_works else [data]
+    return train(work, aux_works=aux_works)
 
 def group_by_work_type(works:list):
     work_index = defaultdict(list)

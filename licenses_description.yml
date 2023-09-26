@@ -55,7 +55,7 @@
   url: https://opensource.org/license/unlicense/
   version: null
   available: true
-  categories: [public, software, permissive]
+  categories: [public, software, data, model, permissive] # The Unlicense is designed for software, but we use this as the default license of data and model too
   labels: [Public Domain]
   rights: [use, modify, merge, redistribute, commercial_use, copyright]
   reserved_rights: []
@@ -498,7 +498,7 @@
   url: https://creativecommons.org/licenses/by-nd/4.0/
   version: 4.0
   available: true
-  categories: [public, data, auto-relicensing]
+  categories: [public, data, permissive, auto-relicensing]
   labels: [Creative Commons]
   rights: [use, modify, merge, commercial_use] # If you modify it, you may not distribute the modified material.
   reserved_rights: [redistribute, sublicense, trademark_use, patent_use, copyright, patent, trademark] # Cannot redistribute
@@ -513,7 +513,7 @@
   url: https://creativecommons.org/licenses/by-nc-nd/4.0/
   version: 4.0
   available: true
-  categories: [public, data, copyleft, auto-relicensing]
+  categories: [public, data, permissive, auto-relicensing]
   labels: [Creative Commons]
   rights: [use, modify, merge]
   reserved_rights: [redistribute, sublicense, commercial_use, trademark_use, patent_use, copyright, patent, trademark] # Cannot redistribute
@@ -668,19 +668,21 @@
   terms: &OpenRAILterms
     - usages: [use, copy]
       forms: [raw, binary, saas]
-      required_rights: [use]
       result: duplicate
       restrictions: [include_use_restriction, include_runtime_restriction]
       relicense: false
-      copyleft: true
-    - usages: [combine, amalgamate, modify, distill, generate, train]
+    - usages: [generate]
       forms: [raw, binary, saas]
-      required_rights: [use, modify, merge]
+      result: derivative
+      restrictions: [include_use_restriction, include_runtime_restriction]
+      keywords: [transfer, modification]
+      relicense: true
+    - usages: [combine, amalgamate, modify, distill, train]
+      forms: [raw, binary, saas]
       result: derivative
       restrictions: [state_changes, include_use_restriction, include_runtime_restriction]
       keywords: [transfer, modification]
       relicense: true
-      copyleft: true
 
 - 
   full_name: CreativeML Open RAIL-M # Model License, same as OpenRAIL++
@@ -734,7 +736,7 @@
   version: null
   available: true
   categories: [model, proprietary]
-  labels: [Use Restriction]
+  labels: [Meta, Use Restriction]
   rights: [use, modify, merge, redistribute, commercial_use, patent_use] # The redistribution right is not granted.
   reserved_rights: [sublicense, trademark_use, copyright, patent, trademark]
   rights_prefix: [non-exclusive, worldwide, non-transferable, non-sublicensable, revocable, royalty-free]
@@ -743,14 +745,12 @@
   terms: &OPT175Bterms
     - usages: [use, copy]
       forms: [raw, binary, saas]
-      required_rights: [use]
       result: duplicate
       restrictions: [include_use_restriction] # Only personal use are allow, so the requirements of include_notice, include_license are omitted
       relicense: false
       copyleft: true
     - usages: [combine, amalgamate, modify, distill, generate, train]
       forms: [raw, binary, saas]
-      required_rights: [use, modify, merge]
       result: derivative
       restrictions: [include_use_restriction]
       keywords: [modify, reproduce, incorporate]
@@ -764,11 +764,48 @@
   version: null
   available: true
   categories: [model, proprietary]
-  labels: [Use Restriction]
+  labels: [Meta, Use Restriction]
   rights: [use, modify, merge, redistribute, commercial_use, patent_use]
   reserved_rights: [sublicense, trademark_use, copyright, patent, trademark]
   rights_prefix: [non-exclusive, worldwide, non-transferable, non-sublicensable, revocable, royalty-free]
   coverage: [duplicate]
   redistribute: []
   terms: *OPT175Bterms
+
+- 
+  full_name: Llama2 # Model License
+  short_id: Llama2
+  url: https://ai.meta.com/resources/models-and-libraries/llama-downloads/
+  version: null
+  available: true
+  categories: [public, model, permissive]
+  labels: [Meta, Use Restriction]
+  rights: [use, modify, merge, redistribute, commercial_use, patent_use]
+  reserved_rights: [sublicense, trademark_use, copyright, patent, trademark]
+  rights_prefix: [worldwide, non-exclusive, non-transferable, no-charge, royalty-free]
+  coverage: [duplicate, derivative]
+  redistribute: [include_license]
+  terms: 
+    - usages: [use, copy]
+      forms: [raw, binary, saas]
+      result: duplicate
+      restrictions: [include_notice, include_use_restriction]
+      relicense: false
+    - usages: [generate]
+      forms: [raw, binary, saas]
+      result: derivative
+      restrictions: [include_use_restriction]
+      keywords: [outputs]
+      relicense: true
+    - usages: [combine, amalgamate, modify, train] 
+      forms: [raw, binary, saas]
+      result: derivative
+      keywords: [portion]
+      restrictions: [include_notice, include_use_restriction]
+      relicense: true
+    - usages: [distill] # Llama2 cannot be used to improve any other LLM
+      forms: [raw, binary, saas]
+      result: derivative
+      restrictions: []
+      relicense: true
 ...

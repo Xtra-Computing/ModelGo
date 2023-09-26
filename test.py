@@ -69,14 +69,6 @@ class TestMLP(unittest.TestCase):
     
     def setUp(self):
         pass
-    
-    def case1():
-        pass
-
-
-    def case2():
-        data = Work('laion2B-en', 'data', 'CC-BY')
-
 
 
 if __name__ == '__main__':

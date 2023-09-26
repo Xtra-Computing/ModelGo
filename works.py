@@ -110,7 +110,6 @@ class Work(object):
         for _type, _works in zip(['aux', 'mix', 'sub'], [self.auxworks, self.mixworks, self.subworks]):
             if _type not in exclude:
                 coverage = coverage + _works
-        
         for work, usage in coverage:
             if work.has_relied_work(exclude):
                 # Recursively find the relied works

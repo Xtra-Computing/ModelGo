@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{3}
+\begin{thebibliography}{27}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -37,14 +37,151 @@
 \providecommand\natexlab[1]{#1}
 \providecommand\showeprint[2][]{arXiv:#2}
 
+\bibitem[Benjamin et~al\mbox{.}(2019)]%
+        {benjamin2019towards}
+\bibfield{author}{\bibinfo{person}{Misha Benjamin}, \bibinfo{person}{Paul Gagnon}, \bibinfo{person}{Negar Rostamzadeh}, \bibinfo{person}{Chris Pal}, \bibinfo{person}{Yoshua Bengio}, {and} \bibinfo{person}{Alex Shee}.} \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{Towards standardization of data licenses: The montreal data license}.
+\newblock \bibinfo{journal}{\emph{arXiv preprint arXiv:1903.12262}} (\bibinfo{year}{2019}).
+\newblock
+
+
+\bibitem[Commons(2023)]%
+        {creative2023artificial}
+\bibfield{author}{\bibinfo{person}{Creative Commons}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \bibinfo{title}{Artificial intelligence and CC licenses}.
+\newblock
+\newblock
+\urldef\tempurl%
+\url{https://creativecommons.org/faq/#artificial-intelligence-and-cc-licenses}
+\showURL{%
+Retrieved September 25, 2023 from \tempurl}
+
+
+\bibitem[Contractor et~al\mbox{.}(2022)]%
+        {contractor2022behavioral}
+\bibfield{author}{\bibinfo{person}{Danish Contractor}, \bibinfo{person}{Daniel McDuff}, \bibinfo{person}{Julia~Katherine Haines}, \bibinfo{person}{Jenny Lee}, \bibinfo{person}{Christopher Hines}, \bibinfo{person}{Brent Hecht}, \bibinfo{person}{Nicholas Vincent}, {and} \bibinfo{person}{Hanlin Li}.} \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{Behavioral use licensing for responsible AI}. In \bibinfo{booktitle}{\emph{2022 ACM Conference on Fairness, Accountability, and Transparency (FAccT)}}. \bibinfo{pages}{778--788}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1145/3531146.3533143}
+\showDOI{\tempurl}
+
+
+\bibitem[Cui et~al\mbox{.}(2023)]%
+        {cui2023empirical}
+\bibfield{author}{\bibinfo{person}{Xing Cui}, \bibinfo{person}{Jingzheng Wu}, \bibinfo{person}{Yanjun Wu}, \bibinfo{person}{Xu Wang}, \bibinfo{person}{Tianyue Luo}, \bibinfo{person}{Sheng Qu}, \bibinfo{person}{Xiang Ling}, {and} \bibinfo{person}{Mutian Yang}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{An Empirical Study of License Conflict in Free and Open Source Software}. In \bibinfo{booktitle}{\emph{2023 IEEE/ACM 45th International Conference on Software Engineering: Software Engineering in Practice (ICSE-SEIP)}}. IEEE, \bibinfo{pages}{495--505}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/ICSE-SEIP58684.2023.00050}
+\showDOI{\tempurl}
+
+
+\bibitem[Devlin et~al\mbox{.}(2019)]%
+        {devlin2019bert}
+\bibfield{author}{\bibinfo{person}{Jacob Devlin}, \bibinfo{person}{Ming-Wei Chang}, \bibinfo{person}{Kenton Lee}, {and} \bibinfo{person}{Kristina Toutanova}.} \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{{BERT}: Pre-training of deep bidirectional transformers for language understanding}. In \bibinfo{booktitle}{\emph{Proceedings of the 17th Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (NAACL-HLT)}}. \bibinfo{pages}{4171--4186}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.18653/v1/n19-1423}
+\showDOI{\tempurl}
+
+
+\bibitem[Gao et~al\mbox{.}(2020)]%
+        {gao2020the}
+\bibfield{author}{\bibinfo{person}{Leo Gao}, \bibinfo{person}{Stella Biderman}, \bibinfo{person}{Sid Black}, \bibinfo{person}{Laurence Golding}, \bibinfo{person}{Travis Hoppe}, \bibinfo{person}{Charles Foster}, \bibinfo{person}{Jason Phang}, \bibinfo{person}{Horace He}, \bibinfo{person}{Anish Thite}, \bibinfo{person}{Noa Nabeshima}, \bibinfo{person}{Shawn Presser}, {and} \bibinfo{person}{Connor Leahy}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{The {P}ile: An 800GB Dataset of Diverse Text for Language Modeling}.
+\newblock \bibinfo{journal}{\emph{arXiv preprint arXiv:2101.00027}} (\bibinfo{year}{2020}).
+\newblock
+
+
+\bibitem[Goyal et~al\mbox{.}(2022)]%
+        {goyal2022vision}
+\bibfield{author}{\bibinfo{person}{Priya Goyal}, \bibinfo{person}{Quentin Duval}, \bibinfo{person}{Isaac Seessel}, \bibinfo{person}{Mathilde Caron}, \bibinfo{person}{Mannat Singh}, \bibinfo{person}{Ishan Misra}, \bibinfo{person}{Levent Sagun}, \bibinfo{person}{Armand Joulin}, {and} \bibinfo{person}{Piotr Bojanowski}.} \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{Vision models are more robust and fair when pretrained on uncurated images without supervision}.
+\newblock \bibinfo{journal}{\emph{arXiv preprint arXiv:2202.08360}} (\bibinfo{year}{2022}).
+\newblock
+
+
+\bibitem[Han et~al\mbox{.}(2021)]%
+        {han2021pre}
+\bibfield{author}{\bibinfo{person}{Xu Han}, \bibinfo{person}{Zhengyan Zhang}, \bibinfo{person}{Ning Ding}, \bibinfo{person}{Yuxian Gu}, \bibinfo{person}{Xiao Liu}, \bibinfo{person}{Yuqi Huo}, \bibinfo{person}{Jiezhong Qiu}, \bibinfo{person}{Yuan Yao}, \bibinfo{person}{Ao Zhang}, \bibinfo{person}{Liang Zhang}, {et~al\mbox{.}}} \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{Pre-trained models: Past, present and future}.
+\newblock \bibinfo{journal}{\emph{AI Open}}  \bibinfo{volume}{2} (\bibinfo{year}{2021}), \bibinfo{pages}{225--250}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1016/j.aiopen.2021.08.002}
+\showDOI{\tempurl}
+
+
+\bibitem[He et~al\mbox{.}(2022)]%
+        {he2022fastermoe}
+\bibfield{author}{\bibinfo{person}{Jiaao He}, \bibinfo{person}{Jidong Zhai}, \bibinfo{person}{Tiago Antunes}, \bibinfo{person}{Haojie Wang}, \bibinfo{person}{Fuwen Luo}, \bibinfo{person}{Shangfeng Shi}, {and} \bibinfo{person}{Qin Li}.} \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{{FasterMoE}: modeling and optimizing training of large-scale dynamic pre-trained models}. In \bibinfo{booktitle}{\emph{Proceedings of the 27th ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming (PPoPP)}}. \bibinfo{pages}{120--134}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1145/3503221.3508418}
+\showDOI{\tempurl}
+
+
+\bibitem[Huang et~al\mbox{.}(2022)]%
+        {huang2022layoutlmv3}
+\bibfield{author}{\bibinfo{person}{Yupan Huang}, \bibinfo{person}{Tengchao Lv}, \bibinfo{person}{Lei Cui}, \bibinfo{person}{Yutong Lu}, {and} \bibinfo{person}{Furu Wei}.} \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{{LayoutLMv3}: Pre-training for document ai with unified text and image masking}. In \bibinfo{booktitle}{\emph{Proceedings of the 30th ACM International Conference on Multimedia (MM)}}. \bibinfo{pages}{4083--4091}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1145/3503161.3548112}
+\showDOI{\tempurl}
+
+
+\bibitem[Jiang et~al\mbox{.}(2023)]%
+        {jiang2023empirical}
+\bibfield{author}{\bibinfo{person}{Wenxin Jiang}, \bibinfo{person}{Nicholas Synovic}, \bibinfo{person}{Matt Hyatt}, \bibinfo{person}{Taylor~R Schorlemmer}, \bibinfo{person}{Rohan Sethi}, \bibinfo{person}{Yung-Hsiang Lu}, \bibinfo{person}{George~K Thiruvathukal}, {and} \bibinfo{person}{James~C Davis}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{An empirical study of pre-trained model reuse in the hugging face deep learning model registry}. In \bibinfo{booktitle}{\emph{Proceedings of the 45th {IEEE/ACM} International Conference on Software Engineering (ICSE)}}. \bibinfo{pages}{2463--2475}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/ICSE48619.2023.00206}
+\showDOI{\tempurl}
+
+
+\bibitem[Kapitsaki et~al\mbox{.}(2017)]%
+        {kapitsaki2017automating}
+\bibfield{author}{\bibinfo{person}{Georgia~M Kapitsaki}, \bibinfo{person}{Frederik Kramer}, {and} \bibinfo{person}{Nikolaos~D Tselikas}.} \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{Automating the license compatibility process in open source software with {SPDX}}.
+\newblock \bibinfo{journal}{\emph{Journal of Systems and Software (JSS)}}  \bibinfo{volume}{131} (\bibinfo{year}{2017}), \bibinfo{pages}{386--401}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1016/j.jss.2016.06.064}
+\showDOI{\tempurl}
+
+
+\bibitem[Ltd.(2023)]%
+        {dreamlike2023}
+\bibfield{author}{\bibinfo{person}{Dreamlike~Tech Ltd.}} \bibinfo{year}{2023}\natexlab{}.
+\newblock \bibinfo{title}{Dreamlike Photoreal 2.0}.
+\newblock
+\newblock
+\urldef\tempurl%
+\url{https://huggingface.co/dreamlike-art/dreamlike-photoreal-2.0}
+\showURL{%
+Retrieved September 25, 2023 from \tempurl}
+
+
+\bibitem[Mathur et~al\mbox{.}(2012)]%
+        {mathur2012empirical}
+\bibfield{author}{\bibinfo{person}{Arunesh Mathur}, \bibinfo{person}{Harshal Choudhary}, \bibinfo{person}{Priyank Vashist}, \bibinfo{person}{William Thies}, {and} \bibinfo{person}{Santhi Thilagam}.} \bibinfo{year}{2012}\natexlab{}.
+\newblock \showarticletitle{An empirical study of license violations in open source projects}. In \bibinfo{booktitle}{\emph{2012 35th Annual IEEE Software Engineering Workshop (SEW)}}. IEEE, \bibinfo{pages}{168--176}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/SEW.2012.24}
+\showDOI{\tempurl}
+
+
 \bibitem[Ombredanne(2020)]%
         {ombredanne2020free}
-\bibfield{author}{\bibinfo{person}{Philippe Ombredanne}.}
-  \bibinfo{year}{2020}\natexlab{}.
-\newblock \showarticletitle{Free and open source software license compliance:
-  tools for software composition analysis}.
-\newblock \bibinfo{journal}{\emph{Computer}} \bibinfo{volume}{53},
-  \bibinfo{number}{10} (\bibinfo{year}{2020}), \bibinfo{pages}{105--109}.
+\bibfield{author}{\bibinfo{person}{Philippe Ombredanne}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{Free and open source software license compliance: tools for software composition analysis}.
+\newblock \bibinfo{journal}{\emph{Computer}} \bibinfo{volume}{53}, \bibinfo{number}{10} (\bibinfo{year}{2020}), \bibinfo{pages}{105--109}.
 \newblock
 \urldef\tempurl%
 \url{https://doi.org/10.1109/MC.2020.3011082}
@@ -53,25 +190,107 @@
 
 \bibitem[Perens(1999)]%
         {perens1999open}
-\bibfield{author}{\bibinfo{person}{Bruce Perens}.}
-  \bibinfo{year}{1999}\natexlab{}.
+\bibfield{author}{\bibinfo{person}{Bruce Perens}.} \bibinfo{year}{1999}\natexlab{}.
 \newblock \showarticletitle{The open source definition}.
-\newblock \bibinfo{journal}{\emph{Open sources: voices from the open source
-  revolution}}  \bibinfo{volume}{1} (\bibinfo{year}{1999}),
-  \bibinfo{pages}{171--188}.
+\newblock \bibinfo{journal}{\emph{Open sources: voices from the open source revolution}}  \bibinfo{volume}{1} (\bibinfo{year}{1999}), \bibinfo{pages}{171--188}.
 \newblock
+
+
+\bibitem[Radford et~al\mbox{.}(2019)]%
+        {radford2019language}
+\bibfield{author}{\bibinfo{person}{Alec Radford}, \bibinfo{person}{Jeffrey Wu}, \bibinfo{person}{Rewon Child}, \bibinfo{person}{David Luan}, \bibinfo{person}{Dario Amodei}, \bibinfo{person}{Ilya Sutskever}, {et~al\mbox{.}}} \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{Language models are unsupervised multitask learners}.
+\newblock \bibinfo{journal}{\emph{OpenAI blog}} \bibinfo{volume}{1}, \bibinfo{number}{8} (\bibinfo{year}{2019}), \bibinfo{pages}{9}.
+\newblock
+
+
+\bibitem[Rajbahadur et~al\mbox{.}(2021)]%
+        {rajbahadur2021can}
+\bibfield{author}{\bibinfo{person}{Gopi~Krishnan Rajbahadur}, \bibinfo{person}{Erika Tuck}, \bibinfo{person}{Li Zi}, \bibinfo{person}{Dayi Lin}, \bibinfo{person}{Boyuan Chen}, \bibinfo{person}{Zhen Ming}, \bibinfo{person}{Daniel~M German}, {et~al\mbox{.}}} \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{Can I use this publicly available dataset to build commercial AI software?--A Case Study on Publicly Available Image Datasets}.
+\newblock \bibinfo{journal}{\emph{arXiv preprint arXiv:2111.02374}} (\bibinfo{year}{2021}).
+\newblock
+
+
+\bibitem[Rombach et~al\mbox{.}(2022)]%
+        {rombach2022high}
+\bibfield{author}{\bibinfo{person}{Robin Rombach}, \bibinfo{person}{Andreas Blattmann}, \bibinfo{person}{Dominik Lorenz}, \bibinfo{person}{Patrick Esser}, {and} \bibinfo{person}{Bj{\"o}rn Ommer}.} \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{High-resolution image synthesis with latent diffusion models}. In \bibinfo{booktitle}{\emph{Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)}}. \bibinfo{pages}{10684--10695}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/CVPR52688.2022.01042}
+\showDOI{\tempurl}
 
 
 \bibitem[Rosen(2005)]%
         {rosen2005open}
-\bibfield{author}{\bibinfo{person}{Lawrence Rosen}.}
-  \bibinfo{year}{2005}\natexlab{}.
-\newblock \bibinfo{booktitle}{\emph{Open Source Licensing: Software Freedom and
-  Intellectual Property Law}}.
-\newblock \bibinfo{publisher}{Prentice Hall Professional Technical Reference},
-  \bibinfo{address}{New Jersey}.
+\bibfield{author}{\bibinfo{person}{Lawrence Rosen}.} \bibinfo{year}{2005}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{Open Source Licensing: Software Freedom and Intellectual Property Law}}.
+\newblock \bibinfo{publisher}{Prentice Hall Professional Technical Reference}, \bibinfo{address}{New Jersey}.
 \newblock
 \showISBNx{0-13-148787-6}
+
+
+\bibitem[Scao et~al\mbox{.}(2022)]%
+        {scao2022bloom}
+\bibfield{author}{\bibinfo{person}{Teven~Le Scao}, \bibinfo{person}{Angela Fan}, \bibinfo{person}{Christopher Akiki}, \bibinfo{person}{Ellie Pavlick}, \bibinfo{person}{Suzana Ili{\'c}}, \bibinfo{person}{Daniel Hesslow}, \bibinfo{person}{Roman Castagn{\'e}}, \bibinfo{person}{Alexandra~Sasha Luccioni}, \bibinfo{person}{Fran{\c{c}}ois Yvon}, \bibinfo{person}{Matthias Gall{\'e}}, {et~al\mbox{.}}} \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{{BLOOM}: A 176b-parameter open-access multilingual language model}.
+\newblock \bibinfo{journal}{\emph{arXiv preprint arXiv:2211.05100}} (\bibinfo{year}{2022}).
+\newblock
+
+
+\bibitem[Schuhmann et~al\mbox{.}(2022)]%
+        {schuhmann2022laion}
+\bibfield{author}{\bibinfo{person}{Christoph Schuhmann}, \bibinfo{person}{Romain Beaumont}, \bibinfo{person}{Richard Vencu}, \bibinfo{person}{Cade Gordon}, \bibinfo{person}{Ross Wightman}, \bibinfo{person}{Mehdi Cherti}, \bibinfo{person}{Theo Coombes}, \bibinfo{person}{Aarush Katta}, \bibinfo{person}{Clayton Mullis}, \bibinfo{person}{Mitchell Wortsman}, {et~al\mbox{.}}} \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{{LAION-5B:} An open large-scale dataset for training next generation image-text models}.
+\newblock \bibinfo{journal}{\emph{Advances in Neural Information Processing Systems (NeurIPS)}}  \bibinfo{volume}{35} (\bibinfo{year}{2022}), \bibinfo{pages}{25278--25294}.
+\newblock
+
+
+\bibitem[Strubell et~al\mbox{.}(2019)]%
+        {strubell2019energy}
+\bibfield{author}{\bibinfo{person}{Emma Strubell}, \bibinfo{person}{Ananya Ganesh}, {and} \bibinfo{person}{Andrew McCallum}.} \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{Energy and Policy Considerations for Deep Learning in {NLP}}. In \bibinfo{booktitle}{\emph{Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics (ACL)}}. \bibinfo{pages}{3645--3650}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.18653/v1/p19-1355}
+\showDOI{\tempurl}
+
+
+\bibitem[Touvron et~al\mbox{.}(2023)]%
+        {touvron2023llama}
+\bibfield{author}{\bibinfo{person}{Hugo Touvron}, \bibinfo{person}{Louis Martin}, \bibinfo{person}{Kevin Stone}, \bibinfo{person}{Peter Albert}, \bibinfo{person}{Amjad Almahairi}, \bibinfo{person}{Yasmine Babaei}, \bibinfo{person}{Nikolay Bashlykov}, \bibinfo{person}{Soumya Batra}, \bibinfo{person}{Prajjwal Bhargava}, \bibinfo{person}{Shruti Bhosale}, {et~al\mbox{.}}} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{Llama 2: Open foundation and fine-tuned chat models}.
+\newblock \bibinfo{journal}{\emph{arXiv preprint arXiv:2307.09288}} (\bibinfo{year}{2023}).
+\newblock
+
+
+\bibitem[Wolf et~al\mbox{.}(2020)]%
+        {wolf2020transformers}
+\bibfield{author}{\bibinfo{person}{Thomas Wolf}, \bibinfo{person}{Lysandre Debut}, \bibinfo{person}{Victor Sanh}, \bibinfo{person}{Julien Chaumond}, \bibinfo{person}{Clement Delangue}, \bibinfo{person}{Anthony Moi}, \bibinfo{person}{Pierric Cistac}, \bibinfo{person}{Tim Rault}, \bibinfo{person}{R{\'e}mi Louf}, \bibinfo{person}{Morgan Funtowicz}, {et~al\mbox{.}}} \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{Transformers: State-of-the-art natural language processing}. In \bibinfo{booktitle}{\emph{Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)}}. \bibinfo{pages}{38--45}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.18653/v1/2020.emnlp-demos.6}
+\showDOI{\tempurl}
+
+
+\bibitem[You et~al\mbox{.}(2021)]%
+        {you2021workshop}
+\bibfield{author}{\bibinfo{person}{Shan You}, \bibinfo{person}{Chang Xu}, \bibinfo{person}{Fei Wang}, {and} \bibinfo{person}{Changshui Zhang}.} \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{Workshop on Model Mining}. In \bibinfo{booktitle}{\emph{Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery \& Data Mining}}. \bibinfo{pages}{4177--4178}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1145/3447548.3469471}
+\showDOI{\tempurl}
+
+
+\bibitem[Zeng et~al\mbox{.}(2023)]%
+        {zeng2023glm}
+\bibfield{author}{\bibinfo{person}{Aohan Zeng}, \bibinfo{person}{Xiao Liu}, \bibinfo{person}{Zhengxiao Du}, \bibinfo{person}{Zihan Wang}, \bibinfo{person}{Hanyu Lai}, \bibinfo{person}{Ming Ding}, \bibinfo{person}{Zhuoyi Yang}, \bibinfo{person}{Yifan Xu}, \bibinfo{person}{Wendi Zheng}, \bibinfo{person}{Xiao Xia}, {et~al\mbox{.}}} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{{GLM-130B:} An Open Bilingual Pre-trained Model}.
+\newblock \bibinfo{journal}{\emph{Proceedings of the 11th International Conference on Learning Representations (ICLR)}}.
+\newblock
 
 
 \end{thebibliography}

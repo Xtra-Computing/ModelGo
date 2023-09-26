@@ -74,11 +74,13 @@ class License(object):
     
     # Check whether this license can be apply to a work in "type" (model, data, software)
     def is_supported_work_type(self, type:str):
-        if type == "model": 
-            # Models can be regarded as software, model, or derivative of data
+        if type in self.meta["categories"]:
             return True
-        elif type in self.meta["categories"]:
+        
+        # Models can be regarded as software
+        elif "software" in self.meta["categories"] and type == "model":
             return True
+        
         return False
     
     def get_share_coverage(self) -> list:
@@ -216,10 +218,13 @@ class Parser(object):
         # 2, Check the rights granting for reuse and open (such as share, sell)
         self.rights_granting_analysis(work, open_policy)
 
-        # 3, Check the restrictions involved by relied works
+        # 3, Check the warnings involved by relied works
+        self.warning_analysis(work, open_policy)
+
+        # 4, Check the restrictions involved by relied works
         self.restrictions_analysis(work, open_policy)
         
-        # 4, Finnal check for disclose and redistribute requirements
+        # 5, Finnal check for disclose and redistribute requirements
         self.redistribution_analysis(work, open_policy)
         return True
 
@@ -232,9 +237,9 @@ class Parser(object):
     def license_analysis(self, TBD_work:Work) -> bool:
         if TBD_work.license_name != 'TBD':
             logging.warning(f"{TBD_work.name} has license, no need for license analysis")
-            return False
+            return True
         
-        elif TBD_work.has_relied_work() is False: # license_name == TBD but w/o relied work.
+        elif TBD_work.has_relied_work(exclude='aux') is False: # license_name == TBD but w/o relied subworks and mixworks.
             TBD_work.license_name = 'Unlicense' # Default to 'Unlicense'
             self.register_license(TBD_work)
             return True
@@ -275,22 +280,40 @@ class Parser(object):
             elif aim_license_name is None: 
                 # we tend to retain same permissive license to new work
                 exclude_unlicense = [w.license.short_id for w in permissives if w.license.short_id != 'Unlicense']
+                for pli in ['Unlicense'] + exclude_unlicense:
+                    # Find relicensable, prefer 'Unlicense' due to reduce unnecessary conflicts
+                    # From these need relicese works (exclude auxworks), check the availability of relicesing
+                    need_relicense = [rw for rw, _ in relied_works_wo_aux if rw.license.short_id != pli]
+                    cannot_relicense = []
+                    for rw in need_relicense: 
+                        if terms_wo_aux[rw].get('relicense') == False and terms_wo_aux[rw].get('result') not in ['independent', 'NODEF']:
+                            cannot_relicense.append(rw)
+                    #print(pli, [w.name for w in cannot_relicense])   # DEBUG
+                    if len(cannot_relicense) == 0:
+                        aim_license_name = pli # Find a feasible relicensing plan (pli)
+                        break
+                # Cannot find the relicensing plan
+                if aim_license_name is None:
+                    logging.error(f'Work {TBD_work.name} canot be licensed as another license due to {[rw.license_name for rw in cannot_relicense]} does not grant the relicense rights')
+                    return False
+                """
                 if all(pli == exclude_unlicense[0] for pli in exclude_unlicense):
                     # All relied work under same permissive license (exclude Unlicense)
-                    #aim_license_name = exclude_unlicense[0]
-                    aim_license_name = 'Unlicense'
+                    aim_license_name = exclude_unlicense[0] # Defect: Unnecessary Resstrictions
+                    #aim_license_name = 'Unlicense' # Defect: Unnecessary relicense requirement
                 else:
                     aim_license_name = 'Unlicense' # Register as 'Unlicense' if relied works contain multiple permissive licenses
                     logging.debug(f'Mulitiple permissive licenses exist in work {TBD_work.name}, use Unlicense by default')
+                """
 
-            # From these need relicese works (exclude auxworks), check the availability of relicesing
+            # Reconfirm relicense plan (with aim_license_name)
             need_relicense = [rw for rw, _ in relied_works_wo_aux if rw.license.short_id != aim_license_name]
             cannot_relicense = []
             for rw in need_relicense: 
                 if terms_wo_aux[rw].get('relicense') == False and terms_wo_aux[rw].get('result') not in ['independent', 'NODEF']:
                     cannot_relicense.append(rw)
 
-            if len(cannot_relicense) > 0: pass # TODO: We can deal with the exception of license compatibility here.
+            #if len(cannot_relicense) > 0: pass # TODO: We can deal with the exception of license compatibility here.
 
             if len(cannot_relicense) == 0:
                 # The aiming license is given and relicensing to different license of reused results is allowed
@@ -339,7 +362,6 @@ class Parser(object):
             if rw in shared_works_list:
                 req_rights += req_open_policy_rights
             
-            #print(rw.name, ru,req_rights)
             for right in req_rights:
                 is_granted = rw.license.is_granted_right(right)
                 if is_granted == False:
@@ -359,6 +381,14 @@ class Parser(object):
             if 'restrictions' in term:
                 for res in term.get('restrictions'):
                     work.add_event(getattr(EVENT, res.upper())(rw.name, rw.license_name))
+        return
+    
+    def warning_analysis(self, work:Work, open_policy:str=''):
+        for rw, ru in work.find_relied_works(exclude=['aux']): # Dont report warnings from auxworks
+            warnings = rw.filter_events_by_type('warning')
+            #print(rw.name, rw.caution)
+            if len(warnings) > 0:
+                work.add_event(warnings)
         return
     
     def redistribution_analysis(self, work:Work, open_policy:str):

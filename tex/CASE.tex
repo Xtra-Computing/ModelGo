@@ -6,12 +6,12 @@ However, this can be challenging in practice due to three present situations:
 
 (2) Lack of Development Lifecycle Information for ML Reusing: ML reusing often occurs without a clear record, making it hard to trace the origins and licenses of components used.
 
-(3) Non-compliance within Datasets: Crowdsourced datasets often suffer from license non-compliance issues~\cite{rajbahadur2021can}, making the licenses declared by dataset collectors invalid.
+(3) Non-compliance within Datasets: Crowdsourced datasets often suffer from license non-compliance issues~\cite{rajbahadur2021can}, making the licenses (usually permissive) declared by dataset collectors invalid.
 
-Therefore, we show the use cases of Modelgo
-Table~\ref{tab:MLP}
-Table~\ref{tab:works}
-
+Consequently, directly analyzing real-world ML projects may result in uncertainty, over-optimistic results, and often fail to detect any license conflicts.
+Therefore, to validate Modelgo, we have designed five ML scenarios rendered using 15 common data sources and 11 models that cover 5 modalities and 7 tasks, respectively.
+Table~\ref{tab:works} shows the specifications of the involved data sources and models, whose licenses include copyleft, permissive, public domain, and no public license~\footnote{Some data sources contain crowdsourced content with multiple licenses, and we selected a non-public domain license among them.}.
+Furthermore, our case studies can cover all events listed in Table~\ref{tab:analysis}, and the their details and findings are provided in the following section.
 
 \begin{table}[t]
     \caption{Specifications of AI components used in case studies, which include \textcolor{Copyleft}{Copyleft License}, \textcolor{Permissive}{Permissive License}, \textcolor{Public}{Public Domain Licens} and No public license.}
@@ -62,10 +62,13 @@ Table~\ref{tab:works}
         \end{tabular}
 \end{table}
 
+\subsection{CASE \Romannum{1} : Corpus Combination}
+Our 
+
 \begin{figure}[t]
     \centering
     \includegraphics[width=\linewidth]{fig/case1.pdf}
-    \caption{Case Study \Romannum{1}: Combination of Corpus. (a) LGPL-LR proliferation, CC collection; (b) LGPL-LR no linguistic resource, CC No redistribution.}
+    \caption{Case Study \Romannum{1}: Corpus Combination. (a) LGPL-LR proliferation, CC collection; (b) LGPL-LR no linguistic resource, CC No redistribution.}
     \Description{}
     \label{fig:case1}
 \end{figure}

@@ -145,8 +145,10 @@ class Parser(object):
             idx = licenses_list.index(license_name)
             return self.licenses_list[idx] # Return the name in license description
         return None
-        
-
+    
+    def print_supported_license_names(self):
+        print(self.licenses_list)
+        return
     
     # Register license for the work or a list of works
     def register_license(self, work:Work, relicense=False):

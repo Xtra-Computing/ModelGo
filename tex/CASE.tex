@@ -1,5 +1,66 @@
 \section{Case Study Details}
+An ideal practice of Modelgo is to assess real-world ML projects and detect their potential license compliance issues. 
+However, this can be challenging in practice due to three present situations:
 
+(1) Prevalent Licensing Disorganization in ML Projects: Many ML projects lack organized licensing information, making it difficult to ascertain the licenses of individual components.
+
+(2) Lack of Development Lifecycle Information for ML Reusing: ML reusing often occurs without a clear record, making it hard to trace the origins and licenses of components used.
+
+(3) Non-compliance within Datasets: Crowdsourced datasets often suffer from license non-compliance issues~\cite{rajbahadur2021can}, making the licenses declared by dataset collectors invalid.
+
+Therefore, we show the use cases of Modelgo
+Table~\ref{tab:MLP}
+Table~\ref{tab:works}
+
+
+\begin{table}[t]
+    \caption{Specifications of AI components used in case studies, which include \textcolor{Copyleft}{Copyleft License}, \textcolor{Permissive}{Permissive License}, \textcolor{Public}{Public Domain Licens} and No public license.}
+    \footnotesize
+    \label{tab:works}
+    \begin{tabular}{|p{1.6cm}|p{3cm}|p{0.6cm}|p{1.7cm}|}
+        \hline
+        \rowcolor[gray]{.8}
+        \textbf{Work Name} & \textbf{License Name} & \textbf{Type} & \textbf{Modality/Usage}  \\ \hline
+        Wikipedia & \textcolor{Copyleft}{CC-BY-SA-4.0} & \multirow{15}{*}{Data} & \multirow{6}{*}{Text}   \\ \cline{1-2}
+        StackExchange & \textcolor{Copyleft}{CC-BY-SA-4.0}  &  &    \\ \cline{1-2}
+        FreeLaw & CC-BY-ND-4.0 &  &   \\ \cline{1-2}
+        arXiv & \textcolor{Copyleft}{CC-BY-NC-SA-4.0} &  &   \\ \cline{1-2}
+        PubMed & \textcolor{Copyleft}{CC-BY-NC-SA-4.0} &  &    \\ \cline{1-2}
+        Deep-sequoia & CC-BY-NC-ND-4.0 &  &   \\ \cline{1-2} \cline{4-4}
+
+        Midjourney Gen & CC-BY-NC-ND-4.0 &  & \multirow{6}{*}{Image}  \\ \cline{1-2}
+        Flickr & \textcolor{Copyleft}{CC-BY-NC-SA-4.0} &  &   \\ \cline{1-2}
+        StockSnap & \textcolor{Public}{CC0-1.0} &  &   \\ \cline{1-2}
+        Wikimedia & \textcolor{Copyleft}{CC-BY-SA-4.0} &  &   \\ \cline{1-2}
+        OpenClipart & \textcolor{Public}{CC0-1.0} &  &   \\ \cline{1-2} \cline{4-4}
+        
+        ccMixter & \textcolor{Permissive}{CC-BY-NC-4.0} & & \multirow{2}{*}{Voice}  \\ \cline{1-2}
+        Jamendo & CC-BY-NC-ND-4.0 &  &   \\ \cline{1-2} \cline{4-4}
+        
+        Thingverse & \textcolor{Copyleft}{CC-BY-NC-SA-4.0} &  & 3D model  \\ \cline{1-2} \cline{4-4}
+
+        Vimeo & CC-BY-NC-ND-4.0 &  & Video  \\ \hline
+
+        Baize & \textcolor{Copyleft}{GPL-3.0} & \multirow{11}{*}{Model} & \multirow{4}{*}{Text Generation}   \\ \cline{1-2}
+        BLOOM & \textcolor{Permissive}{BigScience-BLOOM-RAIL-1.0} & &   \\ \cline{1-2}
+        Llama2 & \textcolor{Permissive}{Llama2} & &   \\ \cline{1-2}
+        BigTranslate & \textcolor{Copyleft}{GPL-3.0} & &   \\ \cline{1-2} \cline{4-4}
+
+        BERT & \textcolor{Permissive}{Apache-2.0} &  & Fill-Mask   \\ \cline{1-2} \cline{4-4}
+
+        Stable Diffusion & \textcolor{Permissive}{CreativeML-OpenRAIL-M} & & Text to Image  \\ \cline{1-2} \cline{4-4}
+
+        MaskFormer & \textcolor{Permissive}{CC-BY-NC-4.0} & & Image  \\ \cline{1-2}
+        DETR & \textcolor{Permissive}{Apache-2.0} & & Segmentation \\ \cline{1-2} \cline{4-4}
+
+        Whisper & \textcolor{Permissive}{MIT} & & Voice to Text  \\ \cline{1-2} \cline{4-4}
+
+        X-Clip & \textcolor{Permissive}{MIT} & & Video to Text  \\ \cline{1-2} \cline{4-4}
+
+        I2VGen-XL & CC-BY-NC-ND-4.0 & & Image to Video  \\ \hline
+
+        \end{tabular}
+\end{table}
 
 \begin{figure}[t]
     \centering

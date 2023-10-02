@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{27}
+\begin{thebibliography}{29}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -36,6 +36,16 @@
 \providecommand\bibinfo[2]{#2}
 \providecommand\natexlab[1]{#1}
 \providecommand\showeprint[2][]{arXiv:#2}
+
+\bibitem[Bender et~al\mbox{.}(2021)]%
+        {bender2021dangers}
+\bibfield{author}{\bibinfo{person}{Emily~M Bender}, \bibinfo{person}{Timnit Gebru}, \bibinfo{person}{Angelina McMillan-Major}, {and} \bibinfo{person}{Shmargaret Shmitchell}.} \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{On the dangers of stochastic parrots: Can language models be too big?}. In \bibinfo{booktitle}{\emph{Proceedings of the 2021 ACM conference on Fairness, Accountability, and Transparency (FAccT)}}. \bibinfo{pages}{610--623}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1145/3442188.3445922}
+\showDOI{\tempurl}
+
 
 \bibitem[Benjamin et~al\mbox{.}(2019)]%
         {benjamin2019towards}
@@ -131,6 +141,17 @@ Retrieved September 25, 2023 from \tempurl}
 \newblock
 \urldef\tempurl%
 \url{https://doi.org/10.1145/3503161.3548112}
+\showDOI{\tempurl}
+
+
+\bibitem[Jacobs et~al\mbox{.}(1991)]%
+        {jacobs1991adaptive}
+\bibfield{author}{\bibinfo{person}{Robert~A Jacobs}, \bibinfo{person}{Michael~I Jordan}, \bibinfo{person}{Steven~J Nowlan}, {and} \bibinfo{person}{Geoffrey~E Hinton}.} \bibinfo{year}{1991}\natexlab{}.
+\newblock \showarticletitle{Adaptive mixtures of local experts}.
+\newblock \bibinfo{journal}{\emph{Neural computation}} \bibinfo{volume}{3}, \bibinfo{number}{1} (\bibinfo{year}{1991}), \bibinfo{pages}{79--87}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1162/neco.1991.3.1.79}
 \showDOI{\tempurl}
 
 

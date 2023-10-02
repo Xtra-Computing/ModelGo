@@ -126,6 +126,45 @@
       result: NODEF
 
 -
+  full_name: Artistic License v2.0 # Software License
+  short_id: Artistic-3.0
+  url: https://opensource.org/license/artistic-2-0/
+  version: 2.0
+  available: true
+  categories: [public, software, permissive, disclose]
+  labels: [OSI Approved]
+  rights: [use, modify, merge, redistribute, commercial_use, patent_use, sublicense]
+  reserved_rights: [trademark_use, copyright, patent, trademark]
+  rights_prefix: [worldwide, non-exclusive, no-charge]
+  coverage: [duplicate, derivative]
+  redistribute: [include_notice, include_license]
+  terms:
+    - usages: [use, copy]
+      forms: [raw, binary, saas]
+      result: duplicate
+      restrictions: []
+      relicense: false
+    - usages: [combine]
+      forms: [binary, saas]
+      keywords: [extend]
+      result: independent
+    - usages: [combine]
+      forms: [raw]
+      keywords: [aggregate]
+      result: derivative
+      restrictions: [state_changes]
+      relicense: true
+    - usages: [amalgamate, modify]
+      forms: [raw, binary, saas]
+      result: derivative
+      keywords: [modified, changed]
+      restrictions: [state_changes]
+      relicense: true
+    - usages: [train, distill, generate, embed]
+      forms: [raw, binary, saas]
+      result: NODEF
+
+-
   full_name: GNU General Public License v3.0 # Software License (copyleft)
   short_id: GPL-3.0
   url: https://www.gnu.org/licenses/gpl-3.0.en.html

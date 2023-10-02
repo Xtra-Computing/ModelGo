@@ -109,20 +109,5 @@ case4(bloom_model, wiki_text, bert_model, [llama2_model, bigtranslate_model]) # 
 #case5([stocksnap_img, midjourney_img], case3([whisper_model, baize_model, stable_diffusion_mode, i2vgen_model], ccmixter_music, False), [vimeo_video])
 #thingverse_3d
 
-"""
-par.register_license([work1, work2, work3, work4])
+#par.print_supported_license_names()
 
-new_work = combine([work1, work2, work4])
-result = par.analysis(new_work, open_policy='sell')
-if result:
-    new_work.summary()
-else:
-    print('Error :(')
-"""
-#new_work = amalgamate([work1, work2])
-#new_work = train([work1, work4])
-#new_work2 = amalgamate([new_work, work2])
-#new_work3 = combine([new_work2, work3, work4])
-#print(work4.license.meta['terms'])
-#par.analysis(new_work3, open_policy='sell')
-#new_work3.summary()

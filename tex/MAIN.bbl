@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{29}
+\begin{thebibliography}{30}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -100,7 +100,7 @@ Retrieved September 25, 2023 from \tempurl}
 \bibitem[Gao et~al\mbox{.}(2020)]%
         {gao2020the}
 \bibfield{author}{\bibinfo{person}{Leo Gao}, \bibinfo{person}{Stella Biderman}, \bibinfo{person}{Sid Black}, \bibinfo{person}{Laurence Golding}, \bibinfo{person}{Travis Hoppe}, \bibinfo{person}{Charles Foster}, \bibinfo{person}{Jason Phang}, \bibinfo{person}{Horace He}, \bibinfo{person}{Anish Thite}, \bibinfo{person}{Noa Nabeshima}, \bibinfo{person}{Shawn Presser}, {and} \bibinfo{person}{Connor Leahy}.} \bibinfo{year}{2020}\natexlab{}.
-\newblock \showarticletitle{The {P}ile: An 800GB Dataset of Diverse Text for Language Modeling}.
+\newblock \showarticletitle{{The Pile}: An 800GB Dataset of Diverse Text for Language Modeling}.
 \newblock \bibinfo{journal}{\emph{arXiv preprint arXiv:2101.00027}} (\bibinfo{year}{2020}).
 \newblock
 
@@ -176,6 +176,14 @@ Retrieved September 25, 2023 from \tempurl}
 \showDOI{\tempurl}
 
 
+\bibitem[Kocetkov et~al\mbox{.}(2023)]%
+        {kocetkov2023stack}
+\bibfield{author}{\bibinfo{person}{Denis Kocetkov}, \bibinfo{person}{Raymond Li}, \bibinfo{person}{Loubna~Ben Allal}, \bibinfo{person}{Jia Li}, \bibinfo{person}{Chenghao Mou}, \bibinfo{person}{Carlos~Mu{\~n}oz Ferrandis}, \bibinfo{person}{Yacine Jernite}, \bibinfo{person}{Margaret Mitchell}, \bibinfo{person}{Sean Hughes}, \bibinfo{person}{Thomas Wolf}, {et~al\mbox{.}}} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{{The Stack}: 3 {TB} of permissively licensed source code}.
+\newblock \bibinfo{journal}{\emph{Transactions on Machine Learning Research (TMLR)}} (\bibinfo{year}{2023}).
+\newblock
+
+
 \bibitem[Ltd.(2023)]%
         {dreamlike2023}
 \bibfield{author}{\bibinfo{person}{Dreamlike~Tech Ltd.}} \bibinfo{year}{2023}\natexlab{}.
@@ -209,11 +217,11 @@ Retrieved September 25, 2023 from \tempurl}
 \showDOI{\tempurl}
 
 
-\bibitem[Perens(1999)]%
-        {perens1999open}
-\bibfield{author}{\bibinfo{person}{Bruce Perens}.} \bibinfo{year}{1999}\natexlab{}.
-\newblock \showarticletitle{The open source definition}.
-\newblock \bibinfo{journal}{\emph{Open sources: voices from the open source revolution}}  \bibinfo{volume}{1} (\bibinfo{year}{1999}), \bibinfo{pages}{171--188}.
+\bibitem[Penedo et~al\mbox{.}(2023)]%
+        {penedo2023refinedweb}
+\bibfield{author}{\bibinfo{person}{Guilherme Penedo}, \bibinfo{person}{Quentin Malartic}, \bibinfo{person}{Daniel Hesslow}, \bibinfo{person}{Ruxandra Cojocaru}, \bibinfo{person}{Alessandro Cappelli}, \bibinfo{person}{Hamza Alobeidli}, \bibinfo{person}{Baptiste Pannier}, \bibinfo{person}{Ebtesam Almazrouei}, {and} \bibinfo{person}{Julien Launay}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{The RefinedWeb dataset for Falcon LLM: outperforming curated corpora with web data, and web data only}.
+\newblock \bibinfo{journal}{\emph{arXiv preprint arXiv:2306.01116}} (\bibinfo{year}{2023}).
 \newblock
 
 

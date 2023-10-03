@@ -14,7 +14,7 @@ Table~\ref{tab:works} shows the specifications of the involved data sources and 
 Furthermore, our case studies can cover all events listed in Table~\ref{tab:analysis}, and the their details and findings are provided in the following section.
 
 \begin{table}[t]
-    \caption{Specifications of AI components used in case studies, which include \textcolor{Copyleft}{Copyleft License}, \textcolor{Permissive}{Permissive License}, \textcolor{Public}{Public Domain Licens} and No public license.}
+    \caption{Specifications of AI components used in case studies, which include \textcolor{Copyleft}{Copyleft License}, \textcolor{Permissive}{Permissive License}, \textcolor{Public}{Public Domain Licens} and No Public License.}
     \footnotesize
     \label{tab:works}
     \begin{tabular}{|p{1.6cm}|p{3cm}|p{0.6cm}|p{1.7cm}|}
@@ -63,12 +63,37 @@ Furthermore, our case studies can cover all events listed in Table~\ref{tab:anal
 \end{table}
 
 \subsection{CASE \Romannum{1} : Corpus Combination}
-Our 
+
+Our first case is corpus combination, which is very common in crowdsourced LLM datasets~\cite{gao2020the, penedo2023refinedweb, kocetkov2023stack}. 
+Additionally, we also consider scenarios where the corpus is extended with the help of translation LLM.
+As shown in Figure~\ref{fig:case1} (a), we first translate\footnote{In our cases, we treat translation as a specific form of embedding with a natural language output.} \textit{arXiv} and \textit{Stack Exchange} using \textit{Big Translate} model, then we combine these translated corpuses with \textit{Deep-sequoia} and \textit{FreeLaw}.
+This combined corpus is the final work, intended for commercial purposes.
+Figure~\ref{fig:case1} (b) depicts a variation in which the final work is a combination of translated corpus and the LLM.
+Note that, to simplify analysis, we treat these no public licenses, such as CC-BY-ND-4.0 and CC-BY-NC-ND-4.0, as permissive licenses with limitations on sharing derivatives, as they do not include any copyleft terms.
+%We have also consolidated some redundant results reported by intermediate reused components to simplify our figures.
+The interpretation of license analysis results is as follows:
+
+\boxed{\text{Results of CASE \Romannum{1} (a)}} The copyleft conditions about \textit{translation} of the CC licenses were triggered, which means that the translated corpuses are also covered by the original licenses.
+As a result, the translated \textit{arXiv} and \textit{Stack Exchange} corpuses remain under the original copyleft license. 
+However, combining these corpuses with another copyleft-licensed \textit{Deep-sequoia} corpus did not result in the multiple copyleft licenses error, as the combination with strong separate falls outside the proliferate coverage of LGPL-LR.
+The proliferation extended to the final work and force it to be licensed under LGPL-LR as well.
+It is important to note that only the effort taken to combine the corpuses is under LGPL-LR, and the licensing action to the final work will not change the licenses of its components.
+
+In this case, there are two types of errors according to Modelgo's assessment.
+The first error arises from the CC-BY-NC-SA-4.0 license of the translated \textit{arXiv}, which doesn't grant the right of commercial use\footnote{This error also arises from \textit{arXiv} since it is a sub-work of the translated \textit{arXiv}, we will consolidate this type of redundant in the rest of the case studies.}. 
+The second error is caused by the fact that the redistribution rights of FreeLaw are not granted to comply with CC-BY-ND-4.0.
+There are also many restrictions, such as the final work must state the changes compared to the original work and must retain the licenses and notice files of the original works.
+In addition, Modelgo also indicates that the granted rights of LGPL-LR are revocable, which poses a potential risk for further redistribution.
+
+\boxed{\text{Results of CASE \Romannum{1} (b)}} Different from CASE \Romannum{1} (a), the final work in CASE \Romannum{1} (b) is licensed under another copyleft license GPL-3.0 from \textit{Big Translate}.
+This is because LGPL-LR has a license proliferation exemption for reused results that are no longer classified as linguistic resources.
+Consequently, the license of final work is proliferated by GPL-3.0.
+Additionally, besides the rights not granted error arising from CC-BY-NC-ND-4.0, this license also explicitly prohibits any form of sharing derivatives, resulting in a cannot share error.
 
 \begin{figure}[t]
     \centering
     \includegraphics[width=\linewidth]{fig/case1.pdf}
-    \caption{Case Study \Romannum{1}: Corpus Combination. (a) LGPL-LR proliferation, CC collection; (b) LGPL-LR no linguistic resource, CC No redistribution.}
+    \caption{CASE \Romannum{1}: Corpus Combination. (a) Example of copyleft proliferation rules ; (b) LGPL-LR no linguistic resource exemption, CC No redistribution. AI ctivities: \boxed{\text{E}}mbed, \boxed{\text{C}}ombine.}
     \Description{}
     \label{fig:case1}
 \end{figure}
@@ -88,6 +113,8 @@ Our
     \Description{}
     \label{fig:case3}
 \end{figure}
+
+% Responsible AI 的 copyleft use behavioral 问题：历史累积
 
 \begin{figure}[t]
     \centering

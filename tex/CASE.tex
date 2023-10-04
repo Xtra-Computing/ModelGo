@@ -166,7 +166,6 @@ Therefore, once AI model licensed components are used in ML projects, all subseq
 
 \subsection{CASE \Romannum{4} : Knowledge Transfer and Fusion}
 
-
 \begin{figure}[h]
     \centering
     \includegraphics[width=\linewidth]{fig/case4.pdf}
@@ -175,7 +174,18 @@ Therefore, once AI model licensed components are used in ML projects, all subseq
     \label{fig:case4}
 \end{figure}
 
+The knowledge can be transferred or integrated from one model to another without the need for explicit code replication or linking. 
+This is achieved through technologies such as Student-Teacher Learning~\cite{furlanello2018born}, Contrastive Learning~\cite{li2021model}, Federated Learning~\cite{mcmahan2017communication}, Model Fusion~\cite{lam2021model}, etc.
+Traditional OSS license expose a loophole regarding these unique reusing methods from ML, and these methods also pose challenges for deep IP protection~\cite{peng2022intellectual}.
+With the assistance of Modelgo, we further explore the compliance of these knowledge transfer methods within existing licensing framework.
+
 \boxed{\text{Results of CASE \Romannum{4} (a)}} 
+The distillation and amalgamation both yield a weak separation result from the original work, which can be interpreted as one form of modification.
+Therefore, the final work should be under a CC-BY-NC-4.0, the same as \textit{Mask Former}.
+However, the CC licenses do not define the terms for the materials used for distillation, so there is no effect from the copyleft licenses of \textit{Wikimedia} and \textit{I2VGen-XL}.
+ 
+There is one error in the assessment. 
+Since the modification of a CC NonCommercial licensed work cannot be relicensed according to its conditions, the amalgamated result face a no commercial rights error when commercialized.
 
 \boxed{\text{Results of CASE \Romannum{4} (b)}} 
 

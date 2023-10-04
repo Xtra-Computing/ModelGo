@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{34}
+\begin{thebibliography}{39}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -95,6 +95,13 @@ Retrieved September 25, 2023 from \tempurl}
 \urldef\tempurl%
 \url{https://doi.org/10.18653/v1/n19-1423}
 \showDOI{\tempurl}
+
+
+\bibitem[Furlanello et~al\mbox{.}(2018)]%
+        {furlanello2018born}
+\bibfield{author}{\bibinfo{person}{Tommaso Furlanello}, \bibinfo{person}{Zachary Lipton}, \bibinfo{person}{Michael Tschannen}, \bibinfo{person}{Laurent Itti}, {and} \bibinfo{person}{Anima Anandkumar}.} \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{Born again neural networks}. In \bibinfo{booktitle}{\emph{Proceedings of the 35th International Conference on Machine Learning (ICML)}}. PMLR, \bibinfo{pages}{1607--1616}.
+\newblock
 
 
 \bibitem[Gao et~al\mbox{.}(2020)]%
@@ -200,6 +207,20 @@ Retrieved September 25, 2023 from \tempurl}
 \newblock
 
 
+\bibitem[Lam et~al\mbox{.}(2021)]%
+        {lam2021model}
+\bibfield{author}{\bibinfo{person}{Thanh~Chi Lam}, \bibinfo{person}{Nghia Hoang}, \bibinfo{person}{Bryan Kian~Hsiang Low}, {and} \bibinfo{person}{Patrick Jaillet}.} \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{Model Fusion for Personalized Learning}. In \bibinfo{booktitle}{\emph{Proceedings of the 38th International Conference on Machine Learning (ICML)}}. PMLR, \bibinfo{pages}{5948--5958}.
+\newblock
+
+
+\bibitem[Li et~al\mbox{.}(2021)]%
+        {li2021model}
+\bibfield{author}{\bibinfo{person}{Qinbin Li}, \bibinfo{person}{Bingsheng He}, {and} \bibinfo{person}{Dawn Song}.} \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{Model-contrastive federated learning}. In \bibinfo{booktitle}{\emph{Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)}}. \bibinfo{pages}{10713--10722}.
+\newblock
+
+
 \bibitem[Ltd.(2023)]%
         {dreamlike2023}
 \bibfield{author}{\bibinfo{person}{Dreamlike~Tech Ltd.}} \bibinfo{year}{2023}\natexlab{}.
@@ -233,6 +254,13 @@ Retrieved September 25, 2023 from \tempurl}
 \showDOI{\tempurl}
 
 
+\bibitem[McMahan et~al\mbox{.}(2017)]%
+        {mcmahan2017communication}
+\bibfield{author}{\bibinfo{person}{Brendan McMahan}, \bibinfo{person}{Eider Moore}, \bibinfo{person}{Daniel Ramage}, \bibinfo{person}{Seth Hampson}, {and} \bibinfo{person}{Blaise~Aguera y Arcas}.} \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{Communication-Efficient Learning of Deep Networks from Decentralized Data}. In \bibinfo{booktitle}{\emph{Proceedings of the 20th International Conference on Artificial Intelligence and Statistics (AISTATS)}}. \bibinfo{pages}{1273--1282}.
+\newblock
+
+
 \bibitem[Ombredanne(2020)]%
         {ombredanne2020free}
 \bibfield{author}{\bibinfo{person}{Philippe Ombredanne}.} \bibinfo{year}{2020}\natexlab{}.
@@ -257,6 +285,17 @@ Retrieved September 25, 2023 from \tempurl}
 \newblock \showarticletitle{The RefinedWeb dataset for Falcon LLM: outperforming curated corpora with web data, and web data only}.
 \newblock \bibinfo{journal}{\emph{arXiv preprint arXiv:2306.01116}} (\bibinfo{year}{2023}).
 \newblock
+
+
+\bibitem[Peng et~al\mbox{.}(2022)]%
+        {peng2022intellectual}
+\bibfield{author}{\bibinfo{person}{Sen Peng}, \bibinfo{person}{Yufei Chen}, \bibinfo{person}{Jie Xu}, \bibinfo{person}{Zizhuo Chen}, \bibinfo{person}{Cong Wang}, {and} \bibinfo{person}{Xiaohua Jia}.} \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{Intellectual property protection of DNN models}.
+\newblock \bibinfo{journal}{\emph{World Wide Web}} (\bibinfo{year}{2022}), \bibinfo{pages}{1--35}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1007/s11280-022-01113-3}
+\showDOI{\tempurl}
 
 
 \bibitem[Radford et~al\mbox{.}(2019)]%

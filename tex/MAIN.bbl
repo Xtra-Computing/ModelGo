@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{30}
+\begin{thebibliography}{34}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -113,6 +113,14 @@ Retrieved September 25, 2023 from \tempurl}
 \newblock
 
 
+\bibitem[Greenbaum(2016)]%
+        {greenbaum2016the}
+\bibfield{author}{\bibinfo{person}{Eli Greenbaum}.} \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{The Non-Discrimination Principle in Open Source Licensing}.
+\newblock \bibinfo{journal}{\emph{Cardozo Law Review}} \bibinfo{volume}{37}, \bibinfo{number}{4} (\bibinfo{year}{2016}), \bibinfo{pages}{1297--1344}.
+\newblock
+
+
 \bibitem[Han et~al\mbox{.}(2021)]%
         {han2021pre}
 \bibfield{author}{\bibinfo{person}{Xu Han}, \bibinfo{person}{Zhengyan Zhang}, \bibinfo{person}{Ning Ding}, \bibinfo{person}{Yuxian Gu}, \bibinfo{person}{Xiao Liu}, \bibinfo{person}{Yuqi Huo}, \bibinfo{person}{Jiezhong Qiu}, \bibinfo{person}{Yuan Yao}, \bibinfo{person}{Ao Zhang}, \bibinfo{person}{Liang Zhang}, {et~al\mbox{.}}} \bibinfo{year}{2021}\natexlab{}.
@@ -132,6 +140,14 @@ Retrieved September 25, 2023 from \tempurl}
 \urldef\tempurl%
 \url{https://doi.org/10.1145/3503221.3508418}
 \showDOI{\tempurl}
+
+
+\bibitem[Hedrick(2019)]%
+        {hedrick2019ithink}
+\bibfield{author}{\bibinfo{person}{Samantha~Fink Hedrick}.} \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{I Think, Therefore I Create: Claiming Copyright in the Outputs of Algorithms}.
+\newblock \bibinfo{journal}{\emph{New York University Journal of Intellectual Property \& Entertainment Law (JIPEL)}} \bibinfo{volume}{8}, \bibinfo{number}{2} (\bibinfo{year}{2019}), \bibinfo{pages}{324--375}.
+\newblock
 
 
 \bibitem[Huang et~al\mbox{.}(2022)]%
@@ -196,6 +212,17 @@ Retrieved September 25, 2023 from \tempurl}
 Retrieved September 25, 2023 from \tempurl}
 
 
+\bibitem[Margoni(2018)]%
+        {margoni2018artificial}
+\bibfield{author}{\bibinfo{person}{Thomas Margoni}.} \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{Artificial Intelligence, Machine learning and EU copyright law: Who owns AI?}
+\newblock \bibinfo{journal}{\emph{Machine Learning and EU Copyright Law: Who Owns AI}} (\bibinfo{year}{2018}).
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.2139/ssrn.3299523}
+\showDOI{\tempurl}
+
+
 \bibitem[Mathur et~al\mbox{.}(2012)]%
         {mathur2012empirical}
 \bibfield{author}{\bibinfo{person}{Arunesh Mathur}, \bibinfo{person}{Harshal Choudhary}, \bibinfo{person}{Priyank Vashist}, \bibinfo{person}{William Thies}, {and} \bibinfo{person}{Santhi Thilagam}.} \bibinfo{year}{2012}\natexlab{}.
@@ -215,6 +242,13 @@ Retrieved September 25, 2023 from \tempurl}
 \urldef\tempurl%
 \url{https://doi.org/10.1109/MC.2020.3011082}
 \showDOI{\tempurl}
+
+
+\bibitem[on~New Technological Uses~of Copyrighted Works~(US)(1979)]%
+        {national1979final}
+\bibfield{author}{\bibinfo{person}{National~Commission on~New Technological Uses~of Copyrighted Works~(US)}.} \bibinfo{year}{1979}\natexlab{}.
+\newblock \showarticletitle{Final Report of the National Commission on New Technological Uses of Copyrighted Works, July 31, 1978}. Library of Congress.
+\newblock
 
 
 \bibitem[Penedo et~al\mbox{.}(2023)]%

@@ -13,6 +13,10 @@ Therefore, to validate Modelgo, we have designed five ML scenarios rendered usin
 Table~\ref{tab:works} shows the specifications of the involved data sources and models, whose licenses include copyleft, permissive, public domain, and no public license~\footnote{Some data sources contain crowdsourced content with multiple licenses, and we selected a non-public domain license among them.}.
 Furthermore, our case studies can cover all events listed in Table~\ref{tab:analysis}, and the their details and findings are provided in the following section.
 
+It's worth noting that, as a license compliance analysis tool, Modelgo's goal is to report potential legal risks in ML projects related to licenses.
+It is not designed to address legal interpretation issues such as copyrightability of the final work, assessing copyright infringement, or establishing authorship, which typically require verification by a court of law in different regions~\cite{national1979final, hedrick2019ithink, margoni2018artificial}.
+
+
 \begin{table}[t]
     \caption{Specifications of AI components used in case studies, which include \textcolor{Copyleft}{Copyleft License}, \textcolor{Permissive}{Permissive License}, \textcolor{Public}{Public Domain Licens} and No Public License.}
     \footnotesize
@@ -64,70 +68,129 @@ Furthermore, our case studies can cover all events listed in Table~\ref{tab:anal
 
 \subsection{CASE \Romannum{1} : Corpus Combination}
 
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\linewidth]{fig/case1.pdf}
+    \caption{CASE \Romannum{1}: Corpus Combination. (a) Example of copyleft proliferation rules ; (b) Example of LGPL-LR exemption and no public license. AI Activities: \boxed{\text{E}}mbed, \boxed{\text{C}}ombine.}
+    \Description{}
+    \label{fig:case1}
+\end{figure}
+
 Our first case is corpus combination, which is very common in crowdsourced LLM datasets~\cite{gao2020the, penedo2023refinedweb, kocetkov2023stack}. 
 Additionally, we also consider scenarios where the corpus is extended with the help of translation LLM.
 As shown in Figure~\ref{fig:case1} (a), we first translate\footnote{In our cases, we treat translation as a specific form of embedding with a natural language output.} \textit{arXiv} and \textit{Stack Exchange} using \textit{Big Translate} model, then we combine these translated corpuses with \textit{Deep-sequoia} and \textit{FreeLaw}.
 This combined corpus is the final work, intended for commercial purposes.
 Figure~\ref{fig:case1} (b) depicts a variation in which the final work is a combination of translated corpus and the LLM.
 Note that, to simplify analysis, we treat these no public licenses, such as CC-BY-ND-4.0 and CC-BY-NC-ND-4.0, as permissive licenses with limitations on sharing derivatives, as they do not include any copyleft terms.
+If not specified otherwise, the format of models and datasets is set to raw (i.e., modifiable), while the other supported formats are binary and SaaS.
 %We have also consolidated some redundant results reported by intermediate reused components to simplify our figures.
 The interpretation of license analysis results is as follows:
 
-\boxed{\text{Results of CASE \Romannum{1} (a)}} The copyleft conditions about \textit{translation} of the CC licenses were triggered, which means that the translated corpuses are also covered by the original licenses.
-As a result, the translated \textit{arXiv} and \textit{Stack Exchange} corpuses remain under the original copyleft license. 
-However, combining these corpuses with another copyleft-licensed \textit{Deep-sequoia} corpus did not result in the multiple copyleft licenses error, as the combination with strong separate falls outside the proliferate coverage of LGPL-LR.
-The proliferation extended to the final work and force it to be licensed under LGPL-LR as well.
+\boxed{\text{Results of CASE \Romannum{1} (a)}} 
+The copyleft conditions about \textit{translation} of the CC licenses were triggered, which means that the translated corpuses are also covered by the original licenses.
+As a result, the translated \textit{arXiv} and \textit{Stack Exchange} corpuses remain under the original copyleft CC ShareAlike licenses. 
+However, combining these corpuses with another copyleft-licensed \textit{Deep-sequoia} corpus did not result in the multiple copyleft licenses error, as the combination with strong separate falls outside the proliferate coverage of LGPL-LR and CC ShareAlike licenses~\cite{creative2023artificial}.
+But, the proliferation extended to the final work and force it to be licensed under LGPL-LR as well.
 It is important to note that only the effort taken to combine the corpuses is under LGPL-LR, and the licensing action to the final work will not change the licenses of its components.
 
-In this case, there are two types of errors according to Modelgo's assessment.
+There are two types of errors according to Modelgo's assessment.
 The first error arises from the CC-BY-NC-SA-4.0 license of the translated \textit{arXiv}, which doesn't grant the right of commercial use\footnote{This error also arises from \textit{arXiv} since it is a sub-work of the translated \textit{arXiv}, we will consolidate this type of redundant in the rest of the case studies.}. 
 The second error is caused by the fact that the redistribution rights of FreeLaw are not granted to comply with CC-BY-ND-4.0.
 There are also many restrictions, such as the final work must state the changes compared to the original work and must retain the licenses and notice files of the original works.
 In addition, Modelgo also indicates that the granted rights of LGPL-LR are revocable, which poses a potential risk for further redistribution.
 
-\boxed{\text{Results of CASE \Romannum{1} (b)}} Different from CASE \Romannum{1} (a), the final work in CASE \Romannum{1} (b) is licensed under another copyleft license GPL-3.0 from \textit{Big Translate}.
+\boxed{\text{Results of CASE \Romannum{1} (b)}} 
+Different from CASE \Romannum{1} (a), the final work in CASE \Romannum{1} (b) is licensed under another copyleft license GPL-3.0 from \textit{Big Translate}.
 This is because LGPL-LR has a license proliferation exemption for reused results that are no longer classified as linguistic resources.
 Consequently, the license of final work is proliferated by GPL-3.0.
-Additionally, besides the rights not granted error arising from CC-BY-NC-ND-4.0, this license also explicitly prohibits any form of sharing derivatives, resulting in a cannot share error.
+Additionally, besides the rights not granted error arising from CC-BY-NC-ND-4.0, this no public license also explicitly prohibits any form of sharing derivatives, resulting in a cannot share error.
 
-\begin{figure}[t]
-    \centering
-    \includegraphics[width=\linewidth]{fig/case1.pdf}
-    \caption{CASE \Romannum{1}: Corpus Combination. (a) Example of copyleft proliferation rules ; (b) LGPL-LR no linguistic resource exemption, CC No redistribution. AI ctivities: \boxed{\text{E}}mbed, \boxed{\text{C}}ombine.}
-    \Description{}
-    \label{fig:case1}
-\end{figure}
+\boxed{Summary} 
+% 结论：数据集的收集应该避免no public 和 不能商用的数据集，使用copyleft 的CC 数据集比较安全，但是其他GPL需要额外注意扩散范围
 
-\begin{figure}[t]
+\subsection{CASE \Romannum{2} : Mixture of Experts}
+
+\begin{figure}[h]
     \centering
     \includegraphics[width=\linewidth]{fig/case2.pdf}
-    \caption{Case Study \Romannum{2}: Mixture of Experts. (a) BLOOM-RAIL, binary of GPL; (b) Unlicense, CC-BY-NC no distribute derivative. GPL Automatic Licensing of Downstream Recipients}
+    \caption{CASE \Romannum{2}: Mixture of Experts. (a) Source code disclosure of GPLed work; (b) Sharing work under CC NoDerivs. AI Activities: \boxed{\text{T}}rain, \boxed{\text{M}}oE.}
     \Description{}
     \label{fig:case2}
 \end{figure}
 
-\begin{figure}[t]
+In this case study, we consider the MoE scenario, in which we combine two models with a newly trained model using a gating network.
+There are two variations in this case, each involving different models, training data, release policies (SaaS and sharing), as depicted in Figure~\ref{fig:case2} (a) and (b), respectively.
+A real-wrold counterpart could be Wu Dao 2.0, which is a LLM trained using MoE technology with input from tens of thousands of experts~\cite{he2022fastermoe}.
+Additionally, releasing models as a service is commonly observed in commercial AI applications such as chatGPT and Midjourney.
+
+\boxed{\text{Results of CASE \Romannum{2} (a)}} 
+There is still significant legal uncertainty regarding whether CC-licensed works can be applied to AI training~\cite{creative2023artificial}.
+Since there is no explicit definition of AI training and corresponding restrictions for resulting models within the license text, we consider training as an undefined activity that falls outside the scope of CC agreements.
+Therefore, even though the copyleft CC-BY-SA-4.0 license is used for \textit{Wikimedia}, the trained model \textit{BERT} does not trigger the license proliferation conditions and can be relicensed to Unlicense.
+The final work's license is proliferated to GPL-3.0 from \textit{Baize}, as in CASE \Romannum{1} (b).
+
+There is one warning in the assessment: the final work released as SaaS should remain open source or provide a readable copy of the source code to comply with GPL-3.0. 
+Meanwhile, user behavioral restrictions also apply to the final work, as it is a derivative of \textit{BLOOM} governed by responsible AI conditions~\cite{contractor2022behavioral}.
+
+\boxed{\text{Results of CASE \Romannum{2} (b)}} 
+In this case study, we replaced experts with CV models. 
+The assessment reveals that the final work cannot be shared, whether modified or not, even for non-commercial purposes, if the project includes CC NoDerivs licenses, as these licenses do not grant redistribution rights to the licensee.
+This feature is helpful for licensors who intend to prohibit any derivation and commercialization of their models without the need to draft a custom proprietary license.
+However, this disorganization of ML projects' licensing has a negative effect on the entire ecosystem.
+
+\boxed{Summary} 
+
+\subsection{CASE \Romannum{3} : Generation Pipeline}
+
+\begin{figure}[h]
     \centering
     \includegraphics[width=\linewidth]{fig/case3.pdf}
-    \caption{Case Study \Romannum{3}: Pipeline.}
+    \caption{CASE \Romannum{3}: Generation Pipeline. AI Activities: \boxed{\text{G}}eneration}
     \Description{}
     \label{fig:case3}
 \end{figure}
 
-% Responsible AI 的 copyleft use behavioral 问题：历史累积
+As shown in Table~\ref{tab:MLP}, artifact generation has become the most popular application of ML.
+In this case study, we leverages generative models to produce data for different modalities in a pipeline fashion.
+The final generated content is released for commercial use.
 
-\begin{figure}[t]
+\boxed{\text{Results of CASE \Romannum{3}}} 
+There is still an ambiguity in traditional OSS licenses and free content licenses when it comes to the use of licensed materials for generating artifacts.
+From the perspective of the license agreement, this AI activity is permitted as long as the right to use is granted, and there are also no further claims for the generated content.
+However, there is one restriction from OpenRAIL-M. 
+The AI model license clearly defines the conditions for AI activities and applies copyleft-style restrictions to its licensed work. 
+Therefore, once AI model licensed components are used in ML projects, all subsequent work should comply with these user behavioral restrictions, which can potentially lead to the final work becoming closed source~\cite{greenbaum2016the}.
+
+\boxed{Summary} 
+% Responsible AI 的 copyleft use behavioral 问题：历史累积 full spectrum
+
+\subsection{CASE \Romannum{4} : Knowledge Transfer and Fusion}
+
+
+\begin{figure}[h]
     \centering
     \includegraphics[width=\linewidth]{fig/case4.pdf}
-    \caption{Case Study \Romannum{4}: distillation and model averaging.}
+    \caption{CASE \Romannum{4}: Knowledge Transfer and Fusion. AI Activities: \boxed{\text{D}}istillation, \boxed{\text{A}}malgamation.}
     \Description{}
     \label{fig:case4}
 \end{figure}
 
-\begin{figure}[t]
+\boxed{\text{Results of CASE \Romannum{4} (a)}} 
+
+\boxed{\text{Results of CASE \Romannum{4} (b)}} 
+
+\boxed{Summary} 
+
+\subsection{CASE \Romannum{5} : Remix Data}
+
+\begin{figure}[h]
     \centering
     \includegraphics[width=\linewidth]{fig/case5.pdf}
-    \caption{Case Study \Romannum{5}: distillation and model averaging.}
+    \caption{CASE \Romannum{5}: Remix Data.}
     \Description{}
     \label{fig:case5}
 \end{figure}
+
+\boxed{\text{Results of CASE \Romannum{5}}} 
+
+\boxed{Summary} 

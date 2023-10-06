@@ -28,6 +28,7 @@
   rights_prefix: [perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable]
   coverage: [duplicate, derivative, modification] # The range of sharing allowed, independent and NODEF always allowed to be shared
   redistribute: [include_notice, include_license] # Requirements for redistribution
+  compat: []
   terms: # Definition of use methods and according terms
     - usages: [use, copy] # use this work implies you hold a copy of this work
       forms: [raw, binary]
@@ -177,7 +178,8 @@
   rights_prefix: [non-exclusive, worldwide, royalty-free, irrevocable] 
   coverage: [duplicate, derivative]
   redistribute: [include_notice, include_license]
-  terms: &GPL3terms
+  compat: [AGPL-3.0]
+  terms:
     - usages: [use, copy]
       forms: [raw, binary] # w/o saas
       result: duplicate
@@ -193,17 +195,23 @@
       forms: [raw]
       result: derivative
       restrictions: [state_changes]
-      relicense: false
+      relicense: conditional
     - usages: [distill, generate]
       forms: [raw, binary]
       result: independent
       keywords: [output]
       relicense: true
-    - usages: [amalgamate, modify]
+    - usages: [amalgamate]
       forms: [raw, binary]
       result: derivative
       restrictions: [state_changes]
-      keywords: [link, modify]
+      keywords: [link]
+      relicense: conditional
+    - usages: [modify]
+      forms: [raw, binary]
+      result: derivative
+      restrictions: [state_changes]
+      keywords: [modify]
       relicense: false
     - usages: [train, embed]
       forms: [raw, binary]
@@ -259,14 +267,46 @@
   url: https://www.gnu.org/licenses/lgpl-3.0.en.html
   version: 3.0
   available: true
-  categories: [public, software, copyleft, disclose] # w/o auto-relicensing
+  categories: [public, software, copyleft] # w/o auto-relicensing, w/o disclose
   labels: [OSI Approved, GNU]
   rights: [use, modify, merge, redistribute, commercial_use]
   reserved_rights: [sublicense, trademark_use, copyright, patent, trademark]
   rights_prefix: [non-exclusive, worldwide, royalty-free, irrevocable] 
   coverage: [duplicate, derivative]
   redistribute: [include_notice, include_license]
-  terms: *GPL3terms # Same as GPL-3.0
+  compat: [GPL-3.0]
+  terms: &LGPL3terms
+    - usages: [use, copy]
+      forms: [raw, binary] # w/o saas
+      result: duplicate
+      restrictions: []
+      relicense: false
+    - usages: [combine] # The only different compare to GPL
+      forms: [raw, binary]
+      result: independent
+      restrictions: []
+      keywords: [separate, aggregate]
+      relicense: true
+    - usages: [distill, generate]
+      forms: [raw, binary]
+      result: independent
+      keywords: [output]
+      relicense: true
+    - usages: [amalgamate]
+      forms: [raw, binary]
+      result: derivative
+      restrictions: [state_changes]
+      keywords: [link]
+      relicense: conditional
+    - usages: [modify]
+      forms: [raw, binary]
+      result: derivative
+      restrictions: [state_changes]
+      keywords: [modify]
+      relicense: false
+    - usages: [train, embed]
+      forms: [raw, binary]
+      result: NODEF
 
 -
   full_name: GNU Lesser General Public License v2.1 # Software License (copyleft)
@@ -274,14 +314,15 @@
   url: https://www.gnu.org/licenses/lgpl-3.0.en.html
   version: 2.1
   available: true
-  categories: [public, software, copyleft, disclose] # w/o auto-relicensing
+  categories: [public, software, copyleft] # w/o auto-relicensing, w/o disclose
   labels: [OSI Approved, GNU]
   rights: [use, modify, merge, redistribute, commercial_use]
   reserved_rights: [sublicense, trademark_use, copyright, patent, trademark]
   rights_prefix: [non-exclusive, worldwide, royalty-free, irrevocable] 
   coverage: [duplicate, derivative]
   redistribute: [include_notice, include_license]
-  terms: *GPL3terms # Same as GPL-3.0
+  compat: [GPL-2.0]
+  terms: *LGPL3terms # Same as LGPL-3.0
 
 -
   full_name: The 3-Clause BSD License # Software License
@@ -467,6 +508,7 @@
   rights_prefix: [worldwide, royalty-free, non-sublicensable, non-exclusive, irrevocable]
   coverage: [duplicate, derivative, modification, translation]
   redistribute: [include_notice, include_license]
+  compat: [CC-BY-SA, CC-BY-NC, CC-BY-NC-SA]
   terms: &CCBYterms
     - usages: [use, copy]
       forms: [raw, binary]
@@ -478,7 +520,7 @@
       result: derivative
       restrictions: [state_changes]
       keywords: [reproduce, adaptation, remix]
-      relicense: false
+      relicense: conditional
     - usages: [combine]
       forms: [raw, binary]
       result: independent
@@ -514,6 +556,7 @@
   rights_prefix: [worldwide, royalty-free, non-sublicensable, non-exclusive, irrevocable]
   coverage: [duplicate, derivative, modification, translation]
   redistribute: [include_notice, include_license]
+  compat: [GPL-3.0]
   terms: *CCBYterms # The terms is same as CC-BY 4.0
 
 - 
@@ -529,6 +572,7 @@
   rights_prefix: [worldwide, royalty-free, non-sublicensable, non-exclusive, irrevocable]
   coverage: [duplicate, derivative, modification, translation]
   redistribute: [include_notice, include_license]
+  compat: [CC-BY-NC-SA]
   terms: *CCBYterms
 
 - 
@@ -544,6 +588,7 @@
   rights_prefix: [worldwide, royalty-free, non-sublicensable, non-exclusive, irrevocable]
   coverage: [duplicate] # No Derivatives, it means all derivative, modification, translation are unallowed
   redistribute: [include_notice, include_license]
+  compat: [CC-BY-NC-ND] # No compat according CC, however, we can enable it for analysis purpose.
   terms: *CCBYterms
 
 - 
@@ -559,6 +604,7 @@
   rights_prefix: [worldwide, royalty-free, non-sublicensable, non-exclusive, irrevocable]
   coverage: [duplicate] # No Derivatives, it means all derivative, modification, translation are unallowed
   redistribute: [include_notice, include_license]
+  compat: []
   terms: *CCBYterms
 
 - 
@@ -574,6 +620,7 @@
   rights_prefix: [worldwide, royalty-free, non-sublicensable, non-exclusive, irrevocable]
   coverage: [duplicate, derivative, modification, translation]
   redistribute: [include_notice, include_license]
+  compat: []
   terms: *CCBYterms
 
 -
@@ -632,8 +679,8 @@
   available: true
   categories: [public, data, copyleft, disclose, auto-relicensing] # with auto-relicensing
   labels: [GNU]
-  rights: [use, modify, merge, redistribute, commercial_use]
-  reserved_rights: [sublicense, trademark_use, copyright, patent, trademark]
+  rights: [use, modify, merge, redistribute]
+  reserved_rights: [sublicense, trademark_use, copyright, patent, trademark, commercial_use]
   rights_prefix: [no-charge, royalty-free] 
   coverage: [duplicate, derivative]
   redistribute: [include_notice, include_license]
@@ -673,6 +720,7 @@
   rights_prefix: [worldwide, royalty-free]
   coverage: [duplicate, derivative]
   redistribute: [include_notice, include_license]
+  incompat: [GPL]
   terms:
     - usages: [use, copy]
       forms: [raw, binary]

@@ -145,7 +145,7 @@ However, this disorganization of ML projects' licensing has a negative effect on
 \begin{figure}[h]
     \centering
     \includegraphics[width=\linewidth]{fig/case3.pdf}
-    \caption{CASE \Romannum{3}: Generation Pipeline. AI Activities: \boxed{\text{G}}eneration}
+    \caption{CASE \Romannum{3}: Generation Pipeline. AI Activities: \boxed{\text{G}}eneration.}
     \Description{}
     \label{fig:case3}
 \end{figure}
@@ -169,7 +169,7 @@ Therefore, once AI model licensed components are used in ML projects, all subseq
 \begin{figure}[h]
     \centering
     \includegraphics[width=\linewidth]{fig/case4.pdf}
-    \caption{CASE \Romannum{4}: Knowledge Transfer and Fusion. AI Activities: \boxed{\text{D}}istillation, \boxed{\text{A}}malgamation.}
+    \caption{CASE \Romannum{4}: Knowledge Transfer and Fusion. (a)  AI Activities: \boxed{\text{D}}istillation, \boxed{\text{A}}malgamation.}
     \Description{}
     \label{fig:case4}
 \end{figure}
@@ -188,6 +188,10 @@ There is one error in the assessment.
 Since the modification of a CC NonCommercial licensed work cannot be relicensed according to its conditions, the amalgamated result face a no commercial rights error when commercialized.
 
 \boxed{\text{Results of CASE \Romannum{4} (b)}} 
+This case study assess license compliance towards some NLP models.
+The only error is detected from \textit{Llama2}, whose license does not grant sublicense rights for further republication, conflicting with the releasing policy.
+Additionally, the rights granted by the Llama2 license are revocable, posing a potential risk in the final ML project.
+Furthermore, the final work should also comply with the user behavioral restrictions demanded by BLOOM-RAIL-1.0 and Llama2.
 
 \boxed{Summary} 
 
@@ -196,11 +200,18 @@ Since the modification of a CC NonCommercial licensed work cannot be relicensed 
 \begin{figure}[h]
     \centering
     \includegraphics[width=\linewidth]{fig/case5.pdf}
-    \caption{CASE \Romannum{5}: Remix Data.}
+    \caption{CASE \Romannum{5}: Remix Data. AI Activities: \boxed{\text{G}}generation, \boxed{\text{A}}malgamation, \boxed{\text{C}}ombination.}
     \Description{}
     \label{fig:case5}
 \end{figure}
 
-\boxed{\text{Results of CASE \Romannum{5}}} 
+Mirroring the previous case, this case considers the scenario of data remix and integration, which can arise when using data augmentation methods such as "mixup"\cite{zhang2018mixup}, SMOTE\cite{chawla2002smote}, ADASYN~\cite{he2008adasyn}, etc.
+We reuse the generation pipeline depicted in Figure~\ref{fig:case3} to increase the complexity of the assessment.
+
+\boxed{\text{Results of CASE \Romannum{5}}}
+The analysis result reported a conflict when remixing \textit{Midjourney Gen Image} and \textit{Thingverse} due to CC-BY-NC-4.0 interrupting the license proliferation of CC-BY-NC-SA-4.0.
+However, it is a false alarm because there is a two-way compatibility between CC ShareAlike licenses, as indicated by a supplementary interpretation from Creative Commons\footnote{https://wiki.creativecommons.org/wiki/Wiki/cc\_license\_compatibility}. 
+We reserve this alarm to remind developers to manually check the compatibility from licensors or consult with legal experts.
+
 
 \boxed{Summary} 

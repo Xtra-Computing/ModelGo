@@ -127,24 +127,39 @@ class Parser(object):
 
         self.licenses_list = list(self.licenses_dict.keys())
 
-    def __find_matching_license(self, license_name, ignore_case=True, ignore_version=True):
+    def detect_license_version(self, license_name) -> tuple[str, bool]: # Return the license name removed version, bool indicates whether contain version info
+        if '-' in license_name:
+            maybe_name, maybe_ver_str = license_name.rsplit('-', 1)
+            if maybe_ver_str.replace('.','').isdigit(): # The license name contains version number
+                return maybe_name, True
+        return license_name, False # Version number no found
+
+    def __find_matching_license(self, license_name, ignore_case=True, approx_match=True) -> tuple[str, bool]:
+        """
         def remove_version(license_name): # Remove the version number in license's name
             if '-' in license_name:
                 maybe_name, maybe_ver_str = license_name.rsplit('-', 1)
                 if maybe_ver_str.replace('.','').isdigit(): # The license name contains version number
                     return maybe_name
             return license_name # Version number no found
-
+        """
+        
+        matching, exact_ver = None, False
+        names_list = [name for name in self.licenses_list]
         if ignore_case:
             license_name = license_name.casefold()
-            licenses_list = [name.casefold() for name in self.licenses_list]
-        if ignore_version:
-            license_name = remove_version(license_name)
-            licenses_list = [remove_version(name) for name in licenses_list]
-        if license_name in licenses_list:
-            idx = licenses_list.index(license_name)
-            return self.licenses_list[idx] # Return the name in license description
-        return None
+            names_list = [name.casefold() for name in names_list]
+        if license_name in names_list:
+            matching = license_name
+            exact_ver = True
+        elif approx_match: # Ignore the version if no exact result
+            license_name = self.detect_license_version(license_name)[0]
+            names_list = [self.detect_license_version(name)[0] for name in names_list]
+            matching = license_name if self.detect_license_version(license_name)[0] in [self.detect_license_version(name)[0] for name in names_list] else None
+        if matching:
+            idx = names_list.index(matching)
+            return self.licenses_list[idx], exact_ver # Return the name in license description, exact_ver is true if the version number is also matching
+        return '', exact_ver
     
     def print_supported_license_names(self):
         print(self.licenses_list)
@@ -180,10 +195,10 @@ class Parser(object):
 
 
     # Return a copy of license by name, return none if no found
-    def clone_license(self, license_name) -> License:
-        match_license = self.__find_matching_license(license_name)
+    def clone_license(self, license_name, approx_match=True) -> License:
+        match_license, exact_ver = self.__find_matching_license(license_name, approx_match)
         if match_license:
-            logging.debug(f"Find the matching license: {match_license}")
+            logging.debug(f"Find the matching license: {match_license}, version matching: {exact_ver}")
             clone = copy(self.licenses_dict[match_license])
             return clone
         return None
@@ -233,7 +248,7 @@ class Parser(object):
     """
         Register new license for TBD work, the default license is 'Unlicense'.
         If there has one copyleft license, license proliferation will be applied,
-        If there has two or more different copyleft licenses, an error will be thrown.
+        If there has two or more different copyleft licenses, an error will be thrown if they are in-compat.
         NOTE: This function only consider the first level relied works that with explicit licenses, please loop this function if need.
     """
     def license_analysis(self, TBD_work:Work) -> bool:
@@ -257,84 +272,164 @@ class Parser(object):
 
             copylefts = [rw for rw, _ in relied_works_wo_aux if rw.license.is_copyleft() == True] # Relied works (w/o aux) that under copyleft licenses
             permissives = [rw for rw, _ in relied_works_wo_aux if rw.license.is_permissive() == True] # Relied works (w/o aux) that under permissive licenses
+            public_domains = [rw for rw, _ in relied_works_wo_aux if rw.license.is_public_domain() == True]
+            others = [rw for rw, _ in relied_works_wo_aux if rw not in copylefts+permissives+public_domains]
+
             # Find triggered copylefts works that result in copyleft license proliferation 
-            triggered_copylefts = [rw for rw in copylefts if terms[rw]['result'] not in ['independent', 'NODEF']]
-
-            # We tend to fullfill the prior license assignment of this work if it is exist
-            aim_license_name = self.clone_license(TBD_work.assigned_license_name).short_id if TBD_work.assigned_license_name else None
+            triggered_copylefts = [rw for rw in copylefts if terms_wo_aux[rw]['result'] not in ['independent', 'NODEF']]
+            triggered_permissive = [rw for rw in permissives if terms_wo_aux[rw]['result'] not in ['independent', 'NODEF']]
+            # Public domain will not be triggered in our design
+            triggered_others = [rw for rw in others if terms_wo_aux[rw]['result'] not in ['independent', 'NODEF']]
             
-            # Deal with copyleft situation
-            # Triggered copyleft licenses be detected, the license proliferation need be handled
-            if len(triggered_copylefts) >= 1:
-                if all(w.license.short_id == triggered_copylefts[0].license.short_id 
-                       for w in triggered_copylefts): # These copyleft licenses are same
-                    aim_copyleft_license_name = triggered_copylefts[0].license.short_id
-                    if aim_license_name and aim_copyleft_license_name != aim_license_name: 
-                        # There has a conflict between the assignment of this work and the copyleft licenses of relied works, this work will be licensed as the copyleft one    
-                        logging.warning(f"Cannot fullfill the license assignment of work {TBD_work.name} due to the limitation of copyleft licenses of its relied works")
-                    aim_license_name = aim_copyleft_license_name
-                else: # Two or more copyleft licenses
-                    TBD_work.add_event(EVENT.MULTIPLE_COPYLEFT_ERROR(copylefts))
-                    logging.error(f'Mulitiple copyleft licenses exist in work {TBD_work.name}: {[cp.license_name for cp in copylefts]}')
-                    return False
-            
-            # Deal with all permissive and no license assignment situation 
-            elif aim_license_name is None: 
-                # we tend to retain same permissive license to new work
-                exclude_unlicense = [w.license.short_id for w in permissives if w.license.short_id != 'Unlicense']
-                for pli in ['Unlicense'] + exclude_unlicense:
-                    # Find relicensable, prefer 'Unlicense' due to reduce unnecessary conflicts
-                    # From these need relicese works (exclude auxworks), check the availability of relicesing
-                    need_relicense = [rw for rw, _ in relied_works_wo_aux if rw.license.short_id != pli]
-                    cannot_relicense = []
-                    for rw in need_relicense: 
-                        if terms_wo_aux[rw].get('relicense') == False and terms_wo_aux[rw].get('result') not in ['independent', 'NODEF']:
-                            cannot_relicense.append(rw)
-                    #print(pli, [w.name for w in cannot_relicense])   # DEBUG
-                    if len(cannot_relicense) == 0:
-                        aim_license_name = pli # Find a feasible relicensing plan (pli)
-                        break
-                # Cannot find the relicensing plan
-                if aim_license_name is None:
-                    logging.error(f'Work {TBD_work.name} canot be licensed as another license due to {[rw.license_name for rw in cannot_relicense]} does not grant the relicense rights')
-                    return False
+            # Find a feasible relicense solution of this work from multiple licenses
+            aim_license_name, fail_works = self.multiple_license_solver(terms_wo_aux, triggered_copylefts, triggered_permissive, public_domains, triggered_others, TBD_work.assigned_license_name, TBD_work.name)
+            logging.debug(f"Aim license name: {aim_license_name}")
+
+             # Fail to found the solution, force it to aim license and report an error
+            if len(fail_works) > 0: 
+                logging.debug(f"Fail to relicensing works: {[w.name for w in fail_works]}")
+
+                fail_copyleft = [fw for fw in fail_works if fw.license.is_copyleft()]
+                fail_incompat = [fw for fw in fail_works if terms_wo_aux[fw].get('relicense') == 'conditional']
+                fail_noright = [fw for fw in fail_works if terms_wo_aux[fw].get('relicense') == False]
+
                 """
-                if all(pli == exclude_unlicense[0] for pli in exclude_unlicense):
-                    # All relied work under same permissive license (exclude Unlicense)
-                    aim_license_name = exclude_unlicense[0] # Defect: Unnecessary Resstrictions
-                    #aim_license_name = 'Unlicense' # Defect: Unnecessary relicense requirement
-                else:
-                    aim_license_name = 'Unlicense' # Register as 'Unlicense' if relied works contain multiple permissive licenses
-                    logging.debug(f'Mulitiple permissive licenses exist in work {TBD_work.name}, use Unlicense by default')
+                if len(fail_copylefts) >= 2:
+                    # Multiple in-compat copyleft exist
+                    TBD_work.add_event(EVENT.MULTIPLE_COPYLEFT_ERROR(fail_copylefts))
                 """
-
-            # Reconfirm relicense plan (with aim_license_name)
-            need_relicense = [rw for rw, _ in relied_works_wo_aux if rw.license.short_id != aim_license_name]
-            cannot_relicense = []
-            for rw in need_relicense: 
-                if terms_wo_aux[rw].get('relicense') == False and terms_wo_aux[rw].get('result') not in ['independent', 'NODEF']:
-                    cannot_relicense.append(rw)
-
-            #if len(cannot_relicense) > 0: pass # TODO: We can deal with the exception of license compatibility here.
-
-            if len(cannot_relicense) == 0:
-                # The aiming license is given and relicensing to different license of reused results is allowed
-                # NOTE: The aiming license will be applied to this work, but not applied to relied works
-                prev_license_name = TBD_work.license_name
-                TBD_work.license_name = aim_license_name # Set to new name
-                self.register_license(TBD_work, relicense=True) # Relicensing, register the new license!
-                logging.debug(f'Work {TBD_work.name} be relicensed from {prev_license_name} to {TBD_work.license_name}')
-                if TBD_work.license_name == TBD_work.assigned_license_name:
-                    logging.debug(f"Work {TBD_work.name} was successfully licensed as {TBD_work.assigned_license_name}")
-                    TBD_work.assigned_license_name = None # Reset assignment
-                return True
-            else: # Some relied work do not allow relicensing of reused results
-                for w in cannot_relicense:
+                for w in fail_incompat:
+                    TBD_work.add_event(EVENT.LICENSE_IN_COMPAT_ERROR(w.name, w.license_name, aim_license_name))
+                    logging.error(f'Work {w.name} under {w.license_name} cannot be relicensed to {aim_license_name} due to they are in-compat.')
+                for w in fail_noright:
                     TBD_work.add_event(EVENT.RIGHT_NO_GRANT_ERROR(w.name, 'relicense'))
                     logging.error(f'Work {TBD_work.name} canot be licensed as {aim_license_name} due to {w.name} does not grant the relicense rights')
-                return False
+
+            # Despite exist fails, we report errors and force relicense the result as aim license
+            prev_license_name = TBD_work.license_name
+            TBD_work.license_name = aim_license_name # Set to new name
+            self.register_license(TBD_work, relicense=True) # Relicensing, register the new license!
+            logging.debug(f'Work {TBD_work.name} be relicensed from {prev_license_name} to {TBD_work.license_name}')
+            if TBD_work.license_name == TBD_work.assigned_license_name:
+                logging.debug(f"Work {TBD_work.name} was successfully licensed as {TBD_work.assigned_license_name}")
+                TBD_work.assigned_license_name = None # Reset assignment
+
+            return True # Always return True, just report errors
+        
         return False
 
+    """
+        Return True if the original license can be relicensed to new license according to its term.
+    """
+    def relicense_solver(self, term, original_license_name, new_license_name) -> bool:
+        # If original license is public domain license, or the original license is same as new license, always return true
+        oli = self.clone_license(original_license_name, approx_match=False)
+        nli = self.clone_license(new_license_name, approx_match=False)
+        if oli is None or nli is None: # Cannot find the matching license in parser, return False
+            logging.debug('Cannot complete the relicense solver due to the license name no found')
+            return False
+
+        if oli.short_id == nli.short_id or oli.is_public_domain(): # Always return ture if original license is same as new licenses, or original license is a public domain license
+            return True
+        # Relicensing is permitted if the resulted product is independent or NODEF
+        if term.get('result') in ['independent', 'NODEF']:
+            return True
+        
+        def compat_matching(liname, compat_list): # if compat=[GPL], any version of GPL is compat, if compat=[GPL-3.0], only GPL-3.0 can be matched
+            matching = None
+            for compat_name in compat_list:
+                cname, hasver =  self.detect_license_version(compat_name)
+                if hasver and liname == cname:
+                    matching = compat_name # Return the first matching license name
+                    break
+                if not hasver and self.detect_license_version(liname)[0] == cname: # No need comapre the version of the new license
+                    matching = compat_name
+                    break
+            return matching
+
+        # If relicense if conditional, check the compatibility between these licenses
+        if term.get('relicense', '') == 'conditional': # Check the compatibility of licenses, ignore version number
+            original_compat_list, original_in_compat_list = term.get('compat', []), term.get('incompat', [])
+            is_compat, is_incompat =  compat_matching(new_license_name, original_compat_list), compat_matching(new_license_name, original_in_compat_list)
+            if is_compat and is_incompat:
+                logging.debug(f"Try relicense {original_license_name} to {new_license_name} however both compat and in-compat.")
+                return False
+            elif is_compat:
+                logging.debug(f"{original_license_name} is compat with {new_license_name}.")
+                return True
+            elif is_incompat:
+                logging.debug(f"{original_license_name} is in-compat with {new_license_name}.")
+                return False
+            return False # No in compat list and no in in-compat list
+        return term.get('relicense', False) # Can or Cannot relicense, no condition.
+        
+    """
+        Find a feasible relicense solution (aim license) for multiple license
+        Also return a list of fail works
+    """
+    def multiple_license_solver(self, terms, copylefts, permissives, public_domains, others, aim_license_name = None, work_name = 'NA') -> tuple[str, list]:
+        check_relicense_works = permissives + copylefts 
+        fail_works = []
+        #relicense_pass = False # Wether the relicense of relied works to aim license can pass
+
+        # We intend to fullfill the prior license assignment of this work if it is exist
+        if aim_license_name:
+            # Try to fufill the aim license be assigned to this work, check the relicensable of triggered copylefts and all permissives
+            relicensable = [self.relicense_solver(terms[w], w.license.short_id, aim_license_name) for w in check_relicense_works]
+            if all(relicensable):
+                logging.debug(f"Can fullfill the license assignment of work {work_name} by relicensing its relied works")
+                return aim_license_name, []
+            else:
+                # relicense_pass = False # NOTE: we dont set this value here because we will find another aim license later
+                fail_works = [w for w, x in zip(check_relicense_works, relicensable) if x == False]
+                logging.error(f"Cannot fullfill the license assignment of work {work_name} due to the in-compat of {fail_works}") 
+        
+        if len(copylefts) > 0:
+            """ #1: w/o copyleft
+            Find a feasible solution if the aim license cannot be achieved or there is no assigned aim license
+            We consider the situtaion that contain triggered copyleft first, their proliferation should be handled.
+            """
+
+            for tcl in copylefts: # Seach feasible solution from each triggred copyleft
+                if all(self.relicense_solver(terms[w], w.license.short_id, tcl.license.short_id) for w in check_relicense_works):
+                    aim_license_name = tcl.license_name
+                    break
+            if aim_license_name is None: # Not any feasible copyleft found, default to the first copyleft 
+                aim_license_name = copylefts[0].license.short_id
+                logging.debug(f"Cannot solve the compatibility within copyleft and aim license, change the aim license to {aim_license_name} instead.")
+
+        elif len(permissives) > 0:
+            """ #2: w/o copyleft w/ permissive situtation
+                no license proliferation, need check compatibility
+            """
+
+            # Prefer to use Unlicense
+            candidate_permissive_name = ['Unlicense'] + [w.license.short_id for w in check_relicense_works if w.license.short_id != 'Unlicense']
+            for cpn in candidate_permissive_name:
+                if all(self.relicense_solver(terms[w], w.license.short_id, cpn) for w in check_relicense_works):
+                    aim_license_name = cpn
+                    break
+            if aim_license_name is None: # Not any feasible permissive found, default to the first permissive
+                aim_license_name = permissives[0].license.short_id
+                logging.debug(f"Cannot solve the compatibility within permissive, change the aim license to {aim_license_name} instead.")
+
+        elif len(public_domains) > 0 and len(others) == 0:
+            """ #2: All works are under public domain licenses
+                    Always allow relicense, default to Unlicense
+            """
+            aim_license_name = 'Unlicense'
+        else:
+            logging.warning(f"Unexpect situtation: {[w.license_name for w in others]}")
+            aim_license_name = 'Unlicense'
+            return aim_license_name, others
+
+        # Recheck the relicenable of works, collect the fail to relicense works
+        relicensable = [self.relicense_solver(terms[w], w.license.short_id, aim_license_name) for w in check_relicense_works]
+        fail_works = [w for w, x in zip(check_relicense_works, relicensable) if x == False]
+
+        return aim_license_name, fail_works
+
+    # Find applied terms for this work
     def find_applied_term(self, work:Work, usage:str) -> dict:
         terms = work.license.meta['terms']
         for t in terms:

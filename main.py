@@ -4,7 +4,7 @@ from works import Work
 from license_parser import Parser
 from reuse_methods import *
 
-#logging.basicConfig(level=logging.DEBUG)
+logging.basicConfig(level=logging.DEBUG)
 
 par = Parser("licenses_description.yml")
 
@@ -95,20 +95,24 @@ def case5(remix1, pipelined, remix2):
     reused = combine([mixed1, mixed2])
     par.analysis(reused, open_policy='share')
     reused.summary()
-    print(mixed2.license_name)
+    #print(mixed2.license_name)
     return reused
 
 
 #case1([arxiv_text, stack_exchange_text], bigtranslate_model, [deep_sequoia_text, free_law_text])
 #case1([deep_sequoia_text, pubmed_text], bigtra·nslate_model, [bigtranslate_model])
 #case2([baize_model, bloom_model], wiki_text, bert_model) # NLP task
-case2([detr_model, i2vgen_model], flickr_img, maskformer_model) # Input=Image
+#case2([detr_model, i2vgen_model], flickr_img, maskformer_model) # Input=Image
 #case3([whisper_model, baize_model, stable_diffusion_mode, i2vgen_model], jamendo_music, False) # Music->Text->Image->Video
 #case4(i2vgen_model, wikimedia_img, xclip_model, [maskformer_model, whisper_model]) # Multimodal models
 #case4(bloom_model, wiki_text, bert_model, [llama2_model, bigtranslate_model]) # NLP models
-#case5([stocksnap_img, midjourney_img], case3([whisper_model, baize_model, stable_diffusion_mode, i2vgen_model], ccmixter_music, False), [vimeo_video])
+case5([stocksnap_img, midjourney_img, thingverse_3d], case3([whisper_model, baize_model, stable_diffusion_mode, i2vgen_model], ccmixter_music, False), [vimeo_video])
 #thingverse_3d
 
 #par.print_supported_license_names()
+
+#wiki_text = Work('Wikipedia', 'data', 'raw', 'LGPL') # Corpus, https://en.wikipedia.org/wiki/Wikipedia:Copyrights
+#par.register_license(wiki_text)
+#print(wiki_text.license_name)
 
 

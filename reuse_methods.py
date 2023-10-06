@@ -85,7 +85,7 @@ def amalgamate(works:list, license_name:str=None) -> Work:
         if all(w.form == 'raw' for w in works):
             new_work = new_reused_work(works, 'A', license_name)
             # The modified works are regarded as 'subworks' of the new work (will be share with this work)
-            new_work.subworks = [(w, 'modify') for w in works] #TODO: How about work type = mix? How about spread to mixworks?
+            new_work.subworks = [(w, 'amalgamate') for w in works] #TODO: How about work type = mix? How about spread to mixworks?
             return new_work
         else:
             logging.error("The amalgamation of works only support raw form")

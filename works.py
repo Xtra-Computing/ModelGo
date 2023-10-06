@@ -22,6 +22,8 @@ class EVENT(object):
     LICENSE_SHARING_PROHIBITED_ERROR = lambda work_name, license_name: Evn("licenses error", f"Work {work_name} CONNOT BE SHARED due to the prohibition of license {license_name}")
     
     MIXWORKS_NO_FOUND_WARNING = Evn('analysis warning', 'Work $WNAME$ does NOT have mixworks as expected')
+
+    LICENSE_IN_COMPAT_ERROR = lambda work_name, original_license_name, new_license_name: Evn("analysis error", f"Work {work_name} under {original_license_name} CONNOT BE RELICENSED to license {new_license_name}")
     MULTIPLE_COPYLEFT_ERROR = lambda copylefts: Evn("analysis error", f"Work $WNAME$ has a license conflict as it involves multiple copyleft licenses: {', '.join([l.license_name for l in copylefts])}")
     
     RIGHT_NO_GRANT_WARNING = lambda work_name, right_name: Evn('rights warning', f'Work {work_name} does NOT EXPLICITLY grant you the right to {right_name.upper()}')
@@ -174,7 +176,7 @@ class Work(object):
             ["Work Name",       self.name],
             ["Type & Form",     self.type.title() + ', ' + self.form.title()],
             ["License Name",    self.license.short_id],
-            ["Relied Works",    ', '.join([w.name for w,_ in self.find_relied_works()])]
+            ["Relied Work (License)",    ', '.join([f"{w.name}({w.license_name})" for w,_ in self.find_relied_works()])]
         ]
 
         # Search the open policy information

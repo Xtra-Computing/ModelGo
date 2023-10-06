@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{39}
+\begin{thebibliography}{42}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -53,6 +53,17 @@
 \newblock \showarticletitle{Towards standardization of data licenses: The montreal data license}.
 \newblock \bibinfo{journal}{\emph{arXiv preprint arXiv:1903.12262}} (\bibinfo{year}{2019}).
 \newblock
+
+
+\bibitem[Chawla et~al\mbox{.}(2002)]%
+        {chawla2002smote}
+\bibfield{author}{\bibinfo{person}{Nitesh~V Chawla}, \bibinfo{person}{Kevin~W Bowyer}, \bibinfo{person}{Lawrence~O Hall}, {and} \bibinfo{person}{W~Philip Kegelmeyer}.} \bibinfo{year}{2002}\natexlab{}.
+\newblock \showarticletitle{{SMOTE}: Synthetic Minority Over-sampling Technique}.
+\newblock \bibinfo{journal}{\emph{Journal of artificial intelligence research (JAIR)}} \bibinfo{volume}{16}, \bibinfo{number}{1} (\bibinfo{year}{2002}), \bibinfo{pages}{321--357}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1613/jair.953}
+\showDOI{\tempurl}
 
 
 \bibitem[Commons(2023)]%
@@ -136,6 +147,16 @@ Retrieved September 25, 2023 from \tempurl}
 \newblock
 \urldef\tempurl%
 \url{https://doi.org/10.1016/j.aiopen.2021.08.002}
+\showDOI{\tempurl}
+
+
+\bibitem[He et~al\mbox{.}(2008)]%
+        {he2008adasyn}
+\bibfield{author}{\bibinfo{person}{Haibo He}, \bibinfo{person}{Yang Bai}, \bibinfo{person}{Edwardo~A Garcia}, {and} \bibinfo{person}{Shutao Li}.} \bibinfo{year}{2008}\natexlab{}.
+\newblock \showarticletitle{{ADASYN}: Adaptive synthetic sampling approach for imbalanced learning}. In \bibinfo{booktitle}{\emph{2008 IEEE international joint conference on neural networks (IJCNN)}}. IEEE, \bibinfo{pages}{1322--1328}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/IJCNN.2008.4633969}
 \showDOI{\tempurl}
 
 
@@ -392,6 +413,13 @@ Retrieved September 25, 2023 from \tempurl}
 \bibfield{author}{\bibinfo{person}{Aohan Zeng}, \bibinfo{person}{Xiao Liu}, \bibinfo{person}{Zhengxiao Du}, \bibinfo{person}{Zihan Wang}, \bibinfo{person}{Hanyu Lai}, \bibinfo{person}{Ming Ding}, \bibinfo{person}{Zhuoyi Yang}, \bibinfo{person}{Yifan Xu}, \bibinfo{person}{Wendi Zheng}, \bibinfo{person}{Xiao Xia}, {et~al\mbox{.}}} \bibinfo{year}{2023}\natexlab{}.
 \newblock \showarticletitle{{GLM-130B:} An Open Bilingual Pre-trained Model}.
 \newblock \bibinfo{journal}{\emph{Proceedings of the 11th International Conference on Learning Representations (ICLR)}}.
+\newblock
+
+
+\bibitem[Zhang et~al\mbox{.}(2018)]%
+        {zhang2018mixup}
+\bibfield{author}{\bibinfo{person}{Hongyi Zhang}, \bibinfo{person}{Moustapha Cisse}, \bibinfo{person}{Yann~N Dauphin}, {and} \bibinfo{person}{David Lopez{-}Paz}.} \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{mixup: Beyond Empirical Risk Minimization}. In \bibinfo{booktitle}{\emph{Proceedings of the 6th International Conference on Learning Representations (ICLR)}}.
 \newblock
 
 

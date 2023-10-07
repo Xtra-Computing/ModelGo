@@ -752,6 +752,7 @@
   rights_prefix: [perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable]
   coverage: [duplicate, derivative]
   redistribute: [include_notice, include_license]
+  incompat: [GPL, AGPL, LGPL, GFDL]
   terms: &OpenRAILterms
     - usages: [use, copy]
       forms: [raw, binary, saas]
@@ -763,13 +764,13 @@
       result: derivative
       restrictions: [include_use_restriction, include_runtime_restriction]
       keywords: [transfer, modification]
-      relicense: true
+      relicense: conditional
     - usages: [combine, amalgamate, modify, distill, train]
       forms: [raw, binary, saas]
       result: derivative
       restrictions: [state_changes, include_use_restriction, include_runtime_restriction]
       keywords: [transfer, modification]
-      relicense: true
+      relicense: conditional
 
 - 
   full_name: CreativeML Open RAIL-M # Model License, same as OpenRAIL++
@@ -784,6 +785,7 @@
   rights_prefix: [perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable]
   coverage: [duplicate, derivative]
   redistribute: [include_notice, include_license]
+  incompat: [GPL, AGPL, LGPL, GFDL]
   terms: *OpenRAILterms
 
 - 
@@ -799,6 +801,7 @@
   rights_prefix: [perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable]
   coverage: [duplicate, derivative]
   redistribute: [include_notice, include_license]
+  incompat: [GPL, AGPL, LGPL, GFDL]
   terms: *OpenRAILterms
 
 - 
@@ -814,6 +817,7 @@
   rights_prefix: [perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable]
   coverage: [duplicate, derivative]
   redistribute: [include_notice, include_license]
+  incompat: [GPL, AGPL, LGPL, GFDL]
   terms: *OpenRAILterms
 
 - 
@@ -872,6 +876,7 @@
   rights_prefix: [worldwide, non-exclusive, non-transferable, no-charge, royalty-free]
   coverage: [duplicate, derivative]
   redistribute: [include_license]
+  incompat: [GPL, AGPL, LGPL, GFDL]
   terms: 
     - usages: [use, copy]
       forms: [raw, binary, saas]
@@ -883,16 +888,16 @@
       result: derivative
       restrictions: [include_use_restriction]
       keywords: [outputs]
-      relicense: true
+      relicense: conditional
     - usages: [combine, amalgamate, modify, train] 
       forms: [raw, binary, saas]
       result: derivative
       keywords: [portion]
       restrictions: [include_notice, include_use_restriction]
-      relicense: true
+      relicense: conditional
     - usages: [distill] # Llama2 cannot be used to improve any other LLM
       forms: [raw, binary, saas]
       result: derivative
       restrictions: []
-      relicense: true
+      relicense: conditional
 ...

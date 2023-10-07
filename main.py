@@ -4,7 +4,7 @@ from works import Work
 from license_parser import Parser
 from reuse_methods import *
 
-logging.basicConfig(level=logging.DEBUG)
+#logging.basicConfig(level=logging.DEBUG)
 
 par = Parser("licenses_description.yml")
 
@@ -100,7 +100,7 @@ def case5(remix1, pipelined, remix2):
 
 
 #case1([arxiv_text, stack_exchange_text], bigtranslate_model, [deep_sequoia_text, free_law_text])
-#case1([deep_sequoia_text, pubmed_text], bigtra·nslate_model, [bigtranslate_model])
+#case1([deep_sequoia_text, pubmed_text], bigtranslate_model, [bigtranslate_model])
 #case2([baize_model, bloom_model], wiki_text, bert_model) # NLP task
 #case2([detr_model, i2vgen_model], flickr_img, maskformer_model) # Input=Image
 #case3([whisper_model, baize_model, stable_diffusion_mode, i2vgen_model], jamendo_music, False) # Music->Text->Image->Video

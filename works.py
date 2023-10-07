@@ -23,7 +23,7 @@ class EVENT(object):
     
     MIXWORKS_NO_FOUND_WARNING = Evn('analysis warning', 'Work $WNAME$ does NOT have mixworks as expected')
 
-    LICENSE_IN_COMPAT_ERROR = lambda work_name, original_license_name, new_license_name: Evn("analysis error", f"Work {work_name} under {original_license_name} CONNOT BE RELICENSED to license {new_license_name}")
+    LICENSE_IN_COMPAT_ERROR = lambda work_name, original_license_name, new_license_name: Evn("analysis error", f"Work {work_name} under {original_license_name} CONNOT BE RELICENSED to license {new_license_name} due to incompatibility.")
     MULTIPLE_COPYLEFT_ERROR = lambda copylefts: Evn("analysis error", f"Work $WNAME$ has a license conflict as it involves multiple copyleft licenses: {', '.join([l.license_name for l in copylefts])}")
     
     RIGHT_NO_GRANT_WARNING = lambda work_name, right_name: Evn('rights warning', f'Work {work_name} does NOT EXPLICITLY grant you the right to {right_name.upper()}')

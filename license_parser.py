@@ -62,6 +62,21 @@ class License(object):
             return True
         return False
     
+    def has_compat(self):
+        return 'compat' in self.meta
+    
+    def get_compat_list(self):
+        if 'compat' not in self.meta: 
+            return None # Return None if not compat list is provided
+        else:
+            return self.meta.get('compat')
+    
+    def get_incompat_list(self):
+        if 'incompat' not in self.meta: 
+            return None
+        else:
+            return self.meta.get('incompat')
+    
     # Check whether a right can be granted, such as modify, use, sublicense
     def is_granted_right(self, right:str):
         if self.is_public_domain(): # Always return true for public domain licenses
@@ -337,6 +352,7 @@ class Parser(object):
         
         def compat_matching(liname, compat_list): # if compat=[GPL], any version of GPL is compat, if compat=[GPL-3.0], only GPL-3.0 can be matched
             matching = None
+            if compat_list is None: return matching
             for compat_name in compat_list:
                 cname, hasver =  self.detect_license_version(compat_name)
                 if hasver and liname == cname:
@@ -349,18 +365,24 @@ class Parser(object):
 
         # If relicense if conditional, check the compatibility between these licenses
         if term.get('relicense', '') == 'conditional': # Check the compatibility of licenses, ignore version number
-            original_compat_list, original_in_compat_list = term.get('compat', []), term.get('incompat', [])
-            is_compat, is_incompat =  compat_matching(new_license_name, original_compat_list), compat_matching(new_license_name, original_in_compat_list)
-            if is_compat and is_incompat:
-                logging.debug(f"Try relicense {original_license_name} to {new_license_name} however both compat and in-compat.")
+            original_compat_list, original_incompat_list = oli.get_compat_list(), oli.get_incompat_list()
+            has_compat = False if oli.get_compat_list() is None else True
+            has_incompat = False if oli.get_incompat_list() is None else True
+            is_compat, is_incompat =  compat_matching(new_license_name, original_compat_list), compat_matching(new_license_name, original_incompat_list)
+
+            if has_compat and not has_incompat: # Only the license in compat list are allowed
+                return True if is_compat else False
+            elif has_incompat and not has_compat: # Only the license in in-compat are prohibited
+                return False if is_incompat else True
+            elif has_compat and has_incompat: # Both privide compat list and incompat list, Priority: compat > incompat
+                logging.warning(f"The relicense term of {original_license_name} has compat list and in-compat list.")
+                if is_compat: return True
+                if is_incompat: return False
                 return False
-            elif is_compat:
-                logging.debug(f"{original_license_name} is compat with {new_license_name}.")
-                return True
-            elif is_incompat:
-                logging.debug(f"{original_license_name} is in-compat with {new_license_name}.")
+            else: # Not provide compat list and incompat list
+                logging.error(f"The relicense term of {original_license_name} is conditional but not compat list and in-compat list are provided.")
                 return False
-            return False # No in compat list and no in in-compat list
+
         return term.get('relicense', False) # Can or Cannot relicense, no condition.
         
     """
@@ -370,8 +392,14 @@ class Parser(object):
     def multiple_license_solver(self, terms, copylefts, permissives, public_domains, others, aim_license_name = None, work_name = 'NA') -> tuple[str, list]:
         check_relicense_works = permissives + copylefts 
         fail_works = []
-        #relicense_pass = False # Wether the relicense of relied works to aim license can pass
-
+        
+        # No licenses need to be check
+        if len(check_relicense_works) == 0: 
+            if aim_license_name:
+                return aim_license_name, []
+            else:
+                return 'Unlicense', []
+            
         # We intend to fullfill the prior license assignment of this work if it is exist
         if aim_license_name:
             # Try to fufill the aim license be assigned to this work, check the relicensable of triggered copylefts and all permissives

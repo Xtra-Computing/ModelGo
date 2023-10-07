@@ -26,12 +26,12 @@ The left side consists of a list of AI activities, many of which pertain to mode
 The middle part is our taxonomy that can classify these AI activities.
 Following this rule, we can also identify the corresponding terms in natural language license text shown on the right side.
 For example, Mixture of Experts (MoE) leverages a gating network to ensemble a batch of weak learners~\cite{jacobs1991adaptive}, which leads to a combination with strong separation and aligns with licensing terms like link, portion, collection, etc.
-Unlike combination, the results of amalgamation are difficult (or impossible) to separate, corresponding to AI activities such as modification, fine-tuning, model fusion, etc~\footnote{Whether embeddings constitute a combination with weak separation depends on the specific case. In Modelgo, we classify embeddings as amalgamation if they are created under a content license that treats translation as a form of modification.}. 
+Unlike combination, the results of amalgamation are difficult (or impossible) to separate, corresponding to AI activities such as modification, fine-tuning, model fusion, etc~\footnote{Whether embeddings constitute a combination with weak separation depends on the specific case. In ModelGo, we classify embeddings as amalgamation if they are created under a content license that treats translation as a form of modification.}. 
 These unrecoverable revision of original works are corresponding license text like adapt, alter, remix, etc.
 Distillation and generation are derivatives of original works, which means the results will not contain any portion of the original works. 
 These two AI activities are mostly defined in AI model licenses but are not covered by traditional OSS licenses and free content licenses.
 
-By now, we can ascertain the suitable permissions, limitations, and responsibilities for each AI activity based on the language of the license, even when the license type isnt an exact match.
+By now, we can ascertain the suitable permissions, limitations, and responsibilities for each AI activity based on the language of the license, even when the license type is not an exact match.
 However, its necessarily to emphasize three points.
 First, our proposed method only applies in cases where ambiguities exist in the definition. 
 If the conditions of certain AI activities are explicitly defined in the license, then we should directly follow that.
@@ -82,7 +82,7 @@ The reason we need this specially-designed tree structure is that works with dif
 \subsection{License Analysis in ML Projects}
 
 We have outlined all the necessary preparation steps for license analysis in previous sections.
-Their detailed implementations in Modelgo are as follows.
+Their detailed implementations in ModelGo are as follows.
 
 \textbf{Preparation Step 1}: Following our proposed taxonomy, we manually transcribed the terms in the license text to a standard machine-readable file in YAML format~\footnote{We attempted to use chatGPT to generate this content, but it often behaved unreliably in understanding our taxonomy and produced some stochastic answers~\cite{bender2021dangers}.}.
 This file contain following informations for each license:
@@ -110,7 +110,7 @@ In summary, mix-works, sub-works, and aux-works have different scopes in ML lice
 
 \textbf{Analysis Step}:
 Given the license information and dependencies tree of ML projects, we are ready to analyze the license conflicts within it. 
-Modelgo's license analysis consists of three phases:
+ModelGo's license analysis consists of three phases:
 
 \textit{Initial phase}, where we register each component with clear license name, version, type, and format, and then construct their dependencies using our predefined reusing functions.
 The release policy should be preset here, and we support personal use, sharing, and selling. 
@@ -127,13 +127,13 @@ The validation also includes compliance with disclosure requirements, such as wh
 The releaseability of the final result will be validated upon its mix-works and sub-works, and then an assessment report will be generated.
 
 
-Table~\ref{tab:analysis} presents the warnings, errors, restrictions, obligations, and notices that can be detected using Modelgo.
-Table~\ref{tab:list} lists the licenses supported by Modelgo, which collectively cover over 98\% of licensed models and datasets on Huggingface~\footnote{Licenses without clear names and versions are excluded from the calculation. Worth mentioning, our coverage represents only 24.8\% and 5.2\% of the models and datasets on the entire site due to the significant number of works without license information.}.
+Table~\ref{tab:analysis} presents the warnings, errors, restrictions, obligations, and notices that can be detected using ModelGo.
+Table~\ref{tab:list} lists the licenses supported by ModelGo, which collectively cover over 98\% of licensed models and datasets on Huggingface~\footnote{Licenses without clear names and versions are excluded from the calculation. Worth mentioning, our coverage represents only 24.8\% and 5.2\% of the models and datasets on the entire site due to the significant number of works without license information.}.
 In the next section, we will present five case studies based on real ML components.
 
 
 \begin{table}[t]
-    \caption{License warnings, errors, restrictions/obligations, and notices assessed by Modelgo in \textcolor{Permissive}{initial phase}, \textcolor{Copyleft}{license determination phase} and license validation phase.}
+    \caption{License warnings, errors, restrictions/obligations, and notices assessed by ModelGo in \textcolor{Permissive}{initial phase}, \textcolor{Copyleft}{license determination phase} and license validation phase.}
     \scriptsize
     \label{tab:analysis}
     \begin{tabular}{|p{3.3cm}|p{4.3cm}|}
@@ -150,7 +150,9 @@ In the next section, we will present five case studies based on real ML componen
     
     
     Rights Not Granted Error & License of this work \textbf{cannot grant} you the right to do (...) \\ \hline
-    \textcolor{Copyleft}{Multiple Copyleft Licenses Error} & Work has a license conflict as it involves \textbf{multiple copyleft} licenses. \\ \hline
+    %\textcolor{Copyleft}{Multiple Copyleft Licenses Error} & Work has a license conflict as it involves \textbf{multiple copyleft} licenses. \\ \hline
+    \textcolor{Copyleft}{License Incompatibility Error} & Work has a license conflict as it involves \textbf{multiple incompatible} licenses. \\ \hline
+    \textcolor{Copyleft}{Cannot Relicense Error} & Work has a license conflict as it required \textbf{relicense} rights not be granted. \\ \hline
     Cannot Share Error & License \textbf{prohibits sharing} of this work. \\ \hline \hline
 
     State Changes Restriction & This work must \textbf{state changes} according to related license(s). \\ \hline
@@ -163,7 +165,7 @@ In the next section, we will present five case studies based on real ML componen
 \end{table}
 
 \begin{table}[t]
-    \caption{List of licenses supported by Modelgo, covering over 98\% of licensed models and datasets on Huggingface.}
+    \caption{List of licenses supported by ModelGo, covering over 98\% of licensed models and datasets on Huggingface.}
     \scriptsize
     \label{tab:list}
     \begin{tabular}{|p{2.45cm}|p{2.45cm}|p{2.45cm}|}

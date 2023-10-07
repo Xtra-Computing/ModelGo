@@ -1,5 +1,5 @@
 \section{Case Study Details}
-An ideal practice of Modelgo is to assess real-world ML projects and detect their potential license compliance issues. 
+An ideal practice of ModelGo is to assess real-world ML projects and detect their potential license compliance issues. 
 However, this can be challenging in practice due to three present situations:
 
 (1) Prevalent Licensing Disorganization in ML Projects: Many ML projects lack organized licensing information, making it difficult to ascertain the licenses of individual components.
@@ -9,16 +9,16 @@ However, this can be challenging in practice due to three present situations:
 (3) Non-compliance within Datasets: Crowdsourced datasets often suffer from license non-compliance issues~\cite{rajbahadur2021can}, making the licenses (usually permissive) declared by dataset collectors invalid.
 
 Consequently, directly analyzing real-world ML projects may result in uncertainty, over-optimistic results, and often fail to detect any license conflicts.
-Therefore, to validate Modelgo, we have designed five ML scenarios rendered using 15 common data sources and 11 models that cover 5 modalities and 7 tasks, respectively.
+Therefore, to validate ModelGo, we have designed five ML scenarios rendered using 15 common data sources and 11 models that cover 5 modalities and 7 tasks, respectively.
 Table~\ref{tab:works} shows the specifications of the involved data sources and models, whose licenses include copyleft, permissive, public domain, and no public license~\footnote{Some data sources contain crowdsourced content with multiple licenses, and we selected a non-public domain license among them.}.
 Furthermore, our case studies can cover all events listed in Table~\ref{tab:analysis}, and the their details and findings are provided in the following section.
 
-It's worth noting that, as a license compliance analysis tool, Modelgo's goal is to report potential legal risks in ML projects related to licenses.
+It's worth noting that, as a license compliance analysis tool, ModelGo's goal is to report potential legal risks in ML projects related to licenses.
 It is not designed to address legal interpretation issues such as copyrightability of the final work, assessing copyright infringement, or establishing authorship, which typically require verification by a court of law in different regions~\cite{national1979final, hedrick2019ithink, margoni2018artificial}.
 
 
 \begin{table}[t]
-    \caption{Specifications of AI components used in case studies, which include \textcolor{Copyleft}{Copyleft License}, \textcolor{Permissive}{Permissive License}, \textcolor{Public}{Public Domain Licens} and No Public License.}
+    \caption{Specifications of AI components used in case studies, which include \textcolor{Copyleft}{Copyleft License}, \textcolor{Permissive}{Permissive License}, \textcolor{Public}{Public Domain Licens} and Not-Public License.}
     \footnotesize
     \label{tab:works}
     \begin{tabular}{|p{1.6cm}|p{3cm}|p{0.6cm}|p{1.7cm}|}
@@ -71,7 +71,7 @@ It is not designed to address legal interpretation issues such as copyrightabili
 \begin{figure}[h]
     \centering
     \includegraphics[width=\linewidth]{fig/case1.pdf}
-    \caption{CASE \Romannum{1}: Corpus Combination. (a) Example of copyleft proliferation rules ; (b) Example of LGPL-LR exemption and no public license. AI Activities: \boxed{\text{E}}mbed, \boxed{\text{C}}ombine.}
+    \caption{CASE \Romannum{1}: Corpus Combination. (a) Example of copyleft proliferation rules ; (b) Example of LGPL-LR exemption and non-public license. AI Activities: \boxed{\text{E}}mbed, \boxed{\text{C}}ombine.}
     \Description{}
     \label{fig:case1}
 \end{figure}
@@ -81,7 +81,7 @@ Additionally, we also consider scenarios where the corpus is extended with the h
 As shown in Figure~\ref{fig:case1} (a), we first translate\footnote{In our cases, we treat translation as a specific form of embedding with a natural language output.} \textit{arXiv} and \textit{Stack Exchange} using \textit{Big Translate} model, then we combine these translated corpuses with \textit{Deep-sequoia} and \textit{FreeLaw}.
 This combined corpus is the final work, intended for commercial purposes.
 Figure~\ref{fig:case1} (b) depicts a variation in which the final work is a combination of translated corpus and the LLM.
-Note that, to simplify analysis, we treat these no public licenses, such as CC-BY-ND-4.0 and CC-BY-NC-ND-4.0, as permissive licenses with limitations on sharing derivatives, as they do not include any copyleft terms.
+Note that, to simplify analysis, we treat these non-public licenses, such as CC-BY-ND-4.0 and CC-BY-NC-ND-4.0, as permissive licenses with limitations on sharing derivatives, as they do not include any copyleft terms.
 If not specified otherwise, the format of models and datasets is set to raw (i.e., modifiable), while the other supported formats are binary and SaaS.
 %We have also consolidated some redundant results reported by intermediate reused components to simplify our figures.
 The interpretation of license analysis results is as follows:
@@ -89,24 +89,26 @@ The interpretation of license analysis results is as follows:
 \boxed{\text{Results of CASE \Romannum{1} (a)}} 
 The copyleft conditions about \textit{translation} of the CC licenses were triggered, which means that the translated corpuses are also covered by the original licenses.
 As a result, the translated \textit{arXiv} and \textit{Stack Exchange} corpuses remain under the original copyleft CC ShareAlike licenses. 
-However, combining these corpuses with another copyleft-licensed \textit{Deep-sequoia} corpus did not result in the multiple copyleft licenses error, as the combination with strong separate falls outside the proliferate coverage of LGPL-LR and CC ShareAlike licenses~\cite{creative2023artificial}.
+However, combining these corpuses with another copyleft-licensed \textit{Deep-sequoia} corpus did not result in the multiple copyleft licenses issue, as the combination with strong separate falls outside the proliferate coverage of LGPL-LR and CC ShareAlike licenses~\cite{creative2023artificial}.
 But, the proliferation extended to the final work and force it to be licensed under LGPL-LR as well.
-It is important to note that only the effort taken to combine the corpuses is under LGPL-LR, and the licensing action to the final work will not change the licenses of its components.
+It is important to note that only the effort taken to combine the corpuses is under LGPL-LR, and the licensing action to the final work will not change the inherent licenses of its components.
 
-There are two types of errors according to Modelgo's assessment.
-The first error arises from the CC-BY-NC-SA-4.0 license of the translated \textit{arXiv}, which doesn't grant the right of commercial use\footnote{This error also arises from \textit{arXiv} since it is a sub-work of the translated \textit{arXiv}, we will consolidate this type of redundant in the rest of the case studies.}. 
-The second error is caused by the fact that the redistribution rights of FreeLaw are not granted to comply with CC-BY-ND-4.0.
+There are two types of errors according to ModelGo's assessment.
+The first error arises from the CC-BY-NC-SA-4.0 license of the translated \textit{arXiv}, which doesn't grant the right of commercial use\footnote{This error also arises from \textit{Deep-sequoia} and \textit{arXiv} (since it is a sub-work of the translated \textit{arXiv}), we will omit this type of redundant in the rest of the case studies.}. 
+The second error is caused by the fact that the redistribution rights of final work are not granted to comply with FreeLaw's CC-BY-ND-4.0 license.
 There are also many restrictions, such as the final work must state the changes compared to the original work and must retain the licenses and notice files of the original works.
-In addition, Modelgo also indicates that the granted rights of LGPL-LR are revocable, which poses a potential risk for further redistribution.
+In addition, ModelGo also indicates that the granted rights of LGPL-LR are revocable, which poses a potential risk for further redistribution.
 
 \boxed{\text{Results of CASE \Romannum{1} (b)}} 
 Different from CASE \Romannum{1} (a), the final work in CASE \Romannum{1} (b) is licensed under another copyleft license GPL-3.0 from \textit{Big Translate}.
 This is because LGPL-LR has a license proliferation exemption for reused results that are no longer classified as linguistic resources.
 Consequently, the license of final work is proliferated by GPL-3.0.
-Additionally, besides the rights not granted error arising from CC-BY-NC-ND-4.0, this no public license also explicitly prohibits any form of sharing derivatives, resulting in a cannot share error.
+Additionally, besides the rights not granted error arising from CC-BY-NC-ND-4.0, this non-public license also explicitly prohibits any form of sharing derivatives, resulting in a cannot share error.
 
 \boxed{Summary} 
 % 结论：数据集的收集应该避免no public 和 不能商用的数据集，使用copyleft 的CC 数据集比较安全，但是其他GPL需要额外注意扩散范围
+To minimize the license violation risk when collecting ML data, avoid using content under non-public or non-commercial licenses, and be cautious about the proliferation scope of GPL-like licenses.
+Based on our assessment, using CC-licensed content (including CC ShareAlike) carries less risk.
 
 \subsection{CASE \Romannum{2} : Mixture of Experts}
 
@@ -129,7 +131,9 @@ Since there is no explicit definition of AI training and corresponding restricti
 Therefore, even though the copyleft CC-BY-SA-4.0 license is used for \textit{Wikimedia}, the trained model \textit{BERT} does not trigger the license proliferation conditions and can be relicensed to Unlicense.
 The final work's license is proliferated to GPL-3.0 from \textit{Baize}, as in CASE \Romannum{1} (b).
 
-There is one warning in the assessment: the final work released as SaaS should remain open source or provide a readable copy of the source code to comply with GPL-3.0. 
+There is one error in the assessment: the copyleft-style user behavioral restriction claimed in BLOOM-RAIL-1.0 is consider as \textit{non-permissive additional terms}, which can conflict with GPL-3.0.
+Therefore, an license incompatibility error is reported when we combine \textit{Baize} and \textit{BLOOM} using MoE.
+The warning is that the final work released as SaaS should remain open source or provide a readable copy of the source code to comply with GPL-3.0. 
 Meanwhile, user behavioral restrictions also apply to the final work, as it is a derivative of \textit{BLOOM} governed by responsible AI conditions~\cite{contractor2022behavioral}.
 
 \boxed{\text{Results of CASE \Romannum{2} (b)}} 
@@ -139,6 +143,8 @@ This feature is helpful for licensors who intend to prohibit any derivation and 
 However, this disorganization of ML projects' licensing has a negative effect on the entire ecosystem.
 
 \boxed{Summary} 
+Both OSS and CC licenses lack definitions and corresponding limitations related to model training, leaving freedom to use the trained results. 
+However, responsible AI licenses provide comprehensive definitions for AI activities and copyleft-style restrictions, making their derivatives not GPL-compatible.
 
 \subsection{CASE \Romannum{3} : Generation Pipeline}
 
@@ -163,6 +169,8 @@ Therefore, once AI model licensed components are used in ML projects, all subseq
 
 \boxed{Summary} 
 % Responsible AI 的 copyleft use behavioral 问题：历史累积 full spectrum
+Leveraging generative models can bypass the no-sharing conditions of CC NoDerivs licenses and making the generated content almost ungoverned.
+However, if responsible AI licensed works are involved, the content should comply with their restrictions, potentially leading to further GPL-compatibility issues.
 
 \subsection{CASE \Romannum{4} : Knowledge Transfer and Fusion}
 
@@ -176,8 +184,8 @@ Therefore, once AI model licensed components are used in ML projects, all subseq
 
 The knowledge can be transferred or integrated from one model to another without the need for explicit code replication or linking. 
 This is achieved through technologies such as Student-Teacher Learning~\cite{furlanello2018born}, Contrastive Learning~\cite{li2021model}, Federated Learning~\cite{mcmahan2017communication}, Model Fusion~\cite{lam2021model}, etc.
-Traditional OSS license expose a loophole regarding these unique reusing methods from ML, and these methods also pose challenges for deep IP protection~\cite{peng2022intellectual}.
-With the assistance of Modelgo, we further explore the compliance of these knowledge transfer methods within existing licensing framework.
+Traditional OSS licenses expose a loophole regarding these unique reusing methods from ML, and these methods also pose challenges for deep IP protection~\cite{peng2022intellectual}.
+With the assistance of ModelGo, we further explore the compliance of these knowledge transfer methods within existing licensing framework.
 
 \boxed{\text{Results of CASE \Romannum{4} (a)}} 
 The distillation and amalgamation both yield a weak separation result from the original work, which can be interpreted as one form of modification.
@@ -188,12 +196,17 @@ There is one error in the assessment.
 Since the modification of a CC NonCommercial licensed work cannot be relicensed according to its conditions, the amalgamated result face a no commercial rights error when commercialized.
 
 \boxed{\text{Results of CASE \Romannum{4} (b)}} 
-This case study assess license compliance towards some NLP models.
-The only error is detected from \textit{Llama2}, whose license does not grant sublicense rights for further republication, conflicting with the releasing policy.
+This case study assess license compliance towards NLP models.
+There have two errors all detected from \textit{Llama2}.
+The first error is the license incompatibility between its use limitations terms and the GPL-3.0.
+The second error is because the Llama2 license does not grant sublicense rights for further republication, conflicting with the releasing policy.
 Additionally, the rights granted by the Llama2 license are revocable, posing a potential risk in the final ML project.
 Furthermore, the final work should also comply with the user behavioral restrictions demanded by BLOOM-RAIL-1.0 and Llama2.
 
 \boxed{Summary} 
+Knowledge transfer is a powerful method to bypass the reproduction prohibition of models. 
+However, model fusion may trigger the terms like remi, incorporate, and adapt, necessitating the reusing procedures to remain in compliance.
+In addition, the rights may be revocable even if granted by a permissive license.
 
 \subsection{CASE \Romannum{5} : Remix Data}
 
@@ -205,13 +218,27 @@ Furthermore, the final work should also comply with the user behavioral restrict
     \label{fig:case5}
 \end{figure}
 
-Mirroring the previous case, this case considers the scenario of data remix and integration, which can arise when using data augmentation methods such as "mixup"\cite{zhang2018mixup}, SMOTE\cite{chawla2002smote}, ADASYN~\cite{he2008adasyn}, etc.
+Mirroring the CASE \Romannum{4}, this case considers the scenario of data remix and integration, which can arise when using data augmentation methods such as \textit{mixup}\cite{zhang2018mixup}, SMOTE\cite{chawla2002smote}, ADASYN~\cite{he2008adasyn}, etc.
 We reuse the generation pipeline depicted in Figure~\ref{fig:case3} to increase the complexity of the assessment.
 
 \boxed{\text{Results of CASE \Romannum{5}}}
-The analysis result reported a conflict when remixing \textit{Midjourney Gen Image} and \textit{Thingverse} due to CC-BY-NC-4.0 interrupting the license proliferation of CC-BY-NC-SA-4.0.
-However, it is a false alarm because there is a two-way compatibility between CC ShareAlike licenses, as indicated by a supplementary interpretation from Creative Commons\footnote{https://wiki.creativecommons.org/wiki/Wiki/cc\_license\_compatibility}. 
-We reserve this alarm to remind developers to manually check the compatibility from licensors or consult with legal experts.
+We first analysis the remix of \textit{StockSnap}, \textit{Midjourney Gen Image} and \textit{Thingverse}.
+For content under public domain licenses like CC0-1.0, we can freely remix this content without worrying about any conflicts.
+However, conflicts may arise when remixing content under CC-BY-NC-4.0 and CC-BY-NC-SA-4.0 licenses.
+As shown in Figure~\ref{fig:case4} (a), CC-BY-NC-4.0 cannot be relicensed for its remixed result, while CC-BY-NC-SA-4.0 requires performing license proliferation.
+But the outcome is this remixed work can be relicensed to CC-BY-NC-SA-4.0 because there is a one-way compatibility between CC licenses, as indicated by a supplementary interpretation from Creative Commons\footnote{https://wiki.creativecommons.org/wiki/Wiki/cc\_license\_compatibility}.
+A conflict due to multiple copyleft licenses will arise if we attempt to further remix with \textit{Wikimedia}.
+Furthermore, there will be a \textit{cannot relicense} issue if we attempt to augment \textit{Wikimedia} and relicense it to a new permissive license to bypass the mentioned conflict.
 
+On the other hand, remixing the generated \textit{ccMixter} and \textit{Vimeo} is governed by CC-BY-NC-ND-4.0, which is responsible for almost all errors and restrictions in the final product.
+However, we can get rid of these constraints by leveraging the loophole of generative content as shown in CASE \Romannum{3}.
+
+%The analysis result reported a conflict when remixing \textit{Midjourney Gen Image} and \textit{Thingverse} due to CC-BY-NC-4.0 interrupting the license proliferation of CC-BY-NC-SA-4.0.
+%However, it is a false alarm because there is a two-way compatibility between CC ShareAlike licenses, as indicated by a supplementary interpretation from Creative Commons\footnote{https://wiki.creativecommons.org/wiki/Wiki/cc\_license\_compatibility}. 
+%We reserve this alarm to remind developers to manually check the compatibility from licensors or consult with legal experts.
 
 \boxed{Summary} 
+Directly remixing raw data should ensure compatibility between licenses, which can be challenging in crowdsourced scenarios where multiple copyleft-licensed content exists.
+One feasible solution is to exclude all content under copyleft and non-public licenses. 
+Alternatively, an irregular tactic is to exploit the current ambiguity in licensing frameworks regarding generated content.
+

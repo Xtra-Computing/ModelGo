@@ -25,7 +25,7 @@ As a result, traditional OSS license analysis approaches~\cite{ombredanne2020fre
 
 In this paper, we introduce ModelGo, a tool designed to analyze potential license conflicts, improper license choices, use restrictions and obligations in ML projects that involve nested component reuse procedures.
 To demonstrate the usefulness of ModelGo, we present 5 use cases constructed using 15 datasets and 11 models from real-world, whose license types cover OSS, free content, and AI model.
-Our findings show that there exist potential legal risks when reusing  components under copyleft or non-commercial licenses, and point out the need for attention to AI model licenses.
+Our findings show that there exist potential legal risks when reusing  components under copyleft, non-public, non-commercial licenses, and point out the need for attention to responsible AI model licenses.
 The main contributions of our paper are:
 \begin{itemize}
     \item We raise the challenge of license analysis for ML projects and propose ModelGo to assessing it. To the best of our knowledge, our work is the first attempt to deal with this challenge in the ML context.
@@ -45,97 +45,3 @@ The rest of the paper is organized as follows. (TBD)
 % An empirical study of license violations in open source projects
 % Do Software Developers Understand Open Source Licenses?
 % Analyzing Open Source License Compatibility Issues with Carneades
-
-\begin{comment}
-There is no consensus on whether the use of copyright works as input to train an AI system is an exercise of an exclusive right.
-There remains significant legal uncertainty about whether copyright applies to AI training, which means it may not always be clear whether a CC license applies.
-The larger model was trained on 256 cloud TPU v3 cores. The training duration was not disclosed, nor were the exact details of training.
-
-Open source software license compliance~\cite{ombredanne2020free}
-
-The open source definition~\cite{perens1999open}
-
-AFL~\cite{rosen2005open}
-
-Wudao2.0 1.75T MoE
-[FASTMOE: A FAST MIXTURE-OF-EXPERT TRAINING SYSTEM]
-[GLM-130B: AN OPEN BILINGUAL PRE-TRAINED MODEL]
-
-Objectives and challenges associated with analyzing dataset license compliance?
-Getty Images (US), Inc. v. Stability AI, Inc. (1:23-cv-00135)
-Andersen et al v. Stability AI Ltd. et al (3:23-cv-00201)
-We are not aware of any copyright restrictions of the material
-
-C4, Pile Common Crawl
-crowdsourced
-
-COCO (CC-BY 4.0), CIFAR10 -> Flickr
-Unsplash License \textit{Custom}: Compiling photos from Unsplash to replicate a similar or competing service. https://unsplash.com/license
-Pixabay License: Data mining, extraction, scraping and the use of programs or robots for automatic data collection and/or extraction of digital data on the Services and/or the content available therein is strictly prohibited for all purposes, including without limitation for machine learning purposes.
-
-Google Street View (SVHN) https://about.google/brand-resource-center/products-and-services/geo-guidelines/
-
-%实际上，license analysis应该可分为四层，最底层是license 是否 compliance (或者叫做dataset provenance extraction, License identification)，例如数据集的license是否可以覆盖每个sample，还有就是distribution的版本的license和official source的license不一致，第二层是license之间是否conflict，第三层是应用所需的rights是否具备，最顶层是应用场景是否符合法律法规（regulation）
-
-
-Software reuse is very simple from the legal point of view, if a company or an
-individual reuses software for which it has copyrights. However, things change dramatically
-if one wants to reuse software made by others, since software is protected
-by copyright and possibly by patents. Without explicit permission, no person other
-than the copyright holder is allowed to copy, distribute, or make derivative works
-from the original work.
-\end{comment}
-
-\begin{table*}[]
-    \caption{Summary of machine learning projects in Huggingface. }
-    \footnotesize
-    \label{tab:MLP}
-    \begin{tabular}{|p{2.1cm}|p{1.6cm}|p{2cm}|p{2.75cm}|p{3cm}|p{1.7cm}|p{2cm}|}
-        \hline
-        \textbf{ML Project} & \textbf{Task} & \textbf{Data License} & \textbf{Software License} & \textbf{Model License} & \textbf{Dataset} & \textbf{Risk Resource} \\ \hline
-        
-        Stable Diffusion v1-5 & Text to Image & CC-BY-4.0 & CreativeML-OpenRAIL-M & CreativeML-OpenRAIL-M & LAION-5B & Common Crawl \\ \hline
-        
-        BLOOM & Text Generation & \textit{Mixture} & \textit{Unknown} & BigScience-BLOOM-RAIL-1.0 & \textit{Crowdsourced} & Common Crawl, \newline Wikipedia, etc. \\ \hline
-
-        OrangeMixs & Text to Image & \textit{Mixture} & \textit{Unknown} & CreativeML-OpenRAIL-M & \textit{Crowdsourced} & Danbooru \\ \hline
-
-        ControlNet & Text to Image &  \textit{Unknown} & Apache-2.0 & OpenRAIL & \textit{Unknown} & n/a \\ \hline
-
-        Openjourney & Text to Image &  CC-BY-NC-4.0 & \textit{Unknown} & CreativeML-OpenRAIL-M & Midjourney Gen & Midjourney Gen \\ \hline
-
-        ChatGLM-6B & Text Generation &  \textit{Mixture} & Apache-2.0 & \textit{Custom} & the Pile, Wudao, \newline \textit{Crowdsourced} & PubMed,  Wikipedia, \newline arXiv, GitHub, etc. \\ \hline
-
-        Llama2 & Text Generation &  \textit{Unknown} & Llama2 Community License & Llama2 Community License & \textit{Unknown} & n/a \\ \hline
-
-        StarCoder & Text Generation &  \textit{Mixture} & Apache-2.0 & BigCode-OpenRAIL-M & The Stack & none \\ \hline
-
-        Falcon-40B & Text Generation & ODC-By & Apache-2.0 & Apache-2.0 & RefinedWeb & Wikipedia, Reddit, \newline StackOverflow, etc. \\ \hline
-
-        Waifu Diffusion & Text to Image & \textit{Mixture} & \textit{Unknown} & CreativeML-OpenRAIL-M & \textit{Unknown} & n/a \\ \hline
-
-        Dolly-v2-12B & Text Generation & CC-BY-SA-3.0\&4.0 & MIT & MIT & databricks-dolly\newline-15k, the Pile & PubMed,  Wikipedia, \newline arXiv, GitHub, etc. \\ \hline
-
-        Dreamlike Photoreal & Text to Image & \textit{Unknown} & \textit{Unknown} & \textit{Modified} CreativeML-\newline OpenRAIL-M & \textit{Unknown} & n/a \\ \hline
-
-        Counterfeit & Text to Image & \textit{Unknow} & \textit{Unknown} & CreativeML-OpenRAIL-M & \textit{Unknown} & n/a \\ \hline
-
-        GPT-2 & Text Generation & \textit{Mixture} & \textit{Modified} MIT & \textit{Modified} MIT & \textit{Crowdsourced} & WordPress, GitHub, \newline wikiHow, IMDb, etc. \\ \hline
-
-        GPT-J-6B & Text Generation & \textit{Mixture} & Apache-2.0 & Apache-2.0 & the Pile & PubMed,  Wikipedia, \newline arXiv, GitHub, etc. \\ \hline
-
-        LLaMA-7B & Text Generation & \textit{Mixture} & \textit{Custom} & \textit{Custom} & \textit{Crowdsourced} & GitHub, arXiv, etc. \\ \hline
-
-        BERT & Fill Mask & \textit{Mixture} & Apache-2.0 & Apache-2.0 & Book Corpus, \newline Wikipedia (en) & Wikipedia (en) \\ \hline
-
-        Whisper & ASR & \textit{Unknown} & MIT & MIT & \textit{Unknown} & n/a \\ \hline
-
-        MPT & Text Generation & \textit{Mixture} & Apache-2.0 & Apache-2.0 & \textit{Crowdsourced} & Common Crawl, \newline Wikipedia, etc. \\ \hline
-    
-    % <TOTAL>
-    % Data License: All Permissive(2); Risk of Copyleft/Proprietary(11); Custom/Modified(0); Unknown(6);
-    % Software License: Permissive(11); Risk of Copyleft/Proprietary(n/a); Custom/Modified(2); Unknown(6);
-    % Model License: Permissive(15); Risk of Copyleft/Proprietary(n/a); Custom/Modified(4); Unknown(0);
-
-    \end{tabular}
-\end{table*}

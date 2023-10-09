@@ -56,7 +56,7 @@ Therefore, we should design a mechanism to trace these multi-source dependency s
 \subsection{Structure of ML Projects}
 ML projects have unique dependency relationships compared to OSS projects, like the dependencies between generated content and generation model, as well as between training data and trained model.
 We can summarize these dependencies in ML projects into three categories:
-\begin{itemize}
+\begin{itemize}[leftmargin=*]
     \item \textbf{Mix-works} be embeded in the new work, either verbatim or in part, in a tangible form.
     They usually result from direct copying of original components or reusing them through AI activities like combination and amalgamation. These components are embedded into ML projects and must be released with the new work. 
     For example, if we release a new work utilizing Mixture of Experts (MoE), it is equivalent to releasing all weak learners.
@@ -86,7 +86,7 @@ Their detailed implementations in ModelGo are as follows.
 
 \textbf{Preparation Step 1}: Following our proposed taxonomy, we manually transcribed the terms in the license text to a standard machine-readable file in YAML format~\footnote{We attempted to use chatGPT to generate this content, but it often behaved unreliably in understanding our taxonomy and produced some stochastic answers~\cite{bender2021dangers}.}.
 This file contain following informations for each license:
-\begin{itemize}
+\begin{itemize}[leftmargin=*]
     \item Basic license descriptions, including its name, SPDX short ID, license version, license types (e.g., public domain, permissive, copyleft, proprietary), preferred work types (e.g., software, data, model), and supporting labels such as \textit{disclose code required} or \textit{auto-relicensing applied}.
     
     \item Rights granting information, including granted rights and reserved rights as defined by the license, along with the permitted reusing methods or result forms for redistribution.

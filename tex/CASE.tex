@@ -105,10 +105,11 @@ This is because LGPL-LR has a license proliferation exemption for reused results
 Consequently, the license of final work is proliferated by GPL-3.0.
 Additionally, besides the rights not granted error arising from CC-BY-NC-ND-4.0, this non-public license also explicitly prohibits any form of sharing derivatives, resulting in a cannot share error.
 
-\boxed{Summary} 
+\begin{tcolorbox}
 % 结论：数据集的收集应该避免no public 和 不能商用的数据集，使用copyleft 的CC 数据集比较安全，但是其他GPL需要额外注意扩散范围
-To minimize the license violation risk when collecting ML data, avoid using content under non-public or non-commercial licenses, and be cautious about the proliferation scope of GPL-like licenses.
+\textbf{Findings 1}: To minimize the license violation risk when collecting ML data, avoid using content under non-public or non-commercial licenses, and be cautious about the proliferation scope of GPL-like licenses.
 Based on our assessment, using CC-licensed content (including CC ShareAlike) carries less risk.
+\end{tcolorbox}
 
 \subsection{CASE \Romannum{2} : Mixture of Experts}
 
@@ -142,9 +143,10 @@ The assessment reveals that the final work cannot be shared, whether modified or
 This feature is helpful for licensors who intend to prohibit any derivation and commercialization of their models without the need to draft a custom proprietary license.
 However, this disorganization of ML projects' licensing has a negative effect on the entire ecosystem.
 
-\boxed{Summary} 
-Both OSS and CC licenses lack definitions and corresponding limitations related to model training, leaving freedom to use the trained results. 
+\begin{tcolorbox} 
+\textbf{Findings 2}: Both OSS and CC licenses lack definitions and corresponding limitations related to model training, leaving freedom to use the trained results. 
 However, responsible AI licenses provide comprehensive definitions for AI activities and copyleft-style restrictions, making their derivatives not GPL-compatible.
+\end{tcolorbox}
 
 \subsection{CASE \Romannum{3} : Generation Pipeline}
 
@@ -167,10 +169,11 @@ However, there is one restriction from OpenRAIL-M.
 The AI model license clearly defines the conditions for AI activities and applies copyleft-style restrictions to its licensed work. 
 Therefore, once AI model licensed components are used in ML projects, all subsequent work should comply with these user behavioral restrictions, which can potentially lead to the final work becoming closed source~\cite{greenbaum2016the}.
 
-\boxed{Summary} 
+\begin{tcolorbox} 
 % Responsible AI 的 copyleft use behavioral 问题：历史累积 full spectrum
-Leveraging generative models can bypass the no-sharing conditions of CC NoDerivs licenses and making the generated content almost ungoverned.
+\textbf{Findings 3}: Leveraging generative models can bypass the no-sharing conditions of CC NoDerivs licenses and making the generated content almost ungoverned.
 However, if responsible AI licensed works are involved, the content should comply with their restrictions, potentially leading to further GPL-compatibility issues.
+\end{tcolorbox}
 
 \subsection{CASE \Romannum{4} : Knowledge Transfer and Fusion}
 
@@ -203,10 +206,11 @@ The second error is because the Llama2 license does not grant sublicense rights 
 Additionally, the rights granted by the Llama2 license are revocable, posing a potential risk in the final ML project.
 Furthermore, the final work should also comply with the user behavioral restrictions demanded by BLOOM-RAIL-1.0 and Llama2.
 
-\boxed{Summary} 
-Knowledge transfer is a powerful method to bypass the reproduction prohibition of models. 
+\begin{tcolorbox}
+\textbf{Findings 4}: Knowledge transfer is a powerful method to bypass the reproduction prohibition of models. 
 However, model fusion may trigger the terms like remix, incorporate, and adapt, necessitating the reusing procedures to remain in compliance.
 In addition, the rights may be revocable even if granted by a permissive license.
+\end{tcolorbox}
 
 \subsection{CASE \Romannum{5} : Remix Data}
 
@@ -237,8 +241,8 @@ However, we can get rid of these constraints by leveraging the loophole of gener
 %However, it is a false alarm because there is a two-way compatibility between CC ShareAlike licenses, as indicated by a supplementary interpretation from Creative Commons\footnote{https://wiki.creativecommons.org/wiki/Wiki/cc\_license\_compatibility}. 
 %We reserve this alarm to remind developers to manually check the compatibility from licensors or consult with legal experts.
 
-\boxed{Summary} 
-Directly remixing raw data should ensure compatibility between licenses, which can be challenging in crowdsourced scenarios where multiple copyleft-licensed content exists.
+\begin{tcolorbox}
+\textbf{Findings 5}: Directly remixing raw data should ensure compatibility between licenses, which can be challenging in crowdsourced scenarios.
 One feasible solution is to exclude all content under copyleft and non-public licenses. 
-Alternatively, an irregular tactic is to exploit the current ambiguity in licensing frameworks regarding generated content.
-
+An irregular tactic is to exploit the current ambiguity in licensing frameworks regarding generated content.
+\end{tcolorbox}

@@ -3,8 +3,9 @@ In this section, we present the motivations for this work by introducing the bac
 
 \subsection{Machine Learning Project Licensing}
 % 现在 ML 的license的现状，包括数据的license问题
-Typically, a ML project is constructed with three components: data, software, and models, which are usually governed by different licensing frameworks.
-To profile current ML licensing, Table.~\ref{tab:MLP} provides licensing details for 19 ML projects with over 1,000 likes available in Huggingface\footnote{https://huggingface.co/.  Projects in same series but different versions are omitted.} model repository.
+Typically, a ML project is constructed with data, software and models, which are usually governed by different licensing frameworks.
+To profile current ML licensing, Table.~\ref{tab:MLP} provides licensing details for 19 ML projects with over 1,000 likes available in Huggingface\footnote{https://huggingface.co/. Projects in same series but different versions are omitted.} model repository.
+Due to a lack of license management in development, we have to manually collect the license information from Huggingface, GitHub, related websites and publications.
 
 \textbf{Data Licensing in ML}.
 Based on our profile, more than half (53\%) of ML projects claim their data is licensed in a mixture manner.
@@ -15,9 +16,9 @@ However, there is also potential risk associated with using data under a mixture
 
 First, the mixture of data sources may involve content under copyleft, non-public, and non-commercial licenses. 
 We investigated the sources of mixture and found that only one dataset, the Pile~\cite{gao2020the}, explicitly removed non-permissive content.
-Common sources of risk include Wikipedia, arXiv, WordPress, Common Crawl, etc (Refer to Table.~\ref{tab:works} for more examples).
+Common sources of risk include Wikipedia, arXiv, PubMed and Common Crawl~\cite{henderson2023foundation} (See Table.~\ref{tab:works} for more examples).
 For instance, sharing derivatives based on non-public licensed content raises suspicion of a license violation, and integrating copyleft content also poses a risk of license incompatibility conflicts.
-Furthermore, some content sources like IMDb explicitly prohibit data mining in their \textit{Conditions of Use}.\footnote{You may not use data mining, robots, screen scraping, or similar data gathering and extraction tools on this site ...}
+Furthermore, some content sources like IMDb explicitly prohibit data mining in their \textit{Conditions of Use}.\footnote{"You may not use data mining, robots, screen scraping, or similar data gathering and extraction tools on this site, ..."}
 
 Secondly, the single data license assigned by data collectors may be invalid.
 In our profile, all datasets with a single license contain risky data sources.
@@ -31,19 +32,51 @@ Although Benjamin et al.~\cite{benjamin2019towards} have proposed the Montreal D
 Distinct from OSS projects, less than half (47\%) of ML projects release their code with standard OSS licenses.
 About one-third of ML projects do not declare the code license (but have a model license), which is much higher than in OSS projects~\cite{cui2023empirical}.
 Other projects switch to using AI model or custom licenses to insert additional disclaimers and restrictions related to AI activities, thereby increasing the diversity of licenses in this context.
-However, given that ML, especially Neural Networks (NNs), is still in its emerging stages, the license dependency chain is shorter compared to OSS projects, and most of them use the latest versions of OSS licenses like Apache-2.0 and MIT.
+However, given that ML, especially Neural Networks (NNs), is still in its emerging stages, the license dependency chain is shorter compared to OSS projects~\cite{buchkova2022dasea}, and most of them use the latest versions of OSS licenses like Apache-2.0 and MIT.
 
 % 加一个license的统计数据？
 
 \textbf{Model Licensing in ML.}
+In contrast to software licensing, all ML projects have declared their model licenses.
+The most popular license is Open Responsible AI License (OpenRAIL)~\cite{contractor2022behavioral}, which is a permissive license but includes copyleft-style use-based restrictions governing the use of the model and its derivatives.
+There are 31\% of projects that insist on using unmodified OSS licenses for model licensing, even though these licensing language incurs conceptual ambiguities in the ML context.
+An interesting finding is that, despite their training data being suspected to contain non-public content, the models are declared as free and open work~\cite{henderson2023foundation}.
+
+
+\begin{tcolorbox}
+\textbf{Summary}.
+ML project licenseing exhibit the following characteristics:
+1) Ambiguous, unaccredited and over-permissive license declarations;
+2) Emerging RAIL options for model licensing;
+3) Unique license dependency structures in ML-specific components reusing.
+There is a need for new methods to assess ML license compliance.
+\end{tcolorbox}
 
 % 分歧：自定义license，使用 content license (LayoutLMv3, i2vgen)
 
+\subsection{OSS License Assessment}
+License analysis for OSS projects has been extensively researched.
+%, which can be divide into code level and software level.
+%The code level mainly focus on the compliance of a single file or lines of code.
+For instance, German \textit{et al.}~\cite{german2010sentence} proposed a sentence-based matching tool to identify the license of code.
+Building on this work, Wu \textit{et al.}~\cite{wu2017analysis} further studied inconsistent changes among code clones through provenance analysis.
+These studies mainly deal with copyright issues at the code line level, which can be mapped to a ML problem: finding the provenance of data sources~\cite{rajbahadur2021can} and modules~\cite{chen2022copy}.
+As shown in Figure~\ref{fig:pyramid}, 
 
-\subsection{FOSS License Assessment}
+
 % 传统FOSS做license analysis的一些方法， 附加层次图
 SPDX
 Automating the license compatibility process in open source software with SPDX
+
+
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=\linewidth]{fig/pyramid.pdf}
+    \caption{Research scope and problems of ModelGo compare with traditional OSS license analysis.}
+    \Description{}
+    \label{fig:pyramid}
+\end{figure}
+
 
 %\subsection{Machine Learning IP Protection}
 % 检测是否transfer knowledge，与本工作不冲突
@@ -89,7 +122,7 @@ Automating the license compatibility process in open source software with SPDX
     from the original work.
 \end{comment}
 
-
+\begin{comment}
 \begin{table*}[t]
     \caption{Summary of licensing details for machine learning projects with over 1K likes on Huggingface. }
     \footnotesize
@@ -143,3 +176,5 @@ Automating the license compatibility process in open source software with SPDX
 
     \end{tabular}
 \end{table*}
+
+\end{comment}

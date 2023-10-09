@@ -2,7 +2,7 @@
 % 人工智能基础设施的快速发展和产品化大大加速了机器学习组件数量的增长，模型的复用，如finetune和moe变得常见
 Over the past decade, the advancement and productization of AI infrastructures have significantly accelerated the proliferation of machine learning (ML) components~\cite{jiang2023empirical}, including AI models~\cite{rombach2022high, touvron2023llama}, software~\cite{wolf2020transformers, he2022fastermoe}, and big datasets~\cite{gao2020the, schuhmann2022laion}.
 Concurrently, the reuse of these components has gained popularity, motivated by concerns about their significant demands on financial and energy resources~\cite{strubell2019energy}, as well as the widespread recognition of the value advocated by the open-source movement~\cite{rosen2005open}.
-Unlike code reuse in the OSS field, the reuse of AI models follow a distinct schema.
+Unlike code reuse in the OSS field~\cite{perens1999open}, the reuse of AI models follow a distinct schema.
 A frequently employed approach for AI models reuse is fine-tuning Pre-Trained Models (PTMs)~\cite{han2021pre, touvron2023llama}, where PTMs are adapted on a domain-specific dataset, leveraging their robust generalization capabilities. 
 
 % 但是由于xxx原因导致software，data，model都有不同的license，存在潜在的冲突和法律风险。
@@ -19,7 +19,7 @@ This demonstrates that knowledge can be transferred between models without expli
 Another challenge is improper and ambiguity licensing in ML projects.
 For example, GPT-2 and BERT~\cite{devlin2019bert} are regarded as part of software and then licensed as OSS (e.g., MIT and Apache-2.0).
 However, ML projects like StableDiffusion and Llama2~\cite{touvron2023llama} tend to apply responsible AI restriction terms for both model and code, using AI model licenses such as OpenRAIL-M~\cite{contractor2022behavioral} and Llama2 Community License\footnote{https://huggingface.co/meta-llama/Llama-2-7b}.
-Additionally, to circumvent the limitations of standard OSS licenses, some licensors adopt non-commercial content licenses or custom licenses to protect the Intellectual Property (IP) of their models by prohibiting commercial use~\cite{huang2022layoutlmv3}, fine-tuning~\cite{dreamlike2023}, and reverse engineering~\cite{goyal2022vision}.
+Moreover, to circumvent the limitations of standard OSS licenses, some licensors adopt non-commercial content licenses or custom licenses to protect the Intellectual Property (IP) of their models by prohibiting commercial use~\cite{huang2022layoutlmv3}, fine-tuning~\cite{dreamlike2023}, and reverse engineering~\cite{goyal2022vision}.
 Such ambiguity and the diverse licensing practices within ML projects  increase significant legal uncertainty in license compliance analysis.
 As a result, traditional OSS license analysis approaches~\cite{ombredanne2020free, mathur2012empirical} only consider inclusion and linking relationships among software and lack support for AI model licenses, making them unsuitable for ML project license analysis.
 
@@ -30,8 +30,8 @@ The main contributions of our paper are:
 \begin{itemize}
     \item We raise the challenge of license analysis for ML projects and propose ModelGo to assessing it. To the best of our knowledge, our work is the first attempt to deal with this challenge in the ML context.
     \item As part of our work, we introduce a new taxonomy based on the forms of reused components to identify the corresponding conditions for various ML reuse mechanisms. This method helps mitigate ambiguity in cases of mismatch between applied license type and actual component type, allowing ModelGo to analyze components under various license types, including OSS, free content and AI models.
-    \item  We provide legal compliance assessment reports based on 5 use cases to showcase the effectiveness of our approach. 
-    Through our use cases, we offer valuable insights and experiences in achieving legal compliance in ML projects. 
+    \item  We provide license compliance reports based on 5 use cases to showcase the effectiveness of our approach. 
+    Through our use cases, we offer valuable insights and experiences in achieving compliance in ML projects. 
     Additionally, we also provide license choosing recommendations to minize the risk of non-compliance.
 \end{itemize}
 

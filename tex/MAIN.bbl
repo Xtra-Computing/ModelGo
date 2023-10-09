@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{42}
+\begin{thebibliography}{48}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -55,6 +55,16 @@
 \newblock
 
 
+\bibitem[Buchkova et~al\mbox{.}(2022)]%
+        {buchkova2022dasea}
+\bibfield{author}{\bibinfo{person}{Petya Buchkova}, \bibinfo{person}{Joakim~Hey Hinnerskov}, \bibinfo{person}{Kasper Olsen}, {and} \bibinfo{person}{Rolf-Helge Pfeiffer}.} \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{{DaSEA}: a dataset for software ecosystem analysis}. In \bibinfo{booktitle}{\emph{Proceedings of the 19th International Conference on Mining Software Repositories (MSR)}}. \bibinfo{pages}{388--392}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1145/3524842.3528004}
+\showDOI{\tempurl}
+
+
 \bibitem[Chawla et~al\mbox{.}(2002)]%
         {chawla2002smote}
 \bibfield{author}{\bibinfo{person}{Nitesh~V Chawla}, \bibinfo{person}{Kevin~W Bowyer}, \bibinfo{person}{Lawrence~O Hall}, {and} \bibinfo{person}{W~Philip Kegelmeyer}.} \bibinfo{year}{2002}\natexlab{}.
@@ -63,6 +73,16 @@
 \newblock
 \urldef\tempurl%
 \url{https://doi.org/10.1613/jair.953}
+\showDOI{\tempurl}
+
+
+\bibitem[Chen et~al\mbox{.}(2022)]%
+        {chen2022copy}
+\bibfield{author}{\bibinfo{person}{Jialuo Chen}, \bibinfo{person}{Jingyi Wang}, \bibinfo{person}{Tinglan Peng}, \bibinfo{person}{Youcheng Sun}, \bibinfo{person}{Peng Cheng}, \bibinfo{person}{Shouling Ji}, \bibinfo{person}{Xingjun Ma}, \bibinfo{person}{Bo Li}, {and} \bibinfo{person}{Dawn Song}.} \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{Copy, Right? A testing framework for copyright protection of deep learning models}. In \bibinfo{booktitle}{\emph{IEEE Symposium on Security and Privacy (SP)}}. IEEE, \bibinfo{pages}{824--841}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/SP46214.2022.9833747}
 \showDOI{\tempurl}
 
 
@@ -123,6 +143,16 @@ Retrieved September 25, 2023 from \tempurl}
 \newblock
 
 
+\bibitem[German et~al\mbox{.}(2010)]%
+        {german2010sentence}
+\bibfield{author}{\bibinfo{person}{Daniel~M German}, \bibinfo{person}{Yuki Manabe}, {and} \bibinfo{person}{Katsuro Inoue}.} \bibinfo{year}{2010}\natexlab{}.
+\newblock \showarticletitle{A sentence-matching method for automatic license identification of source code files}. In \bibinfo{booktitle}{\emph{Proceedings of the 25th IEEE/ACM International Conference on Automated Software Engineering (ASE)}}. \bibinfo{pages}{437--446}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1145/1858996.1859088}
+\showDOI{\tempurl}
+
+
 \bibitem[Goyal et~al\mbox{.}(2022)]%
         {goyal2022vision}
 \bibfield{author}{\bibinfo{person}{Priya Goyal}, \bibinfo{person}{Quentin Duval}, \bibinfo{person}{Isaac Seessel}, \bibinfo{person}{Mathilde Caron}, \bibinfo{person}{Mannat Singh}, \bibinfo{person}{Ishan Misra}, \bibinfo{person}{Levent Sagun}, \bibinfo{person}{Armand Joulin}, {and} \bibinfo{person}{Piotr Bojanowski}.} \bibinfo{year}{2022}\natexlab{}.
@@ -175,6 +205,14 @@ Retrieved September 25, 2023 from \tempurl}
 \bibfield{author}{\bibinfo{person}{Samantha~Fink Hedrick}.} \bibinfo{year}{2019}\natexlab{}.
 \newblock \showarticletitle{I Think, Therefore I Create: Claiming Copyright in the Outputs of Algorithms}.
 \newblock \bibinfo{journal}{\emph{New York University Journal of Intellectual Property \& Entertainment Law (JIPEL)}} \bibinfo{volume}{8}, \bibinfo{number}{2} (\bibinfo{year}{2019}), \bibinfo{pages}{324--375}.
+\newblock
+
+
+\bibitem[Henderson et~al\mbox{.}(2023)]%
+        {henderson2023foundation}
+\bibfield{author}{\bibinfo{person}{Peter Henderson}, \bibinfo{person}{Xuechen Li}, \bibinfo{person}{Dan Jurafsky}, \bibinfo{person}{Tatsunori Hashimoto}, \bibinfo{person}{Mark~A Lemley}, {and} \bibinfo{person}{Percy Liang}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{Foundation models and fair use}.
+\newblock \bibinfo{journal}{\emph{arXiv preprint arXiv:2303.15715}} (\bibinfo{year}{2023}).
 \newblock
 
 
@@ -319,6 +357,14 @@ Retrieved September 25, 2023 from \tempurl}
 \showDOI{\tempurl}
 
 
+\bibitem[Perens(1999)]%
+        {perens1999open}
+\bibfield{author}{\bibinfo{person}{Bruce Perens}.} \bibinfo{year}{1999}\natexlab{}.
+\newblock \showarticletitle{The open source definition}.
+\newblock \bibinfo{journal}{\emph{Open sources: voices from the open source revolution}}  \bibinfo{volume}{1} (\bibinfo{year}{1999}), \bibinfo{pages}{171--188}.
+\newblock
+
+
 \bibitem[Radford et~al\mbox{.}(2019)]%
         {radford2019language}
 \bibfield{author}{\bibinfo{person}{Alec Radford}, \bibinfo{person}{Jeffrey Wu}, \bibinfo{person}{Rewon Child}, \bibinfo{person}{David Luan}, \bibinfo{person}{Dario Amodei}, \bibinfo{person}{Ilya Sutskever}, {et~al\mbox{.}}} \bibinfo{year}{2019}\natexlab{}.
@@ -395,6 +441,17 @@ Retrieved September 25, 2023 from \tempurl}
 \newblock
 \urldef\tempurl%
 \url{https://doi.org/10.18653/v1/2020.emnlp-demos.6}
+\showDOI{\tempurl}
+
+
+\bibitem[Wu et~al\mbox{.}(2017)]%
+        {wu2017analysis}
+\bibfield{author}{\bibinfo{person}{Yuhao Wu}, \bibinfo{person}{Yuki Manabe}, \bibinfo{person}{Tetsuya Kanda}, \bibinfo{person}{Daniel~M German}, {and} \bibinfo{person}{Katsuro Inoue}.} \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{Analysis of license inconsistency in large collections of open source projects}.
+\newblock \bibinfo{journal}{\emph{Empirical Software Engineering (ESE)}}  \bibinfo{volume}{22} (\bibinfo{year}{2017}), \bibinfo{pages}{1194--1222}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1007/s10664-016-9487-8}
 \showDOI{\tempurl}
 
 

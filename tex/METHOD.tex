@@ -1,4 +1,5 @@
 \section{Method}
+\label{sec:method}
 This section is organized around three key questions in the context of ML license analysis: (i) How to determine the corresponding conditions in licenses for certain model reuse mechanisms? (ii) How to capture the dependency structure of a machine learning project? (iii) What types of non-compliance exist in ML projects and how to assess them?
 We will present our solutions to these questions in the following sections.
 
@@ -45,6 +46,7 @@ Therefore, we should design a mechanism to trace these multi-source dependency s
     \caption{Our proposed taxonomy bridging AI activities and license terms based on their result forms.}
     \Description{}
     \label{fig:tax}
+    \vspace{-5mm}
 \end{figure}
 
 %translated, altered, arranged, transformed, or otherwise modified 
@@ -77,6 +79,7 @@ The reason we need this specially-designed tree structure is that works with dif
     \caption{The proposed structure for capturing work dependencies in the context of ML projects with multiple reused components.}
     \Description{}
     \label{fig:stru}
+    \vspace{-5mm}
 \end{figure}
 
 \subsection{License Analysis in ML Projects}
@@ -134,6 +137,7 @@ In the next section, we will present five case studies based on real ML componen
 
 \begin{table}[t]
     \caption{License warnings, errors, restrictions/obligations, and notices assessed by ModelGo in \textcolor{Permissive}{initial phase}, \textcolor{Copyleft}{license determination phase} and license validation phase.}
+    \vspace{-3mm}
     \scriptsize
     \label{tab:analysis}
     \begin{tabular}{|p{3.3cm}|p{4.3cm}|}
@@ -165,7 +169,8 @@ In the next section, we will present five case studies based on real ML componen
 \end{table}
 
 \begin{table}[t]
-    \caption{List of licenses supported by ModelGo, covering over 98\% of licensed models and datasets on Huggingface.}
+    \caption{List of licenses (represented by SPDX short IDs) supported by ModelGo, covering over 98\% of licensed models and datasets on Huggingface.}
+    \vspace{-3mm}
     \scriptsize
     \label{tab:list}
     \begin{tabular}{|p{2.45cm}|p{2.45cm}|p{2.45cm}|}

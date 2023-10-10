@@ -1,4 +1,5 @@
 \section{Background and Related Work}
+\label{sec:related}
 In this section, we present the motivations for this work by introducing the background and prior related studies.
 
 \subsection{Machine Learning Project Licensing}
@@ -42,7 +43,7 @@ The most popular license is Open Responsible AI License (OpenRAIL)~\cite{contrac
 There are 31\% of projects that insist on using unmodified OSS licenses for model licensing, even though these licensing language incurs conceptual ambiguities in the ML context.
 An interesting finding is that, despite their training data being suspected to contain non-public content, the models are declared as free and open work~\cite{henderson2023foundation}.
 
-
+\vspace{-2mm}
 \begin{tcolorbox}
 \textbf{Summary}.
 ML project licenseing exhibit the following characteristics:
@@ -52,21 +53,31 @@ ML project licenseing exhibit the following characteristics:
 There is a need for new methods to assess ML license compliance.
 \end{tcolorbox}
 
+
 % 分歧：自定义license，使用 content license (LayoutLMv3, i2vgen)
 
 \subsection{OSS License Assessment}
-License analysis for OSS projects has been extensively researched.
+License analysis for OSS projects has been extensively researched, but it's relatively unexplored in ML context.
+The research scope and problems of OSS and ML license analysis can be classified into three tiers as shown in Figure~\ref{fig:pyramid}.
 %, which can be divide into code level and software level.
 %The code level mainly focus on the compliance of a single file or lines of code.
 For instance, German \textit{et al.}~\cite{german2010sentence} proposed a sentence-based matching tool to identify the license of code.
 Building on this work, Wu \textit{et al.}~\cite{wu2017analysis} further studied inconsistent changes among code clones through provenance analysis.
-These studies mainly deal with copyright issues at the code line level, which can be mapped to a ML problem: finding the provenance of data sources~\cite{rajbahadur2021can} and modules~\cite{chen2022copy}.
-As shown in Figure~\ref{fig:pyramid}, 
+In addition to license identification~\cite{jaeger2017fossology}, Vendome et al.~\cite{vendome2017machine} proposed a ML-based clustering method to detect license exceptions.
+These studies mainly deal with copyright issues at the code lines level, located in bottom tier of Figure~\ref{fig:pyramid}, which can be mapped to similar ML problems: finding the provenance of data sources~\cite{rajbahadur2021can} or modules~\cite{chen2022copy}.
+However, these OSS tools perform software composition analysis through pattern matching or file scanning~\cite{ombredanne2020free}, which are not suitable to datasets and models that typically lack clear provenance and textual licenses.
 
+Shifting the focus to the middle tier, there are some studies that explore license compatibility and violations in software packages~\cite{mathur2012empirical, wu2015method}. 
+Kapitsaki et al.~\cite{kapitsaki2017automating} used Software Package Data Exchange (SPDX) files to detect conflicts in license compatibility (e.g., GPL-2.0 to GPL-3.0).
+Cui \textit{et al.}~\cite{cui2023empirical} directly extracted terms from license texts using Natural Language Processing (NLP) to analyze license conflicts in OSS projects.
+\textbf{However}, OSS license analysis works exhibit clear limitations when extended to ML projects.
+Firstly, they lack support for dataset and model licenses. For example, RAILs and CC licenses are not listed in the SPDX. 
+Secondly, the mixed use of licenses in current ML projects makes it challenging to interpret license conditions across different frameworks.
+Lastly, these works only consider combinations and links in their analysis, whereas ML reuse involves a nested and iterative workflow with a more complex dependency structure (e.g., fine-tuning, embedding).
 
-% 传统FOSS做license analysis的一些方法， 附加层次图
-SPDX
-Automating the license compatibility process in open source software with SPDX
+Distinct with previous studies, the research scope of our work is located in top and middle tiers.
+we propose a practical tool ModelGo to assess potential license violations and non-granting righs errors in ML context.
+We hope ModelGo can help change the situation of disorganized ML components reusing and licensing, providing insights for constructing compaliant ML systems.
 
 
 \begin{figure}[t]
@@ -75,8 +86,8 @@ Automating the license compatibility process in open source software with SPDX
     \caption{Research scope and problems of ModelGo compare with traditional OSS license analysis.}
     \Description{}
     \label{fig:pyramid}
+    \vspace{-5mm}
 \end{figure}
-
 
 %\subsection{Machine Learning IP Protection}
 % 检测是否transfer knowledge，与本工作不冲突

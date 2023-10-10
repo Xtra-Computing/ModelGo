@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{48}
+\begin{thebibliography}{51}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -237,6 +237,14 @@ Retrieved September 25, 2023 from \tempurl}
 \showDOI{\tempurl}
 
 
+\bibitem[Jaeger et~al\mbox{.}(2017)]%
+        {jaeger2017fossology}
+\bibfield{author}{\bibinfo{person}{Michael~C Jaeger}, \bibinfo{person}{Oliver Fendt}, \bibinfo{person}{Robert Gobeille}, \bibinfo{person}{Maximilian Huber}, \bibinfo{person}{Johannes Najjar}, \bibinfo{person}{Kate Stewart}, \bibinfo{person}{Steffen Weber}, {and} \bibinfo{person}{Andreas Wurl}.} \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{The {FOSSology} project: 10 years of license scanning}.
+\newblock \bibinfo{journal}{\emph{International Free and Open Source Software Law Review}}  \bibinfo{volume}{9} (\bibinfo{year}{2017}), \bibinfo{pages}{9}.
+\newblock
+
+
 \bibitem[Jiang et~al\mbox{.}(2023)]%
         {jiang2023empirical}
 \bibfield{author}{\bibinfo{person}{Wenxin Jiang}, \bibinfo{person}{Nicholas Synovic}, \bibinfo{person}{Matt Hyatt}, \bibinfo{person}{Taylor~R Schorlemmer}, \bibinfo{person}{Rohan Sethi}, \bibinfo{person}{Yung-Hsiang Lu}, \bibinfo{person}{George~K Thiruvathukal}, {and} \bibinfo{person}{James~C Davis}.} \bibinfo{year}{2023}\natexlab{}.
@@ -434,6 +442,16 @@ Retrieved September 25, 2023 from \tempurl}
 \newblock
 
 
+\bibitem[Vendome et~al\mbox{.}(2017)]%
+        {vendome2017machine}
+\bibfield{author}{\bibinfo{person}{Christopher Vendome}, \bibinfo{person}{Mario Linares-V{\'a}squez}, \bibinfo{person}{Gabriele Bavota}, \bibinfo{person}{Massimiliano Di~Penta}, \bibinfo{person}{Daniel German}, {and} \bibinfo{person}{Denys Poshyvanyk}.} \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{Machine learning-based detection of open source license exceptions}. In \bibinfo{booktitle}{\emph{Proceedings of IEEE/ACM 39th International Conference on Software Engineering (ICSE)}}. IEEE, \bibinfo{pages}{118--129}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/ICSE.2017.19}
+\showDOI{\tempurl}
+
+
 \bibitem[Wolf et~al\mbox{.}(2020)]%
         {wolf2020transformers}
 \bibfield{author}{\bibinfo{person}{Thomas Wolf}, \bibinfo{person}{Lysandre Debut}, \bibinfo{person}{Victor Sanh}, \bibinfo{person}{Julien Chaumond}, \bibinfo{person}{Clement Delangue}, \bibinfo{person}{Anthony Moi}, \bibinfo{person}{Pierric Cistac}, \bibinfo{person}{Tim Rault}, \bibinfo{person}{R{\'e}mi Louf}, \bibinfo{person}{Morgan Funtowicz}, {et~al\mbox{.}}} \bibinfo{year}{2020}\natexlab{}.
@@ -441,6 +459,16 @@ Retrieved September 25, 2023 from \tempurl}
 \newblock
 \urldef\tempurl%
 \url{https://doi.org/10.18653/v1/2020.emnlp-demos.6}
+\showDOI{\tempurl}
+
+
+\bibitem[Wu et~al\mbox{.}(2015)]%
+        {wu2015method}
+\bibfield{author}{\bibinfo{person}{Yuhao Wu}, \bibinfo{person}{Yuki Manabe}, \bibinfo{person}{Tetsuya Kanda}, \bibinfo{person}{Daniel~M German}, {and} \bibinfo{person}{Katsuro Inoue}.} \bibinfo{year}{2015}\natexlab{}.
+\newblock \showarticletitle{A method to detect license inconsistencies in large-scale open source projects}. In \bibinfo{booktitle}{\emph{Proceedings of IEEE/ACM 12th Working Conference on Mining Software Repositories (MSR)}}. IEEE, \bibinfo{pages}{324--333}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/MSR.2015.37}
 \showDOI{\tempurl}
 
 

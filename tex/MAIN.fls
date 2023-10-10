@@ -1537,13 +1537,16 @@ INPUT ./INTRODUCTION.tex
 INPUT INTRODUCTION.tex
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/libertine/LinLibertineT-tlf-t1.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/libertine/LinLibertineT-tlf-t1.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/libertine/LinLibertineT-tlf-t1.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/vf/public/libertine/LinLibertineT-tlf-t1.vf
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/libertine/LinLibertineT-tlf-t1--base.tfm
+INPUT /usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/libertine/lbtn_76gpa5.enc
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/vf/public/libertine/LinBiolinumTB-tlf-t1.vf
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/libertine/LinBiolinumTB-tlf-t1--base.tfm
-INPUT /usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/libertine/lbtn_25tcsq.enc
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/vf/public/libertine/LinLibertineT-tlf-t1.vf
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/libertine/LinLibertineT-tlf-t1--base.tfm
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/libertine/lbtn_76gpa5.enc
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/vf/public/libertine/LinLibertineTB-tlf-t1.vf
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/libertine/LinLibertineTB-tlf-t1--base.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/libertine/lbtn_nh77jq.enc
@@ -1573,6 +1576,10 @@ INPUT BACKGROUND.tex
 INPUT ./BACKGROUND.tex
 INPUT ./BACKGROUND.tex
 INPUT BACKGROUND.tex
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/libertine/LinBiolinumT-tlf-t1.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/libertine/LinBiolinumT-tlf-t1.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/vf/public/libertine/LinBiolinumT-tlf-t1.vf
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/libertine/LinBiolinumT-tlf-t1--base.tfm
 INPUT ./fig/pyramid.pdf
 INPUT ./fig/pyramid.pdf
 INPUT fig/pyramid.pdf
@@ -1585,10 +1592,6 @@ INPUT METHOD.tex
 INPUT ./METHOD.tex
 INPUT ./METHOD.tex
 INPUT METHOD.tex
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/libertine/LinBiolinumT-tlf-t1.tfm
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/libertine/LinBiolinumT-tlf-t1.tfm
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/vf/public/libertine/LinBiolinumT-tlf-t1.vf
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/libertine/LinBiolinumT-tlf-t1--base.tfm
 INPUT ./fig/taxonomy.pdf
 INPUT ./fig/taxonomy.pdf
 INPUT fig/taxonomy.pdf
@@ -1599,7 +1602,6 @@ INPUT ./fig/structure.pdf
 INPUT fig/structure.pdf
 INPUT ./fig/structure.pdf
 INPUT ./fig/structure.pdf
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/libertine/LinLibertineT-tlf-t1.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/libertine/LinLibertineT-tlf-ot1.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/newtx/nxlmi7.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/newtx/ntxsy7.tfm
@@ -1628,8 +1630,6 @@ INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/libertine/LinLibertine
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/libertine/LinLibertineTB-tlf-t1.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/vf/public/libertine/LinLibertineTB-tlf-t1.vf
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/libertine/LinLibertineTB-tlf-t1--base.tfm
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/vf/public/libertine/LinLibertineT-tlf-t1.vf
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/libertine/LinLibertineT-tlf-t1--base.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/libertine/LinLibertineTI-tlf-t1.tfm
 INPUT ./fig/case2.pdf
 INPUT ./fig/case2.pdf

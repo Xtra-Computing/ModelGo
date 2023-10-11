@@ -1,0 +1,142 @@
+\section{Part}
+\label{apdx:A}
+
+Table~\ref{tab:MLP}
+
+\begin{table*}[t]
+  \caption{Summary of licensing details for ML projects with over 1K likes on Huggingface (Accessed on October 11, 2023). }
+  \footnotesize
+  \label{tab:MLP}
+  \begin{tabular}{|p{2.1cm}|p{1.6cm}|p{2cm}|p{2.75cm}|p{3cm}|p{1.7cm}|p{2cm}|}
+      \hline
+      \rowcolor[gray]{.8}
+      \textbf{ML Project} & \textbf{Task} & \textbf{Data License} & \textbf{Software License} & \textbf{Model License} & \textbf{Dataset} & \textbf{Risk Resource} \\ \hline
+      
+      Stable Diffusion v1-5 & Text to Image & CC-BY-4.0 & CreativeML-OpenRAIL-M & CreativeML-OpenRAIL-M & LAION-5B & Common Crawl \\ \hline
+      
+      BLOOM & Text Generation & \textit{Mixture} & \textit{Unknown} & BigScience-BLOOM-RAIL-1.0 & \textit{Crowdsourced} & Common Crawl, \newline Wikipedia, etc. \\ \hline
+
+      OrangeMixs & Text to Image & \textit{Mixture} & \textit{Unknown} & CreativeML-OpenRAIL-M & \textit{Crowdsourced} & Danbooru \\ \hline
+
+      ControlNet & Text to Image &  \textit{Unknown} & Apache-2.0 & OpenRAIL & \textit{Unknown} & n/a \\ \hline
+
+      Openjourney & Text to Image &  CC-BY-NC-4.0 & \textit{Unknown} & CreativeML-OpenRAIL-M & Midjourney Gen & Midjourney Gen \\ \hline
+
+      ChatGLM-6B & Text Generation &  \textit{Mixture} & Apache-2.0 & \textit{Custom} & the Pile, Wudao, \newline \textit{Crowdsourced} & PubMed,  Wikipedia, \newline arXiv, GitHub, etc. \\ \hline
+
+      Llama2 & Text Generation &  \textit{Unknown} & Llama2 Community License & Llama2 Community License & \textit{Unknown} & n/a \\ \hline
+
+      StarCoder & Text Generation &  \textit{Mixture} & Apache-2.0 & BigCode-OpenRAIL-M & The Stack & none \\ \hline
+
+      Falcon-40B & Text Generation & ODC-By & Apache-2.0 & Apache-2.0 & RefinedWeb & Wikipedia, Reddit, \newline StackOverflow, etc. \\ \hline
+
+      Waifu Diffusion & Text to Image & \textit{Mixture} & \textit{Unknown} & CreativeML-OpenRAIL-M & \textit{Unknown} & n/a \\ \hline
+
+      Dolly-v2-12B & Text Generation & CC-BY-SA-3.0\&4.0 & MIT & MIT & databricks-dolly\newline-15k, the Pile & PubMed,  Wikipedia, \newline arXiv, GitHub, etc. \\ \hline
+
+      Dreamlike Photoreal & Text to Image & \textit{Unknown} & \textit{Unknown} & \textit{Modified} CreativeML-\newline OpenRAIL-M & \textit{Unknown} & n/a \\ \hline
+
+      Counterfeit & Text to Image & \textit{Unknow} & \textit{Unknown} & CreativeML-OpenRAIL-M & \textit{Unknown} & n/a \\ \hline
+
+      GPT-2 & Text Generation & \textit{Mixture} & \textit{Modified} MIT & \textit{Modified} MIT & \textit{Crowdsourced} & WordPress, GitHub, \newline wikiHow, IMDb, etc. \\ \hline
+
+      GPT-J-6B & Text Generation & \textit{Mixture} & Apache-2.0 & Apache-2.0 & the Pile & PubMed,  Wikipedia, \newline arXiv, GitHub, etc. \\ \hline
+
+      LLaMA-7B & Text Generation & \textit{Mixture} & \textit{Custom} & \textit{Custom} & \textit{Crowdsourced} & GitHub, arXiv, etc. \\ \hline
+
+      BERT & Fill Mask & \textit{Mixture} & Apache-2.0 & Apache-2.0 & Book Corpus, \newline Wikipedia (en) & Wikipedia (en) \\ \hline
+
+      Whisper & ASR & \textit{Unknown} & MIT & MIT & \textit{Unknown} & n/a \\ \hline
+
+      MPT & Text Generation & \textit{Mixture} & Apache-2.0 & Apache-2.0 & \textit{Crowdsourced} & Common Crawl, \newline Wikipedia, etc. \\ \hline
+
+      Mistral-7B & Text Generation & \textit{Unknow} & Apache-2.0 & Apache-2.0 & \textit{Unknow} & n/a \\ \hline
+  
+  % <TOTAL>
+  % Data License: All Permissive(2); Risk of Copyleft/Proprietary(11); Custom/Modified(0); Unknown(6);
+  % Software License: Permissive(11); Risk of Copyleft/Proprietary(n/a); Custom/Modified(2); Unknown(6);
+  % Model License: Permissive(15); Risk of Copyleft/Proprietary(n/a); Custom/Modified(4); Unknown(0);
+
+  \end{tabular}
+\end{table*}
+
+Table~\ref{tab:stats}
+
+\begin{table*}[]
+    \caption{List of Huggingface supported licenses and number of works, with ModelGo supported licenses highlighted in BOLD. Note that many works do not explicitly indicate their license version. (Accessed on October 11, 2023). }
+    \footnotesize
+    \label{tab:stats}
+    \begin{tabular}{|ll||ll|}
+    \hline
+    \rowcolor[gray]{.8} 
+    \multicolumn{2}{|c||}{Model Licenses (Total: 355,150)}     & \multicolumn{2}{c|}{Dataset Licenses (Total: 69,277)}   \\ \hline
+    \multicolumn{1}{|l|}{License Name} & \# of Works & \multicolumn{1}{l|}{License Name} & \# of Works \\ \hline
+    \multicolumn{1}{|l|}{\textbf{Apache-2.0}} & 46,758 & \multicolumn{1}{l|}{MIT} & 5,415 \\ \hline
+    \multicolumn{1}{|l|}{\textbf{MIT}} & 21,365 & \multicolumn{1}{l|}{Apache-2.0} & 3,026 \\ \hline %3020+6
+    \multicolumn{1}{|l|}{OpenRAIL} & 17,760 & \multicolumn{1}{l|}{OpenRAIL} & 1,639 \\ \hline
+    \multicolumn{1}{|l|}{\textbf{CreativeML-OpenRAIL-M}} & 12,059 & \multicolumn{1}{l|}{\textbf{CC-BY-4.0}} & 1,355 \\ \hline
+    \multicolumn{1}{|l|}{other} & 6,521 & \multicolumn{1}{l|}{other} & 1,257 \\ \hline
+    \multicolumn{1}{|l|}{CC-BY-NC-4.0} & 2,867 & \multicolumn{1}{l|}{\textbf{CC-BY-SA-4.0}} & 609 \\ \hline
+    \multicolumn{1}{|l|}{CC-BY-4.0} & 2,676 & \multicolumn{1}{l|}{AFL-3.0} & 515 \\ \hline
+    \multicolumn{1}{|l|}{\textbf{AFL-3.0}} & 2,111 & \multicolumn{1}{l|}{CC} & 444 \\ \hline
+    \multicolumn{1}{|l|}{\textbf{Llama2}} & 1,776 & \multicolumn{1}{l|}{\textbf{CC0-1.0}} & 435 \\ \hline
+    \multicolumn{1}{|l|}{CC-BY-NC-SA-4.0} & 1,312 & \multicolumn{1}{l|}{\textbf{CC-BY-NC-4.0}} & 385 \\ \hline
+    \multicolumn{1}{|l|}{\textbf{GPL-3.0}} & 1,080 & \multicolumn{1}{l|}{\textbf{CC-BY-NC-SA-4.0}} & 378 \\ \hline
+    \multicolumn{1}{|l|}{CC-BY-SA-4.0} & 959 & \multicolumn{1}{l|}{CC-BY-SA-3.0} & 377 \\ \hline
+    \multicolumn{1}{|l|}{\textbf{OpenRAIL++}} & 667 & \multicolumn{1}{l|}{CreativeML-OpenRAIL-M} & 290 \\ \hline
+    \multicolumn{1}{|l|}{CC} & 625 & \multicolumn{1}{l|}{GPL-3.0} & 266 \\  \hline
+    \multicolumn{1}{|l|}{\textbf{BigScience-OpenAI-M}} & 596 & \multicolumn{1}{l|}{\textbf{CC-BY-NC-ND-4.0}} & 190 \\ \hline
+    \multicolumn{1}{|l|}{\textbf{Artistic-2.0}} & 579 & \multicolumn{1}{l|}{BigScience-OpenRAIL-M} & 114 \\ \hline
+    \multicolumn{1}{|l|}{\textbf{BSD-3-Clause}} & 525 & \multicolumn{1}{l|}{CC-BY-3.0} & 94 \\ \hline
+    \multicolumn{1}{|l|}{\textbf{BigScience-BLOOM-RAIL-1.0}} & 422 & \multicolumn{1}{l|}{CC-BY-2.0} & 91 \\ \hline
+    \multicolumn{1}{|l|}{\textbf{WTFPL}} & 331 & \multicolumn{1}{l|}{Artistic-2.0} & 91 \\ \hline
+    \multicolumn{1}{|l|}{CC-BY-SA-3.0} & 288 & \multicolumn{1}{l|}{ODC-by} & 80 \\ \hline
+    \multicolumn{1}{|l|}{CC0-1.0} & 270 & \multicolumn{1}{l|}{WTFPL} & 80 \\ \hline
+    \multicolumn{1}{|l|}{\textbf{BigCode-OpenRAIL-M}} & 251 & \multicolumn{1}{l|}{Unlicense} & 68 \\ \hline
+    \multicolumn{1}{|l|}{\textbf{AGPL-3.0}} & 237 & \multicolumn{1}{l|}{Llama2} & 63 \\ \hline
+    \multicolumn{1}{|l|}{\textbf{Unlicense}} & 199 & \multicolumn{1}{l|}{BSD} & 62 \\ \hline
+    \multicolumn{1}{|l|}{CC-BY-NC-ND-4.0} & 194 & \multicolumn{1}{l|}{GPL} & 54 \\ \hline
+    \multicolumn{1}{|l|}{GPL} & 173 & \multicolumn{1}{l|}{\textbf{C-UDA}} & 49 \\ \hline
+    \multicolumn{1}{|l|}{BSD} & 155 & \multicolumn{1}{l|}{AGPL-3.0} & 46 \\ \hline
+    \multicolumn{1}{|l|}{CC-BY-3.0} & 104 & \multicolumn{1}{l|}{CC-BY-NC-SA-3.0} & 38 \\ \hline
+    \multicolumn{1}{|l|}{GPL-2.0} & 84 & \multicolumn{1}{l|}{ODBL} & 35 \\ \hline
+    \multicolumn{1}{|l|}{CC-BY-2.0} & 80 & \multicolumn{1}{l|}{\textbf{GFDL}} & 34 \\ \hline
+    \multicolumn{1}{|l|}{BSL-1.0} & 75 & \multicolumn{1}{l|}{BSD-3-Clause} & 34 \\ \hline
+    \multicolumn{1}{|l|}{\textbf{BSD-2-Clause}} & 74 & \multicolumn{1}{l|}{\textbf{CC-BY-ND-4.0}} & 32 \\ \hline
+    \multicolumn{1}{|l|}{\textbf{LGPL-3.0}} & 65 & \multicolumn{1}{l|}{CC-BY-NC-3.0} & 28 \\ \hline
+    \multicolumn{1}{|l|}{C-UDA} & 57 & \multicolumn{1}{l|}{BigScience-BLOOM-RAIL-1.0} & 28 \\ \hline
+    \multicolumn{1}{|l|}{CC-BY-NC-2.0} & 48 & \multicolumn{1}{l|}{GPL-2.0} & 26 \\ \hline
+    \multicolumn{1}{|l|}{CC-BY-NC-3.0} & 45 & \multicolumn{1}{l|}{OpenRAIL++} & 24 \\ \hline
+    \multicolumn{1}{|l|}{\textbf{OSL-3.0}} & 44 & \multicolumn{1}{l|}{CC-BY-NC-2.0} & 21 \\ \hline
+    \multicolumn{1}{|l|}{\textbf{ECL-2.0}} & 35 & \multicolumn{1}{l|}{BigCode-OpenRAIL-M} & 20 \\ \hline
+    \multicolumn{1}{|l|}{PDDL} & 35 & \multicolumn{1}{l|}{\textbf{PDDL}} & 20 \\ \hline
+    \multicolumn{1}{|l|}{\textbf{BSD-3-Clause-Clear}} & 28 & \multicolumn{1}{l|}{BSD-2-Clause} & 16 \\ \hline
+    \multicolumn{1}{|l|}{CC-BY-ND-4.0} & 27 & \multicolumn{1}{l|}{LGPL-3.0} & 15 \\ \hline
+    \multicolumn{1}{|l|}{GFDL} & 26 & \multicolumn{1}{l|}{CDLA-Sharing-1.0} & 14 \\ \hline
+    \multicolumn{1}{|l|}{Ms-PL} & 26 & \multicolumn{1}{l|}{CC-BY-2.5} & 12 \\ \hline
+    \multicolumn{1}{|l|}{Zlib} & 25 & \multicolumn{1}{l|}{Ms-PL} & 11 \\ \hline
+    \multicolumn{1}{|l|}{LGPL} & 21 & \multicolumn{1}{l|}{CDLA-Permissive-2.0} & 11 \\ \hline
+    \multicolumn{1}{|l|}{DeepFloyd-IF-License} & 19 & \multicolumn{1}{l|}{CC-BY-NC-SA-2.0} & 10 \\ \hline
+    \multicolumn{1}{|l|}{CC-BY-NC-SA-3.0} & 19 & \multicolumn{1}{l|}{MPL-2.0} & 10 \\ \hline
+    \multicolumn{1}{|l|}{LGPL-LR} & 17 & \multicolumn{1}{l|}{EUPL-1.1} & 10 \\ \hline
+    \multicolumn{1}{|l|}{MPL-2.0} & 16 & \multicolumn{1}{l|}{CC-BY-NC-ND-3.0} & 10 \\ \hline
+    \multicolumn{1}{|l|}{ISC} & 15 & \multicolumn{1}{l|}{BSL-1.0} & 10 \\ \hline
+    \multicolumn{1}{|l|}{CC-BY-NC-SA-2.0} & 15 & \multicolumn{1}{l|}{BSD-3-Clause-Clear} & 8 \\ \hline
+    \multicolumn{1}{|l|}{ODBL} & 15 & \multicolumn{1}{l|}{LGPL} & 6 \\ \hline
+    \multicolumn{1}{|l|}{CC-BY-2.0} & 14 & \multicolumn{1}{l|}{ECL-2.0} & 6 \\ \hline
+    \multicolumn{1}{|l|}{CC-BY-NC-ND-3.0} & 14 & \multicolumn{1}{l|}{OSL-3.0} & 5 \\ \hline
+    \multicolumn{1}{|l|}{ODB-by} & 13 & \multicolumn{1}{l|}{ISC} & 5 \\ \hline
+    \multicolumn{1}{|l|}{NCSA} & 9 & \multicolumn{1}{l|}{\textbf{LGPL-LR}} & 4 \\ \hline
+    \multicolumn{1}{|l|}{EPL-2.0} & 9 & \multicolumn{1}{l|}{PostgreSQL} & 3 \\ \hline
+    \multicolumn{1}{|l|}{EUPL-1.1} & 9 & \multicolumn{1}{l|}{Zlib} & 3 \\ \hline
+    \multicolumn{1}{|l|}{CDLA-Sharing-1.0} & 7 & \multicolumn{1}{l|}{EPL-2.0} & 2 \\ \hline
+    \multicolumn{1}{|l|}{\textbf{LGPL-2.1}} & 6 & \multicolumn{1}{l|}{OFL-1.1} & 2 \\ \hline
+    \multicolumn{1}{|l|}{PostgreSQL} & 5 & \multicolumn{1}{l|}{LGPL-2.1} & 1 \\ \hline
+    \multicolumn{1}{|l|}{LPPL-1.3c} & 5 & \multicolumn{1}{l|}{CDLA-Permissive-1.0} & 1 \\ \hline
+    \multicolumn{1}{|l|}{EPL-1.0} & 4 & \multicolumn{1}{l|}{CC-BY-2.0} & 1 \\ \hline
+    \multicolumn{1}{|l|}{OFL-1.1} & 3 & \multicolumn{1}{l|}{NCSA} & 1 \\ \hline
+    \multicolumn{1}{|l|}{TII-Falcon-LLM} & 2 & \multicolumn{1}{l|}{DeepFloyd-IF-License} & 1 \\ \hline
+    \multicolumn{1}{|l|}{CDLA-Permissive-2.0} & 2 & \multicolumn{1}{l|}{EPL-1.0} & 1 \\ \hline
+    \multicolumn{1}{|l|}{CDLA-Permissive-1.0} & 2 & \multicolumn{1}{l|}{LPPL-1.3c} & 1 \\ \hline
+    \end{tabular}
+\end{table*}

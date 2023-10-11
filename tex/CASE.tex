@@ -3,15 +3,15 @@
 An ideal practice of ModelGo is to assess real-world ML projects and detect their potential license compliance issues. 
 However, this can be challenging in practice due to three present situations:
 
-(1) Prevalent Licensing Disorganization in ML Projects: Many ML projects lack organized licensing information, making it difficult to ascertain the licenses of individual components.
+(1) Prevalent Licensing Disorganization: Many ML projects lack publicly available organized licensing information, making it difficult to ascertain the licenses of individual components.
 
 (2) Lack of Development Lifecycle Information for ML Reusing: ML reusing often occurs without a clear record, making it hard to trace the origins and licenses of components used.
 
-(3) Non-compliance within Datasets: Crowdsourced datasets often suffer from license non-compliance issues~\cite{rajbahadur2021can}, making the licenses (usually permissive) declared by dataset collectors invalid.
+(3) Non-compliance within Datasets: Crowdsourced datasets often suffer from license non-compliance issues~\cite{rajbahadur2021can}, making the licenses (usually permissive) declared by dataset publishers invalid.
 
 Consequently, directly analyzing real-world ML projects may result in uncertainty, over-optimistic results, and often fail to detect any license conflicts.
 Therefore, to validate ModelGo, we have designed five ML scenarios rendered using 15 common data sources and 11 models that cover 5 modalities and 7 tasks, respectively.
-Table~\ref{tab:works} shows the specifications of the involved data sources and models, whose licenses include copyleft, permissive, public domain, and no public license~\footnote{Some data sources contain crowdsourced content with multiple licenses, and we selected a non-public domain license among them.}.
+Table~\ref{tab:works} shows the specifications of the involved data sources and models, whose licenses include copyleft, permissive, public domain, and no public license\footnote{Some data sources contain crowdsourced content with multiple licenses, and we selected a non-public domain license among them.}.
 Furthermore, our case studies can cover all events listed in Table~\ref{tab:analysis}, and the their details and findings are provided in the following section.
 
 It's worth noting that, as a license compliance analysis tool, ModelGo's goal is to report potential legal risks in ML projects related to licenses.
@@ -19,7 +19,8 @@ It is not designed to address legal interpretation issues such as copyrightabili
 
 
 \begin{table}[t]
-    \caption{Specifications of AI components used in case studies, which include \textcolor{Copyleft}{Copyleft License}, \textcolor{Permissive}{Permissive License}, \textcolor{Public}{Public Domain Licens} and Not-Public License.}
+    \caption{Specifications of AI components used in case studies, which include \textcolor{Copyleft}{Copyleft License}, \textcolor{Permissive}{Permissive License}, \textcolor{Public}{Public Domain License} and Not-Public License.}
+    \vspace{-3mm}
     \footnotesize
     \label{tab:works}
     \begin{tabular}{|p{1.6cm}|p{3cm}|p{0.6cm}|p{1.7cm}|}
@@ -65,6 +66,7 @@ It is not designed to address legal interpretation issues such as copyrightabili
         I2VGen-XL & CC-BY-NC-ND-4.0 & & Image to Video  \\ \hline
 
         \end{tabular}
+        \vspace{-2mm}
 \end{table}
 
 \subsection{CASE \Romannum{1} : Corpus Combination}
@@ -72,7 +74,7 @@ It is not designed to address legal interpretation issues such as copyrightabili
 \begin{figure}[h]
     \centering
     \includegraphics[width=\linewidth]{fig/case1.pdf}
-    \caption{CASE \Romannum{1}: Corpus Combination. (a) Example of copyleft proliferation rules ; (b) Example of LGPL-LR exemption and non-public license. AI Activities: \boxed{\text{E}}mbed, \boxed{\text{C}}ombine.}
+    \caption{CASE \Romannum{1}: Corpus Combination. AI Activities: \boxed{\text{E}}mbed, \boxed{\text{C}}ombine.}
     \Description{}
     \label{fig:case1}
 \end{figure}
@@ -117,7 +119,7 @@ Based on our assessment, using CC-licensed content (including CC ShareAlike) car
 \begin{figure}[h]
     \centering
     \includegraphics[width=\linewidth]{fig/case2.pdf}
-    \caption{CASE \Romannum{2}: Mixture of Experts. (a) Source code disclosure of GPLed work; (b) Sharing work under CC NoDerivs. AI Activities: \boxed{\text{T}}rain, \boxed{\text{M}}oE.}
+    \caption{CASE \Romannum{2}: Mixture of Experts. AI Activities: \boxed{\text{T}}rain, \boxed{\text{M}}oE.}
     \Description{}
     \label{fig:case2}
 \end{figure}
@@ -146,7 +148,7 @@ However, this disorganization of ML projects' licensing has a negative effect on
 
 \begin{tcolorbox} 
 \textbf{Findings 2}: Both OSS and CC licenses lack definitions and corresponding limitations related to model training, leaving freedom to use the trained results. 
-However, responsible AI licenses provide comprehensive definitions for AI activities and copyleft-style restrictions, making their derivatives not GPL-compatible.
+However, RAILs provide comprehensive definitions for AI activities and copyleft-style restrictions, making their derivatives not GPL-compatible.
 \end{tcolorbox}
 
 \subsection{CASE \Romannum{3} : Generation Pipeline}
@@ -170,10 +172,11 @@ However, there is one restriction from OpenRAIL-M.
 The AI model license clearly defines the conditions for AI activities and applies copyleft-style restrictions to its licensed work. 
 Therefore, once AI model licensed components are used in ML projects, all subsequent work should comply with these user behavioral restrictions, which can potentially lead to the final work becoming closed source~\cite{greenbaum2016the}.
 
+%\vspace{-2mm}
 \begin{tcolorbox} 
 % Responsible AI 的 copyleft use behavioral 问题：历史累积 full spectrum
 \textbf{Findings 3}: Leveraging generative models can bypass the no-sharing conditions of CC NoDerivs licenses and making the generated content almost ungoverned.
-However, if responsible AI licensed works are involved, the content should comply with their restrictions, potentially leading to further GPL-compatibility issues.
+However, if RAIL-licensed works are involved, the content should comply with their restrictions, potentially leading to further GPL-compatibility issues.
 \end{tcolorbox}
 
 \subsection{CASE \Romannum{4} : Knowledge Transfer and Fusion}

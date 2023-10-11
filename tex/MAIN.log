@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.18)  11 OCT 2023 00:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.18)  11 OCT 2023 22:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1116,23 +1116,14 @@ LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
 (Font)              scaled to size 9.0pt on input line 235.
  (./INTRODUCTION.tex
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 7.3pt on input line 12.
+(Font)              scaled to size 7.3pt on input line 11.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 5.5pt on input line 12.
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[][] []\T1/LinuxLibertineT-TLF/m/n/7 (+20) https://creativecommons.org/licenses/| [] []https://openjourney.art/|
- []
-
+(Font)              scaled to size 5.5pt on input line 11.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 6.0pt on input line 33.
-[1.1{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/libertine/lbtn_76gpa5.enc}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}
+ [1.1{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/libertine/lbtn_76gpa5.enc}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}
 
 {/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/libertine/lbtn_nh77jq.enc}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/libertine/lbtn_naooyc.enc}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/libertine/lbtn_7grukw.enc}]) (./BACKGROUND.tex
-
-LaTeX Warning: Reference `tab:MLP' on page ii undefined on input line 8.
-
-
 Overfull \vbox (5.38774pt too high) has occurred while \output is active []
 
 
@@ -1146,7 +1137,7 @@ LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
 [2.2]
 
 pdfTeX warning: pdflatex (file ./fig/pyramid.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<fig/pyramid.pdf, id=209, 247.66052pt x 98.88544pt>
+<fig/pyramid.pdf, id=219, 247.66052pt x 98.88544pt>
 File: fig/pyramid.pdf Graphic file (type pdf)
 <use fig/pyramid.pdf>
 Package pdftex.def Info: fig/pyramid.pdf  used on input line 85.
@@ -1154,7 +1145,7 @@ Package pdftex.def Info: fig/pyramid.pdf  used on input line 85.
 ) (./METHOD.tex [3.3 <./fig/pyramid.pdf>]
 
 pdfTeX warning: pdflatex (file ./fig/taxonomy.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<fig/taxonomy.pdf, id=258, 258.38596pt x 198.62486pt>
+<fig/taxonomy.pdf, id=269, 258.38596pt x 198.62486pt>
 File: fig/taxonomy.pdf Graphic file (type pdf)
 <use fig/taxonomy.pdf>
 Package pdftex.def Info: fig/taxonomy.pdf  used on input line 45.
@@ -1162,7 +1153,7 @@ Package pdftex.def Info: fig/taxonomy.pdf  used on input line 45.
 
 
 pdfTeX warning: pdflatex (file ./fig/structure.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<fig/structure.pdf, id=260, 225.51859pt x 102.94148pt>
+<fig/structure.pdf, id=271, 225.51859pt x 102.94148pt>
 File: fig/structure.pdf Graphic file (type pdf)
 <use fig/structure.pdf>
 Package pdftex.def Info: fig/structure.pdf  used on input line 78.
@@ -1176,105 +1167,104 @@ LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
 (Font)              scaled to size 6.0pt on input line 147.
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--181
+Underfull \hbox (badness 10000) in paragraph at lines 181--182
 \T1/LinuxLibertineT-TLF/m/n/6 (+20) BSD-2-Clause, Artistic-2.0,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 182--183
+Underfull \hbox (badness 10000) in paragraph at lines 183--184
 []|\T1/LinuxLibertineT-TLF/m/n/6 (+20) CC0-1.0, CC-BY-4.0, CC-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 182--183
+Underfull \hbox (badness 10000) in paragraph at lines 183--184
 \T1/LinuxLibertineT-TLF/m/n/6 (+20) BY-SA-4.0, CC-BY-NC-4.0,
  []
 
 
-Underfull \hbox (badness 2401) in paragraph at lines 182--183
+Underfull \hbox (badness 2401) in paragraph at lines 183--184
 \T1/LinuxLibertineT-TLF/m/n/6 (+20) CC-BY-ND-4.0, CC-BY-NC-
  []
 
 
-Underfull \hbox (badness 7944) in paragraph at lines 182--183
+Underfull \hbox (badness 7944) in paragraph at lines 183--184
 \T1/LinuxLibertineT-TLF/m/n/6 (+20) ND-4.0, CC-BY-NC-SA-4.0,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 182--183
+Underfull \hbox (badness 10000) in paragraph at lines 183--184
 \T1/LinuxLibertineT-TLF/m/n/6 (+20) PDDL, C-UDA, LGPL-LR,
  []
 
 
-Underfull \hbox (badness 7814) in paragraph at lines 184--185
+Underfull \hbox (badness 7814) in paragraph at lines 185--186
 []|\T1/LinuxLibertineT-TLF/m/n/6 (+20) OpenRAIL++, CreativeML-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 184--185
+Underfull \hbox (badness 10000) in paragraph at lines 185--186
 \T1/LinuxLibertineT-TLF/m/n/6 (+20) OpenRAIL-M, BigScience-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 184--185
+Underfull \hbox (badness 10000) in paragraph at lines 185--186
 \T1/LinuxLibertineT-TLF/m/n/6 (+20) BLOOM-RAIL-1.0, Llama2,
  []
 
 ) (./CASE.tex
-Underfull \vbox (badness 1571) has occurred while \output is active []
-
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 7.0pt on input line 28.
-
+(Font)              scaled to size 7.0pt on input line 29.
+ [5.5]
 
 pdfTeX warning: pdflatex (file ./fig/case1.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<fig/case1.pdf, id=340, 253.65729pt x 147.63556pt>
+<fig/case1.pdf, id=360, 253.59494pt x 147.45468pt>
 File: fig/case1.pdf Graphic file (type pdf)
 <use fig/case1.pdf>
-Package pdftex.def Info: fig/case1.pdf  used on input line 74.
-(pdftex.def)             Requested size: 241.14749pt x 140.35435pt.
+Package pdftex.def Info: fig/case1.pdf  used on input line 76.
+(pdftex.def)             Requested size: 241.14749pt x 140.21613pt.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 7.3pt on input line 75.
+(Font)              scaled to size 7.3pt on input line 77.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 5.5pt on input line 75.
-[5.5]
+(Font)              scaled to size 5.5pt on input line 77.
+
+Underfull \hbox (badness 2856) in paragraph at lines 77--77
+[]\T1/LinuxLibertineT-TLF/b/n/9 (+20) Figure 4: |CASE I: Cor-pus Com-bi-na-tion. AI Ac-tiv-i-ties:
+ []
+
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
-(Font)              scaled to size 7.0pt on input line 98.
+(Font)              scaled to size 7.0pt on input line 100.
 
 
 pdfTeX warning: pdflatex (file ./fig/case2.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<fig/case2.pdf, id=361, 254.71376pt x 125.31609pt>
+<fig/case2.pdf, id=369, 254.13895pt x 123.9027pt>
 File: fig/case2.pdf Graphic file (type pdf)
 <use fig/case2.pdf>
-Package pdftex.def Info: fig/case2.pdf  used on input line 119.
-(pdftex.def)             Requested size: 241.14749pt x 118.64612pt.
+Package pdftex.def Info: fig/case2.pdf  used on input line 121.
+(pdftex.def)             Requested size: 241.14749pt x 117.57452pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [6.6 <./fig/case1.pdf>]
 
 pdfTeX warning: pdflatex (file ./fig/case3.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<fig/case3.pdf, id=490, 249.03047pt x 54.34132pt>
+<fig/case3.pdf, id=501, 249.03047pt x 54.34132pt>
 File: fig/case3.pdf Graphic file (type pdf)
 <use fig/case3.pdf>
-Package pdftex.def Info: fig/case3.pdf  used on input line 156.
+Package pdftex.def Info: fig/case3.pdf  used on input line 158.
 (pdftex.def)             Requested size: 241.14749pt x 52.62393pt.
 
-Underfull \hbox (badness 1960) in paragraph at lines 157--157
+Underfull \hbox (badness 1960) in paragraph at lines 159--159
 []\T1/LinuxLibertineT-TLF/b/n/9 (+20) Figure 6: |CASE III: Gen-er-a-tion Pipeline. AI Ac-tiv-i-ties:
  []
 
 
-LaTeX Warning: Reference `tab:MLP' on page vii undefined on input line 162.
-
-
 
 pdfTeX warning: pdflatex (file ./fig/case4.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<fig/case4.pdf, id=492, 253.37154pt x 125.74818pt>
+<fig/case4.pdf, id=504, 252.40808pt x 125.74278pt>
 File: fig/case4.pdf Graphic file (type pdf)
 <use fig/case4.pdf>
-Package pdftex.def Info: fig/case4.pdf  used on input line 183.
-(pdftex.def)             Requested size: 241.14749pt x 119.6865pt.
+Package pdftex.def Info: fig/case4.pdf  used on input line 186.
+(pdftex.def)             Requested size: 241.14749pt x 120.13225pt.
 [7.7 <./fig/case2.pdf> <./fig/case3.pdf
 
 pdfTeX warning: pdflatex (file ./fig/case3.pdf): PDF inclusion: multiple pdfs with page group included in a single page
@@ -1284,73 +1274,81 @@ pdfTeX warning: pdflatex (file ./fig/case4.pdf): PDF inclusion: multiple pdfs wi
 >]
 
 pdfTeX warning: pdflatex (file ./fig/case5.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<fig/case5.pdf, id=786, 235.24646pt x 93.57881pt>
+<fig/case5.pdf, id=797, 235.24646pt x 93.57881pt>
 File: fig/case5.pdf Graphic file (type pdf)
 <use fig/case5.pdf>
-Package pdftex.def Info: fig/case5.pdf  used on input line 220.
+Package pdftex.def Info: fig/case5.pdf  used on input line 223.
 (pdftex.def)             Requested size: 241.14749pt x 95.9303pt.
 ) (./MAIN.bbl
-LaTeX Info: Redefining \tempurl on input line 64.
-LaTeX Info: Redefining \tempurl on input line 75.
+LaTeX Info: Redefining \tempurl on input line 56.
+LaTeX Info: Redefining \tempurl on input line 74.
 LaTeX Info: Redefining \tempurl on input line 85.
-LaTeX Info: Redefining \tempurl on input line 96.
+LaTeX Info: Redefining \tempurl on input line 95.
  [8.8 <./fig/case5.pdf>]
-LaTeX Info: Redefining \tempurl on input line 107.
-LaTeX Info: Redefining \tempurl on input line 117.
-LaTeX Info: Redefining \tempurl on input line 127.
-LaTeX Info: Redefining \tempurl on input line 152.
-LaTeX Info: Redefining \tempurl on input line 179.
-LaTeX Info: Redefining \tempurl on input line 189.
-LaTeX Info: Redefining \tempurl on input line 199.
-LaTeX Info: Redefining \tempurl on input line 225.
-LaTeX Info: Redefining \tempurl on input line 236.
-LaTeX Info: Redefining \tempurl on input line 254.
-LaTeX Info: Redefining \tempurl on input line 265.
-LaTeX Info: Redefining \tempurl on input line 298.
-LaTeX Info: Redefining \tempurl on input line 310.
+LaTeX Info: Redefining \tempurl on input line 106.
+LaTeX Info: Redefining \tempurl on input line 118.
+LaTeX Info: Redefining \tempurl on input line 129.
+LaTeX Info: Redefining \tempurl on input line 139.
+LaTeX Info: Redefining \tempurl on input line 149.
+LaTeX Info: Redefining \tempurl on input line 174.
+LaTeX Info: Redefining \tempurl on input line 201.
+LaTeX Info: Redefining \tempurl on input line 211.
+LaTeX Info: Redefining \tempurl on input line 221.
+LaTeX Info: Redefining \tempurl on input line 247.
+LaTeX Info: Redefining \tempurl on input line 258.
+LaTeX Info: Redefining \tempurl on input line 276.
+LaTeX Info: Redefining \tempurl on input line 287.
 LaTeX Info: Redefining \tempurl on input line 320.
+LaTeX Info: Redefining \tempurl on input line 332.
+LaTeX Info: Redefining \tempurl on input line 342.
 
-Underfull \hbox (badness 3260) in paragraph at lines 326--329
+Underfull \hbox (badness 3260) in paragraph at lines 348--351
 []\T1/LinuxLibertineT-TLF/m/n/7 (+20) Brendan McMa-han, Ei-der Moore, Daniel Ra-m-age, Seth Hamp-son, and
  []
 
-LaTeX Info: Redefining \tempurl on input line 338.
-LaTeX Info: Redefining \tempurl on input line 364.
+LaTeX Info: Redefining \tempurl on input line 360.
+LaTeX Info: Redefining \tempurl on input line 372.
 LaTeX Info: Redefining \tempurl on input line 398.
-LaTeX Info: Redefining \tempurl on input line 433.
-LaTeX Info: Redefining \tempurl on input line 451.
-LaTeX Info: Redefining \tempurl on input line 461.
-LaTeX Info: Redefining \tempurl on input line 471.
+LaTeX Info: Redefining \tempurl on input line 417.
+LaTeX Info: Redefining \tempurl on input line 429.
+LaTeX Info: Redefining \tempurl on input line 456.
+LaTeX Info: Redefining \tempurl on input line 491.
+LaTeX Info: Redefining \tempurl on input line 509.
 [9.9]
-LaTeX Info: Redefining \tempurl on input line 482.
-LaTeX Info: Redefining \tempurl on input line 492.
-)
-Overfull \vbox (1.16599pt too high) has occurred while \output is active []
+LaTeX Info: Redefining \tempurl on input line 519.
+LaTeX Info: Redefining \tempurl on input line 529.
+LaTeX Info: Redefining \tempurl on input line 539.
+LaTeX Info: Redefining \tempurl on input line 550.
+LaTeX Info: Redefining \tempurl on input line 560.
+) (./APPENDIX.tex
 
- (/usr/local/texlive/2023/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 65.
+
+)
+Overfull \vbox (1.46599pt too high) has occurred while \output is active []
+
+ [10.10] [11.11] (/usr/local/texlive/2023/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
 File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
 ) (/usr/local/texlive/2023/texmf-dist/tex/generic/stringenc/se-utf8.def
 File: se-utf8.def 2019/11/29 v1.12 stringenc: UTF-8
-) [10.10] (./MAIN.aux)
-
-LaTeX Warning: There were undefined references.
-
+) [12.12] (./MAIN.aux)
 Package rerunfilecheck Info: File `MAIN.out' has not changed.
-(rerunfilecheck)             Checksum: 2C9C8B42712F8C383CCB30FD18DEF96B;3301.
+(rerunfilecheck)             Checksum: 88CC81F7A856A24E932D8E8D6C4C1D1E;3379.
  ) 
 Here is how much of TeX's memory you used:
- 32663 strings out of 476025
- 597177 string characters out of 5790017
- 1909388 words of memory out of 5000000
- 51621 multiletter control sequences out of 15000+600000
- 687409 words of font info for 454 fonts, out of 8000000 for 9000
+ 32699 strings out of 476025
+ 597955 string characters out of 5790017
+ 1919388 words of memory out of 5000000
+ 51646 multiletter control sequences out of 15000+600000
+ 687621 words of font info for 454 fonts, out of 8000000 for 9000
  1303 hyphenation exceptions out of 8191
- 85i,17n,131p,1381b,790s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 85i,17n,131p,1381b,796s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/libertine/LinBiolinumT.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/libertine/LinBiolinumTB.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/libertine/LinLibertineT.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/libertine/LinLibertineTB.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/libertine/LinLibertineTI.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/txsys.pfb>
-Output written on MAIN.pdf (10 pages, 880659 bytes).
+Output written on MAIN.pdf (12 pages, 892384 bytes).
 PDF statistics:
- 952 PDF objects out of 1000 (max. 8388607)
- 593 compressed objects within 6 object streams
- 108 named destinations out of 1000 (max. 500000)
- 82133 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 984 PDF objects out of 1000 (max. 8388607)
+ 624 compressed objects within 7 object streams
+ 116 named destinations out of 1000 (max. 500000)
+ 82141 words of extra memory for PDF output out of 89155 (max. 10000000)
 

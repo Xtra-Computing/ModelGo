@@ -32,7 +32,7 @@ These unrecoverable revision of original works are corresponding license text li
 Distillation and generation are derivatives of original works, which means the results will not contain any portion of the original works. 
 These two AI activities are mostly defined in AI model licenses but are not covered by traditional OSS licenses and free content licenses.
 
-By now, we can ascertain the suitable permissions, limitations, and responsibilities for each AI activity based on the language of the license, even when the license type is not an exact match.
+By now, we can ascertain the suitable permissions, limitations, and responsibilities for each AI activity based on the license language, even when the license type is not an exact match.
 However, its necessarily to emphasize three points.
 First, our proposed method only applies in cases where ambiguities exist in the definition. 
 If the conditions of certain AI activities are explicitly defined in the license, then we should directly follow that.
@@ -131,7 +131,7 @@ The releaseability of the final result will be validated upon its mix-works and 
 
 
 Table~\ref{tab:analysis} presents the warnings, errors, restrictions, obligations, and notices that can be detected using ModelGo.
-Table~\ref{tab:list} lists the licenses supported by ModelGo, which collectively cover over 98\% of licensed models and datasets on Huggingface~\footnote{Licenses without clear names and versions are excluded from the calculation. Worth mentioning, our coverage represents only 24.8\% and 5.2\% of the models and datasets on the entire site due to the significant number of works without license information.}.
+Table~\ref{tab:list} lists the licenses supported by ModelGo, which collectively cover over 96\% of licensed models and datasets on Huggingface~\footnote{No major changes between various versions of CCs, so they are considered as supported. Licenses without clear names and versions are excluded from the calculation. Worth mentioning, our coverage represents only 24.8\% and 6.0\% of the models and datasets on the entire repository due to the significant number of works without license information.}.
 In the next section, we will present five case studies based on real ML components.
 
 
@@ -166,17 +166,18 @@ In the next section, we will present five case studies based on real ML componen
     Runtime Restriction & This work must comply with the \textbf{rumtime restriction} terms according to related license(s). \\ \hline
 
     \end{tabular}
+    \vspace{-2mm}
 \end{table}
 
 \begin{table}[t]
-    \caption{List of licenses (represented by SPDX short IDs) supported by ModelGo, covering over 98\% of licensed models and datasets on Huggingface.}
+    \caption{List of licenses (represented by SPDX short IDs) supported by ModelGo, covering over 96\% of licensed models and datasets on Huggingface.}
     \vspace{-3mm}
     \scriptsize
     \label{tab:list}
     \begin{tabular}{|p{2.45cm}|p{2.45cm}|p{2.45cm}|}
     \hline
     \rowcolor[gray]{.8}
-    \textbf{OSS License} (99.8\%) & \textbf{Content License} (99.2\%) & \textbf{AI Model License} (98.2\%)\\ \hline
+    \textbf{OSS License} (99.8\%) & \textbf{Content License} (96.6\%) & \textbf{AI Model License} (98.2\%)\\ \hline
     Apache-2.0, Unlicense, MIT, AFL-3.0, GPL-3.0, AGPL-3.0, LGPL-3.0, LGPL-2.1, BSD-3-Clause, BSD-3-Clause-Clear, BSD-2-Clause, Artistic-2.0, WTFPL-2.0, OSL-3.0, ECL-2.0
     &
     CC0-1.0, CC-BY-4.0, CC-BY-SA-4.0, CC-BY-NC-4.0, CC-BY-ND-4.0, CC-BY-NC-ND-4.0, CC-BY-NC-SA-4.0, PDDL, C-UDA, LGPL-LR, GFDL
@@ -185,6 +186,7 @@ In the next section, we will present five case studies based on real ML componen
     \\ \hline
 
     \end{tabular}
+    \vspace{-2mm}
 \end{table}
 
 

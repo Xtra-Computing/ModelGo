@@ -5,13 +5,13 @@ In this section, we present the motivations for this work by introducing the bac
 \subsection{Machine Learning Project Licensing}
 % 现在 ML 的license的现状，包括数据的license问题
 Typically, a ML project is constructed with data, software and models, which are usually governed by different licensing frameworks.
-To profile current ML licensing, Table.~\ref{tab:MLP} provides licensing details for 19 ML projects with over 1,000 likes available in Huggingface\footnote{https://huggingface.co/. Projects in same series but different versions are omitted.} model repository.
+To profile current ML licensing, we summary licensing details for ML projects with over 1,000 likes available in Huggingface\footnote{https://huggingface.co/. Projects in same series but different versions are omitted.} model repository (See Appendix~\ref{apdx:A}).
 Due to a lack of license management in development, we have to manually collect the license information from Huggingface, GitHub, related websites and publications.
 
 \textbf{Data Licensing in ML}.
-Based on our profile, more than half (53\%) of ML projects claim their data is licensed in a mixture manner.
-Additionally, 26\% of projects use a single dataset with a standard data license like Creative Commons (CC) licenses.
-The data source of remaining projects (21\%) is unknown.
+Based on our profile, half of ML projects claim their data is licensed in a mixture manner.
+Additionally, 25\% of projects use a single dataset with a standard data license like Creative Commons (CC) licenses.
+The data source of remaining projects (25\%) is unknown.
 Obviously, legal compliance cannot be guaranteed when using data from unknown sources. 
 However, there is also potential risk associated with using data under a mixture of licenses or a single license based on follow reasons:
 
@@ -30,7 +30,7 @@ This highlights that ML data licensing is currently irregular and has become a s
 Although Benjamin et al.~\cite{benjamin2019towards} have proposed the Montreal Data License (MDL) to foster fair use of data in AI activities, unfortunately, none of the ML projects adopted this license as shown in our profile.
 
 \textbf{Software Licensing in ML.}
-Distinct from OSS projects, less than half (47\%) of ML projects release their code with standard OSS licenses.
+Distinct from OSS projects, only 50\% of ML projects release their code with standard OSS licenses.
 About one-third of ML projects do not declare the code license (but have a model license), which is much higher than in OSS projects~\cite{cui2023empirical}.
 Other projects switch to using AI model or custom licenses to insert additional disclaimers and restrictions related to AI activities, thereby increasing the diversity of licenses in this context.
 However, given that ML, especially Neural Networks (NNs), is still in its emerging stages, the license dependency chain is shorter compared to OSS projects~\cite{buchkova2022dasea}, and most of them use the latest versions of OSS licenses like Apache-2.0 and MIT.
@@ -40,7 +40,7 @@ However, given that ML, especially Neural Networks (NNs), is still in its emergi
 \textbf{Model Licensing in ML.}
 In contrast to software licensing, all ML projects have declared their model licenses.
 The most popular license is Open Responsible AI License (OpenRAIL)~\cite{contractor2022behavioral}, which is a permissive license but includes copyleft-style use-based restrictions governing the use of the model and its derivatives.
-There are 31\% of projects that insist on using unmodified OSS licenses for model licensing, even though these licensing language incurs conceptual ambiguities in the ML context.
+There are 35\% of projects that insist on using unmodified OSS licenses for model licensing, even though these licensing language incurs conceptual ambiguities in the ML context.
 An interesting finding is that, despite their training data being suspected to contain non-public content, the models are declared as free and open work~\cite{henderson2023foundation}.
 
 \vspace{-2mm}
@@ -77,7 +77,7 @@ Lastly, these works only consider combinations and links in their analysis, wher
 
 Distinct with previous studies, the research scope of our work is located in top and middle tiers.
 we propose a practical tool ModelGo to assess potential license violations and non-granting righs errors in ML context.
-We hope ModelGo can help change the situation of disorganized ML components reusing and licensing, providing insights for constructing compaliant ML systems.
+We hope that ModelGo can assist developers in comprehending their obligations and risks when reusing ML components with multiple licenses~\cite{almeida2017software}, providing insights for constructing compaliant ML systems.
 
 
 \begin{figure}[t]

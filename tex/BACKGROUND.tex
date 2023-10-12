@@ -10,22 +10,22 @@ Due to a lack of license management in development, we have to manually collect 
 
 \textbf{Data Licensing in ML}.
 Based on our profile, half of ML projects claim their data is licensed in a mixture manner.
-Additionally, 25\% of projects use a single dataset with a standard data license like Creative Commons (CC) licenses.
+Additionally, 25\% of projects use a single dataset with a standard data license like Creative Commons (CC).
 The data source of remaining projects (25\%) is unknown.
 Obviously, legal compliance cannot be guaranteed when using data from unknown sources. 
-However, there is also potential risk associated with using data under a mixture of licenses or a single license based on follow reasons:
+However, there is also potential risk associated with using datasets under a mixture of licenses or a single license based on follow reasons:
 
 First, the mixture of data sources may involve content under copyleft, non-public, and non-commercial licenses. 
 We investigated the sources of mixture and found that only one dataset, the Pile~\cite{gao2020the}, explicitly removed non-permissive content.
 Common sources of risk include Wikipedia, arXiv, PubMed and Common Crawl~\cite{henderson2023foundation} (See Table.~\ref{tab:works} for more examples).
 For instance, sharing derivatives based on non-public licensed content raises suspicion of a license violation, and integrating copyleft content also poses a risk of license incompatibility conflicts.
-Furthermore, some content sources like IMDb explicitly prohibit data mining in their \textit{Conditions of Use}.\footnote{"You may not use data mining, robots, screen scraping, or similar data gathering and extraction tools on this site, ..."}
+Furthermore, some content sources like IMDb explicitly prohibit data mining in their \textit{Conditions of Use}\footnote{"You may not use data mining, robots, screen scraping, or similar data gathering and extraction tools on this site, ..."}.
 
-Secondly, the single data license assigned by data collectors may be invalid.
+Second, the single data license assigned by data collectors may be invalid.
 In our profile, all datasets with a single license contain risky data sources.
 Rajbahadur \textit{et al.}~\cite{rajbahadur2021can} investigated the sources of six public datasets and shown their inherent incompatibility for commercial use.
-A real case is the copyright infringement lawsuit filed by Getty Images Inc., alleging that Stability AI Ltd. misused Getty Images photos to train its Stable Diffusion~\cite{rombach2022high} generative model (1:23-cv-00135).
-However, the claimed license of training dataset~\cite{schuhmann2022laion} used for Stable Diffusion is CC-BY-4.0, which is a permissive license allowing for commercial use.
+A real case is the copyright infringement lawsuit filed by Getty Images Inc., alleging that Stability AI Ltd. misused Getty Images photos to train its StableDiffusion~\cite{rombach2022high} generative model (1:23-cv-00135).
+However, the claimed license of training dataset~\cite{schuhmann2022laion} used for StableDiffusion is CC-BY-4.0, which is a permissive license allowing for commercial use.
 This highlights that ML data licensing is currently irregular and has become a significant factor in legal non-compliance.
 Although Benjamin et al.~\cite{benjamin2019towards} have proposed the Montreal Data License (MDL) to foster fair use of data in AI activities, unfortunately, none of the ML projects adopted this license as shown in our profile.
 
@@ -71,13 +71,13 @@ Shifting the focus to the middle tier, there are some studies that explore licen
 Kapitsaki et al.~\cite{kapitsaki2017automating} used Software Package Data Exchange (SPDX) files to detect conflicts in license compatibility (e.g., GPL-2.0 to GPL-3.0).
 Cui \textit{et al.}~\cite{cui2023empirical} directly extracted terms from license texts using Natural Language Processing (NLP) to analyze license conflicts in OSS projects.
 \textbf{However}, OSS license analysis works exhibit clear limitations when extended to ML projects.
-Firstly, they lack support for dataset and model licenses. For example, RAILs and CC licenses are not listed in the SPDX. 
-Secondly, the mixed use of licenses in current ML projects makes it challenging to interpret license conditions across different frameworks.
-Lastly, these works only consider combinations and links in their analysis, whereas ML reuse involves a nested and iterative workflow with a more complex dependency structure (e.g., fine-tuning, embedding).
+First, they lack support for dataset and model licenses. For example, RAILs and CCs are not listed in the SPDX. 
+Second, the mixed use of licenses in current ML projects makes it challenging to interpret license conditions across different frameworks.
+Last, these works only consider combinations and links in their analysis, whereas ML reuse involves a nested and iterative workflow with a more complex dependency structure (e.g., fine-tuning, embedding).
 
 Distinct with previous studies, the research scope of our work is located in top and middle tiers.
 we propose a practical tool ModelGo to assess potential license violations and non-granting righs errors in ML context.
-We hope that ModelGo can assist developers in comprehending their obligations and risks when reusing ML components with multiple licenses~\cite{almeida2017software}, providing insights for constructing compaliant ML systems.
+We hope that ModelGo can assist developers in comprehending their obligations and risks when reusing ML components with multiple licenses~\cite{almeida2017software}, providing insights for constructing compliant ML systems.
 
 
 \begin{figure}[t]

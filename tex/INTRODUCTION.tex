@@ -8,9 +8,9 @@ A frequently employed approach for AI models reuse is fine-tuning Pre-Trained Mo
 % 但是由于xxx原因导致software，data，model都有不同的license，存在潜在的冲突和法律风险。
 From a legal perspective, model reuse is generally uncontroversial when its developers or affiliated companies own the copyright for all components.
 However, data and models often have separate copyright holders in nowadays ML projects~\cite{rajbahadur2021can, radford2019language, scao2022bloom, zeng2023glm}.
-For instance, GPT-2~\cite{radford2019language}, developed by OpenAI, was trained on 45 million web pages containing personal content and copyrighted materials from third-party platforms like WordPress, GitHub, and IMDb, none of which is owned by OpenAI\footnote{Copyright and privacy lawsuits against OpenAI: 3:23-cv-03199, 3:23-cv-04625, 3:23-cv-03223, 3:23-cv-04557, 3:23-cv-03416, 1:23-cv-08292.}. % Docket Number
+For instance, GPT-2~\cite{radford2019language}, developed by OpenAI, was trained on 45 million web pages containing personal content and copyrighted materials from third-party platforms like WordPress, GitHub, and IMDb, none of which is owned by OpenAI. % Docket Number
 These crowdsourced web scraping content~\cite{wang2023easyspider} typically provides limited usage and distribution rights to users through pre-agreed licenses (e.g., Creative Commons Licenses~\cite{creative2023list}), which may restrict certain reuse methods like remixing, reproducing, and translating. 
-To prevent legal risk, it is essential to ensure that the final ML projects remain compaliant with all license conditions associated with the reused components~\cite{cui2023empirical, mathur2012empirical, kapitsaki2017automating}.
+To prevent legal risk\footnote{Copyright infringement and privacy lawsuits against OpenAI: 3:23-cv-03199, 3:23-cv-04625, 3:23-cv-03223, 3:23-cv-04557, 3:23-cv-03416, 1:23-cv-08292.}, it is essential to ensure that the final ML projects remain compliant with all license conditions associated with the reused components~\cite{cui2023empirical, mathur2012empirical, kapitsaki2017automating}.
 
 However, compared to assessing licensing compliance for OSS, ensuring license compliance in ML projects poses several unique challenges. 
 First, a ML project is not only a combination of software like an OSS project but also composed of datasets and models~\cite{han2021pre}, which may be under different types of licenses (e.g., Free Content Licenses and AI model licenses~\cite{contractor2022behavioral}).
@@ -21,7 +21,7 @@ For example, GPT-2 and BERT~\cite{devlin2019bert} are regarded as part of softwa
 However, ML projects like StableDiffusion and Llama2~\cite{touvron2023llama} tend to apply responsible AI restriction terms for both model and code, using AI model licenses such as OpenRAIL-M~\cite{contractor2022behavioral} and Llama2 Community License~\cite{meta2023llama2}.
 Moreover, to circumvent the limitations of standard OSS licenses, some licensors adopt non-commercial content licenses or custom licenses to protect the Intellectual Property (IP) of their models by prohibiting commercial use~\cite{huang2022layoutlmv3}, fine-tuning~\cite{dreamlike2023}, and reverse engineering~\cite{goyal2022vision}.
 Such ambiguity and the diverse licensing practices within ML projects  increase significant legal uncertainty in license compliance analysis.
-As a result, traditional OSS license analysis approaches~\cite{ombredanne2020free, mathur2012empirical} only consider inclusion and linking relationships among software and lack support for AI model licenses, making them unsuitable for ML project license analysis.
+As a result, traditional OSS license analysis approaches~\cite{ombredanne2020free, mathur2012empirical} only consider inclusion and linking relationships among software and lack support for AI model licenses, making them unsuitable for ML projects license analysis.
 
 In this paper, we introduce ModelGo, a tool designed to analyze potential license conflicts, improper license choices, use restrictions and obligations in ML projects that involve nested component reuse procedures.
 To demonstrate the usefulness of ModelGo, we present 5 use cases constructed using 15 datasets and 11 models from real-world, whose license types cover OSS, free content, and AI model.
@@ -29,7 +29,7 @@ Our findings show that there exist potential legal risks when reusing  component
 The main contributions of our paper are:
 \begin{itemize}
     \item We raise the challenge of license analysis for ML projects and propose ModelGo to assessing it. To the best of our knowledge, our work is the first attempt to deal with this challenge in the ML context.
-    \item As part of our work, we introduce a new taxonomy based on the forms of reused components to identify the corresponding conditions for various ML reuse mechanisms. This method helps mitigate ambiguity in cases of mismatch between applied license type and actual component type, allowing ModelGo to analyze components under various license types, including OSS, free content and AI models.
+    \item As part of our work, we introduce a new taxonomy based on the forms of reused components to identify the corresponding conditions for various ML reuse mechanisms. This method helps mitigate ambiguity in cases of mismatch between applied license type and actual component type, allowing ModelGo to analyze components under various license types, including OSS, free content, and AI models.
     \item  We provide license compliance reports based on 5 use cases to showcase the effectiveness of our approach. 
     Through our use cases, we offer valuable insights and experiences in achieving compliance in ML projects. 
     Additionally, we also provide license choosing recommendations to minize the risk of non-compliance.

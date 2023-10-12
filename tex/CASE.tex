@@ -9,7 +9,7 @@ However, this can be challenging in practice due to three present situations:
 
 (3) Non-compliance within Datasets: Crowdsourced datasets often suffer from license non-compliance issues~\cite{rajbahadur2021can}, making the licenses (usually permissive) declared by dataset publishers invalid.
 
-Consequently, directly analyzing real-world ML projects may result in uncertainty, over-optimistic results, and often fail to detect any license conflicts.
+Consequently, directly analyzing real-world ML projects can result in uncertainty, over-optimistic results, and often fail to detect any license conflicts.
 Therefore, to validate ModelGo, we have designed five ML scenarios rendered using 15 common data sources and 11 models that cover 5 modalities and 7 tasks, respectively.
 Table~\ref{tab:works} shows the specifications of the involved data sources and models, whose licenses include copyleft, permissive, public domain, and no public license\footnote{Some data sources contain crowdsourced content with multiple licenses, and we selected a non-public domain license among them.}.
 Furthermore, our case studies can cover all events listed in Table~\ref{tab:analysis}, and the their details and findings are provided in the following section.
@@ -66,7 +66,6 @@ It is not designed to address legal interpretation issues such as copyrightabili
         I2VGen-XL & CC-BY-NC-ND-4.0 & & Image to Video  \\ \hline
 
         \end{tabular}
-        \vspace{-2mm}
 \end{table}
 
 \subsection{CASE \Romannum{1} : Corpus Combination}
@@ -245,8 +244,24 @@ However, we can get rid of these constraints by leveraging the loophole of gener
 %However, it is a false alarm because there is a two-way compatibility between CC ShareAlike licenses, as indicated by a supplementary interpretation from Creative Commons\footnote{https://wiki.creativecommons.org/wiki/Wiki/cc\_license\_compatibility}. 
 %We reserve this alarm to remind developers to manually check the compatibility from licensors or consult with legal experts.
 
+\vspace{-2mm}
 \begin{tcolorbox}
 \textbf{Findings 5}: Directly remixing raw data should ensure compatibility between licenses, which can be challenging in crowdsourced scenarios.
 One feasible solution is to exclude all content under copyleft and non-public licenses. 
 An irregular tactic is to exploit the current ambiguity in licensing frameworks regarding generated content.
 \end{tcolorbox}
+
+\vspace{-3mm}
+\subsection{Summary}
+
+Based on the findings from our case studies, we conclude five guidelines to minimize license conflicts and legal risks in ML projects:
+
+(1) Avoid reusing any works under proprietary or unknown licenses, as they may pose a risk of copyright infringement.
+(2) If you intend to use any ML components under RAILs (or other responsible AI model licenses), avoid including GPL-like licensed works in your projects, and vice versa.
+(3) Refrain from using any non-public or non-commercial licensed works if you plan to share the project or sell it, respectively. 
+(4) If you're uncertain about compatibility, limit your project to using at most one copyleft license.
+(5) Ensure that all components are under appropriate licensing frameworks.
+We provide a flowchart to illustrate this idea in Appendix~\ref{apdx:A}.
+
+Please note that our guidelines are aimed at minimizing potential risks related to license terms and do not provide legal interpretations as previously mentioned. 
+See our disclaimers in Appendix~\ref{apdx:disclaimer}.

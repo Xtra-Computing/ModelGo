@@ -1666,6 +1666,11 @@ INPUT APPENDIX.tex
 INPUT ./APPENDIX.tex
 INPUT ./APPENDIX.tex
 INPUT APPENDIX.tex
+INPUT ./fig/flowchart.pdf
+INPUT ./fig/flowchart.pdf
+INPUT fig/flowchart.pdf
+INPUT ./fig/flowchart.pdf
+INPUT ./fig/flowchart.pdf
 INPUT /usr/local/texlive/2023/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
 INPUT /usr/local/texlive/2023/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
 INPUT /usr/local/texlive/2023/texmf-dist/tex/generic/stringenc/se-pdfdoc.def

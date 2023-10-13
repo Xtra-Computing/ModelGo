@@ -70,10 +70,10 @@ However, these OSS tools perform software composition analysis through pattern m
 Shifting the focus to the middle tier, there are some studies that explore license compatibility and violations in software packages~\cite{mathur2012empirical, wu2015method}. 
 Kapitsaki et al.~\cite{kapitsaki2017automating} used Software Package Data Exchange (SPDX) files to detect conflicts in license compatibility (e.g., GPL-2.0 to GPL-3.0).
 Cui \textit{et al.}~\cite{cui2023empirical} directly extracted terms from license texts using Natural Language Processing (NLP) to analyze license conflicts in OSS projects.
-\textbf{However}, OSS license analysis works exhibit clear limitations when extended to ML projects.
+\textbf{However, OSS license analysis works exhibit clear limitations when extended to ML projects.}
 First, they lack support for dataset and model licenses. For example, RAILs and CCs are not listed in the SPDX. 
 Second, the mixed use of licenses in current ML projects makes it challenging to interpret license conditions across different frameworks.
-Last, these works only consider combinations and links in their analysis, whereas ML reuse involves a nested and iterative workflow with a more complex dependency structure (e.g., fine-tuning, embedding).
+Last, these works only consider code replications and links in their analysis, whereas ML reuse involves a nested and iterative workflow with a more complex dependency structure (e.g., fine-tuning, embedding).
 
 Distinct with previous studies, the research scope of our work is located in top and middle tiers.
 we propose a practical tool ModelGo to assess potential license violations and non-granting righs errors in ML context.
@@ -86,7 +86,6 @@ We hope that ModelGo can assist developers in comprehending their obligations an
     \caption{Research scope and problems of ModelGo compare with traditional OSS license analysis.}
     \Description{}
     \label{fig:pyramid}
-    \vspace{-5mm}
 \end{figure}
 
 %\subsection{Machine Learning IP Protection}

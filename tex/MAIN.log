@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.18)  12 OCT 2023 17:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.18)  13 OCT 2023 17:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1130,14 +1130,17 @@ Overfull \vbox (5.38774pt too high) has occurred while \output is active []
 
 Class acmart Warning: \vspace should only be used to provide space above/below surrounding objects on input line 46.
 
+
+Underfull \vbox (badness 4254) has occurred while \output is active []
+
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 70.
+(Font)              scaled to size 9.0pt on input line 69.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 7.0pt on input line 70.
-[2.2]
+(Font)              scaled to size 7.0pt on input line 69.
+ [2.2]
 
 pdfTeX warning: pdflatex (file ./fig/pyramid.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<fig/pyramid.pdf, id=227, 247.66052pt x 98.88544pt>
+<fig/pyramid.pdf, id=226, 247.66052pt x 98.88544pt>
 File: fig/pyramid.pdf Graphic file (type pdf)
 <use fig/pyramid.pdf>
 Package pdftex.def Info: fig/pyramid.pdf  used on input line 85.
@@ -1153,7 +1156,7 @@ Package pdftex.def Info: fig/taxonomy.pdf  used on input line 45.
 
 
 pdfTeX warning: pdflatex (file ./fig/structure.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<fig/structure.pdf, id=279, 225.51859pt x 102.94148pt>
+<fig/structure.pdf, id=280, 225.51859pt x 102.94148pt>
 File: fig/structure.pdf Graphic file (type pdf)
 <use fig/structure.pdf>
 Package pdftex.def Info: fig/structure.pdf  used on input line 78.
@@ -1212,34 +1215,37 @@ Underfull \hbox (badness 10000) in paragraph at lines 185--186
  []
 
 ) (./CASE.tex
+Overfull \vbox (5.21935pt too high) has occurred while \output is active []
+
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 7.0pt on input line 29.
- [5.5]
+(Font)              scaled to size 7.0pt on input line 30.
+
 
 pdfTeX warning: pdflatex (file ./fig/case1.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<fig/case1.pdf, id=362, 253.59494pt x 147.45468pt>
+<fig/case1.pdf, id=355, 253.59494pt x 147.45468pt>
 File: fig/case1.pdf Graphic file (type pdf)
 <use fig/case1.pdf>
-Package pdftex.def Info: fig/case1.pdf  used on input line 75.
+Package pdftex.def Info: fig/case1.pdf  used on input line 76.
 (pdftex.def)             Requested size: 241.14749pt x 140.21613pt.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 7.3pt on input line 76.
+(Font)              scaled to size 7.3pt on input line 77.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 5.5pt on input line 76.
+(Font)              scaled to size 5.5pt on input line 77.
 
-Underfull \hbox (badness 2856) in paragraph at lines 76--76
+Underfull \hbox (badness 2856) in paragraph at lines 77--77
 []\T1/LinuxLibertineT-TLF/b/n/9 (+20) Figure 4: |CASE I: Cor-pus Com-bi-na-tion. AI Ac-tiv-i-ties:
  []
 
+[5.5]
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
-(Font)              scaled to size 7.0pt on input line 99.
+(Font)              scaled to size 7.0pt on input line 100.
 
 
 pdfTeX warning: pdflatex (file ./fig/case2.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<fig/case2.pdf, id=371, 254.13895pt x 123.9027pt>
+<fig/case2.pdf, id=375, 254.13895pt x 123.9027pt>
 File: fig/case2.pdf Graphic file (type pdf)
 <use fig/case2.pdf>
-Package pdftex.def Info: fig/case2.pdf  used on input line 120.
+Package pdftex.def Info: fig/case2.pdf  used on input line 121.
 (pdftex.def)             Requested size: 241.14749pt x 117.57452pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1247,23 +1253,23 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [6.6 <./fig/case1.pdf>]
 
 pdfTeX warning: pdflatex (file ./fig/case3.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<fig/case3.pdf, id=503, 249.03047pt x 54.34132pt>
+<fig/case3.pdf, id=504, 249.03047pt x 54.34132pt>
 File: fig/case3.pdf Graphic file (type pdf)
 <use fig/case3.pdf>
-Package pdftex.def Info: fig/case3.pdf  used on input line 157.
+Package pdftex.def Info: fig/case3.pdf  used on input line 158.
 (pdftex.def)             Requested size: 241.14749pt x 52.62393pt.
 
-Underfull \hbox (badness 1960) in paragraph at lines 158--158
+Underfull \hbox (badness 1960) in paragraph at lines 159--159
 []\T1/LinuxLibertineT-TLF/b/n/9 (+20) Figure 6: |CASE III: Gen-er-a-tion Pipeline. AI Ac-tiv-i-ties:
  []
 
 
 
 pdfTeX warning: pdflatex (file ./fig/case4.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<fig/case4.pdf, id=506, 252.40808pt x 125.74278pt>
+<fig/case4.pdf, id=507, 252.40808pt x 125.74278pt>
 File: fig/case4.pdf Graphic file (type pdf)
 <use fig/case4.pdf>
-Package pdftex.def Info: fig/case4.pdf  used on input line 185.
+Package pdftex.def Info: fig/case4.pdf  used on input line 186.
 (pdftex.def)             Requested size: 241.14749pt x 120.13225pt.
 [7.7 <./fig/case2.pdf> <./fig/case3.pdf
 
@@ -1274,16 +1280,16 @@ pdfTeX warning: pdflatex (file ./fig/case4.pdf): PDF inclusion: multiple pdfs wi
 >]
 
 pdfTeX warning: pdflatex (file ./fig/case5.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<fig/case5.pdf, id=799, 235.24646pt x 93.57881pt>
+<fig/case5.pdf, id=800, 235.24646pt x 93.57881pt>
 File: fig/case5.pdf Graphic file (type pdf)
 <use fig/case5.pdf>
-Package pdftex.def Info: fig/case5.pdf  used on input line 222.
+Package pdftex.def Info: fig/case5.pdf  used on input line 223.
 (pdftex.def)             Requested size: 241.14749pt x 95.9303pt.
 
-Class acmart Warning: \vspace should only be used to provide space above/below surrounding objects on input line 247.
+Class acmart Warning: \vspace should only be used to provide space above/below surrounding objects on input line 248.
 
 
-Class acmart Warning: \vspace should only be used to provide space above/below surrounding objects on input line 254.
+Class acmart Warning: \vspace should only be used to provide space above/below surrounding objects on input line 255.
 
 ) (./MAIN.bbl [8.8 <./fig/case5.pdf>]
 LaTeX Info: Redefining \tempurl on input line 56.
@@ -1331,7 +1337,7 @@ LaTeX Info: Redefining \tempurl on input line 560.
 ) (./APPENDIX.tex
 
 pdfTeX warning: pdflatex (file ./fig/flowchart.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<fig/flowchart.pdf, id=912, 212.9978pt x 341.88097pt>
+<fig/flowchart.pdf, id=913, 212.9978pt x 341.88097pt>
 File: fig/flowchart.pdf Graphic file (type pdf)
 <use fig/flowchart.pdf>
 Package pdftex.def Info: fig/flowchart.pdf  used on input line 17.
@@ -1349,18 +1355,18 @@ Package rerunfilecheck Info: File `MAIN.out' has not changed.
 (rerunfilecheck)             Checksum: EE9FA08DBCFC694F0F0090DE0179A467;3766.
  ) 
 Here is how much of TeX's memory you used:
- 32714 strings out of 476025
- 598252 string characters out of 5790017
- 1927388 words of memory out of 5000000
+ 32717 strings out of 476025
+ 598318 string characters out of 5790017
+ 1928388 words of memory out of 5000000
  51656 multiletter control sequences out of 15000+600000
- 687621 words of font info for 454 fonts, out of 8000000 for 9000
+ 687992 words of font info for 456 fonts, out of 8000000 for 9000
  1304 hyphenation exceptions out of 8191
  85i,17n,131p,1381b,786s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/libertine/LinBiolinumT.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/libertine/LinBiolinumTB.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/libertine/LinLibertineT.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/libertine/LinLibertineTB.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/libertine/LinLibertineTI.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/txsys.pfb>
-Output written on MAIN.pdf (12 pages, 927884 bytes).
+Output written on MAIN.pdf (12 pages, 928977 bytes).
 PDF statistics:
- 1011 PDF objects out of 1200 (max. 8388607)
- 644 compressed objects within 7 object streams
+ 1012 PDF objects out of 1200 (max. 8388607)
+ 645 compressed objects within 7 object streams
  119 named destinations out of 1000 (max. 500000)
  82162 words of extra memory for PDF output out of 89155 (max. 10000000)
 

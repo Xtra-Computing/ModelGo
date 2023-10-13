@@ -1621,8 +1621,6 @@ INPUT ./CASE.tex
 INPUT ./CASE.tex
 INPUT CASE.tex
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/libertine/LinLibertineTB-tlf-t1.tfm
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/vf/public/libertine/LinLibertineTB-tlf-t1.vf
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/libertine/LinLibertineTB-tlf-t1--base.tfm
 INPUT ./fig/case1.pdf
 INPUT ./fig/case1.pdf
 INPUT fig/case1.pdf
@@ -1630,6 +1628,8 @@ INPUT ./fig/case1.pdf
 INPUT ./fig/case1.pdf
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/libertine/LinLibertineTB-tlf-t1.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/libertine/LinLibertineTB-tlf-t1.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/vf/public/libertine/LinLibertineTB-tlf-t1.vf
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/libertine/LinLibertineTB-tlf-t1--base.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/libertine/LinLibertineTI-tlf-t1.tfm
 INPUT ./fig/case2.pdf
 INPUT ./fig/case2.pdf

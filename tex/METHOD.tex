@@ -1,15 +1,15 @@
 \section{Method}
 \label{sec:method}
-This section is organized around three key questions in the context of ML license analysis: (i) How to determine the corresponding conditions in licenses for certain model reuse mechanisms? (ii) How to capture the dependency structure of a machine learning project? (iii) What types of non-compliance exist in ML projects and how to assess them?
+This section is organized around three key questions in ML license analysis: (i) How to determine the applicable conditions in licenses for certain model reuse mechanisms? (ii) How to capture the dependency structure of a ML project? (iii) What types of non-compliance exist in ML projects and how to assess them?
 We will present our solutions to these questions in the following sections.
 
 \subsection{Taxonomy for ML License Analysis}
 Determining the corresponding conditions in licenses is a challenging task for ML projects due to the conceptual ambiguities in existing licensing language and the disorganization in current ML licensing practices.
-For example, CC-BY-ND prohibits the sharing of derivatives of licensed materials.
-However, its definition of making derivatives is unclear in the context of ML domain.
+For example, license like CC-BY-ND prohibits the sharing of derivatives of licensed materials.
+However, its definition of making derivatives is unclear in the ML domain.
 For instance, should embeddings of a corpus be considered a derivative work upon that corpus?
 Unfortunately, even though Creative Commons provides a flow chart to illustrate the trigger conditions of CC licenses in the context of AI activity~\cite{creative2023artificial}, it raises another question: \textit{Is the output considered protectable copyright subject matter?}
-The answer depends on how the embedding activity is interpreted, for example, considering it as a translation of the original work can trigger the CC license.
+The answer depends on how the embedding activity is interpreted, for example, considering it as a translation of the original work can trigger the CC licenses.
 
 MDL advocates the use of a \textit{Top Sheet} to delineate what ML activities are allowed with data~\cite{benjamin2019towards}, but this proposal is rarely implemented in practice (life would be easier if it were widely accepted). 
 Making things more complex, some projects release their models under free content licenses, like LayoutLMv3 model~\cite{huang2022layoutlmv3}, which is licensed under CC-BY-NC-SA-4.0. 
@@ -18,8 +18,8 @@ An ideal and elegant solution would be to encourage licensors to make context-ap
 However, some ML components may be composed of prior works that are shared under copyleft license templates, which may disallow such relicensing of their derivatives to a new license.
 Therefore, it is necessary to establish practical rules to bridge AI activities and existing licensing language.
 
-To address the above challenge, we propose a result-based taxonomy that categorizes all AI activities into four categories based on the forms of their results. 
-In our taxonomy, there are four categories of AI activities: Combination, Amalgamation, Distillation, and Generation, which are defined by four forms of their results, respectively: 1) Combination with strong separation; 2) Combination with weak separation; 3) Derivatives from concepts; and 4) Derivatives from data.
+To address the above challenge, we propose a new taxonomy that categorizes all AI activities into four categories based on the forms of their results. 
+There are four categories of AI activities following our taxonomy: Combination, Amalgamation, Distillation, and Generation, which are defined by four forms of their results, respectively: 1) Combination with strong separation; 2) Combination with weak separation; 3) Derivatives from concepts; and 4) Derivatives from data.
 Correspondingly, we can also categorize the usage behaviors in licensing language into these four categories based on their outcome forms.
 
 We leverage Figure~\ref{fig:tax} to illustrate this idea.
@@ -29,21 +29,21 @@ Following this rule, we can also identify the corresponding terms in natural lan
 For example, Mixture of Experts (MoE) leverages a gating network to ensemble a batch of weak learners~\cite{jacobs1991adaptive}, which leads to a combination with strong separation and aligns with licensing terms like link, portion, collection, etc.
 Unlike combination, the results of amalgamation are difficult (or impossible) to separate, corresponding to AI activities such as modification, fine-tuning, model fusion, etc~\footnote{Whether embeddings constitute a combination with weak separation depends on the specific case. In ModelGo, we classify embeddings as amalgamation if they are created under a content license that treats translation as a form of modification.}. 
 These unrecoverable revision of original works are corresponding license text like adapt, alter, remix, etc.
-Distillation and generation are derivatives of original works, which means the results will not contain any portion of the original works. 
+On the other hand, distillation and generation are derivatives of original works, which means the results will not contain any portion of the original works. 
 These two AI activities are mostly defined in AI model licenses but are not covered by traditional OSS licenses and free content licenses.
 
-By now, we can ascertain the suitable permissions, limitations, and responsibilities for each AI activity based on the license language, even when the license type is not an exact match.
+By now, we can ascertain the suitable permissions, limitations, and obligations for each AI activity based on the license language, even when the license type is not an exact match.
 However, its necessarily to emphasize three points.
 First, our proposed method only applies in cases where ambiguities exist in the definition. 
 If the conditions of certain AI activities are explicitly defined in the license, then we should directly follow that.
-Second, due to the various definitions adopted in different licenses, the bridging rules depend on each specific case and may differ from Figure~\ref{fig:tax}.
+Second, due to the various definitions adopted in different licenses, the final mappings depend on each specific case and may differ from Figure~\ref{fig:tax}.
 Lastly, one AI activity may trigger multiple license conditions. For example, a fine-tuned model can be seen as a combination with weak separation of the original model, while it can also be viewed as a derivative from fine-tuning data.
 Therefore, we should design a mechanism to trace these multi-source dependency structures in ML projects, which we will detail in the next section.
  
 \begin{figure}[t]
     \centering
     \includegraphics[width=\linewidth]{fig/taxonomy.pdf}
-    \caption{Our proposed taxonomy bridging AI activities and license terms based on their result forms.}
+    \caption{Our proposed taxonomy bridging AI activities and license language keywords based on their result forms.}
     \Description{}
     \label{fig:tax}
     \vspace{-5mm}
@@ -68,15 +68,15 @@ We can summarize these dependencies in ML projects into three categories:
     \item \textbf{Aux-works} are components used to build the new work and are either included in it or released with it. For example, the original model used for knowledge distillation.
 \end{itemize}
 
-Figure~\ref{fig:stru} illustrates the structure of a work constructed by reusing multiple components in the context of ML projects.
+Figure~\ref{fig:stru} illustrates the structure of a work constructed by reusing multiple components in ML projects.
 The final ML project may be constructed through iterative reuse of other works, resulting in a ternary dependencies tree for this project.
-The reason we need this specially-designed tree structure is that works with different dependency types have different license condition proliferation rules, which need to be handled separately during subsequent license analysis. 
+The reason we need this specially-designed tree structure is that works with different dependency types have different license conditions proliferation rules, as illustrated by dotted boxes in Figure~\ref{fig:stru}, which need to be handled separately during subsequent license analysis. 
 
 
 \begin{figure}[t]
     \centering
     \includegraphics[width=\linewidth]{fig/structure.pdf}
-    \caption{The proposed structure for capturing work dependencies in the context of ML projects with multiple reused components.}
+    \caption{The proposed structure for capturing work dependencies in ML projects with multiple reused components.}
     \Description{}
     \label{fig:stru}
     \vspace{-5mm}
@@ -87,15 +87,15 @@ The reason we need this specially-designed tree structure is that works with dif
 We have outlined all the necessary preparation steps for license analysis in previous sections.
 Their detailed implementations in ModelGo are as follows.
 
-\textbf{Preparation Step 1}: Following our proposed taxonomy, we have manually transcribed the terms in the license text to a standard machine-readable file in YAML format~\footnote{We attempted to use chatGPT to generate this content, but it often behaved unreliably in understanding our taxonomy and produced some stochastic answers~\cite{bender2021dangers}.}.
+\textbf{Preparation Step 1}: Following our proposed taxonomy, we have manually transcribed the terms in the license text to a standard machine-readable file in YAML format\footnote{We attempted to use chatGPT to generate this content, but it often behaved unreliably in understanding our taxonomy and produced some stochastic answers~\cite{bender2021dangers}.}.
 This file contain following informations for each license:
 \begin{itemize}[leftmargin=*]
-    \item Basic license descriptions, including its name, SPDX short ID, license version, license types (e.g., public domain, permissive, copyleft, proprietary), preferred work types (e.g., software, data, model), and supporting labels such as \textit{disclose code required} or \textit{auto-relicensing applied}.
+    \item Basic license descriptions, including its full name, SPDX short ID, license version, license types (e.g., public domain, permissive, copyleft, proprietary), preferred work types (e.g., software, data, model), and supporting labels such as \textit{disclose code required} and \textit{auto-relicensing applied}.
     
-    \item Rights granting information, including granted rights and reserved rights as defined by the license, along with the permitted reusing methods or result forms for redistribution.
+    \item Rights granting information, including granted rights and reserved rights as defined by the license text, along with the permitted reusing methods and permitted result forms for redistribution.
     The prefix of such granting also be noted for cases where the granted rights can be revoked.
 
-    \item Corresponding terms for each AI activity, which contain result forms and relicensability of the activity, corresponding restrictions, and obligations. 
+    \item Applicable terms for each AI activity, which contain result forms and relicensability of the activity, corresponding restrictions, and obligations. 
     This item will be marked as \textit{No Defined} if both the activity and the result forms of this activity are not explicitly covered in the license text.
 \end{itemize}
 
@@ -115,11 +115,11 @@ In summary, mix-works, sub-works, and aux-works have different scopes in ML lice
 Given the license information and dependencies tree of ML projects, we are ready to analyze the license conflicts within it. 
 ModelGo's license analysis consists of three phases:
 
-\textit{Initial phase}, where we register each component with clear license name, version, type, and format, and then construct their dependencies using our predefined reusing functions.
+\textit{Initial phase}, where we register each component with exact license name, version, type, and format (e.g., raw, binary, SaaS), and then construct their workflows using our predefined reusing functions to capture the dependencies.
 The release policy should be preset here, and we support personal use, sharing, and selling. 
-Normally, few conditions apply when you only use the work personally, and most licenses limit behaviors like redistribution and commercial use.
+Normally, few conditions apply when you only use the work personally, and most license terms limit behaviors like redistribution, sublicensing, and commercial use.
 
-\textit{License determination phase}, where we iteratively derive the appropriate new licenses for intermediate reused results.
+\textit{License determination phase}, where we iteratively derive the eligible new licenses for intermediate reused results.
 Copyleft proliferation occurs when there is a triggered copyleft license in the relied components.
 An error will raise if there are other copyleft licenses or if there are components that cannot be relicensed.
 To condense our analysis results, we prioritize using \textit{Unlicense} for intermediate results once they are relicenseable.
@@ -131,7 +131,7 @@ The releaseability of the final result will be validated upon its mix-works and 
 
 
 Table~\ref{tab:analysis} presents the warnings, errors, restrictions, obligations, and notices that can be detected using ModelGo.
-Table~\ref{tab:list} lists the licenses supported by ModelGo, which collectively cover over 96\% of licensed models and datasets on Huggingface~\footnote{No major changes between various versions of CCs, so they are considered as supported. Licenses without clear names and versions are excluded from the calculation. Worth mentioning, our coverage represents only 24.8\% and 6.0\% of the models and datasets on the entire repository due to the significant number of works without license information.}.
+Table~\ref{tab:list} lists the licenses supported by ModelGo, which collectively cover over 96\% of licensed models and datasets on Huggingface\footnote{No major changes between different version CCs, so they are all considered as supported. Licenses without clear names and versions are excluded from the calculation. Worth mentioning, our coverage represents only 24.8\% and 6.0\% of the models and datasets on the entire repository due to the significant number of works without license information.}.
 In the next section, we will present five case studies based on real ML components.
 
 

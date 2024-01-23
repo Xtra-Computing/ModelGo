@@ -311,7 +311,7 @@
 -
   full_name: GNU Lesser General Public License v2.1 # Software License (copyleft)
   short_id: LGPL-2.1
-  url: https://www.gnu.org/licenses/lgpl-3.0.en.html
+  url: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html
   version: 2.1
   available: true
   categories: [public, software, copyleft] # w/o auto-relicensing, w/o disclose
@@ -806,7 +806,7 @@
 
 - 
   full_name: BigScience Open RAIL-M License # Model License, same as OpenRAIL++
-  short_id: BigScience-BLOOM-RAIL-1.0
+  short_id: BigScience-BLOOM-OpenRAIL-M
   url: https://bigscience.huggingface.co/blog/bigscience-openrail-m
   version: null
   available: true

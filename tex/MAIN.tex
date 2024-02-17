@@ -45,37 +45,18 @@
 %% for your publication.
 %%
 %%
-\documentclass[sigconf, anonymous, review, nonacm]{acmart}
+\documentclass[sigconf]{acmart}
 %\documentclass[sigconf, nonacm]{acmart}
 
-%%
-%% \BibTeX command to typeset BibTeX logo in the docs
-\AtBeginDocument{%
-  \providecommand\BibTeX{{%
-    Bib\TeX}}}
+\copyrightyear{2024}
+\acmYear{2024}
+\setcopyright{acmlicensed}
+\acmConference[WWW '24] {Proceedings of the ACM Web Conference 2024}{May 13--17, 2024}{Singapore, Singapore.}
+\acmBooktitle{Proceedings of the ACM Web Conference 2024 (WWW '24), May 13--17, 2024, Singapore, Singapore}
+\acmISBN{979-8-4007-0171-9/24/05}
+\acmDOI{10.1145/3589334.3645520}
 
-%% Rights management information.  This information is sent to you
-%% when you complete the rights form.  These commands have SAMPLE
-%% values in them; it is your responsibility as an author to replace
-%% the commands and values with those provided to you when you
-%% complete the rights form.
-\setcopyright{acmcopyright}
-\copyrightyear{2018}
-\acmYear{2018}
-\acmDOI{XXXXXXX.XXXXXXX}
-
-%% These commands are for a PROCEEDINGS abstract or paper.
-\acmConference[Conference acronym 'XX]{Make sure to enter the correct
-  conference title from your rights confirmation emai}{June 03--05,
-  2018}{Woodstock, NY}
-%%
-%%  Uncomment \acmBooktitle if the title of the proceedings is different
-%%  from ``Proceedings of ...''!
-%%
-%%\acmBooktitle{Woodstock '18: ACM Symposium on Neural Gaze Detection,
-%%  June 03--05, 2018, Woodstock, NY}
-\acmPrice{15.00}
-\acmISBN{978-1-4503-XXXX-X/18/06}
+\settopmatter{printacmref=true}
 
 
 %%
@@ -126,6 +107,7 @@
 \usepackage{longtable}
 \usepackage{tcolorbox}
 \usepackage{enumitem} % no indent [leftmargin=*]
+\usepackage{balance}
 
 \definecolor{Permissive}{HTML}{18AFCC}
 \definecolor{Public}{HTML}{5F9099}
@@ -139,7 +121,7 @@
 %%
 %% The "title" command has an optional parameter,
 %% allowing the author to define a "short title" to be used in page headers.
-\title{ModelGo: A Pratical Tool for Machine Learning License Analysis}
+\title{ModelGo: A Practical Tool for Machine Learning License Analysis}
 
 %%
 %% The "author" command and its associated commands are used to define
@@ -147,16 +129,28 @@
 %% Of note is the shared affiliation of the first two authors, and the
 %% "authornote" and "authornotemark" commands
 %% used to denote shared contribution to the research.
-\begin{comment}
+
 \author{Moming Duan}
 \affiliation{%
   \institution{National University of Singapore}
   %\city{Singapore}
   \country{Singapore}}
 \email{moming@nus.edu.sg}
-\end{comment}
 
-\author{Authors}
+
+\author{Qinbin Li}
+\affiliation{%
+  \institution{UC Berkeley}
+  %\city{Berkeley}
+  \country{USA}}
+\email{qinbin@berkeley.edu}
+
+\author{Bingsheng He}
+\affiliation{%
+  \institution{National University of Singapore}
+  %\city{Singapore}
+  \country{Singapore}}
+\email{hebs@comp.nus.edu.sg}
 
 %%
 %% By default, the full list of authors will be used in the page
@@ -164,7 +158,7 @@
 %% other information printed in the page headers. This command allows
 %% the author to define a more concise list
 %% of authors' names for this purpose.
-\renewcommand{\shortauthors}{X et al.}
+\renewcommand{\shortauthors}{Moming Duan, Qinbin Li, \& Bingsheng He}
 
 %%
 %% The abstract is a short summary of the work to be presented in the
@@ -181,6 +175,7 @@
   % ModelGo的设计，一句话
   With ModelGo, we present license assessment reports based on 5 use cases with diverse model-reusing scenarios, rendered by real-world machine learning components.
   Finally, we summarize the reasons behind license conflicts and provide guidelines for minimizing them.
+  Our code is publicly available at \url{https://github.com/morningD/ModelGo}.
 \end{abstract}
 
 %bundling the LGPL-LR corpus dataset with another corpus dataset licensed under CC-BY-SA 4.0 can result in a copyleft proliferation conflict. %as stipulated by the derivative work terms of LGPL-LR.
@@ -191,34 +186,22 @@
 %% Please copy and paste the code instead of the example below.
 %%
 \begin{CCSXML}
-<ccs2012>
- <concept>
-  <concept_id>00000000.0000000.0000000</concept_id>
-  <concept_desc>Do Not Use This Code, Generate the Correct Terms for Your Paper</concept_desc>
-  <concept_significance>500</concept_significance>
- </concept>
- <concept>
-  <concept_id>00000000.00000000.00000000</concept_id>
-  <concept_desc>Do Not Use This Code, Generate the Correct Terms for Your Paper</concept_desc>
-  <concept_significance>300</concept_significance>
- </concept>
- <concept>
-  <concept_id>00000000.00000000.00000000</concept_id>
-  <concept_desc>Do Not Use This Code, Generate the Correct Terms for Your Paper</concept_desc>
-  <concept_significance>100</concept_significance>
- </concept>
- <concept>
-  <concept_id>00000000.00000000.00000000</concept_id>
-  <concept_desc>Do Not Use This Code, Generate the Correct Terms for Your Paper</concept_desc>
-  <concept_significance>100</concept_significance>
- </concept>
-</ccs2012>
+  <ccs2012>
+     <concept>
+         <concept_id>10011007.10011074.10011134.10003559</concept_id>
+         <concept_desc>Software and its engineering~Open source model</concept_desc>
+         <concept_significance>300</concept_significance>
+         </concept>
+     <concept>
+         <concept_id>10003456.10003457.10003580.10003585</concept_id>
+         <concept_desc>Social and professional topics~Testing, certification and licensing</concept_desc>
+         <concept_significance>500</concept_significance>
+         </concept>
+   </ccs2012>
 \end{CCSXML}
 
-\ccsdesc[500]{Do Not Use This Code~Generate the Correct Terms for Your Paper}
-\ccsdesc[300]{Do Not Use This Code~Generate the Correct Terms for Your Paper}
-\ccsdesc{Do Not Use This Code~Generate the Correct Terms for Your Paper}
-\ccsdesc[100]{Do Not Use This Code~Generate the Correct Terms for Your Paper}
+\ccsdesc[500]{Social and professional topics~Testing, certification and licensing}
+\ccsdesc[300]{Software and its engineering~Open source model}
 
 %%
 %% Keywords. The author(s) should pick words that accurately describe
@@ -258,22 +241,24 @@ We leverage five case studies to demonstrate the feasibility of our method, and 
 %% (and NOT an unnumbered section). This ensures the proper
 %% identification of the section in the article metadata, and the
 %% consistent spelling of the heading.
-\begin{comment}
-  \begin{acks}
-Ack.
+
+\begin{acks}
+This research is supported by the National Research Foundation Singapore and DSO National Laboratories under the AI Singapore Programme (AISG Award No: AISG2-RP-2020-018). 
+Any opinions, findings and conclusions or recommendations expressed in this material are those of the authors and do not reflect the views of National Research Foundation, Singapore.
 \end{acks}
-\end{comment}
+
 
 
 %%
 %% The next two lines define the bibliography style to be used, and
 %% the bibliography file.
 \bibliographystyle{ACM-Reference-Format}
+%\balance
 \bibliography{REF}
-
 
 %%
 %% If your work has an appendix, this is the place to put it.
+\newpage
 \appendix
 \input{APPENDIX}
 

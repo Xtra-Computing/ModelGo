@@ -18,57 +18,6 @@ Furthermore, our case studies can cover all events listed in Table~\ref{tab:anal
 It's worth noting that, as a license compliance analysis tool, ModelGo's goal is to report potential legal risks in ML projects related to licenses.
 It is not designed to address legal interpretation issues such as copyrightability of the final work, assessing copyright infringement, or establishing authorship, which typically require verification by a court of law in different regions~\cite{national1979final, hedrick2019ithink, margoni2018artificial}.
 
-
-\begin{table}[t]
-    \caption{Specifications of AI components used in case studies, which include \textcolor{Copyleft}{Copyleft License}, \textcolor{Permissive}{Permissive License}, \textcolor{Public}{Public Domain License} and Non-Public License.}
-    \vspace{-3mm}
-    \footnotesize
-    \label{tab:works}
-    \begin{tabular}{|p{1.6cm}|p{3cm}|p{0.6cm}|p{1.7cm}|}
-        \hline
-        \rowcolor[gray]{.8}
-        \textbf{Work Name} & \textbf{License Name} & \textbf{Type} & \textbf{Modality/Usage}  \\ \hline
-        Wikipedia & \textcolor{Copyleft}{CC-BY-SA-4.0} & \multirow{15}{*}{Data} & \multirow{6}{*}{Text}   \\ \cline{1-2}
-        StackExchange & \textcolor{Copyleft}{CC-BY-SA-4.0}  &  &    \\ \cline{1-2}
-        FreeLaw & CC-BY-ND-4.0 &  &   \\ \cline{1-2}
-        arXiv & \textcolor{Copyleft}{CC-BY-NC-SA-4.0} &  &   \\ \cline{1-2}
-        PubMed & \textcolor{Copyleft}{CC-BY-NC-SA-4.0} &  &    \\ \cline{1-2}
-        Deep-sequoia & CC-BY-NC-ND-4.0 &  &   \\ \cline{1-2} \cline{4-4}
-
-        Midjourney Gen & CC-BY-NC-ND-4.0 &  & \multirow{6}{*}{Image}  \\ \cline{1-2}
-        Flickr & \textcolor{Copyleft}{CC-BY-NC-SA-4.0} &  &   \\ \cline{1-2}
-        StockSnap & \textcolor{Public}{CC0-1.0} &  &   \\ \cline{1-2}
-        Wikimedia & \textcolor{Copyleft}{CC-BY-SA-4.0} &  &   \\ \cline{1-2}
-        OpenClipart & \textcolor{Public}{CC0-1.0} &  &   \\ \cline{1-2} \cline{4-4}
-        
-        ccMixter & \textcolor{Permissive}{CC-BY-NC-4.0} & & \multirow{2}{*}{Voice}  \\ \cline{1-2}
-        Jamendo & CC-BY-NC-ND-4.0 &  &   \\ \cline{1-2} \cline{4-4}
-        
-        Thingverse & \textcolor{Copyleft}{CC-BY-NC-SA-4.0} &  & 3D model  \\ \cline{1-2} \cline{4-4}
-
-        Vimeo & CC-BY-NC-ND-4.0 &  & Video  \\ \hline
-
-        Baize & \textcolor{Copyleft}{GPL-3.0} & \multirow{11}{*}{Model} & \multirow{4}{*}{Text Generation}   \\ \cline{1-2}
-        BLOOM & \textcolor{Permissive}{BigScience-BLOOM-RAIL-1.0} & &   \\ \cline{1-2}
-        Llama2 & \textcolor{Permissive}{Llama2 Community License} & &   \\ \cline{1-2}
-        BigTranslate & \textcolor{Copyleft}{GPL-3.0} & &   \\ \cline{1-2} \cline{4-4}
-
-        BERT & \textcolor{Permissive}{Apache-2.0} &  & Fill-Mask   \\ \cline{1-2} \cline{4-4}
-
-        Stable Diffusion & \textcolor{Permissive}{CreativeML-OpenRAIL-M} & & Text to Image  \\ \cline{1-2} \cline{4-4}
-
-        MaskFormer & \textcolor{Permissive}{CC-BY-NC-4.0} & & Image  \\ \cline{1-2}
-        DETR & \textcolor{Permissive}{Apache-2.0} & & Segmentation \\ \cline{1-2} \cline{4-4}
-
-        Whisper & \textcolor{Permissive}{MIT} & & Voice to Text  \\ \cline{1-2} \cline{4-4}
-
-        X-Clip & \textcolor{Permissive}{MIT} & & Video to Text  \\ \cline{1-2} \cline{4-4}
-
-        I2VGen-XL & CC-BY-NC-ND-4.0 & & Image to Video  \\ \hline
-
-        \end{tabular}
-\end{table}
-
 \subsection{CASE \Romannum{1} : Corpus Combination}
 
 \begin{figure}[h]
@@ -110,7 +59,7 @@ Additionally, besides the rights not granted error arising from CC-BY-NC-ND-4.0,
 
 \begin{tcolorbox}
 % 结论：数据集的收集应该避免no public 和 不能商用的数据集，使用copyleft 的CC 数据集比较安全，但是其他GPL需要额外注意扩散范围
-\textbf{Findings 1}: To minimize the license violation risk when collecting ML data, avoid using content under non-public or non-commercial licenses, and be cautious about the proliferation scope of GPL-like licenses.
+\textbf{Finding 1}: To minimize the license violation risk when collecting ML data, avoid using content under non-public or non-commercial licenses, and be cautious about the proliferation scope of GPL-like licenses.
 Based on our assessment, using CC-licensed content (including CC ShareAlike) carries less risk.
 \end{tcolorbox}
 
@@ -147,7 +96,7 @@ This feature is helpful for licensors who intend to prohibit any derivation and 
 However, this disorganization of ML projects' licensing has a negative effect on the entire ecosystem.
 
 \begin{tcolorbox} 
-\textbf{Findings 2}: Both OSS and CC licenses lack definitions and corresponding limitations related to model training, leaving freedom to use the trained results. 
+\textbf{Finding 2}: Both OSS and CC licenses lack definitions and corresponding limitations related to model training, leaving freedom to use the trained results. 
 However, RAILs provide comprehensive definitions for AI activities and copyleft-style restrictions, making their derivatives not GPL-compatible.
 \end{tcolorbox}
 
@@ -175,7 +124,7 @@ Therefore, once AI model licensed components are used in ML projects, all subseq
 %\vspace{-2mm}
 \begin{tcolorbox} 
 % Responsible AI 的 copyleft use behavioral 问题：历史累积 full spectrum
-\textbf{Findings 3}: Leveraging generative models can bypass the no-sharing conditions of CC NoDerivs licenses and making the generated content almost ungoverned.
+\textbf{Finding 3}: Leveraging generative models can bypass the no-sharing conditions of CC NoDerivs licenses and making the generated content almost ungoverned.
 However, if RAIL-licensed works are involved, the content should comply with their restrictions, potentially leading to further GPL-compatibility issues.
 \end{tcolorbox}
 
@@ -211,7 +160,7 @@ Additionally, the rights granted by the Llama2 license are revocable, posing a p
 Furthermore, the final work should also comply with the user behavioral restrictions demanded by BLOOM-RAIL-1.0 and Llama2.
 
 \begin{tcolorbox}
-\textbf{Findings 4}: Knowledge transfer is a powerful method to bypass the reproduction prohibition of models. 
+\textbf{Finding 4}: Knowledge transfer is a powerful method to bypass the reproduction prohibition of models. 
 However, model fusion may trigger the terms like remix, incorporate, and adapt, necessitating the reusing procedures to remain in compliance.
 In addition, the rights may be revocable even if granted by a permissive license.
 \end{tcolorbox}
@@ -226,7 +175,7 @@ In addition, the rights may be revocable even if granted by a permissive license
     \label{fig:case5}
 \end{figure}
 
-Mirroring the CASE \Romannum{4}, this case considers the scenario of data remix and integration, which can arise when using data augmentation methods such as \textit{mixup}\cite{zhang2018mixup}, SMOTE\cite{chawla2002smote}, ADASYN~\cite{he2008adasyn}, etc.
+Mirroring the CASE \Romannum{4}, this case considers the scenario of data remix and integration, which can arise when using data augmentation methods such as \textit{mixup}~\cite{zhang2018mixup}, SMOTE~\cite{chawla2002smote}, ADASYN~\cite{he2008adasyn}, etc.
 We reuse the generation pipeline depicted in Figure~\ref{fig:case3} to increase the complexity of the assessment.
 
 \boxed{\text{Results of CASE \Romannum{5}}}
@@ -245,14 +194,14 @@ However, we can get rid of these constraints by leveraging the loophole of gener
 %However, it is a false alarm because there is a two-way compatibility between CC ShareAlike licenses, as indicated by a supplementary interpretation from Creative Commons\footnote{https://wiki.creativecommons.org/wiki/Wiki/cc\_license\_compatibility}. 
 %We reserve this alarm to remind developers to manually check the compatibility from licensors or consult with legal experts.
 
-\vspace{-2mm}
+%\vspace{-2mm}
 \begin{tcolorbox}
-\textbf{Findings 5}: Directly remixing raw data should ensure compatibility between licenses, which can be challenging in crowdsourced scenarios.
+\textbf{Finding 5}: Directly remixing raw data should ensure compatibility between licenses, which can be challenging in crowdsourced scenarios.
 One feasible solution is to exclude all content under copyleft and non-public licenses. 
 An irregular tactic is to exploit the current ambiguity in licensing frameworks regarding generated content.
 \end{tcolorbox}
 
-\vspace{-3mm}
+%\vspace{-3mm}
 \subsection{Summary}
 
 Based on the findings from our case studies, we conclude five guidelines to minimize license conflicts and legal risks in ML projects:

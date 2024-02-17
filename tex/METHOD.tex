@@ -1,6 +1,6 @@
 \section{Method}
 \label{sec:method}
-This section is organized around three key questions in ML license analysis: (i) How to determine the applicable conditions in licenses for certain model reuse mechanisms? (ii) How to capture the dependency structure of a ML project? (iii) What types of non-compliance exist in ML projects and how to assess them?
+This section is organized around three key questions in ML license analysis: \emph{(i) How to determine the applicable conditions in licenses for certain model reuse mechanisms? (ii) How to capture the dependency structure of a ML project? (iii) What types of non-compliance exist in ML projects and how to assess them?}
 We will present our solutions to these questions in the following sections.
 
 \subsection{Taxonomy for ML License Analysis}
@@ -46,7 +46,7 @@ Therefore, we should design a mechanism to trace these multi-source dependency s
     \caption{Our proposed taxonomy bridging AI activities and license language keywords based on their result forms.}
     \Description{}
     \label{fig:tax}
-    \vspace{-5mm}
+    %\vspace{-5mm}
 \end{figure}
 
 %translated, altered, arranged, transformed, or otherwise modified 
@@ -79,7 +79,7 @@ The reason we need this specially-designed tree structure is that works with dif
     \caption{The proposed structure for capturing work dependencies in ML projects with multiple reused components.}
     \Description{}
     \label{fig:stru}
-    \vspace{-5mm}
+    %\vspace{-5mm}
 \end{figure}
 
 \subsection{License Analysis in ML Projects}
@@ -137,7 +137,7 @@ In the next section, we will present five case studies based on real ML componen
 
 \begin{table}[t]
     \caption{License warnings, errors, restrictions/obligations, and notices assessed by ModelGo in \textcolor{Permissive}{initial phase}, \textcolor{Copyleft}{license determination phase} and license validation phase.}
-    \vspace{-3mm}
+    %\vspace{-3mm}
     \scriptsize
     \label{tab:analysis}
     \begin{tabular}{|p{3.3cm}|p{4.3cm}|}
@@ -166,27 +166,7 @@ In the next section, we will present five case studies based on real ML componen
     Runtime Restriction & This work must comply with the \textbf{rumtime restriction} terms according to related license(s). \\ \hline
 
     \end{tabular}
-    \vspace{-2mm}
-\end{table}
-
-\begin{table}[t]
-    \caption{List of licenses (represented by SPDX short IDs) supported by ModelGo, covering over 96\% of licensed models and datasets on Huggingface.}
-    \vspace{-3mm}
-    \scriptsize
-    \label{tab:list}
-    \begin{tabular}{|p{2.45cm}|p{2.45cm}|p{2.45cm}|}
-    \hline
-    \rowcolor[gray]{.8}
-    \textbf{OSS License} (99.8\%) & \textbf{Content License} (96.6\%) & \textbf{AI Model License} (98.2\%)\\ \hline
-    Apache-2.0, Unlicense, MIT, AFL-3.0, GPL-3.0, AGPL-3.0, LGPL-3.0, LGPL-2.1, BSD-3-Clause, BSD-3-Clause-Clear, BSD-2-Clause, Artistic-2.0, WTFPL-2.0, OSL-3.0, ECL-2.0
-    &
-    CC0-1.0, CC-BY-4.0, CC-BY-SA-4.0, CC-BY-NC-4.0, CC-BY-ND-4.0, CC-BY-NC-ND-4.0, CC-BY-NC-SA-4.0, PDDL, C-UDA, LGPL-LR, GFDL
-    & 
-    OpenRAIL++, CreativeML-OpenRAIL-M, BigScience-BLOOM-RAIL-1.0, Llama2, OPT-175B, SEER
-    \\ \hline
-
-    \end{tabular}
-    \vspace{-2mm}
+    %\vspace{-2mm}
 \end{table}
 
 

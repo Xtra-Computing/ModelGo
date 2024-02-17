@@ -3,7 +3,7 @@
 Over the past decade, the advancement and productization of AI infrastructures have significantly accelerated the proliferation of machine learning (ML) components~\cite{jiang2023empirical}, including AI models~\cite{rombach2022high, touvron2023llama}, software~\cite{wolf2020transformers, he2022fastermoe}, and datasets~\cite{gao2020the, schuhmann2022laion}.
 Concurrently, the reuse of these components has gained popularity, motivated by concerns about their significant demands on financial and energy resources~\cite{strubell2019energy}, as well as the widespread recognition of the value advocated by the open-source movement~\cite{rosen2005open}.
 Unlike code reuse in the OSS field~\cite{perens1999open}, the reuse of AI models follow a distinct scheme.
-A frequently employed approach for AI models reuse is fine-tuning Pre-Trained Models (PTMs)~\cite{han2021pre, touvron2023llama}, where PTMs are adapted on a domain-specific dataset, leveraging their robust generalization capabilities. 
+A frequently employed approach is fine-tuning Pre-Trained Models (PTMs)~\cite{han2021pre, touvron2023llama}, where PTMs are adapted on a domain-specific dataset, leveraging their robust generalization capabilities. 
 
 % 但是由于xxx原因导致software，data，model都有不同的license，存在潜在的冲突和法律风险。
 From a legal perspective, model reuse is generally uncontroversial when its developers or affiliated companies own the copyright for all components.
@@ -27,7 +27,7 @@ In this paper, we introduce ModelGo, a tool designed to analyze potential licens
 To demonstrate the usefulness of ModelGo, we present 5 use cases constructed using 15 datasets and 11 models from real-world, whose license types cover OSS, free content, and AI model.
 Our findings show that there exist potential legal risks when reusing  components under copyleft, non-public, non-commercial licenses, and point out the need for attention to responsible AI model licenses.
 The main contributions of our paper are:
-\begin{itemize}
+\begin{itemize}[]
     \item We raise the challenge of license analysis for ML projects and propose ModelGo to assessing it. To the best of our knowledge, our work is the first attempt to deal with this challenge in the ML context.
     \item As part of our work, we introduce a new taxonomy based on the forms of reused components to identify the applicable conditions for various ML reuse mechanisms. This method helps mitigate ambiguity in cases of mismatch between declared license type and actual component type, allowing ModelGo to analyze components under various license types, including OSS, free content, and AI models.
     \item  We provide license compliance reports based on 5 use cases to showcase the effectiveness of our approach. 
@@ -39,7 +39,6 @@ The rest of the paper is organized as follows.
 Section~\ref{sec:related} introduces related studies and the motivations behind this work.
 Section~\ref{sec:method} presents the detailed design, including our proposed taxonomy for bridging AI activities and license language, ML work dependencies structure, and the license analysis workflow of ModelGo.
 Section~\ref{sec:case} provides five case studies and their corresponding findings, and Section~\ref{sec:conclusion} concludes this work.
-\textbf{Code will be available once the paper is published.}
 %We first propose using a new taxonomy based on the forms of reused components to identify the corresponding conditions for different reuse mechanisms.
 %Based on ModelGo employs a tree structure to track the dependencies of components in ML pipelines.
 

@@ -1,4 +1,4 @@
-\section{Case Study Details}
+\section{Case Studies}
 \label{sec:case}
 An ideal practice of ModelGo is to assess real-world ML projects and detect their potential license compliance issues. 
 However, this can be challenging in practice due to three present situations:
@@ -38,7 +38,8 @@ If not specified otherwise, the format of models and datasets is set to raw (i.e
 %We have also consolidated some redundant results reported by intermediate reused components to simplify our figures.
 The interpretation of license analysis results is as follows:
 
-\boxed{\text{Results of CASE \Romannum{1} (a)}} 
+%\boxed{\text{Results of CASE \Romannum{1} (a)}} 
+\textbf{Results of CASE \Romannum{1} (a)}
 The copyleft conditions about \textit{translation} of the CCs were triggered, which means that the translated corpuses are also covered by the original licenses.
 As a result, the translated \textit{arXiv} and \textit{Stack Exchange} corpuses remain under the original copyleft CC ShareAlike licenses. 
 However, combining these corpuses with another copyleft-licensed \textit{Deep-sequoia} corpus did not result in the multiple copyleft licenses issue, as the combination with strong separation falls outside the proliferate coverage of LGPL-LR and CC ShareAlike licenses~\cite{creative2023artificial}.
@@ -51,7 +52,8 @@ The second error is caused by the fact that the redistribution rights of final w
 There are also many restrictions, such as the final work must state the changes compared to the original work and must retain the licenses and notice files of the original works.
 In addition, ModelGo also indicates that the granted rights of LGPL-LR are revocable, which poses a potential risk for further redistribution.
 
-\boxed{\text{Results of CASE \Romannum{1} (b)}} 
+%\boxed{\text{Results of CASE \Romannum{1} (b)}}
+\textbf{Results of CASE \Romannum{1} (b)} 
 Different from CASE \Romannum{1} (a), the final work in CASE \Romannum{1} (b) is licensed under another copyleft license GPL-3.0 from \textit{Big Translate}.
 This is because LGPL-LR has a license proliferation exemption for reused results that are no longer classified as linguistic resources.
 Consequently, the license of final work is proliferated by GPL-3.0.
@@ -78,7 +80,8 @@ There are two variations in this case, each involving different models, training
 A real-wrold counterpart could be Wu Dao 2.0, which is a LLM trained using MoE technology with input from tens of thousands of experts~\cite{he2022fastermoe}.
 Additionally, releasing models as a service is commonly observed in commercial AI applications such as chatGPT and Midjourney.
 
-\boxed{\text{Results of CASE \Romannum{2} (a)}} 
+%\boxed{\text{Results of CASE \Romannum{2} (a)}} 
+\textbf{Results of CASE \Romannum{2} (a)}
 There is still significant legal uncertainty regarding whether CC-licensed works can be applied to AI training~\cite{creative2023artificial}.
 Since there is no explicit definition of AI training and corresponding restrictions for resulting models within the license text, we consider training as an undefined activity that falls outside the scope of CC agreements.
 Therefore, even though the copyleft CC-BY-SA-4.0 license is used for \textit{Wikimedia}, the trained model \textit{BERT} does not trigger the license proliferation conditions and can be relicensed to Unlicense.
@@ -89,7 +92,8 @@ Therefore, an license incompatibility error is reported when we combine \textit{
 The warning is that the final work released as SaaS should remain open source or provide a readable copy of the source code to comply with GPL-3.0. 
 Meanwhile, user behavioral restrictions also apply to the final work, as it is a derivative of \textit{BLOOM} governed by responsible AI conditions~\cite{contractor2022behavioral}.
 
-\boxed{\text{Results of CASE \Romannum{2} (b)}} 
+%\boxed{\text{Results of CASE \Romannum{2} (b)}} 
+\textbf{Results of CASE \Romannum{2} (b)}
 In this case study, we replaced experts with CV models. 
 The assessment reveals that the final work cannot be shared, whether modified or not, even for non-commercial purposes, if the project includes CC NoDerivs licenses, as these licenses do not grant redistribution rights to the licensee.
 This feature is helpful for licensors who intend to prohibit any derivation and commercialization of their models without the need to draft a custom proprietary license.
@@ -114,7 +118,8 @@ As shown in Table~\ref{tab:MLP}, artifact generation has become the most popular
 In this case study, we leverages generative models to produce data for different modalities in a pipeline fashion.
 The final generated content is released for commercial use.
 
-\boxed{\text{Results of CASE \Romannum{3}}} 
+%\boxed{\text{Results of CASE \Romannum{3}}} 
+\textbf{Results of CASE \Romannum{3}}
 There is still an ambiguity in traditional OSS licenses and free content licenses when it comes to the use of licensed materials for generating artifacts.
 From the perspective of the license agreement, this AI activity is permitted as long as the \textit{Use} right is granted, and there are also no further claims for the generated content.
 However, there is one restriction from OpenRAIL-M. 
@@ -143,7 +148,8 @@ This is achieved through technologies such as Student-Teacher Learning~\cite{fur
 Traditional OSS licenses expose a loophole regarding these unique reusing methods from ML, and these methods also pose challenges for deep IP protection~\cite{peng2022intellectual}.
 With the assistance of ModelGo, we further explore the compliance of these knowledge transfer methods within existing licensing framework.
 
-\boxed{\text{Results of CASE \Romannum{4} (a)}} 
+%\boxed{\text{Results of CASE \Romannum{4} (a)}} 
+\textbf{Results of CASE \Romannum{4} (a)}
 The knowledge fusion like model averaging and fusion yield a weak separation result from the original work, which can be interpreted as one form of amalgamation.
 Therefore, the final work should be under a CC-BY-NC-4.0, the same as \textit{Mask Former}.
 However, the CC licenses do not define the terms for the materials used for distillation, so there is no effect from the copyleft licenses of \textit{Wikimedia} and \textit{I2VGen-XL}.
@@ -151,7 +157,8 @@ However, the CC licenses do not define the terms for the materials used for dist
 There is one error in the assessment. 
 Since the modification of a CC NonCommercial licensed work cannot be relicensed according to its conditions, the amalgamated result face a no commercial rights error when commercialized.
 
-\boxed{\text{Results of CASE \Romannum{4} (b)}} 
+%\boxed{\text{Results of CASE \Romannum{4} (b)}} 
+\textbf{Results of CASE \Romannum{4} (b)}
 This case study assess license compliance towards NLP models.
 There have two errors all detected from \textit{Llama2}.
 The first error is the license incompatibility between its use limitations terms and the GPL-3.0.
@@ -178,7 +185,8 @@ In addition, the rights may be revocable even if granted by a permissive license
 Mirroring the CASE \Romannum{4}, this case considers the scenario of data remix and integration, which can arise when using data augmentation methods such as \textit{mixup}~\cite{zhang2018mixup}, SMOTE~\cite{chawla2002smote}, ADASYN~\cite{he2008adasyn}, etc.
 We reuse the generation pipeline depicted in Figure~\ref{fig:case3} to increase the complexity of the assessment.
 
-\boxed{\text{Results of CASE \Romannum{5}}}
+%\boxed{\text{Results of CASE \Romannum{5}}}
+\textbf{Results of CASE \Romannum{5}}
 We first analysis the remix of \textit{StockSnap}, \textit{Midjourney Gen Image} and \textit{Thingverse}.
 For content under public domain licenses like CC0-1.0, we can freely remix this content without worrying about any conflicts.
 However, conflicts may arise when remixing content under CC-BY-NC-4.0 and CC-BY-NC-SA-4.0 licenses.
@@ -202,7 +210,7 @@ An irregular tactic is to exploit the current ambiguity in licensing frameworks 
 \end{tcolorbox}
 
 %\vspace{-3mm}
-\subsection{Summary}
+\subsection{Summary of Guidelines}
 
 Based on the findings from our case studies, we conclude five guidelines to minimize license conflicts and legal risks in ML projects:
 
@@ -214,4 +222,5 @@ Based on the findings from our case studies, we conclude five guidelines to mini
 We provide a flowchart to illustrate this idea in Appendix~\ref{apdx:A}.
 
 Please note that our guidelines are aimed at minimizing potential risks related to license terms and do not provide legal interpretations as previously mentioned. 
-See our disclaimers in Appendix~\ref{apdx:disclaimer}.
+\textit{\textbf{Disclaimers: the content presented in this article is intended for general informational purposes only and should not be construed as legal advice. Any views, opinions, findings, conclusions, or recommendations expressed in this material are the sole responsibility of the author(s) and do not represent the perspectives of any organization or entity.}}
+%See our disclaimers in Appendix~\ref{apdx:disclaimer}.

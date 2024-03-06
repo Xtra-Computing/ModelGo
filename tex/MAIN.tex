@@ -48,16 +48,15 @@
 \documentclass[sigconf]{acmart}
 %\documentclass[sigconf, nonacm]{acmart}
 
+
 \copyrightyear{2024}
 \acmYear{2024}
-\setcopyright{acmlicensed}
-\acmConference[WWW '24] {Proceedings of the ACM Web Conference 2024}{May 13--17, 2024}{Singapore, Singapore.}
-\acmBooktitle{Proceedings of the ACM Web Conference 2024 (WWW '24), May 13--17, 2024, Singapore, Singapore}
+\setcopyright{rightsretained}
+\acmConference[WWW '24]{Proceedings of the ACM Web Conference 2024}{May 13--17, 2024}{Singapore, Singapore}
+\acmBooktitle{Proceedings of the ACM Web Conference 2024 (WWW '24), May 13--17, 2024, Singapore, Singapore}\acmDOI{10.1145/3589334.3645520}
 \acmISBN{979-8-4007-0171-9/24/05}
-\acmDOI{10.1145/3589334.3645520}
 
 \settopmatter{printacmref=true}
-
 
 %%
 %% Submission ID.
@@ -164,18 +163,16 @@
 %% The abstract is a short summary of the work to be presented in the
 %% article.
 \begin{abstract}
-  Productionizing machine learning projects is inherently complex, involving a multitude of interconnected components that are assembled like LEGO blocks and evolve throughout development lifecycle.
-  These components encompass software, databases, and models, each subject to various licenses governing their reuse and redistribution.
-  However, existing license analysis approaches for Open Source Software (OSS) are not well-suited for this context.
-  %and the intricate web of licenses often leads to conflicts.
-  For instance, some projects are licensed without explicitly granting sublicensing rights, or the granted rights can be revoked, potentially exposing their derivatives to legal risks.
-  Indeed, the analysis of licenses in machine learning projects grows significantly more intricate as it involves interactions among diverse types of licenses and licensed materials.
-  To the best of our knowledge, no prior research has delved into the exploration of license conflicts within this domain.
-  In this paper, we introduce ModelGo, a practical tool for auditing potential legal risks in machine learning projects to enhance compliance and fairness.
-  % ModelGo的设计，一句话
-  With ModelGo, we present license assessment reports based on five use cases with diverse model-reusing scenarios, rendered by real-world machine learning components.
-  Finally, we summarize the reasons behind license conflicts and provide guidelines for minimizing them.
-  Our code is publicly available at \url{https://github.com/morningD/ModelGo}.
+Productionizing machine learning projects is inherently complex, involving a multitude of interconnected components that are assembled like LEGO blocks and evolve throughout development lifecycle.
+These components encompass software, databases, and models, each subject to various licenses governing their reuse and redistribution.
+However, existing license analysis approaches for Open Source Software (OSS) are not well-suited for this context.
+For instance, some projects are licensed without explicitly granting sublicensing rights, or the granted rights can be revoked, potentially exposing their derivatives to legal risks.
+Indeed, the analysis of licenses in machine learning projects grows significantly more intricate as it involves interactions among diverse types of licenses and licensed materials.
+To the best of our knowledge, no prior research has delved into the exploration of license conflicts within this domain.
+In this paper, we introduce ModelGo, a practical tool for auditing potential legal risks in machine learning projects to enhance compliance and fairness.
+With ModelGo, we present license assessment reports based on five use cases with diverse model-reusing scenarios, rendered by real-world machine learning components.
+Finally, we summarize the reasons behind license conflicts and provide guidelines for minimizing them.
+Our code is publicly available at \url{https://github.com/Xtra-Computing/ModelGo}.
 \end{abstract}
 
 %bundling the LGPL-LR corpus dataset with another corpus dataset licensed under CC-BY-SA 4.0 can result in a copyleft proliferation conflict. %as stipulated by the derivative work terms of LGPL-LR.

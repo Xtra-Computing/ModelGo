@@ -39,7 +39,7 @@ If not specified otherwise, the format of models and datasets is set to raw (i.e
 The interpretation of license analysis results is as follows:
 
 %\boxed{\text{Results of CASE \Romannum{1} (a)}} 
-\textbf{Results of CASE \Romannum{1} (a)}
+\textbf{Results of CASE \Romannum{1} (a).}
 The copyleft conditions about \textit{translation} of the CCs were triggered, which means that the translated corpuses are also covered by the original licenses.
 As a result, the translated \textit{arXiv} and \textit{Stack Exchange} corpuses remain under the original copyleft CC ShareAlike licenses. 
 However, combining these corpuses with another copyleft-licensed \textit{Deep-sequoia} corpus did not result in the multiple copyleft licenses issue, as the combination with strong separation falls outside the proliferate coverage of LGPL-LR and CC ShareAlike licenses~\cite{creative2023artificial}.
@@ -53,7 +53,7 @@ There are also many restrictions, such as the final work must state the changes 
 In addition, ModelGo also indicates that the granted rights of LGPL-LR are revocable, which poses a potential risk for further redistribution.
 
 %\boxed{\text{Results of CASE \Romannum{1} (b)}}
-\textbf{Results of CASE \Romannum{1} (b)} 
+\textbf{Results of CASE \Romannum{1} (b).} 
 Different from CASE \Romannum{1} (a), the final work in CASE \Romannum{1} (b) is licensed under another copyleft license GPL-3.0 from \textit{Big Translate}.
 This is because LGPL-LR has a license proliferation exemption for reused results that are no longer classified as linguistic resources.
 Consequently, the license of final work is proliferated by GPL-3.0.
@@ -81,7 +81,7 @@ A real-wrold counterpart could be Wu Dao 2.0, which is a LLM trained using MoE t
 Additionally, releasing models as a service is commonly observed in commercial AI applications such as chatGPT and Midjourney.
 
 %\boxed{\text{Results of CASE \Romannum{2} (a)}} 
-\textbf{Results of CASE \Romannum{2} (a)}
+\textbf{Results of CASE \Romannum{2} (a).}
 There is still significant legal uncertainty regarding whether CC-licensed works can be applied to AI training~\cite{creative2023artificial}.
 Since there is no explicit definition of AI training and corresponding restrictions for resulting models within the license text, we consider training as an undefined activity that falls outside the scope of CC agreements.
 Therefore, even though the copyleft CC-BY-SA-4.0 license is used for \textit{Wikimedia}, the trained model \textit{BERT} does not trigger the license proliferation conditions and can be relicensed to Unlicense.
@@ -93,7 +93,7 @@ The warning is that the final work released as SaaS should remain open source or
 Meanwhile, user behavioral restrictions also apply to the final work, as it is a derivative of \textit{BLOOM} governed by responsible AI conditions~\cite{contractor2022behavioral}.
 
 %\boxed{\text{Results of CASE \Romannum{2} (b)}} 
-\textbf{Results of CASE \Romannum{2} (b)}
+\textbf{Results of CASE \Romannum{2} (b).}
 In this case study, we replaced experts with CV models. 
 The assessment reveals that the final work cannot be shared, whether modified or not, even for non-commercial purposes, if the project includes CC NoDerivs licenses, as these licenses do not grant redistribution rights to the licensee.
 This feature is helpful for licensors who intend to prohibit any derivation and commercialization of their models without the need to draft a custom proprietary license.
@@ -119,7 +119,7 @@ In this case study, we leverages generative models to produce data for different
 The final generated content is released for commercial use.
 
 %\boxed{\text{Results of CASE \Romannum{3}}} 
-\textbf{Results of CASE \Romannum{3}}
+\textbf{Results of CASE \Romannum{3}.}
 There is still an ambiguity in traditional OSS licenses and free content licenses when it comes to the use of licensed materials for generating artifacts.
 From the perspective of the license agreement, this AI activity is permitted as long as the \textit{Use} right is granted, and there are also no further claims for the generated content.
 However, there is one restriction from OpenRAIL-M. 
@@ -149,7 +149,7 @@ Traditional OSS licenses expose a loophole regarding these unique reusing method
 With the assistance of ModelGo, we further explore the compliance of these knowledge transfer methods within existing licensing framework.
 
 %\boxed{\text{Results of CASE \Romannum{4} (a)}} 
-\textbf{Results of CASE \Romannum{4} (a)}
+\textbf{Results of CASE \Romannum{4} (a).}
 The knowledge fusion like model averaging and fusion yield a weak separation result from the original work, which can be interpreted as one form of amalgamation.
 Therefore, the final work should be under a CC-BY-NC-4.0, the same as \textit{Mask Former}.
 However, the CC licenses do not define the terms for the materials used for distillation, so there is no effect from the copyleft licenses of \textit{Wikimedia} and \textit{I2VGen-XL}.
@@ -158,7 +158,7 @@ There is one error in the assessment.
 Since the modification of a CC NonCommercial licensed work cannot be relicensed according to its conditions, the amalgamated result face a no commercial rights error when commercialized.
 
 %\boxed{\text{Results of CASE \Romannum{4} (b)}} 
-\textbf{Results of CASE \Romannum{4} (b)}
+\textbf{Results of CASE \Romannum{4} (b).}
 This case study assess license compliance towards NLP models.
 There have two errors all detected from \textit{Llama2}.
 The first error is the license incompatibility between its use limitations terms and the GPL-3.0.
@@ -186,7 +186,7 @@ Mirroring the CASE \Romannum{4}, this case considers the scenario of data remix 
 We reuse the generation pipeline depicted in Figure~\ref{fig:case3} to increase the complexity of the assessment.
 
 %\boxed{\text{Results of CASE \Romannum{5}}}
-\textbf{Results of CASE \Romannum{5}}
+\textbf{Results of CASE \Romannum{5}.}
 We first analysis the remix of \textit{StockSnap}, \textit{Midjourney Gen Image} and \textit{Thingverse}.
 For content under public domain licenses like CC0-1.0, we can freely remix this content without worrying about any conflicts.
 However, conflicts may arise when remixing content under CC-BY-NC-4.0 and CC-BY-NC-SA-4.0 licenses.

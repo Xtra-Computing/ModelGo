@@ -58,7 +58,7 @@ Therefore, we should design a mechanism to trace these multi-source dependency s
 \subsection{Structure of ML Projects}
 ML projects have unique dependency relationships compared to OSS projects, like the dependencies between generated content and generation model, as well as between training data and trained model.
 We can summarize these dependencies in ML projects into three categories:
-\begin{itemize}[leftmargin=*]
+\begin{itemize}%[leftmargin=*]
     \item \textbf{Mix-works} be embeded in the new work, either verbatim or in part, in a tangible form.
     They usually result from direct copying of original components or reusing them through AI activities like combination and amalgamation. These components are embedded into ML projects and must be released with the new work. 
     For example, if we release a new work utilizing Mixture of Experts (MoE), it is equivalent to releasing all weak learners.

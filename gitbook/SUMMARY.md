@@ -1,11 +1,11 @@
 # Table of contents
 
-* [👋 Welcome to A ModelGo](README.md)
+* [👋 Welcome to ModelGo](README.md)
 
-## Overview
+## Get Started
 
-* [💡 What we do](overview/what-we-do.md)
-* [✨ Our Features](overview/our-features.md)
+* [🚀 Using ModelGo Licenses](get-started/using-modelgo-licenses.md)
+* [✨ Our Features](get-started/our-features.md)
 
 ## Product Guides
 

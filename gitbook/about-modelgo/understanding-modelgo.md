@@ -1,4 +1,4 @@
-# 📎 Understanding Projects
+# ⚙️ Understanding ModelGo
 
 ## How Projects work
 

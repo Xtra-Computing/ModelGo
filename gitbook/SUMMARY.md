@@ -5,18 +5,12 @@
 ## Get Started
 
 * [🚀 Using ModelGo Licenses](get-started/using-modelgo-licenses.md)
-* [✨ Our Features](get-started/our-features.md)
+* [✨ How to Choose](get-started/how-to-choose.md)
 
-## Product Guides
+## About ModelGo
 
-* [📪 Making a post](product-guides/making-a-post.md)
-* [📎 Understanding Projects](product-guides/understanding-projects.md)
-
-## Fundamentals
-
-* [🛠️ Getting set up](fundamentals/getting-set-up/README.md)
-  * [📝 Setting permissions](fundamentals/getting-set-up/setting-permissions.md)
-  * [🧑 Inviting Members](fundamentals/getting-set-up/inviting-members.md)
+* [⚙️ Understanding ModelGo](about-modelgo/understanding-modelgo.md)
+* [📪 FAQ](about-modelgo/faq.md)
 
 ## Use Cases
 

@@ -11,8 +11,3 @@
 
 * [⚙️ Understanding ModelGo](about-modelgo/understanding-modelgo.md)
 * [📪 FAQ](about-modelgo/faq.md)
-
-## Use Cases
-
-* [🎨 For Designers](use-cases/for-designers.md)
-* [🖥️ For Developers](use-cases/for-developers.md)

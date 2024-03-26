@@ -12,21 +12,23 @@ These licenses are sublicensable and irrevocable, with <mark style="color:purple
 {% tab title="MG0" %}
 <table><thead><tr><th width="192">License Full Name</th><th>ModelGo Zero License 1.0</th></tr></thead><tbody><tr><td>Short Identifier</td><td>MG0</td></tr><tr><td>Tags</td><td>Permissive, Sublicensable, Irrevocable</td></tr><tr><td>Purposes</td><td>Publishing models with almost no restrictions except for the terms regarding Warranty, Liability, and Termination. Recipients may remove your attribution info but may not remove the license info.</td></tr></tbody></table>
 
+
+
 {% embed url="https://github.com/Xtra-Computing/ModelGo/blob/main/MG_licenses/MG0.txt" %}
-Get the Full Text of this License
+👆Get the Full Text of this License
 {% endembed %}
 {% endtab %}
 
 {% tab title="MG-BY" %}
 <table><thead><tr><th width="192">License Full Name</th><th>ModelGo Attribution License 1.0</th></tr></thead><tbody><tr><td>Short Identifier</td><td>MG-BY</td></tr><tr><td>Tags</td><td>Permissive, Sublicensable, Irrevocable</td></tr><tr><td>Purposes</td><td>Further to the provisions of MG0, recipients should retain all attribution info and other notices from original work in their copies and derivatives, and a statement of modifications is also required.</td></tr></tbody></table>
 
+
+
 {% embed url="https://github.com/Xtra-Computing/ModelGo/blob/main/MG_licenses/MG-BY.txt" %}
-Get the Full Text of this License
+👆Get the Full Text of this License
 {% endembed %}
 {% endtab %}
 {% endtabs %}
-
-###
 
 ### Conditional
 
@@ -36,15 +38,25 @@ These licenses include some <mark style="color:purple;">copyleft-style terms</ma
 {% tab title="MG-BY-RAI" %}
 <table><thead><tr><th width="192">License Full Name</th><th>ModelGo Attribution-ResponsibleAI License 1.0</th></tr></thead><tbody><tr><td>Short Identifier</td><td>MG-BY-RAI</td></tr><tr><td>Tags</td><td>Weak Copyleft, Responsible AI, Sublicensable, Revocable</td></tr><tr><td>Purposes</td><td></td></tr></tbody></table>
 
-{% @github-files/github-code-block url="https://github.com/Xtra-Computing/ModelGo/blob/main/MG_licenses/MG-BY.txt" %}
+
+
+{% embed url="https://github.com/Xtra-Computing/ModelGo/blob/main/MG_licenses/MG-BY-RAI.txt" %}
+👆Get the Full Text of this License
+{% endembed %}
 {% endtab %}
 
 {% tab title="MG-BY-OS" %}
 <table><thead><tr><th width="192">License Full Name</th><th>ModelGo Attribution-OpenSource License 1.0</th></tr></thead><tbody><tr><td>Short Identifier</td><td>MG-BY-OS</td></tr><tr><td>Tags</td><td>Copyleft, Disclose Source, Sublicensable, Irrevocable</td></tr><tr><td>Purposes</td><td></td></tr></tbody></table>
 
-{% @github-files/github-code-block url="https://github.com/Xtra-Computing/ModelGo/blob/main/MG_licenses/MG0.txt" %}
+
+
+{% embed url="https://github.com/Xtra-Computing/ModelGo/blob/main/MG_licenses/MG-BY-OS.txt" %}
+👆Get the Full Text of this License
+{% endembed %}
 {% endtab %}
 {% endtabs %}
+
+
 
 ### Stringent
 

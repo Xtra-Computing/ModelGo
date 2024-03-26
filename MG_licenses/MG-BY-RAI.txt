@@ -1,4 +1,4 @@
-﻿ModelGo Zero License
+﻿ModelGo Attribution ResponsibleAI License
 Version 1.0, Mar 2024, https://modelgo.gitbook.io/licenses
 
 
@@ -53,15 +53,15 @@ approved by the Open Source Initiative (OSI).
 2. License Rights and Redistribution.
 By exercising the Licensed Rights (defined below) or by using the Licensed 
 Materials, You accept and agree to be bound by the terms and conditions of 
-this ModelGo Zero License. If You disagree with this License, then no 
-rights are granted to You for the use of the Licensed Materials, and You 
-must cease using them immediately.
+this ModelGo Attribution-ResponsibleAI License. If You disagree with this 
+License, then no rights are granted to You for the use of the Licensed 
+Materials, and You must cease using them immediately.
 a. Grant of Patent License. Subject to the terms and conditions of this 
 License, the Licensor hereby grants You a worldwide, non-exclusive, non-
-transferable, sublicensable, irrevocable, royalty-free limited license 
-under patent claims owned or controlled by the Licensor that are embodied 
-in the Model as furnished by the Licensor, for the duration of the patents, 
-to make, have made, use, Distribute, copy, create derivative works of, and 
+transferable, sublicensable, revocable, royalty-free limited license under 
+patent claims owned or controlled by the Licensor that are embodied in the 
+Model as furnished by the Licensor, for the duration of the patents, to 
+make, have made, use, Distribute, copy, create derivative works of, and 
 make modifications to the Licensed Materials, in whole or in part.
 b. Distribution and Redistribution. You may host for Third Party remote 
 access purposes (e.g., software-as-a-service), reproduce and Distribute 
@@ -71,15 +71,34 @@ conditions:
 i. If You Distribute or make the Licensed Materials, or Derivatives of the 
 Model, available to a Third Party, You shall provide a copy of this License 
 to such Third Party.
-ii. Your use of the Licensed Materials must comply with applicable laws and 
+ii. You must cause any modified files to carry prominent notices stating 
+that You changed the files and giving a relevant date.
+iii. You must retain all copyright, patent, trademark, and attribution 
+notices excluding those notices that do not pertain to any part of the 
+Model, and Derivatives of the Model.
+vi. You must retain, in the Derivatives of the Model that You create, all 
+copyright, patent, and trademark notices from the Licensed Materials, as 
+well as any notices of licensing and any descriptive text identified 
+therein as an "Attribution Notice". 
+v. Your use of the Licensed Materials must comply with applicable laws and 
 regulations (including trade compliance laws and regulations).
+vi. Use-based restrictions as referenced in Attachment B must be included 
+as an enforceable provision by You in any type of legal agreement (e.g., a 
+license) governing the use of the Model or Derivatives of the Model, and 
+You shall give notice to recipients You Distribute to, that the Model or 
+Derivatives of the Model are subject to Attachment B. This provision does 
+not apply to the use of Complementary Materials.
 c. The Output You Generate. You are accountable for the Output You generate 
 and its subsequent uses. If You Distribute the Output created by You with 
 the Model (or Derivatives of the Model), You must acknowledge that the 
 Output contains AI-generated content created by You using the Model (or 
 Derivatives of the Model). No use of the output can contravene any 
 provision as stated in the License.
-d. Exclusions From License Grant. Neither the names of the Licensor nor any 
+d. Responsible Use of AI. Compliance with the restrictions in Attachment B 
+is a condition to the grants in this License. If You use the Model or 
+Derivatives of the Model, You agree not to use it for the specified 
+restricted uses set forth in Attachment B.
+e. Exclusions From License Grant. Neither the names of the Licensor nor any 
 of their trademarks or service marks may be used to endorse or promote 
 products derived from this Licensed Materials without express prior 
 permission of the Licensor. Except as expressly stated herein, nothing in 
@@ -140,7 +159,7 @@ version and apply it to other original works of authorship, provided that
 You furnish a readable notice describing Your modifications to this 
 license.
 
-8. Interpretation of Sections 3 and 4. 
+8. Interpretation of Sections 3 and 4.
 In the event that the disclaimer of warranty and limitation of liability, 
 as provided above, cannot be granted local legal effect in accordance with 
 their terms, these provisions then solely restrict our responsibilities to 
@@ -154,36 +173,83 @@ END TERMS AND CONDITIONS
 
 Attachment A
                            Model Sheet
-+-------------------------------+---+-----------------------------+---+
-| Use & Modify                  | ✓ | Trademark Use               | ✗ |
-+-------------------------------+---+-----------------------------+---+
-| Create Derivatives            | ✓ | Disclose Source             | ✗ |
-+-------------------------------+---+-----------------------------+---+
-| Share Verbatim Copy           | ✓ | Retain Original Attribution | ✗ |
-+-------------------------------+---+-----------------------------+---+
-| Share Derivatives             | ✓ | Retain All Notices          | ✗ |
-+-------------------------------+---+-----------------------------+---+
-| Share Output                  | ✓ | Responsible AI Restrictions | ✗ |
-+-------------------------------+---+-----------------------------+---+
-| Patent Use                    | ✓ |                             |   |
-+-------------------------------+---+-----------------------------+---+
-| Copyright Use                 | ✓ |                             |   |
-+-------------------------------+---+-----------------------------+---+
-| Commercial Use of Model       | ✓ |                             |   |
-+-------------------------------+---+-----------------------------+---+
-| Commercial Use of Output      | ✓ |                             |   |
-+-------------------------------+---+-----------------------------+---+
-| Commercial Use of Derivatives | ✓ |                             |   |
-+-------------------------------+---+-----------------------------+---+
-| Commercial Use of Code & Docs | ✓ |                             |   |
-+-------------------------------+---+-----------------------------+---+
-| Retain Original License       | ✓ |                             |   |
-+-------------------------------+---+-----------------------------+---+
-| Disclaimer of Warranty        | ✓ |                             |   |
-+-------------------------------+---+-----------------------------+---+
-| Limitation of Liability       | ✓ |                             |   |
-+-------------------------------+---+-----------------------------+---+
-| Sublicensing                  | ✓ |                             |   |
-+-------------------------------+---+-----------------------------+---+
-| Irrevocable                   | ✓ |                             |   |
-+-------------------------------+---+-----------------------------+---+
++-------------------------------+---+-----------------+---+
+| Use & Modify                  | ✓ | Irrevocable     | ✗ |
++-------------------------------+---+-----------------+---+
+| Create Derivatives            | ✓ | Trademark Use   | ✗ |
++-------------------------------+---+-----------------+---+
+| Share Verbatim Copy           | ✓ | Disclose Source | ✗ |
++-------------------------------+---+-----------------+---+
+| Share Derivatives             | ✓ | GPL-Compliant   | ✗ |
++-------------------------------+---+-----------------+---+
+| Share Output                  | ✓ |                 |   |
++-------------------------------+---+-----------------+---+
+| Patent Use                    | ✓ |                 |   |
++-------------------------------+---+-----------------+---+
+| Copyright Use                 | ✓ |                 |   |
++-------------------------------+---+-----------------+---+
+| Commercial Use of Model       | ✓ |                 |   |
++-------------------------------+---+-----------------+---+
+| Commercial Use of Output      | ✓ |                 |   |
++-------------------------------+---+-----------------+---+
+| Commercial Use of Derivatives | ✓ |                 |   |
++-------------------------------+---+-----------------+---+
+| Commercial Use of Code & Docs | ✓ |                 |   |
++-------------------------------+---+-----------------+---+
+| Retain Original Attribution   | ✓ |                 |   |
++-------------------------------+---+-----------------+---+
+| Retain Original License       | ✓ |                 |   |
++-------------------------------+---+-----------------+---+
+| Retain All Notices            | ✓ |                 |   |
++-------------------------------+---+-----------------+---+
+| Responsible AI Restrictions   | ✓ |                 |   |
++-------------------------------+---+-----------------+---+
+| Disclaimer of Warranty        | ✓ |                 |   |
++-------------------------------+---+-----------------+---+
+| Limitation of Liability       | ✓ |                 |   |
++-------------------------------+---+-----------------+---+
+| Sublicensing                  | ✓ |                 |   |
++-------------------------------+---+-----------------+---+
+
+
+Attachment B
+                           Use Restrictions
+You agree not to Use the Model or Derivatives of the Model:
+(a) In any way that violates any applicable national, federal, state, local, 
+or international law or regulation;
+(b) For the purpose of exploiting, harming, or attempting to exploit or 
+harm minors in any way;
+(c) To generate and/or disseminate malware (including - but not limited to 
+- ransomware) or any other content to be used for the purpose of Harming 
+electronic systems;
+(d) To generate or disseminate verifiably false information and/or content 
+with the purpose of Harming others;
+(e) To generate or disseminate personally identifiable information with the 
+purpose of Harming others;
+(f) To generate or disseminate information (including - but not limited to 
+- images, code, posts, articles), and place the information in any public 
+context (including - but not limited to - bot generating tweets) without 
+expressly and intelligibly disclaiming that the information and/or content 
+is machine generated;
+(g) To intentionally defame, disparage, or otherwise harass others;
+(h) To impersonate or attempt to impersonate human beings for purposes of 
+deception;
+(i) For fully automated decision-making that adversely impacts an 
+individual’s legal rights or otherwise creates or modifies a binding, 
+enforceable obligation without expressly and intelligibly disclaiming that 
+the creation or modification of the obligation is machine generated;
+(j) For any Use intended to discriminate against or Harm individuals or 
+groups based on online or offline social behavior or known or predicted 
+personal or personality characteristics;
+(k) To intentionally exploit any of the vulnerabilities of a specific group 
+of persons based on their age, social, physical, or mental characteristics, 
+in order to materially distort the behavior of a person pertaining to that 
+group in a manner that causes or is likely to cause that person or another 
+person physical or psychological harm;
+(l) For any Use intended to discriminate against individuals or groups 
+based on legally protected characteristics or categories;
+(m) To provide medical advice or medical results interpretation that is 
+intended to be a substitute for professional medical advice, diagnosis, or 
+treatment;
+(n) For fully automated decision-making in the administration of justice, 
+law enforcement, immigration, or asylum processes.

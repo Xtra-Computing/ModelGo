@@ -1,5 +1,5 @@
 ﻿ModelGo Attribution License
-Version 1.0, Mar 2024, <URL>
+Version 1.0, Mar 2024, https://modelgo.gitbook.io/licenses
 
 
 BEGIN TERMS AND CONDITIONS

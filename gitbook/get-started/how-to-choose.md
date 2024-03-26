@@ -4,9 +4,9 @@
 
 If you are familiar with the [Creative Commons Licenses](https://creativecommons.org/share-your-work/cclicenses/), it will not be a tricky task to understand the meanings of licensing options in ModelGo, which follow the same philosophy to make licensing flexible and easy-to-use.
 
-To enhance understanding and increase transparency of ModelGo licenses, we offer a differential view:
+To enhance understanding and increase transparency of ModelGo licenses, we offer a diff view:
 
-<figure><img src="../.gitbook/assets/diffview.png" alt=""><figcaption><p>Diff View of ModelGo Licenses</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/diffview.jpg" alt=""><figcaption><p>Diff View of ModelGo Licenses</p></figcaption></figure>
 
 ## Licensing Tips
 

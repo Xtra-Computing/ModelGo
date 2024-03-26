@@ -33,8 +33,6 @@ coverY: 0
 [how-to-choose.md](get-started/how-to-choose.md)
 {% endcontent-ref %}
 
-[https://creativecommons.org/share-your-work/cclicenses/](https://creativecommons.org/share-your-work/cclicenses/)
-
 ## About ModelGo
 
 {% content-ref url="about-modelgo/understanding-modelgo.md" %}
@@ -45,9 +43,7 @@ coverY: 0
 [faq.md](about-modelgo/faq.md)
 {% endcontent-ref %}
 
-Our Vision
 
-Our Mission
 
 {% hint style="danger" %}
 ### &#x20;Disclaimer of Warranty

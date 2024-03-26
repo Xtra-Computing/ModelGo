@@ -66,19 +66,31 @@ These licenses are <mark style="color:purple;">non-free</mark> and contain <mark
 {% tab title="MG-BY-NC" %}
 <table><thead><tr><th width="192">License Full Name</th><th>ModelGo Attribution-NonCommercial License 1.0</th></tr></thead><tbody><tr><td>Short Identifier</td><td>MG-BY-NC</td></tr><tr><td>Tags</td><td>No Commercial Use, Auto Licensing, Revocable</td></tr><tr><td>Purposes</td><td></td></tr></tbody></table>
 
-{% @github-files/github-code-block url="https://github.com/Xtra-Computing/ModelGo/blob/main/MG_licenses/MG0.txt" %}
+
+
+{% embed url="https://github.com/Xtra-Computing/ModelGo/blob/main/MG_licenses/MG-BY-NC.txt" %}
+👆Get the Full Text of this License
+{% endembed %}
 {% endtab %}
 
 {% tab title="MG-BY-NC-RAI" %}
 <table><thead><tr><th width="192">License Full Name</th><th>ModelGo Attribution-NonCommercial-ResponsibleAI License 1.0</th></tr></thead><tbody><tr><td>Short Identifier</td><td>MG-BY-NC-RAI</td></tr><tr><td>Tags</td><td>Weak Copyleft, No Commercial Use, Responsible AI, GPL-Incompatible, , Auto Licensing, Revocable</td></tr><tr><td>Purposes</td><td></td></tr></tbody></table>
 
-{% @github-files/github-code-block url="https://github.com/Xtra-Computing/ModelGo/blob/main/MG_licenses/MG0.txt" %}
+
+
+{% embed url="https://github.com/Xtra-Computing/ModelGo/blob/main/MG_licenses/MG-BY-NC-RAI.txt" %}
+👆Get the Full Text of this Licens
+{% endembed %}
 {% endtab %}
 
 {% tab title="MG-BY-NC-OS" %}
 <table><thead><tr><th width="192">License Full Name</th><th>ModelGo Attribution-NonCommercial-OpenSource License 1.0</th></tr></thead><tbody><tr><td>Short Identifier</td><td>MG-BY-NC-OS</td></tr><tr><td>Tags</td><td>Copyleft, No Commercial Use, Disclose Source, Auto Licensing, Revocable</td></tr><tr><td>Purposes</td><td></td></tr></tbody></table>
 
-{% @github-files/github-code-block url="https://github.com/Xtra-Computing/ModelGo/blob/main/MG_licenses/MG0.txt" %}
+
+
+{% embed url="https://github.com/Xtra-Computing/ModelGo/blob/main/MG_licenses/MG-BY-NC-OS.txt" %}
+👆Get the Full Text of this Licens
+{% endembed %}
 {% endtab %}
 {% endtabs %}
 
@@ -88,20 +100,28 @@ The NoDerivatives licensing options prohibit any kind of sharing of model output
 {% tab title="MG-BY-ND" %}
 <table><thead><tr><th width="192">License Full Name</th><th>ModelGo Attribution-NoDerivatives License 1.0</th></tr></thead><tbody><tr><td>Short Identifier</td><td>MG-BY-OS</td></tr><tr><td>Tags</td><td>Proprietary, No Sharing Derivatives, Auto Licensing, Revocable</td></tr><tr><td>Purposes</td><td></td></tr></tbody></table>
 
-{% @github-files/github-code-block url="https://github.com/Xtra-Computing/ModelGo/blob/main/MG_licenses/MG0.txt" %}
+
+
+{% embed url="https://github.com/Xtra-Computing/ModelGo/blob/main/MG_licenses/MG-BY-ND.txt" %}
+👆Get the Full Text of this License
+{% endembed %}
 {% endtab %}
 
 {% tab title="MG-BY-NC-ND" %}
 <table><thead><tr><th width="192">License Full Name</th><th>ModelGo Attribution-NonCommercial-NoDerivatives License 1.0</th></tr></thead><tbody><tr><td>Short Identifier</td><td>MG-BY-NC-ND</td></tr><tr><td>Tags</td><td>Proprietary, No Commercial Use, No Sharing Derivatives, Auto Licensing, Revocable</td></tr><tr><td>Purposes</td><td></td></tr></tbody></table>
 
-{% @github-files/github-code-block url="https://github.com/Xtra-Computing/ModelGo/blob/main/MG_licenses/MG0.txt" %}
+
+
+{% embed url="https://github.com/Xtra-Computing/ModelGo/blob/main/MG_licenses/MG-BY-NC-ND.txt" %}
+👆Get the Full Text of this License
+{% endembed %}
 {% endtab %}
 {% endtabs %}
 
 
 
 {% hint style="danger" %}
-### &#x20;Disclaimer of Warranty
+### Disclaimer of Warranty
 
 We are not a law firm and do not provide legal services or legal advice. Distribution of ModelGo licenses does not establish a lawyer-client or any other relationship. We make our licenses and related information available on an "as-is" basis. We provide no warranties regarding our licenses, any material licensed under their terms and conditions, or any related information. We disclaim all liability for damages resulting from their use to the fullest extent possible.
 {% endhint %}

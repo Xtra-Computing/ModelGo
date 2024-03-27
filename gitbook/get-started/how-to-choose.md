@@ -12,9 +12,9 @@ This diif view provides an overview understanding of different MG licenses. Howe
 
 ## With the Help of ModelSheet
 
-Agreeing with [IBM AI Factsheet](https://aifs360.res.ibm.com) and [Montreal Data License](https://arxiv.org/abs/1903.12262),  we believe that transparency is crucial to increasing trust and standardization in AI. ModelGo licenses use a <mark style="color:purple;">**ModelSheet**</mark> to help users understand the rights and restrictions in the license terms, making it easier to choose the right license.
+Agreeing with [IBM AI Factsheet](https://aifs360.res.ibm.com) and [Montreal Data License](https://arxiv.org/abs/1903.12262),  we believe that transparency is crucial to increasing trust and standardization in AI. ModelGo licenses use a <mark style="color:purple;">**ModelSheet**</mark> to assist model users in understanding the granted rights and restrictions in the license terms. It also helps model developers find the most suitable MG licenses.
 
-You can find the ModelSheet in Attachment A of every MG license file, listed below:
+You can find the ModelSheet in <mark style="color:purple;">**Attachment A**</mark> of every MG license file, and we also list them here:
 
 <details>
 
@@ -385,14 +385,15 @@ You can find the ModelSheet in Attachment A of every MG license file, listed bel
 
 </details>
 
-
-
 ## Tips
+
+Here are some additional tips for selecting suitable MG licenses:
 
 * Choose the options that most closely match your publishing needs.
 * Choose revocable licenses if you haven't finalized your decision yet.
-* Do not choose RAI licenses if your project contains any GPL or LGPL components.
-* If your project already contains any components under MG licenses with an OS option, you must license your entire project with the same OS option.
+* Do not choose MG licenses with RAI if your project contains any GPL or LGPL components.
+* If your project already contains any components under MG licenses with OS option, you must license your entire project with the same OS option.
+* If you just want to share your model freely and without any conditions, use MG0.
 
 
 

@@ -36,7 +36,7 @@ These licenses include some <mark style="color:purple;">copyleft-style terms</ma
 
 {% tabs %}
 {% tab title="MG-BY-RAI" %}
-<table><thead><tr><th width="192">License Full Name</th><th>ModelGo Attribution-ResponsibleAI License 1.0</th></tr></thead><tbody><tr><td>Short Identifier</td><td>MG-BY-RAI</td></tr><tr><td>Tags</td><td>Weak Copyleft, Responsible AI, Sublicensable, Revocable</td></tr><tr><td>Purposes</td><td></td></tr></tbody></table>
+<table><thead><tr><th width="192">License Full Name</th><th>ModelGo Attribution-ResponsibleAI License 1.0</th></tr></thead><tbody><tr><td>Short Identifier</td><td>MG-BY-RAI</td></tr><tr><td>Tags</td><td>Weak Copyleft, Responsible AI, Sublicensable, <mark style="color:purple;"><strong>Revocable</strong></mark></td></tr><tr><td>Purposes</td><td>Publishing models with the responsible use of AI terms, which has been advocated by <a href="https://www.licenses.ai">RAIL</a>. Note that, by applying this license, all copies and subsequent derivatives will be restricted by these use-based restriction terms.</td></tr></tbody></table>
 
 
 
@@ -46,7 +46,7 @@ These licenses include some <mark style="color:purple;">copyleft-style terms</ma
 {% endtab %}
 
 {% tab title="MG-BY-OS" %}
-<table><thead><tr><th width="192">License Full Name</th><th>ModelGo Attribution-OpenSource License 1.0</th></tr></thead><tbody><tr><td>Short Identifier</td><td>MG-BY-OS</td></tr><tr><td>Tags</td><td>Copyleft, Disclose Source, Sublicensable, Irrevocable</td></tr><tr><td>Purposes</td><td></td></tr></tbody></table>
+<table><thead><tr><th width="192">License Full Name</th><th>ModelGo Attribution-OpenSource License 1.0</th></tr></thead><tbody><tr><td>Short Identifier</td><td>MG-BY-OS</td></tr><tr><td>Tags</td><td>Copyleft, Disclose Source, Sublicensable, Irrevocable</td></tr><tr><td>Purposes</td><td>Publishing models with the requirement to open-source model weights, architectures, training and testing code/scripts, etc. (excluding data, system library, and open-source software) for all copies and subsequent derivatives.</td></tr></tbody></table>
 
 
 
@@ -64,7 +64,7 @@ These licenses are <mark style="color:purple;">non-free</mark> and contain <mark
 
 {% tabs %}
 {% tab title="MG-BY-NC" %}
-<table><thead><tr><th width="192">License Full Name</th><th>ModelGo Attribution-NonCommercial License 1.0</th></tr></thead><tbody><tr><td>Short Identifier</td><td>MG-BY-NC</td></tr><tr><td>Tags</td><td>No Commercial Use, Auto Licensing, Revocable</td></tr><tr><td>Purposes</td><td></td></tr></tbody></table>
+<table><thead><tr><th width="192">License Full Name</th><th>ModelGo Attribution-NonCommercial License 1.0</th></tr></thead><tbody><tr><td>Short Identifier</td><td>MG-BY-NC</td></tr><tr><td>Tags</td><td>No Commercial Use, Auto Licensing, <mark style="color:purple;"><strong>Revocable</strong></mark></td></tr><tr><td>Purposes</td><td>Publishing models with no commercial prohibition means that any kind of commercial use (including SaaS) of original models and their derivatives, as well as the generated content thereof and complementary code and scripts, is not allowed. Please note that the patent use granting of this license can be revoked.</td></tr></tbody></table>
 
 
 
@@ -74,7 +74,7 @@ These licenses are <mark style="color:purple;">non-free</mark> and contain <mark
 {% endtab %}
 
 {% tab title="MG-BY-NC-RAI" %}
-<table><thead><tr><th width="192">License Full Name</th><th>ModelGo Attribution-NonCommercial-ResponsibleAI License 1.0</th></tr></thead><tbody><tr><td>Short Identifier</td><td>MG-BY-NC-RAI</td></tr><tr><td>Tags</td><td>Weak Copyleft, No Commercial Use, Responsible AI, GPL-Incompatible, , Auto Licensing, Revocable</td></tr><tr><td>Purposes</td><td></td></tr></tbody></table>
+<table><thead><tr><th width="192">License Full Name</th><th>ModelGo Attribution-NonCommercial-ResponsibleAI License 1.0</th></tr></thead><tbody><tr><td>Short Identifier</td><td>MG-BY-NC-RAI</td></tr><tr><td>Tags</td><td>Weak Copyleft, No Commercial Use, Responsible AI, GPL-Incompatible, , Auto Licensing, <mark style="color:purple;"><strong>Revocable</strong></mark></td></tr><tr><td>Purposes</td><td>Further to the provisions of MG-BY-NC, recipients should also comply with the responsible use of AI terms.</td></tr></tbody></table>
 
 
 
@@ -84,7 +84,7 @@ These licenses are <mark style="color:purple;">non-free</mark> and contain <mark
 {% endtab %}
 
 {% tab title="MG-BY-NC-OS" %}
-<table><thead><tr><th width="192">License Full Name</th><th>ModelGo Attribution-NonCommercial-OpenSource License 1.0</th></tr></thead><tbody><tr><td>Short Identifier</td><td>MG-BY-NC-OS</td></tr><tr><td>Tags</td><td>Copyleft, No Commercial Use, Disclose Source, Auto Licensing, Revocable</td></tr><tr><td>Purposes</td><td></td></tr></tbody></table>
+<table><thead><tr><th width="192">License Full Name</th><th>ModelGo Attribution-NonCommercial-OpenSource License 1.0</th></tr></thead><tbody><tr><td>Short Identifier</td><td>MG-BY-NC-OS</td></tr><tr><td>Tags</td><td>Copyleft, No Commercial Use, Disclose Source, Auto Licensing, Irrevocable</td></tr><tr><td>Purposes</td><td>Further to the provisions of MG-BY-NC, recipients should also open-source any derivatives they create.</td></tr></tbody></table>
 
 
 
@@ -98,7 +98,7 @@ The NoDerivatives licensing options prohibit any kind of sharing of model output
 
 {% tabs %}
 {% tab title="MG-BY-ND" %}
-<table><thead><tr><th width="192">License Full Name</th><th>ModelGo Attribution-NoDerivatives License 1.0</th></tr></thead><tbody><tr><td>Short Identifier</td><td>MG-BY-OS</td></tr><tr><td>Tags</td><td>Proprietary, No Sharing Derivatives, Auto Licensing, Revocable</td></tr><tr><td>Purposes</td><td></td></tr></tbody></table>
+<table><thead><tr><th width="192">License Full Name</th><th>ModelGo Attribution-NoDerivatives License 1.0</th></tr></thead><tbody><tr><td>Short Identifier</td><td>MG-BY-OS</td></tr><tr><td>Tags</td><td>Proprietary, No Sharing Derivatives, Auto Licensing, <mark style="color:purple;"><strong>Revocable</strong></mark></td></tr><tr><td>Purposes</td><td>Publishing models with sharing restrictions limited to the verbatim copy, prohibiting any kind of sharing of generated content, derivatives (including their outputs).</td></tr></tbody></table>
 
 
 
@@ -108,7 +108,7 @@ The NoDerivatives licensing options prohibit any kind of sharing of model output
 {% endtab %}
 
 {% tab title="MG-BY-NC-ND" %}
-<table><thead><tr><th width="192">License Full Name</th><th>ModelGo Attribution-NonCommercial-NoDerivatives License 1.0</th></tr></thead><tbody><tr><td>Short Identifier</td><td>MG-BY-NC-ND</td></tr><tr><td>Tags</td><td>Proprietary, No Commercial Use, No Sharing Derivatives, Auto Licensing, Revocable</td></tr><tr><td>Purposes</td><td></td></tr></tbody></table>
+<table><thead><tr><th width="192">License Full Name</th><th>ModelGo Attribution-NonCommercial-NoDerivatives License 1.0</th></tr></thead><tbody><tr><td>Short Identifier</td><td>MG-BY-NC-ND</td></tr><tr><td>Tags</td><td>Proprietary, No Commercial Use, No Sharing Derivatives, Auto Licensing, <mark style="color:purple;"><strong>Revocable</strong></mark></td></tr><tr><td>Purposes</td><td>Further to the provisions of MG-BY-ND, any kind of commercial use (including SaaS) of original models and their derivatives, as well as the generated content thereof and complementary code and scripts, is not allowed.</td></tr></tbody></table>
 
 
 
@@ -120,7 +120,7 @@ The NoDerivatives licensing options prohibit any kind of sharing of model output
 
 
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 ### Disclaimer of Warranty
 
 We are not a law firm and do not provide legal services or legal advice. Distribution of ModelGo licenses does not establish a lawyer-client or any other relationship. We make our licenses and related information available on an "as-is" basis. We provide no warranties regarding our licenses, any material licensed under their terms and conditions, or any related information. We disclaim all liability for damages resulting from their use to the fullest extent possible.

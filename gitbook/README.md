@@ -35,17 +35,17 @@ coverY: 0
 
 ## About ModelGo
 
-{% content-ref url="about-modelgo/understanding-modelgo.md" %}
-[understanding-modelgo.md](about-modelgo/understanding-modelgo.md)
+{% content-ref url="learn-more/understanding-modelgo.md" %}
+[understanding-modelgo.md](learn-more/understanding-modelgo.md)
 {% endcontent-ref %}
 
-{% content-ref url="about-modelgo/faq.md" %}
-[faq.md](about-modelgo/faq.md)
+{% content-ref url="learn-more/faq.md" %}
+[faq.md](learn-more/faq.md)
 {% endcontent-ref %}
 
 
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 ### &#x20;Disclaimer of Warranty
 
 We are not a law firm and do not provide legal services or legal advice. Distribution of ModelGo licenses does not establish a lawyer-client or any other relationship. We make our licenses and related information available on an "as-is" basis. We provide no warranties regarding our licenses, any material licensed under their terms and conditions, or any related information. We disclaim all liability for damages resulting from their use to the fullest extent possible.

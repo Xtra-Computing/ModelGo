@@ -7,7 +7,7 @@
 * [🚀 Using ModelGo Licenses](get-started/using-modelgo-licenses.md)
 * [✨ How to Choose](get-started/how-to-choose.md)
 
-## About ModelGo
+## Learn More
 
-* [⚙️ Understanding ModelGo](about-modelgo/understanding-modelgo.md)
-* [📪 FAQ](about-modelgo/faq.md)
+* [⚙️ Understanding ModelGo](learn-more/understanding-modelgo.md)
+* [📪 FAQ](learn-more/faq.md)

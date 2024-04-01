@@ -9,5 +9,5 @@
 
 ## Learn More
 
-* [⚙️ Understanding ModelGo](learn-more/understanding-modelgo.md)
+* [📖 Understanding ModelGo](learn-more/understanding-modelgo.md)
 * [📪 FAQ](learn-more/faq.md)

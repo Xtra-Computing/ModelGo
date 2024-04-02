@@ -30,9 +30,15 @@ Our way of reusing these licenses text is compliant, and to address any copyrigh
 
 It's worth mentioning that during the drafting of ModelGo, we discovered that text reuse is common in open software licenses, and it can be difficult to identify <mark style="color:purple;">implicit copying</mark> to text from licenses that forbid reuse. Therefore, there may still be an unknown risk of copyright infringement in ModelGo licenses. Please inform us if you identify these risks or any other similar risks.
 
-## Structure
+## License Structure
 
+ModelGo licenses consist of eight sections and one or two attachments. Section 2, "License Rights and Redistribution," is the primary provision that grants patent and copyright licenses and states the restrictions of use and distribution. Two subsections are specific to particular licensing options: "No Derivatives" for "ND" and "Responsible Use of AI" for RAI.
 
+ModelGo licenses include a Disclaimer of Warranty and Limitation of Liability (Section3, 4), and disclaiming any warranty of Third-Party Materials (Section 6). Additionally, our licenses include terms, as  stated in Section 7, that allow you to modify the license text, provided you furnish a readable notice describing your modifications to this license.&#x20;
+
+The attachment, which is separate from the Terms and Conditions of the license, consists of a Model Sheet or, in addition, a list of Use Restrictions. Your custom restriction terms can be added to the Use Restrictions list, but changes made to the Model Sheet will not affect the license content.
+
+<figure><img src="../.gitbook/assets/structure.jpg" alt=""><figcaption><p>Structure of MG Licenses</p></figcaption></figure>
 
 
 

@@ -50,19 +50,18 @@ An example of the license notice for MG-BY-NC-RAI is:
   Copyright [yyyy] [name of copyright owner]
  
   Licensed under the ModelGo Attribution-NonCommercial-ResponsibleAI License, Version 1.0 (the "License");
-  you may not use this file except in compliance with the License.
+  You may not use this file except in compliance with the License.
   You may obtain a copy of the License at
  
   https://raw.githubusercontent.com/Xtra-Computing/ModelGo/main/MG_licenses/MG-BY-NC-RAI.txt
  
-  Unless required by applicable law or agreed to in writing, software
-  distributed under the License is distributed on an "AS IS" BASIS,
+  Unless required by applicable law or agreed to in writing, the Licensed Materials and
+  any Ouput and results thereof distributed under the License is distributed on an "AS IS" BASIS,
   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  See the License for the specific language governing permissions and
-  limitations under the License.
+  See the License for the specific language governing permissions and limitations under the License.
 ```
 
 {% hint style="info" %}
-Please replace the fields enclosed by brackets "\[]" with your own identifying information and change "Attribution-NonCommercial-ResponsibleAI" and "MG-BY-NC-RAI" to the [full name and short identifier](../get-started/using-modelgo-licenses.md#modelgo-licenses-family) of your chosen MG license.
+Please replace the fields enclosed by brackets "\[]" with your own identifying information and change "Attribution-NonCommercial-ResponsibleAI" and "MG-BY-NC-RAI" to the [full name and short identifier](../get-started/using-modelgo-licenses.md#modelgo-licenses-family) of your chosen MG license. If you modify the terms and conditions of MG Licenses, please replace "Version \*" with "Modified Version" and update the license link to your modified license file.
 {% endhint %}
 

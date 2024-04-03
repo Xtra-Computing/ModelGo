@@ -2,7 +2,22 @@
 description: >-
   Official Website for ModelGo Licenses - A standard way to publish your deep
   learning models.
+cover: .gitbook/assets/cover.webp
 coverY: 0
+layout:
+  cover:
+    visible: true
+    size: full
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
 ---
 
 # 👋 Welcome to ModelGo

@@ -46,7 +46,7 @@ coverY: 0
 
 
 {% hint style="warning" %}
-#### Disclaimer of Warranty
+### Disclaimer of Warranty
 
 We are not a law firm and do not provide legal services or legal advice. Distribution of ModelGo licenses does not establish a lawyer-client or any other relationship. We make our licenses and related information available on an "as-is" basis. We provide no warranties regarding our licenses, any material licensed under their terms and conditions, or any related information. We disclaim all liability for damages resulting from their use to the fullest extent possible.
 {% endhint %}

@@ -34,36 +34,3 @@ For Patent License
 
 <table><thead><tr><th width="331">License Name</th><th width="200">Revocable?</th><th>Sublicensable?</th></tr></thead><tbody><tr><td>AFL-3.0</td><td>No</td><td>Yes</td></tr><tr><td>Apache-2.0</td><td>No</td><td>Not Stated</td></tr><tr><td>CodeML-OpenRAIL-M</td><td>No</td><td>Not Stated</td></tr><tr><td>CreativeML-OpenRAIL-M</td><td>No</td><td>Not Stated</td></tr><tr><td>CC-BY-4.0 (Copyright)</td><td>No</td><td>Auto Licensing</td></tr><tr><td>GPL-3.0</td><td>Not Stated</td><td>Auto Licensing</td></tr><tr><td>Llama2 Community License</td><td>Not Stated</td><td>Not Stated</td></tr><tr><td>Llama License Agreement</td><td>Yes</td><td>No</td></tr><tr><td>SEER License Agreement</td><td>Yes</td><td>No</td></tr></tbody></table>
 
-
-
-## Q: What wil happened if I remix&#x20;
-
-
-
-## Q: More Options
-
-
-
-##
-
-
-
-## Q: Is MG with OS Considered Open Source License?
-
-
-
-## Q: May I Retain the Attribution Information in the Generated Content?&#x20;
-
-
-
-## Q: Can I Close Source my Models licensed under MG with OS?
-
-
-
-## Q:  May I Reuse ModelGo Licenses Text to Make My Own Licenses?
-
-
-
-
-
-Q: Is there any plan to extend ModelGo Licenses to Dataset.

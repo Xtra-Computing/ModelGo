@@ -2,7 +2,7 @@
 description: >-
   Official Website for ModelGo Licenses - A standard way to publish your deep
   learning models.
-cover: .gitbook/assets/cover.webp
+cover: .gitbook/assets/cover_wm.webp
 coverY: 0
 layout:
   cover:

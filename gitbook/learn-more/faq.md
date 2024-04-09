@@ -26,7 +26,11 @@ MG licenses should not apply to Third-Party Materials (e.g., open-source softwar
 
 ## Q: May I distribute the generated content?
 
-You can share the generated content (including the output of the Model and the output of the Derivatives of the Model) only if the <mark style="color:purple;">ND option is not being used</mark>. MG licenses will not be proliferated to the generated content and do not claim copyright over them. However, MG licenses require users to acknowledge that the output contains AI-generated content created by the users using the model. Please refer to the "<mark style="color:purple;">The Output You Generate</mark>" section for more information.
+<mark style="color:purple;">**It depends.**</mark> You can share the generated content (including the output of the Model and the output of the Derivatives of the Model) only if the <mark style="color:purple;">ND option is not being used</mark>. MG licenses will not be proliferated to the generated content and do not claim copyright over them. However, MG licenses require users to acknowledge that the output contains AI-generated content created by the users using the model. Please refer to the "<mark style="color:purple;">The Output You Generate</mark>" section for more information.
+
+## Q: Should I retain the attribution information in the generated content?
+
+<mark style="color:purple;">**No.**</mark> The BY options in MG only apply to the model and its derivatives (excluding code and scripts which may already be covered by separate OSS licenses). MG licenses only require users to acknowledge that the output contains AI-generated content created by the users using the model.
 
 ## Q: Revocable vs. Irrevocable;  Sublicensable vs. Non-sublicensable.
 
@@ -52,5 +56,23 @@ ModelGo licenses determine revocability and sublicensing with careful considerat
 
 ModelGo licenses explicitly state whether they grant or do not grant licensee patent and copyright licenses. This clarity ensures that model users understand their rights and potential risks when reusing and contributing models.
 
+## Q: Are MG licenses with OS considered Open Source licenses?
 
+<mark style="color:purple;">**No.**</mark> ModelGo licenses are not approved by the Open Source Initiative (OSI). However, we aim for MG-BY-OS and MG-BY-NC-OS licenses to keep the model "open." It's also worth mentioning that the meaning of "open" may differ between software and models. In ModelGo licenses, OS means the availability of model weights and specific code and scripts necessary to train and use models, excluding the openness of the dataset (as we consider it outside the governing scope of MG licenses).
+
+## Q: May I close source my models licensed under MG with OS?
+
+<mark style="color:purple;">**No.**</mark> This applies to its derivatives as well. MG-BY-OS and MG-BY-NC-OS are copyleft licenses, meaning all derivative works must also be covered by the same license. You also can't revoke MG-BY-OS and MG-BY-NC-OS, unlike GPL-3.0, which doesn't explicitly claim the granted patent license is irrevocable.
+
+## Q: Will ModelGo licenses support more licensing options?
+
+<mark style="color:purple;">**Possibly**</mark>. We recommend using the licensing options most appropriate for your publishing scenario. We may revise the license text or add new licensing options to address emerging needs in model licensing. However, simplicity and conciseness are also factors we consider, which is important to avoid licensing conflicts in an ML project.
+
+## Q: May I reuse ModelGo licenses text to make my own licenses?
+
+<mark style="color:purple;">**Yes, you can.**</mark> ModelGo licenses explicitly allow you to do so as stated in Section 7, provided that you furnish a readable notice describing your modifications to the original ModelGo licenses. However, we encourage using the licensing options most appropriate for your publishing scenario to facilitate standardization in model licensing and simplify license analysis in ML projects.
+
+## Q: Will my modification to ModelSheet take effect?
+
+<mark style="color:purple;">**No**</mark>. ModelSheet is not part of the terms and conditions of MG licenses, so modifications to it will not be effective. ModelSheet is only to assist you and users in choosing a license and understanding its content. If you have custom needs to add to ModelGo licenses, you should modify the provisions in the terms and conditions part.
 

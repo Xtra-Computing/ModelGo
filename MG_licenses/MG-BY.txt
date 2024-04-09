@@ -1,5 +1,5 @@
 ﻿ModelGo Attribution License
-Version 1.0, Mar 2024, https://modelgo.gitbook.io/licenses
+Version 1.0, Apr 2024, https://modelgo.gitbook.io/licenses
 
 
 BEGIN TERMS AND CONDITIONS
@@ -56,13 +56,15 @@ Materials, You accept and agree to be bound by the terms and conditions of
 this ModelGo Attribution License. If You disagree with this License, then 
 no rights are granted to You for the use of the Licensed Materials, and You 
 must cease using them immediately.
-a. Grant of Patent License. Subject to the terms and conditions of this 
-License, the Licensor hereby grants You a worldwide, non-exclusive, non-
-transferable, sublicensable, irrevocable, royalty-free limited license 
-under patent claims owned or controlled by the Licensor that are embodied 
-in the Model as furnished by the Licensor, for the duration of the patents, 
-to make, have made, use, Distribute, copy, create derivative works of, and 
-make modifications to the Licensed Materials, in whole or in part.
+a. Grant of Patent and Copyright Licenses. Subject to the terms and 
+conditions of this License, the Licensor hereby grants You a worldwide, 
+non-exclusive, non-transferable, sublicensable, irrevocable, royalty-free 
+limited license under patent and copyright claims owned or controlled by 
+the Licensor that are embodied in the Model as furnished by the Licensor, 
+for the duration of intellectual property rights protection, to make, have 
+made, use, Distribute, copy, prepare, publicly display, publicly perform, 
+create derivative works of, and make modifications to the Licensed 
+Materials, in whole or in part.
 b. Distribution and Redistribution. You may host for Third Party remote 
 access purposes (e.g., software-as-a-service), reproduce and Distribute 
 copies of the Licensed Materials or Derivatives of the Model thereof in any 
@@ -163,7 +165,6 @@ END TERMS AND CONDITIONS
 
 Attachment A
                            Model Sheet
-
 +-------------------------------+---+-----------------------------+---+
 | Use & Modify                  | ✓ | Trademark Use               | ✗ |
 +-------------------------------+---+-----------------------------+---+

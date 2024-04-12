@@ -96,9 +96,9 @@ For example, if we remix two models licensed under MG-BY-NC and MG-BY-OS, respec
 
 Overall, in most cases, you can freely remix permissive MG licensed models into your model without conflicts, and remix conditional MG licensed models into your model if following the same restrictions, but it's difficult to remix stringent MG licensed models and impossible to remix MG with ND licensed models.
 
-## Q: Why ModelGo licenses don't support OS with RAI?
+## Q: Why do ModelGo licenses not support OS with RAI?
 
-Following our previous ML license analysis study ([https://github.com/Xtra-Computing/ModelGo](https://github.com/Xtra-Computing/ModelGo)), the copyleft-style use-based restrictions in RAI licenses are incompatible with the terms regarding further restrictions in Section 10 of GPL-3.0. Therefore, with concerns that the RAI kind restrictions are out of the spirit of Open Source and potentially lead to closed source (Ref. Greenbaum, E. (2015). The Non-Discrimination Principle in Open Source Licensing. Cardozo L. Rev., 37, 1297), we didn't draft the MG-BY-OS-RAI license.
+Following our previous [ML license analysis study](https://github.com/Xtra-Computing/ModelGo), the copyleft-style use-based restrictions in RAI licenses are incompatible with the terms regarding further restrictions in Section 10 of GPL-3.0. Therefore, with concerns that the RAI kind restrictions are out of the spirit of Open Source and potentially lead to closed source (Ref. Greenbaum, E. (2015). The Non-Discrimination Principle in Open Source Licensing. Cardozo L. Rev., 37, 1297), we didn't draft the MG-BY-OS-RAI license.
 
 > ### GPL-3.0 Section 10
 >

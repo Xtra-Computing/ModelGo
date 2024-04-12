@@ -74,5 +74,41 @@ ModelGo licenses explicitly state whether they grant or do not grant licensee pa
 
 ## Q: Will my modification to ModelSheet take effect?
 
-<mark style="color:purple;">**No**</mark>. ModelSheet is not part of the terms and conditions of MG licenses, so modifications to it will not be effective. ModelSheet is only to assist you and users in choosing a license and understanding its content. If you have custom needs to add to ModelGo licenses, you should modify the provisions in the terms and conditions part.
+<mark style="color:purple;">**No.**</mark> ModelSheet is not part of the terms and conditions of MG licenses, so modifications to it will not be effective. ModelSheet is only to assist you and users in choosing a license and understanding its content. If you have custom needs to add to ModelGo licenses, you should modify the provisions in the terms and conditions part.
+
+## Q: What happens if I remix two models under MG licenses?
+
+There are two scenarios depending on whether the remixed result is <mark style="color:purple;">**separable**</mark> or <mark style="color:purple;">**inseparable**</mark>.&#x20;
+
+In the first scenario, where the two models remain separable from each other, such remixing (for example, Voting, Stacking, MoE, Pipeline, etc.) will not create a brand new work, and the original models will remain under their original licenses. You can apply a new license to your remix effort (e.g., weights of gating networks) if applicable, but this action will not affect the original licenses of the base models.
+
+In the second scenario, where the remixing process results in an inseparable outcome (for example, weight averaging, model fusion, layer concatenation, etc.), it is necessary to check the compatibility between the two original licenses of the base models before remixing. There is a one-way compatibility in MG licenses from Permissive to Conditional to Stringent. This means that the remixing result can be licensed under MG with stricter options, but fewer options are not permitted. We provide you a compatibility table to demonstrate this rule:
+
+<div data-full-width="false">
+
+<figure><img src="../.gitbook/assets/compati.jpg" alt=""><figcaption><p>MG Compatibility Table</p></figcaption></figure>
+
+</div>
+
+Choose two models' licenses you want to remix from the rows and columns. The ✅ mark means you can remix the two models, and there is a feasible licensing solution for relicensing your remix results; ⚠️ mark means due to the terms of NoDerivatives, you can't share your remix results, which leads to you being unable to apply any license to the results; ❌ mark means there isn't a feasible licensing solution for such remixing, so you should follow the terms regarding derivatives of original licenses but can't relicense your remix results.
+
+For example, if we remix two models licensed under MG-BY-NC and MG-BY-OS, respectively, we can relicense the remix results to MG-BY-NC-OS. If we want to remix models with MG-BY and MG-BY-ND, even though it seems feasible to apply MG-BY-ND to the remixing results, following the NoDerivatives terms of MG-BY-ND, we can't share such remixing, which leads to no license being applicable. If we want to remix MG-BY-OS and MG-BY-RAI, the problem is there are no feasible licensing solutions for the remix results, so such remix is not supported by ModelGo licenses.
+
+Overall, in most cases, you can freely remix permissive MG licensed models into your model without conflicts, and remix conditional MG licensed models into your model if following the same restrictions, but it's difficult to remix stringent MG licensed models and impossible to remix MG with ND licensed models.
+
+## Q: Why ModelGo licenses don't support OS with RAI?
+
+Following our previous ML license analysis study ([https://github.com/Xtra-Computing/ModelGo](https://github.com/Xtra-Computing/ModelGo)), the copyleft-style use-based restrictions in RAI licenses are incompatible with the terms regarding further restrictions in Section 10 of GPL-3.0. Therefore, with concerns that the RAI kind restrictions are out of the spirit of Open Source and potentially lead to closed source (Ref. Greenbaum, E. (2015). The Non-Discrimination Principle in Open Source Licensing. Cardozo L. Rev., 37, 1297), we didn't draft the MG-BY-OS-RAI license.
+
+> ### GPL-3.0 Section 10
+>
+> You may not impose any further restrictions on the exercise of the rights granted or affirmed under this License. For example, you may not impose a license fee, royalty, or other charge for exercise of rights granted under this License, and you may not initiate litigation (including a cross-claim or counterclaim in a lawsuit) alleging that any patent claim is infringed by making, using, selling, offering for sale, or importing the Program or any portion of it.
+
+
+
+
+
+
+
+GPL-compatibility issues.
 

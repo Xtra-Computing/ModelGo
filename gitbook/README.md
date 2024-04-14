@@ -26,7 +26,7 @@ layout:
 
 #### **ModelGo licenses** provide flexible, free, and user-friendly licensing solutions to meet your specific needs in publishing deep learning models. The goal of ModelGo is to facilitate <mark style="color:purple;">managed sharing</mark> of  models while <mark style="color:purple;">protecting Intellectual Property</mark>, striking a balance between openness and control, and preserving model developers' opportunities for commercialization.
 
-{% embed url="https://drive.google.com/file/d/1A_8sWbtG6j961Tzn1QImB7-rEzCm03Ou/view?usp=sharing" %}
+{% embed url="https://drive.google.com/file/d/1DhlLbkzcFOJTqyCAqmngF6J2DUL1FCmd/view?usp=share_link" %}
 
 ## The ModelGo License Options&#x20;
 

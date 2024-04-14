@@ -67,3 +67,7 @@ layout:
 
 We are not a law firm and do not provide legal services or legal advice. Distribution of ModelGo licenses does not establish a lawyer-client or any other relationship. We make our licenses and related information available on an "as-is" basis. We provide no warranties regarding our licenses, any material licensed under their terms and conditions, or any related information. We disclaim all liability for damages resulting from their use to the fullest extent possible.
 {% endhint %}
+
+{% hint style="info" %}
+Except where otherwise noted, the content on this website (including text, images, and video, excluding ModelGo licenses text file) is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en). All rights reserved.
+{% endhint %}

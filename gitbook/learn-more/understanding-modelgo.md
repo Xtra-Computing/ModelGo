@@ -40,28 +40,3 @@ The attachment, which is separate from the Terms and Conditions of the license, 
 
 <figure><img src="../.gitbook/assets/structure.jpg" alt=""><figcaption><p>Structure of MG Licenses</p></figcaption></figure>
 
-## How to Apply the ModelGo Licenses to Your Model
-
-You can use a <mark style="color:purple;">license notice</mark> to declare the use of MG licenses in your model. We recommend attaching this license notice in a separate text file and presenting this information on your model card page or GitHub repository page.
-
-An example of the license notice for MG-BY-NC-RAI is:
-
-```
-  Copyright [yyyy] [name of copyright owner]
- 
-  Licensed under the ModelGo Attribution-NonCommercial-ResponsibleAI License, Version 1.0 (the "License");
-  You may not use this file except in compliance with the License.
-  You may obtain a copy of the License at
- 
-  https://raw.githubusercontent.com/Xtra-Computing/ModelGo/main/MG_licenses/MG-BY-NC-RAI.txt
- 
-  Unless required by applicable law or agreed to in writing, the Licensed Materials and
-  any Ouput and results thereof distributed under the License is distributed on an "AS IS" BASIS,
-  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  See the License for the specific language governing permissions and limitations under the License.
-```
-
-{% hint style="info" %}
-Please replace the fields enclosed by brackets "\[]" with your own identifying information and change "Attribution-NonCommercial-ResponsibleAI" and "MG-BY-NC-RAI" to the [full name and short identifier](../get-started/using-modelgo-licenses.md#modelgo-licenses-family) of your chosen MG license. If you modify the terms and conditions of MG Licenses, please replace "Version \*" with "Modified Version" and update the license link to your modified license file.
-{% endhint %}
-

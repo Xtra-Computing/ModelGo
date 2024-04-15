@@ -36,7 +36,7 @@ layout:
 * <mark style="color:yellow;">**NC**</mark> - Downstream model users must run and distribute your models, derivatives of your models, and generated content of your models for <mark style="color:yellow;">Non-Commercial purposes only</mark>.
 * <mark style="color:orange;">**ND**</mark> - Downstream model users may <mark style="color:orange;">Not Distribute</mark> any modified works or generated content based on your models.
 * <mark style="color:purple;">**RAI**</mark> - Downstream model users must ensure that their use and distribution of your models and derivatives of your models <mark style="color:purple;">comply with the terms of</mark> [<mark style="color:purple;">Responsible use of AI</mark>](https://www.licenses.ai/).
-* <mark style="color:blue;">**OS**</mark> - Downstream model users must keep their distributed copies and derivatives <mark style="color:blue;">Open Source</mark> to the public and apply the same license to their derivative work when publishing (<mark style="color:blue;">Copyleft</mark>).
+* <mark style="color:blue;">**OS**</mark> - Downstream model users must keep their distributed copies and derivatives <mark style="color:blue;">Open Source to the public and apply the same license</mark> to their derivative work when publishing (Copyleft).
 
 #### With multiple publishing options supported, ModelGo can offer you a unified solution for licensing models with different sharing purposes and policies.
 
@@ -71,3 +71,4 @@ We are not a law firm and do not provide legal services or legal advice. Distrib
 {% hint style="info" %}
 Except where otherwise noted, the content on this website (including text, images, and video, excluding ModelGo licenses text file) is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en). All rights reserved.
 {% endhint %}
+

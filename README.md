@@ -1,6 +1,6 @@
 # ModelGo
 
-### Official impletementation of WWW 2024 accepted Paper:[ModelGo: A Practical Tool for Machine Learning License Analysis]
+### Official impletementation of WWW 2024 accepted Paper (Oral): [ModelGo: A Practical Tool for Machine Learning License Analysis]
 ![img](images/cover.png)
 
 📌 [Download Compiled PDF](MAIN.pdf)
@@ -8,7 +8,7 @@
 #### Cite this Work:
 ```
 @inproceedings{duan2024modelgo,
-  title={{ModelGo}: A Partical Tool for Machine Learning License Analysis},
+  title={{ModelGo}: A Practical Tool for Machine Learning License Analysis},
   author={Duan, Moming and Li, Qinbin and He, Bingsheng},
   booktitle={Proceedings of the {ACM} Web Conference 2024},
   year={2024}

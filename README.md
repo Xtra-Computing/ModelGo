@@ -8,7 +8,7 @@
 📌 [Download this Paper](https://dl.acm.org/doi/abs/10.1145/3589334.3645520)
 
 # ModelGo Licenses Set
-### ✨Recent Update: We are happy to annocence our [ModelGo Licenses Set](https://modelgo.gitbook.io/licenses)! 🤗
+### ✨Recent Update: We are happy to annocence our [ModelGo Licenses Set](https://www.modelgo.li)! 🤗
 #### ModelGo Licenses provide flexible, free, and user-friendly licensing solutions to meet your specific needs in publishing deep learning models. We offer you five publishing options (similar to Creative Commons):
 
 

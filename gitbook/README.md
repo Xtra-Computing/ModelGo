@@ -52,7 +52,7 @@ Why We Need a Model-Specific License?
 [how-to-choose.md](get-started/how-to-choose.md)
 {% endcontent-ref %}
 
-## About ModelGo
+## About ModelGo Licenses
 
 {% content-ref url="learn-more/understanding-modelgo.md" %}
 [understanding-modelgo.md](learn-more/understanding-modelgo.md)

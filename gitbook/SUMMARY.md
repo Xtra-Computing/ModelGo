@@ -1,6 +1,6 @@
 # Table of contents
 
-* [👋 Welcome to ModelGo](README.md)
+* [👋 A Standard Way for Model Publishing](README.md)
 
 ## Get Started
 

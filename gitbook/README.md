@@ -1,7 +1,7 @@
 ---
 description: >-
-  Official Website for ModelGo Licenses - A standard way to publish your deep
-  learning models.
+  Welcome to the official website for ModelGo Licenses - A standard way to
+  publish your deep learning models.
 cover: .gitbook/assets/cover_wm.webp
 coverY: 0
 layout:
@@ -20,15 +20,17 @@ layout:
     visible: true
 ---
 
-# 👋 Welcome to ModelGo
+# 👋 A Standard Way for Model Publishing
 
-## Overview
+## Towards Better Model Publishing
 
 #### **ModelGo licenses** provide flexible, free, and user-friendly licensing solutions to meet your specific needs in publishing deep learning models. The goal of ModelGo is to facilitate <mark style="color:purple;">managed sharing</mark> of  models while <mark style="color:purple;">protecting Intellectual Property</mark>, striking a balance between openness and control, and preserving model developers' opportunities for commercialization.
 
 {% embed url="https://drive.google.com/file/d/1DhlLbkzcFOJTqyCAqmngF6J2DUL1FCmd/view?usp=share_link" %}
+Why We Need a Model-Specific License?
+{% endembed %}
 
-## The ModelGo License Options&#x20;
+## ModelGo License Options&#x20;
 
 #### ModelGo licenses offer you five publishing options:
 

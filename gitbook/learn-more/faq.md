@@ -60,7 +60,7 @@ ModelGo licenses determine revocability and sublicensing with careful considerat
 
 <mark style="color:purple;">**Grant of patent and copyright licenses in ModelGo:**</mark>
 
-<table><thead><tr><th width="331">License Name</th><th width="200">Revocable?</th><th>Sublicensable?</th></tr></thead><tbody><tr><td>MG0</td><td>No</td><td>Yes</td></tr><tr><td>MG-BY</td><td>No</td><td>Yes</td></tr><tr><td>CC-BY-OS (Copyleft)</td><td>No</td><td>Yes</td></tr><tr><td>MG-BY-NC-OS (Copyleft)</td><td>No</td><td>Auto Licensing</td></tr><tr><td>CC-BY-RAI</td><td>Yes</td><td>Yes</td></tr><tr><td>MG-BY-NC</td><td>Yes</td><td>Auto Licensing</td></tr><tr><td>MG-BY-ND</td><td>Yes</td><td>Auto Licensing</td></tr><tr><td>MG-BY-NC-ND</td><td>Yes</td><td>Auto Licensing</td></tr><tr><td>MG-BY-NC-RAI</td><td>Yes</td><td>Auto Licensing</td></tr></tbody></table>
+<table><thead><tr><th width="331">License Name</th><th width="200">Revocable?</th><th>Sublicensable?</th></tr></thead><tbody><tr><td>MG0</td><td>No</td><td>Yes</td></tr><tr><td>MG-BY</td><td>No</td><td>Yes</td></tr><tr><td>MG-BY-OS (Copyleft)</td><td>No</td><td>Yes</td></tr><tr><td>MG-BY-NC-OS (Copyleft)</td><td>No</td><td>Auto Licensing</td></tr><tr><td>MG-BY-RAI</td><td>Yes</td><td>Yes</td></tr><tr><td>MG-BY-NC</td><td>Yes</td><td>Auto Licensing</td></tr><tr><td>MG-BY-ND</td><td>Yes</td><td>Auto Licensing</td></tr><tr><td>MG-BY-NC-ND</td><td>Yes</td><td>Auto Licensing</td></tr><tr><td>MG-BY-NC-RAI</td><td>Yes</td><td>Auto Licensing</td></tr></tbody></table>
 
 ModelGo licenses explicitly state whether they grant or do not grant licensee patent and copyright licenses. This clarity ensures that model users understand their rights and potential risks when reusing and contributing models.
 

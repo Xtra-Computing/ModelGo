@@ -20,7 +20,7 @@ layout:
 
 # 👋 A Standard Way for Model Publishing
 
-## 📣 ModelGo Licenses V2 is Now live!
+## 📣 ModelGo Licenses Version 2.0 is Now Live!
 
 ### <mark style="color:purple;">**What's New:**</mark>&#x20;
 

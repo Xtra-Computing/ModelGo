@@ -42,7 +42,7 @@ ModelGo licenses include a Disclaimer of Warranty and Limitation of Liability (S
 
 The attachment, which is separate from the Terms and Conditions of the license, consists of a [Model Sheet](../get-started/how-to-choose.md#with-the-help-of-modelsheet) or, in addition, a list of Use Restrictions. Your custom restriction terms can be added to the Use Restrictions list, but changes made to the Model Sheet will not affect the license content.
 
-<figure><img src="../.gitbook/assets/structure.jpg" alt=""><figcaption><p>Structure of MG Licenses</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/structure (1).jpg" alt=""><figcaption><p>Structure of MG Licenses</p></figcaption></figure>
 
 ## Timeline
 

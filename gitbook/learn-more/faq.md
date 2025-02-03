@@ -2,19 +2,23 @@
 
 ## Q: Why we need ModelGo licenses?
 
-ModelGo licenses offer flexible options to fulfill your specific licensing needs about using and distributing your deep learning models while protecting your Intellectual Property (IP). Traditional open-source software (OSS) licenses lack clear definitions regarding machine learning concepts, such as Models, Output, and Derivatives created through knowledge transfer. This lack of compatibility can result in certain ML activities (e.g., Distillation, Mix-of-Expert) being beyond the control of the model owner and potentially compromising their IP rights.
+ModelGo licenses offer flexible options to fulfill your specific licensing needs about using and distributing your deep learning models while protecting your Intellectual Property (IP).
 
-Many developers on [HuggingFace](https://huggingface.co/models?license=license:cc-by-nc-nd-4.0\&sort=likes) have chosen to use Creative Commons Licenses (CCs) to restrict commercial use of their models. However, CCs are primarily designed for artifacts such as articles, music, and pictures, making them incompatible when applied to ML models. Therefore, there is a need for a new specific licensing method for models.
+<mark style="color:purple;">**Why not use Llama or Gemma Licenses?**</mark> Llama and Gemma licenses are proprietary licenses and assert copyright ownership by Meta and Google. If your project builds on Llama or Gemma, you have no choice but to comply with their original licenses. However, if you own your model and want to publish it while retaining your copyright attribution, you may prefer a public-use license like ModelGo Licenses.
 
-Recently, Responsible AI Licenses (RAILs) have been widely advocated to address the need for governing AI technologies, aiming to restrict unlawful and unethical uses of models. We acknowledge the emerging need for such governance (which is why we offer the RAI option in ModelGo licenses), but we also recognize the demand for stricter restrictions, such as prohibiting commercial use, sharing of derivatives, and mandatory open-sourcing to protect the profits of model developers. This is why we propose ModelGo and offer more licensing options to fill this gap.
+<mark style="color:purple;">**Why not use OSS licenses?**</mark> Traditional open-source software (OSS) licenses lack clear definitions regarding machine learning concepts, such as Models, Output, and Derivatives created through knowledge transfer. This lack of compatibility can result in certain ML activities (e.g., Distillation, Mix-of-Expert) being beyond the control of the model owner and potentially compromising their IP rights.
+
+<mark style="color:purple;">**Why not use CCs?**</mark> Many developers on [HuggingFace](https://huggingface.co/models?license=license:cc-by-nc-nd-4.0\&sort=likes) have chosen to use Creative Commons Licenses (CCs) to restrict commercial use of their models. However, CCs are primarily designed for artifacts such as articles, music, and pictures, making them incompatible when applied to ML models. Therefore, there is a need for a new specific licensing method for models.
+
+<mark style="color:purple;">**Why not use OpenRAILs?**</mark> Recently, Responsible AI Licenses (RAILs) have been widely advocated to address the need for governing AI technologies, aiming to restrict unlawful and unethical uses of models. We acknowledge the emerging need for such governance (which is why we offer the RAI option in ModelGo licenses), but we also recognize the demand for stricter restrictions, such as prohibiting commercial use, sharing of derivatives, and mandatory open-sourcing to protect the profits of model developers. This is why we propose ModelGo and offer more licensing options to fill this gap.
 
 ## Q: What is the difference between ModelGo and OpenRAILs?
 
-From the compositional perspective, [OpenRAILs(-M)](https://www.licenses.ai/ai-licenses) is built upon Apache-2.0 with additional terms tailored for ML fields. Their main alterations include adding a Use Restrictions attachment and use-based behaviour restriction terms in the license text.  To offer more comprehensive licensing control, ModelGo is not solely based on Apache-2.0 but also draws inspiration or terms from GPL-3.0, CCs, AFL-3.0, Llama2 Community License, SEER License Agreement, and, of course, OpenRAILs.
+From the compositional perspective, [OpenRAILs(-M)](https://www.licenses.ai/ai-licenses) is built upon Apache-2.0 with additional terms tailored for ML fields. Their main alterations include adding a Use Restrictions attachment and use-based behaviour restriction terms in the license text.  To provide more comprehensive licensing control, ModelGo draws inspiration from previous licenses but does not copy any of their terms. You can use MG licenses without concern for copyright issues in the license text.
 
-From a goals perspective, OpenRAILs(-M) advocate for protecting models from unlawful and unethical use. Recently, they provide a [license generator](https://www.licenses.ai/rail-license-generator) to generate a list of domain-specific Use Restrictions. The goals of ModelGo are somewhat different; we aim to provide a CCs-like framework for controlling the use and distribution of published models. For example, developers can freely choose the most permissive licenses like MG0 and MG-BY to waive most restrictions on their models, or they can choose the NC option (which is revocable) to prevent undesired commercialization of their models and generated content. The OS option aims to incentivize sharing and contributions.
+From a goals perspective, OpenRAILs(-M) advocate for protecting models from unlawful and unethical use. Recently, they provide a [license generator](https://www.licenses.ai/rail-license-generator) to generate a list of domain-specific Use Restrictions. The goals of ModelGo are somewhat different; we aim to provide a CCs-like framework for controlling the use and distribution of published models. For example, developers can freely choose the most permissive licenses like MG0-2.0 and MG-BY-2.0 to waive most restrictions on their models, or they can choose the NC option (which is revocable) to prevent undesired commercialization of their models and generated content. The OS option aims to incentivize sharing and contributions.
 
-Roughly speaking, MG-BY-RAI can be seen as similar to OpenRAILs. But we just leave the RAI as a choice to the model publishers. Additionally, to further deter misuse of models, the patent use rights granted by MG-BY-RAI are revocable, distinguishing it from OpenRAILs.
+Roughly speaking, MG-BY-RAI can be seen as similar to OpenRAILs. But we just leave the RAI as a choice to the model publishers. Additionally, to further deter misuse of models, the rights granted by MG-BY-RAI are revocable, distinguishing it from OpenRAILs.
 
 ## Q: What is the different between ModelGo and AI2 ImpACT?
 
@@ -26,15 +30,19 @@ It's worth mentioning that AI2 ImpACT contains copyleft-style use-based restrict
 
 ## Q: What is the scope of ModelGo licenses governing?
 
-MG licenses only apply to the Model, but their terms govern the <mark style="color:purple;">use and distribution of the Model and its derivatives, as well as outputs thereof, and complementary code and scripts</mark>. We classify these objects into three categories to define the scope of terms: Licensed Materials, Derivatives, and Output, each with different restriction terms and using policies. For example, according to the terms of MG-BY-ND, sharing the verbatim copy of Licensed Materials is allowed while sharing any Derivatives and Outputs is prohibited.
+MG licenses only apply to the Model, but their terms govern the <mark style="color:purple;">use and distribution of the Model and its derivatives, as well as outputs thereof, and complementary code and scripts</mark>. We classify these objects into three categories to define the scope of terms: Licensed Materials, Derivative Materials, and Output, each with different restriction terms and using policies. For example, according to the terms of MG-BY-ND-2.0, sharing the verbatim copy of Licensed Materials is allowed while sharing any Derivative Materials and Outputs is prohibited.
 
-MG licenses should not apply to Third-Party Materials (e.g., open-source software and free-content artifacts), system libraries, and datasets (e.g., training set, validation set, test set). This implies that choosing MG with OS does not mandate open-sourcing the data used to develop the model. Due to data privacy concerns and the likelihood that these datasets or the data samples therein already have free-content licenses (typically CCs), we consider datasets to be outside the scope of MG licenses.
+MG licenses should not apply to Third-Party Materials (e.g., open-source software and free-content artifacts), system libraries, and datasets (e.g., training set, validation set, test set). This implies that choosing MG with OS does not mandate open-sourcing the data used to develop the model. Due to data privacy concerns and the fact that these datasets or the data samples therein already have free-content licenses (typically CCs), we consider datasets to be outside the scope of MG licenses.
 
 <figure><img src="../.gitbook/assets/scope.jpg" alt=""><figcaption><p>MG Governing Scope</p></figcaption></figure>
 
+## Q: Should I continue using ModelGo Licenses V1?
+
+<mark style="color:purple;">**We suggest not**</mark>. V1 is a remix of existing license texts and may contain unforeseen copyright issues. Additionally, V2 is more comprehensive and includes clauses that better address IP rights in derivatives. We strongly recommend using V2 instead.
+
 ## Q: May I distribute the generated content?
 
-<mark style="color:purple;">**It depends.**</mark> You can share the generated content (including the output of the Model and the output of the Derivatives of the Model) only if the <mark style="color:purple;">ND option is not being used</mark>. MG licenses will not be proliferated to the generated content and do not claim copyright over them. However, MG licenses require users to acknowledge that the output contains AI-generated content created by the users using the model. Please refer to the "<mark style="color:purple;">The Output You Generate</mark>" section for more information.
+<mark style="color:purple;">**It depends.**</mark> You can share the generated content (including the output of the Model and the output of the Derivatives of the Model) only if the <mark style="color:purple;">ND option is not being used</mark>. MG licenses will not be proliferated to the generated content and do not claim copyright over them. However, MG licenses require users to acknowledge that the output contains AI-generated content created by the users using the model. Please refer to the Clause "<mark style="color:purple;">2.4 Output</mark>" for more information.
 
 ## Q: Should I retain the attribution information in the generated content?
 
@@ -66,7 +74,7 @@ ModelGo licenses explicitly state whether they grant or do not grant licensee pa
 
 ## Q: Are MG licenses with OS considered Open Source licenses?
 
-<mark style="color:purple;">**No.**</mark> ModelGo licenses are not approved by the Open Source Initiative (OSI). However, we aim for MG-BY-OS and MG-BY-NC-OS licenses to keep the model "open." It's also worth mentioning that the meaning of "open" may differ between software and models. In ModelGo licenses, OS means the availability of model weights and specific code and scripts necessary to train and use models, excluding the openness of the dataset (as we consider it outside the governing scope of MG licenses).
+<mark style="color:purple;">**No.**</mark> ModelGo licenses are not approved by the Open Source Initiative (OSI). However, we aim for MG-BY-OS and MG-BY-NC-OS licenses to keep the model "open." It's also worth mentioning that the meaning of "open" may differ between software and models. In ModelGo licenses, OS means the availability of **Licensed Materials** and **Derivative Materials**, excluding the openness of the dataset (as we consider it outside the governing scope of MG licenses).
 
 ## Q: May I close source my models licensed under MG with OS?
 
@@ -80,9 +88,9 @@ ModelGo licenses explicitly state whether they grant or do not grant licensee pa
 
 <mark style="color:purple;">**Yes, you can.**</mark> ModelGo licenses explicitly allow you to do so as stated in Section 7, provided that you furnish a readable notice describing your modifications to the original ModelGo licenses. However, we encourage using the licensing options most appropriate for your publishing scenario to facilitate standardization in model licensing and simplify license analysis in ML projects.
 
-## Q: Will my modification to ModelSheet take effect?
+## Q: Will my modification to Model Sheet take effect?
 
-<mark style="color:purple;">**No.**</mark> ModelSheet is not part of the terms and conditions of MG licenses, so modifications to it will not be effective. ModelSheet is only to assist you and users in choosing a license and understanding its content. If you have custom needs to add to ModelGo licenses, you should modify the provisions in the terms and conditions part.
+<mark style="color:purple;">**No.**</mark> Model Sheet is not part of the terms and conditions of MG licenses, so modifications to it will not be effective. Model Sheet is only to assist you and users in choosing a license and understanding its content. If you have custom needs to add to ModelGo licenses, you should modify the provisions in the terms and conditions part.
 
 ## Q: What happens if I remix two models under MG licenses?
 
@@ -92,11 +100,7 @@ In the first scenario, where the two models remain separable from each other, su
 
 In the second scenario, where the remixing process results in an inseparable outcome (for example, weight averaging, model fusion, layer concatenation, etc.), it is necessary to check the compatibility between the two original licenses of the base models before remixing. There is a one-way compatibility in MG licenses from Permissive to Conditional to Stringent. This means that the remixing result can be licensed under MG with stricter options, but fewer options are not permitted. We provide you a compatibility table to demonstrate this rule:
 
-<div data-full-width="false">
-
-<figure><img src="../.gitbook/assets/compati.jpg" alt=""><figcaption><p>MG Compatibility Table</p></figcaption></figure>
-
-</div>
+<div data-full-width="false"><figure><img src="../.gitbook/assets/compati.jpg" alt=""><figcaption><p>MG Compatibility Table</p></figcaption></figure></div>
 
 Choose two models' licenses you want to remix from the rows and columns. The ✅ mark means you can remix the two models, and there is a feasible licensing solution for relicensing your remix results; ⚠️ mark means due to the terms of NoDerivatives, you can't share your remix results, which leads to you being unable to apply any license to the results; ❌ mark means there isn't a feasible licensing solution for such remixing, so you should follow the terms regarding derivatives of original licenses but can't relicense your remix results.
 

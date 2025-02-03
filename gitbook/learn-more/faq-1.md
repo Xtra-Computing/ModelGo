@@ -34,7 +34,7 @@ MG licenses only apply to the Model, but their terms govern the <mark style="col
 
 MG licenses should not apply to Third-Party Materials (e.g., open-source software and free-content artifacts), system libraries, and datasets (e.g., training set, validation set, test set). This implies that choosing MG with OS does not mandate open-sourcing the data used to develop the model. Due to data privacy concerns and the likelihood that these datasets or the data samples therein already have free-content licenses (typically CCs), we consider datasets to be outside the scope of MG licenses.
 
-<figure><img src="../.gitbook/assets/scope.jpg" alt=""><figcaption><p>MG Governing Scope</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/scope (1).jpg" alt=""><figcaption><p>MG Governing Scope</p></figcaption></figure>
 
 ## Q: May I distribute the generated content?
 

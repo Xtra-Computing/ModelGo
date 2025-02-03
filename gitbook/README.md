@@ -26,7 +26,8 @@ layout:
 
 1. A complete redraft, developed with legal experts, to address potential copyright issues in V1.
 2. &#x20;Add dispute resolution clauses for IP rights in derivative works.
-3. Anchored in [NUS Institute of Data Science](https://ids.nus.edu.sg)  and [NUS Artificial Intelligence Institute](https://ai.nus.edu.sg/).
+3. Rearranged the Model Sheet to reduce ambiguity.
+4. Anchored in [NUS Institute of Data Science](https://ids.nus.edu.sg)  and [NUS Artificial Intelligence Institute](https://ai.nus.edu.sg/).
 
 ## Towards Better Model Publishing
 

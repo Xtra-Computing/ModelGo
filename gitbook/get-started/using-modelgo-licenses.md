@@ -98,7 +98,7 @@ The <mark style="color:purple;">**NoDerivatives**</mark> licensing options prohi
 
 ## How to Apply the ModelGo Licenses to Your Model
 
-You can use a <mark style="color:purple;">license notice</mark> to declare the use of MG licenses in your model. We recommend attaching the MG license text file in your project and presenting this notice information on your model card page or GitHub repository page.
+Our licenses are reusable, meaning you can apply them without any modifications on terms. To declare the use of ModelGo licenses, you can include a <mark style="color:purple;">license notice</mark>  in your model. We recommend attaching the MG license text file in your project and presenting this notice information on your model card page or GitHub repository page.
 
 An example of the license notice for MG-BY-NC-RAI-2.0 is:
 

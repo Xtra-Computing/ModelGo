@@ -1,0 +1,296 @@
+﻿ModelGo Attribution-OpenSource License
+Version 2.0, Nov 2024
+
+[Notice: Please note that this License is intended solely for the purpose of governing the use, 
+reproduction, Distribution, modification or creation of derivative works from Licensed 
+Materials (as defined herein), and should not be used for any other purposes. Licensees that 
+intend to provide Derivative Materials for use by third parties (such as end users) should 
+ensure that they put in place a set of suitable terms and conditions to govern their relationship 
+with such third parties and the use of such Derivative Materials by such third parties.]
+
+By using, reproducing, Distributing, modifying and creating derivative works of the Licensed Materials 
+(as defined below), You acknowledge and agree that You have read, understood, and agree to be 
+bound by the terms and conditions of this License. If You do not agree to any terms and/or conditions 
+of this License, then no rights are granted to You under this License and You shall have no right to 
+use, reproduce, Distribute, modify or create derivate works from the Licensed Materials.
+
+1.	DEFINITIONS
+1.1	In this License, the following terms shall have the meanings set forth:
+
+“Intellectual Property Rights” means all inventions, innovations, improvements, 
+developments, methods, patents, rights to inventions, copyright and related rights, moral rights, 
+trademarks and service marks, trade names and domain names, rights in industrial designs, 
+drawings and plans, rights in computer software or source code, database rights, rights in 
+confidential information (including know-how and trade secrets) and any other intellectual 
+property rights, in each case whether registrable, registered or unregistered and including all 
+applications (or rights to apply) for, and renewals or extensions of, such rights and all similar or 
+equivalent rights or forms of protection which subsist or will subsist now or in the future in any 
+part of the world.
+
+“Complementary Materials” means the source code and scripts used to define, run, load, 
+benchmark and/or evaluate the Model, and prepare data for the purpose of training, pretraining, 
+fine-tuning and/or evaluation of the Model, and any tutorials, operating manuals, user guides 
+and/or documentation that guide users in using, operating, implementing and/or customising 
+the Model.
+
+"Derivative Materials" means all improvements, modifications or derivative works to the 
+Licensed Material or any part thereof, which are created or developed by You (either by 
+Yourself or jointly with other third parties), including any new model developed by transferring 
+patterns of weights, parameters, activations and/or Output from the Model, such as through 
+distillation methods or synthetic data generation techniques.
+
+“Distribution” (or “Distribute”) means any transmission, publication, public performance, 
+communication, sharing and other methods of distribution of the Licensed Materials, Derivative 
+Materials and/or Output (as applicable), including provision of the Licensed Materials or any 
+part thereof as a hosted service, which can be accessible through electronic or other remote 
+means, including but not limited to API-based access or web access.
+
+“License” means the terms and conditions for use, reproduction and distribution as set out in 
+[Sections 1 to 8 and the annexes] of this License.
+
+“Licensed Materials” means, collectively, the Model and/or Complementary Materials 
+Distributed made available by the Licensor under this License. For avoidance of doubt, the 
+Licensed Materials do not include any data used for the purpose of training, pretraining and/or 
+evaluating the Model.
+
+“Model” means the machine-learning constructs and/or assemblies licensed by the Licensor 
+under this License, including any checkpoints, learned weights, parameters (including optimizer 
+states) and the model architecture (if applicable).
+
+“Licensor” means the rights owner or entity authorised by the rights owner that is granting the 
+License.
+
+“Output” means any informational content (including any image, text, text effect, audio file 
+and/or video file) generated through operation of the Model and/or any new model developed 
+by transferring patterns of weights, parameters, activations and/or Output from the Model.
+
+“Open-Source Software” means any computer program owned by a third party and distributed 
+under a license approved by the Open-Source Initiative.
+
+"You" (or "Your") means you, or any other person or entity (if you are entering into this license 
+on behalf of such person or entity and provided you have the legal authority to bind such 
+person or entity).
+
+2.	LICENSE RIGHTS
+
+2.1	Grant of Rights to Licensed Materials
+
+(a)	Subject to the terms and conditions of this License, the Licensor hereby grants to You a 
+non-exclusive, non-transferable, sublicensable, irrevocable, royalty-free, worldwide right 
+and license (including the relevant copyrights and patent rights) to:
+
+(i)	use, reproduce and Distribute the Licensed Materials; and
+
+(ii)	use the Licensed Materials to create Derivative Materials.
+
+2.2	Grant of Rights to Derivative Materials
+
+(a)	Subject to Your compliance with all Your obligations under this License and without 
+prejudice to any other terms under this License, all rights (including Intellectual Property 
+Rights) in any Derivative Materials shall automatically vest in and be owned by You.
+
+2.3	Restrictive Covenants
+
+(a)	You shall use, reproduce, Distribute, modify and create derivative works of the Licensed 
+Materials, Derivative Materials (where authorised under this License) and/or Output 
+(where authorised under this License) in compliance with:
+
+(i)	all applicable laws.
+
+(b)	If You Distribute any of the Licensed Materials and/or Derivative Materials (where 
+authorised to under this License) to a third party, You shall:
+
+(i)	provide a copy of this License to such third party;
+
+(ii)	in the case of Distributing Derivative Materials, indicate as part of the Distribution, 
+prominent notices stating that You have modified the Licensed Materials and the 
+relevant date of such modification;
+
+(iii)	in the case of Distributing Licensed Materials, retain as part of the Distribution, any 
+existing copyright notice, attribution notice, and/or any notice identifying the 
+authors of the Licensed Materials;
+
+(iv)	in the case of Distributing Derivative Materials, retain as part of the Distribution, 
+any existing copyright notice, attribution notice and/or any notice identifying the 
+authors of the Licensed Materials used to create the Derivative Materials;
+
+(v)	provide a copy of all such Distributed Licensed Materials and/or Distributed 
+Derivative Materials (as applicable) in Source Code Form to such third party. For 
+the purpose of this clause, “Source Code Form” means the preferred form for 
+making modifications to and reproducing the Licensed Materials and/or Derivative 
+Materials (as applicable);
+
+(vi)	in the case of Distributing Derivative Materials, license the Derivative Materials to 
+the third party under the same terms as this License.
+
+2.4	Output
+
+(a)	You acknowledge and agree that You shall be solely responsible for reviewing the 
+Output before using or relying on it, and for any breaches or violations of laws arising 
+from Your use of the Output.
+
+(b)	You may Distribute the Output to third parties provided that You indicate as part of the 
+Distribution that any Output generated through the use of the Licensed Materials and/or 
+Derivative Materials may contain AI-generated content. For the avoidance of doubt, the 
+foregoing shall not constitute or be construed as any statement, representation or 
+warranty by the Licensor that there are or will be rights (including Intellectual Property 
+Rights) capable of subsisting in and to any Output.
+
+2.5	Reservation of Rights
+
+(a)	Nothing in this License shall be construed to be an assignment or transfer of the 
+Intellectual Property Rights in the Licensed Materials to You. Other than the limited 
+license and use rights to the Licensed Materials provided under this License, no other 
+right or license is granted by the Licensor to You, either express or implied, with respect 
+to any other trademark, trade name, service mark, databases, database rights or other 
+Intellectual Property Rights owned, possessed or licensed by or to the Licensor.
+
+(b)	Without prejudice to the generality of the foregoing, You shall not refer to the Licensor or 
+use the Licensor’s trademarks, trade names, and service marks, for any publicity, 
+advertising or marketing purposes, without the Licensor’s prior written consent.
+
+3.	DISCLAIMER
+
+3.1	To the maximum extent permissible under applicable law, except as expressly and specifically 
+provided in this License, the Licensed Materials are provided on an “as is” and “as available” 
+basis without any representation, warranty, condition, or term of any kind (whether express, 
+implied, statutory or otherwise), which are expressly disclaimed by the Licensor.
+
+3.2	Without prejudice to the generality of the foregoing, the Licensor expressly disclaims all 
+representations, warranties and undertakings of any kind in relation to the Licensed Materials, 
+Derivative Materials and/or Output, including without limitation to their merchantability, 
+satisfactory quality, fitness for a particular purpose, title, non-infringement of third-party rights 
+(including Intellectual Property Rights), accuracy, correctness, absence of error, reliability, 
+timeliness, non-infringement of or compliance with any laws, regulations and/or third-party 
+rights.
+3.3	You are solely responsible for determining the appropriateness of using, reproducing, 
+Distributing, modifying and creating derivative works of the Licensed Materials and assume any 
+risks associated with use of the Licensed Materials, Derivative Materials and/or Output.
+
+4.	LIMITATION OF LIABILITY
+
+4.1	To the maximum extent permissible under applicable law, in no event shall the Licensor be 
+liable to You or any other persons for:
+
+(a)	any lost profits, revenue or anticipated savings;
+
+(b)	any loss of goodwill or damage to reputation;
+
+(c)	any loss or corruption of data (including costs to recover the data); or
+
+(d)	any incidental, indirect, special, exemplary, punitive, multiple or consequential damages,
+
+in any way arising out of or in connection with the Licensed Materials, Derivative Materials 
+and/or Output (including Your use, reproduction, Distribution, modification or creation of 
+derivate works from the Licensed Materials and/or Derivate Materials), whether on an action or 
+claim in contract, tort (including negligence), breach of statutory duty or otherwise, even if the 
+Licensor had been informed or advised of the possibility thereof.
+
+5.	TERM AND TERMINATION
+
+5.1	The term of this License will commence upon Your use, reproduction, Distribution, modification 
+and creation of derivative works of the Licensed Materials and will continue in full force and 
+effect until terminated in accordance with the terms and conditions under this License.
+
+5.2	The Licensor may terminate this License if:
+
+(a)	You are in breach of any term and/or condition of this License; and/or
+
+(b)	You commence any legal action against the Licensor alleging that the Licensed Materials 
+and/or Derivative Materials infringe any Intellectual Property Rights in the world.
+5.3	Upon termination of this License, You shall delete and cease use of the Licensed Materials and 
+Derivative Materials (where applicable). Sections 3, 4 and 7 shall survive the termination of this 
+License.
+6.	THIRD-PARTY MATERIALS
+
+6.1	You acknowledge and agree that the Licensed Materials may use or embody rights (including 
+Intellectual Property Rights) of third parties (“Third-Party Materials”), including Open-Source 
+Software and other free-content works.
+
+6.2	Without prejudice to the foregoing, You acknowledge and agree that:
+
+(a)	the Licensor shall not have any obligation to review any Third-Party Materials, and shall 
+not be responsible for such Third-Party Materials, including their accuracy, completeness, 
+timeliness, currency, validity, copyright compliance, legality, decency quality or any other 
+aspect thereof;
+
+(b)	the Licensor is not a party to any arrangement, transaction or contractual relationship 
+between You and any third party in respect of the Third-Party Materials; and
+
+(c)	the Licensor makes no representations or warranties whatsoever, and shall not be liable 
+for any damage, liabilities, losses (including any loss of data or profits), or any other 
+consequences that You may incur arising out of or in relation to Your use of Third-Party 
+Materials.
+
+7.	GOVERNING LAW AND DISPUTE RESOLUTION
+
+7.1	Any legal action or proceeding arising out of or in connection with this License may be initiated 
+only in the courts of the jurisdiction where the Licensor resides or conducts its primary business, 
+and this License will be governed by the laws of that jurisdiction, excluding its conflict-of-law 
+rules.
+
+8.	MODIFICATION OF THIS LICENSE
+8.1	This License is Copyright © 2024 National University of Singapore. Permission is granted to 
+copy, distribute, or communicate this License without modification. Nothing in this License 
+permits You to modify this License as applied to the Licensed Materials or to Derivative 
+Materials. However, You may modify the text of this License and copy, distribute or 
+communicate Your modified version and apply it to other original works of authorship, provided 
+that You furnish a readable notice describing Your modifications to this license.
+ 
+Annex A
+Model Sheet
++--------------+--------------------------------------------------+---+
+|              | Use, Reproduce and Distribute Licensed Materials | ✓ |
+|              +--------------------------------------------------+---+
+|              | Create Derivative Materials                      | ✓ |
+|              +--------------------------------------------------+---+
+| Grant of     | Sub-License Licensed Materials                   | ✓ |
+| Rights to    +--------------------------------------------------+---+
+| Licensed     | Revocable License to Licensed Materials          | ✗ |
+| Materials    +--------------------------------------------------+---+
+|              | Ownership of Derivative Materials with Licensor  | ✗ |
+|              +--------------------------------------------------+---+
+|              | Commercial Use of Licensed Materials             | ✓ |
++--------------+--------------------------------------------------+---+
+|              | Use and Reproduce Derivative Materials           | ✓ |
+|              +--------------------------------------------------+---+
+|              | Distribute Derivative Materials                  | ✓ |
+|              +--------------------------------------------------+---+
+| Grant of     | Sub-License Derivative Materials                 | ✓ |
+| Rights to    +--------------------------------------------------+---+
+| Derivative   | Revocable License to Derivative Materials        | ✗ |
+| Materials    +--------------------------------------------------+---+
+|              | Ownership of Derivative Materials with Licensee  | ✓ |
+|              +--------------------------------------------------+---+
+|              | Commercial Use of Derivative Materials           | ✓ |
++--------------+--------------------------------------------------+---+
+| Grant of     | Right to Distribute Output if Indicate Notice of | ✓ |
+| Rights to    | AI-Generated Content                             |   |
+| Output       +--------------------------------------------------+---+
+|              | Commercial Use of Output                         | ✓ |
++--------------+--------------------------------------------------+---+
+| Responsible  | Use Restrictions (RAI) on Licensed Materials,    | ✗ |
+| AI           | Derivative Materials and Output                  |   |
++--------------+--------------------------------------------------+---+
+|              | Provide a Copy of Original License               | ✓ |
+|              +--------------------------------------------------+---+
+|              | Retain Original Attribution Notice when          | ✓ |
+|              | Distributing Licensed Materials                  |   |
+|              +--------------------------------------------------+---+
+|              | Retain Original Attribution Notice when          | ✓ |
+|              | Distributing Derivative Materials                |   |
+| Requirements +--------------------------------------------------+---+
+| relating to  | Indicate Modifications when Distributing         | ✓ |
+| Distribution | Derivative Materials                             |   |
+| of Licensed  +--------------------------------------------------+---+
+| Materials    | Require Third Party Recipients to Comply with    |   |
+| and/or       | Use Restrictions (RAI) on Distributed Licensed   | ✗ |
+| Derivative   | Materials, Derivative Materials and Output       |   |
+| Materials    +--------------------------------------------------+---+
+|              | Disclosure of Distributed Licensed Materials     | ✓ |
+|              | and/or Derivative Materials in Source Code Form  |   |
+|              +--------------------------------------------------+---+
+|              | Licensing Distributed Derivative Materials       | ✓ |
+|              | on Same Terms as License                         |   |
++--------------+--------------------------------------------------+---+
+

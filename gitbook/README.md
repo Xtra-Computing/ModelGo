@@ -1,7 +1,5 @@
 ---
-description: >-
-  Welcome to the official website for ModelGo Licenses - A standard way to
-  publish your deep learning models.
+description: Welcome to ModelGo Licenses - A standard way to publish your AI models.
 cover: .gitbook/assets/cover_wm.webp
 coverY: 0
 layout:
@@ -22,19 +20,30 @@ layout:
 
 # 👋 A Standard Way for Model Publishing
 
+## 📣 ModelGo Licenses V2 is Now live!
+
+### <mark style="color:purple;">**What's New:**</mark>&#x20;
+
+1. A complete redraft, developed with legal experts, to address potential copyright issues in V1.
+2. &#x20;Add dispute resolution clauses for IP rights in derivative works.
+3. Rearranged the Model Sheet to reduce ambiguity.
+4. Anchored in [NUS Institute of Data Science](https://ids.nus.edu.sg)  and [NUS Artificial Intelligence Institute](https://ai.nus.edu.sg/).
+
 ## Towards Better Model Publishing
 
-#### **ModelGo licenses** provide flexible, free, and user-friendly licensing solutions to meet your specific needs in publishing deep learning models. The goal of ModelGo is to facilitate <mark style="color:purple;">managed sharing</mark> of  models while <mark style="color:purple;">protecting Intellectual Property</mark>, striking a balance between openness and control, and preserving model developers' opportunities for commercialization.
+#### **ModelGo licenses** provide flexible, free, and user-friendly licensing solutions to meet your specific needs in publishing AI models. The goal of ModelGo is to facilitate <mark style="color:purple;">managed sharing</mark> of  models while <mark style="color:purple;">protecting Intellectual Property</mark>, striking a balance between openness and control, and preserving model developers' opportunities for commercialization.
 
-{% embed url="https://drive.google.com/file/d/1DhlLbkzcFOJTqyCAqmngF6J2DUL1FCmd/view?usp=share_link" %}
-Why We Need a Model-Specific License?
+
+
+{% embed url="https://drive.google.com/file/d/1Bq_PCpiXBw_BNReHSJ9WJKWAr6e2RLID/view?usp=sharing" %}
+ModelGo Introduction Video (AI Avatar from [HeyGen](https://www.heygen.com))
 {% endembed %}
 
 ## ModelGo License Options&#x20;
 
 #### ModelGo licenses offer you five publishing options:
 
-* <mark style="color:green;">**BY**</mark>** -** Downstream model users must <mark style="color:green;">give credit to you</mark>, retain your attribution information, keep the original license and notice in their shared copies and modifications.
+* <mark style="color:green;">**BY**</mark>**&#x20;-** Downstream model users must <mark style="color:green;">give credit to you</mark>, retain your attribution information, keep the original license and notice in their shared copies and modifications.
 * <mark style="color:yellow;">**NC**</mark> - Downstream model users must run and distribute your models, derivatives of your models, and generated content of your models for <mark style="color:yellow;">Non-Commercial purposes only</mark>.
 * <mark style="color:orange;">**ND**</mark> - Downstream model users may <mark style="color:orange;">Not Distribute</mark> any modified works or generated content based on your models.
 * <mark style="color:purple;">**RAI**</mark> - Downstream model users must ensure that their use and distribution of your models and derivatives of your models <mark style="color:purple;">comply with the terms of</mark> [<mark style="color:purple;">Responsible use of AI</mark>](https://www.licenses.ai/).

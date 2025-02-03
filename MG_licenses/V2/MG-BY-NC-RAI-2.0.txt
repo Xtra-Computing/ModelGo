@@ -265,6 +265,7 @@ that You furnish a readable notice describing Your modifications to this license
  
 Annex A
 Model Sheet
+
 +--------------+--------------------------------------------------+---+
 |              | Use, Reproduce and Distribute Licensed Materials | ✓ |
 |              +--------------------------------------------------+---+

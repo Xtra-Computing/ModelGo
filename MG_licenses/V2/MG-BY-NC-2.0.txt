@@ -1,4 +1,4 @@
-﻿ModelGo Attribution-NonCommercial License
+ModelGo Attribution-NonCommercial License
 Version 2.0, Nov 2024
 
 [Notice: Please note that this License is intended solely for the purpose of governing the use, 
@@ -253,6 +253,7 @@ that You furnish a readable notice describing Your modifications to this license
  
 Annex A
 Model Sheet
+
 +--------------+--------------------------------------------------+---+
 |              | Use, Reproduce and Distribute Licensed Materials | ✓ |
 |              +--------------------------------------------------+---+

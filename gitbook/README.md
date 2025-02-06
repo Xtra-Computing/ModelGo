@@ -71,7 +71,11 @@ ModelGo Introduction Video (AI Avatar from [HeyGen](https://www.heygen.com))
 [faq.md](learn-more/faq.md)
 {% endcontent-ref %}
 
+## About Banner Image
 
+This graph visualizes model reuse behavior (model dependencies) in Hugging Face repositories. Each model is represented as a <mark style="color:purple;">**Purple**</mark> node, while different-colored edges indicate various reuse methods, including <mark style="color:red;">**Finetune**</mark>, <mark style="color:orange;">**Adapter**</mark>, <mark style="color:green;">**Quantization**</mark>, and <mark style="color:blue;">**Merge**</mark>. From this graph, we can observe complex model dependencies.
+
+Our vision is that as model reuse becomes increasingly prevalent, models published under different  licenses may conflict with one another, leading to more repositories facing **legal non-compliance** issues. One of the missions of the ModelGo License is to promote a more standardized approach to model sharing.
 
 {% hint style="warning" %}
 ### Disclaimer of Warranty

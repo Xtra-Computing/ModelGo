@@ -1,6 +1,6 @@
 ---
 description: Welcome to ModelGo Licenses - A standard way to publish your AI models.
-cover: .gitbook/assets/cover_wm.webp
+cover: .gitbook/assets/banner.png
 coverY: 0
 layout:
   cover:

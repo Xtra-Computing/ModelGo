@@ -118,7 +118,7 @@ An example of the license notice for MG-BY-NC-RAI-2.0 is:
 ```
 
 {% hint style="info" %}
-Please replace the fields enclosed by brackets "\[]" with your own identifying information and change "Attribution-NonCommercial-ResponsibleAI" and "MG-BY-NC-RAI" to the [full name and short identifier](using-modelgo-licenses.md#modelgo-licenses-family) of your chosen MG license. If you modify the terms and conditions of MG Licenses, please replace "Version \*" with "Modified Version" and update the license link to your modified license file.
+Please replace the fields enclosed by brackets "\[]" with your own identifying information and change "Attribution-NonCommercial-ResponsibleAI" and "MG-BY-NC-RAI" to the [full name and short identifier](using-modelgo-licenses.md) of your chosen MG license. If you modify the terms and conditions of MG Licenses, please replace "Version ∗" with "Modified Version" and update the license link to your modified license file.
 {% endhint %}
 
 

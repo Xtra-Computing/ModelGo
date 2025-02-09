@@ -109,7 +109,7 @@ An example of the license notice for MG-BY-NC-RAI-2.0 is:
   You may not use this file except in compliance with the License.
   You may obtain a copy of the License at
  
-  https://github.com/Xtra-Computing/ModelGo/blob/main/MG_licenses/V2/MG-BY-NC-RAI-2.0.txt
+  https://ids.nus.edu.sg/docs/modelgo/MG-BY-NC-RAI-2.0.txt
  
   Unless required by applicable law or agreed to in writing, the Licensed Materials and
   any Ouput and results thereof distributed under the License is distributed on an "AS IS" BASIS,

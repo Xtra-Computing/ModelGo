@@ -15,6 +15,7 @@ of this License, then no rights are granted to You under this License and You sh
 use, reproduce, Distribute, modify or create derivate works from the Licensed Materials.
 
 1.	DEFINITIONS
+
 1.1	In this License, the following terms shall have the meanings set forth:
 
 “Intellectual Property Rights” means all inventions, innovations, improvements, 
@@ -375,5 +376,5 @@ based on legally protected characteristics or categories;
 (m)	for the purpose of providing medical advice or medical results interpretation that is 
 intended to be a substitute for professional medical advice, diagnosis, or treatment; and
 
-for the purpose of enabling and/or facilitating fully automated decision-making in the administration of 
-justice, law enforcement, immigration, or asylum processes.
+(n)	for the purpose of enabling and/or facilitating fully automated decision-making in the 
+administration of justice, law enforcement, immigration, or asylum processes.

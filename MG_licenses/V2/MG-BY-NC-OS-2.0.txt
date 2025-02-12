@@ -15,6 +15,7 @@ of this License, then no rights are granted to You under this License and You sh
 use, reproduce, Distribute, modify or create derivate works from the Licensed Materials.
 
 1.	DEFINITIONS
+
 1.1	In this License, the following terms shall have the meanings set forth:
 
 “Intellectual Property Rights” means all inventions, innovations, improvements, 
@@ -100,6 +101,7 @@ Licensor a perpetual, worldwide, irrevocable, exclusive (even as against You), s
 licensable, transferable and license fee / royalty-free right and license to use such 
 Derivative Materials for any purposes without any obligation to attribute such 
 Derivative Material to You or obtain further consent from You.
+
 (b)	The Licensor hereby grants to You a non-exclusive, non-sublicensable, irrevocable, 
 royalty-free, worldwide right and license to use, reproduce and Distribute the Derivative 
 Materials.
@@ -186,6 +188,7 @@ satisfactory quality, fitness for a particular purpose, title, non-infringement 
 (including Intellectual Property Rights), accuracy, correctness, absence of error, reliability, 
 timeliness, non-infringement of or compliance with any laws, regulations and/or third-party 
 rights.
+
 3.3	You are solely responsible for determining the appropriateness of using, reproducing, 
 Distributing, modifying and creating derivative works of the Licensed Materials and assume any 
 risks associated with use of the Licensed Materials, Derivative Materials and/or Output.
@@ -221,9 +224,11 @@ effect until terminated in accordance with the terms and conditions under this L
 
 (b)	You commence any legal action against the Licensor alleging that the Licensed Materials 
 and/or Derivative Materials infringe any Intellectual Property Rights in the world.
+
 5.3	Upon termination of this License, You shall delete and cease use of the Licensed Materials and 
 Derivative Materials (where applicable). Sections 3, 4 and 7 shall survive the termination of this 
 License.
+
 6.	THIRD-PARTY MATERIALS
 
 6.1	You acknowledge and agree that the Licensed Materials may use or embody rights (including 
@@ -253,6 +258,7 @@ and this License will be governed by the laws of that jurisdiction, excluding it
 rules.
 
 8.	MODIFICATION OF THIS LICENSE
+
 8.1	This License is Copyright © 2024 National University of Singapore. Permission is granted to 
 copy, distribute, or communicate this License without modification. Nothing in this License 
 permits You to modify this License as applied to the Licensed Materials or to Derivative 
@@ -317,4 +323,3 @@ Model Sheet
 |              | Licensing Distributed Derivative Materials       | ✓ |
 |              | on Same Terms as License                         |   |
 +--------------+--------------------------------------------------+---+
-

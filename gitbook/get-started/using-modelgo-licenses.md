@@ -1,6 +1,6 @@
 # 🚀 Using ModelGo Licenses
 
-There are nine variations of ModelGo licenses, categorized from the most to the least permissive. They are grouped into **Permissive Licenses**, **Conditional Permissive Licenses**, and **Stringent Licenses**. Please select the one that best suits your needs.
+ModelGo Licenses include eight variants, grouped into **Permissive Licenses**, **Conditional Permissive Licenses**, and **Stringent Licenses**. Please select the one that best suits your needs.
 
 ### Permissive
 
@@ -8,7 +8,7 @@ These licenses are sublicensable and irrevocable, with <mark style="color:purple
 
 {% tabs %}
 {% tab title="MG0" %}
-<table><thead><tr><th width="192">License Full Name</th><th>ModelGo Zero License 2.0</th></tr></thead><tbody><tr><td>Short Identifier</td><td>MG0-2.0</td></tr><tr><td>Tags</td><td>Permissive, Sublicensable, Irrevocable</td></tr><tr><td>Who Owns Derivative Works</td><td>Licensee</td></tr><tr><td>Purposes</td><td>Publishing models with almost no restrictions except for the terms regarding Warranty, Liability, and Termination. Recipients may remove your attribution info but may not remove the license info.</td></tr></tbody></table>
+<table><thead><tr><th width="192">License Full Name</th><th>ModelGo Zero License 2.0</th></tr></thead><tbody><tr><td>Short Identifier</td><td>MG0-2.0</td></tr><tr><td>Tags</td><td>Permissive, Sublicensable, Irrevocable</td></tr><tr><td>Who Owns Derivative Works</td><td>Licensee</td></tr><tr><td>Purposes</td><td>Publishing models with almost no restrictions except for the terms regarding Warranty, Liability, and Termination. Recipients may remove your attribution and license file.</td></tr></tbody></table>
 
 {% embed url="https://github.com/Xtra-Computing/ModelGo/blob/main/MG_licenses/V2/MG0-2.0.txt" %}
 👆Get the Full Text of this License
@@ -65,7 +65,7 @@ https://ids.nus.edu.sg/docs/modelgo/MG-BY-2.0.txt
 These licenses include some <mark style="color:purple;">copyleft-style terms</mark>. Recipients can freely use and make derivatives as long as they comply with the specified conditional license terms of the original work.
 
 {% tabs %}
-{% tab title="MG-BY-OS" %}
+{% tab title="MG-BY-SA" %}
 <table><thead><tr><th width="192">License Full Name</th><th>ModelGo Attribution-OpenSource License 2.0</th></tr></thead><tbody><tr><td>Short Identifier</td><td>MG-BY-OS-2.0</td></tr><tr><td>Tags</td><td>Copyleft, Disclose Source, Sublicensable, Irrevocable</td></tr><tr><td>Who Owns Derivative Works</td><td>Licensee</td></tr><tr><td>Purposes</td><td>Publishing models with the requirement to open-source model weights, architectures, training and testing code/scripts, etc. (excluding data, system library, and open-source software) for all copies and subsequent derivatives.</td></tr></tbody></table>
 
 {% embed url="https://github.com/Xtra-Computing/ModelGo/blob/main/MG_licenses/V2/MG-BY-OS-2.0.txt" %}

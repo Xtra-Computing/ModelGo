@@ -22,9 +22,9 @@ layout:
 
 ## 📣 Recent Updates 2025.6.26&#x20;
 
-1. MG0, MG-BY, and MG-BY-SA have been submitted for [OSI](https://opensource.org/) approval.
-2. ModelGo Licenses will be presented as an oral talk at [ICML 2025](https://icml.cc/virtual/2025/oral/40181).
-3. ModelGo Licenses are now anchored at [NUS Institute of Data Science](https://ids.nus.edu.sg/modelgo.html)  and [NUS Artificial Intelligence Institute](https://ai.nus.edu.sg/).
+* MG0, MG-BY, and MG-BY-SA have been submitted for [OSI](https://opensource.org/) approval.
+* ModelGo Licenses will be presented as an oral talk at [ICML 2025](https://icml.cc/virtual/2025/oral/40181).
+* ModelGo Licenses are now anchored at [NUS Institute of Data Science](https://ids.nus.edu.sg/modelgo.html)  and [NUS Artificial Intelligence Institute](https://ai.nus.edu.sg/).
 
 ## Towards Better Model Sharing
 

@@ -20,18 +20,15 @@ layout:
 
 # 👋 A Standard Way for Model Publishing
 
-## 📣 ModelGo Licenses Version 2.0 is Now Live!
+## 📣 Recent Updates 2025.6.26&#x20;
 
-### <mark style="color:purple;">**What's New:**</mark>&#x20;
-
-1. A complete redraft, developed with legal experts, to address potential copyright issues in V1.
-2. &#x20;Add dispute resolution clauses for IP rights in derivative works.
-3. Rearranged the Model Sheet to reduce ambiguity.
-4. Anchored in [NUS Institute of Data Science](https://ids.nus.edu.sg/modelgo.html)  and [NUS Artificial Intelligence Institute](https://ai.nus.edu.sg/).
+1. MG0, MG-BY, and MG-BY-SA have been submitted for [OSI](https://opensource.org/) approval.
+2. ModelGo Licenses will be presented as an oral talk at [ICML 2025](https://icml.cc/virtual/2025/oral/40181).
+3. ModelGo Licenses are now anchored at [NUS Institute of Data Science](https://ids.nus.edu.sg/modelgo.html)  and [NUS Artificial Intelligence Institute](https://ai.nus.edu.sg/).
 
 ## Towards Better Model Sharing
 
-#### **ModelGo licenses** provide flexible, free, and user-friendly licensing solutions to meet your specific needs in publishing AI models. The goal of ModelGo is to facilitate <mark style="color:purple;">managed sharing</mark> of  models while <mark style="color:purple;">protecting Intellectual Property</mark>, striking a balance between openness and control, and preserving model developers' opportunities for commercialization.
+#### **ModelGo licenses** provide CreativeCommons-style licensing solutions to meet your specific needs in publishing AI models. The goal of ModelGo is to facilitate <mark style="color:purple;">managed sharing</mark> of  models while <mark style="color:purple;">protecting Intellectual Property</mark>, striking a balance between openness and control.
 
 
 
@@ -44,10 +41,10 @@ ModelGo Introduction Video (AI Avatar from [HeyGen](https://www.heygen.com))
 #### ModelGo licenses offer you five publishing options:
 
 * <mark style="color:green;">**BY**</mark>**&#x20;-** Downstream model users must <mark style="color:green;">give credit to you</mark>, retain your attribution information, keep the original license and notice in their shared copies and modifications.
-* <mark style="color:yellow;">**NC**</mark> - Downstream model users must run and distribute your models, derivatives of your models, and generated content of your models for <mark style="color:yellow;">Non-Commercial purposes only</mark>.
-* <mark style="color:orange;">**ND**</mark> - Downstream model users may <mark style="color:orange;">Not Distribute</mark> any modified works or generated content based on your models.
+* <mark style="color:yellow;">**NC**</mark> - Downstream model users must run and distribute your models and derivatives of your models for <mark style="color:yellow;">Non-Commercial purposes only</mark>.
+* <mark style="color:orange;">**ND**</mark> - Downstream model users may <mark style="color:orange;">Not Distribute</mark> any modified works based on your models.
 * <mark style="color:purple;">**RAI**</mark> - Downstream model users must ensure that their use and distribution of your models and derivatives of your models <mark style="color:purple;">comply with the terms of</mark> [<mark style="color:purple;">Responsible use of AI</mark>](https://www.licenses.ai/).
-* <mark style="color:blue;">**OS**</mark> - Downstream model users must keep their distributed copies and derivatives <mark style="color:blue;">Open Source to the public and apply the same license</mark> to their derivative work when publishing (Copyleft).
+* <mark style="color:blue;">**SA**</mark> - Downstream model users must keep their distributed copies and derivatives <mark style="color:blue;">Open Source to the public and apply the same license</mark> to their derivative work when publishing (Copyleft).
 
 #### With multiple publishing options supported, ModelGo can offer you a unified solution for licensing models with different sharing purposes and policies.
 

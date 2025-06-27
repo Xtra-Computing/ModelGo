@@ -66,7 +66,7 @@ These licenses include some <mark style="color:purple;">copyleft-style terms</ma
 
 {% tabs %}
 {% tab title="MG-BY-SA" %}
-<table><thead><tr><th width="192">License Full Name</th><th>ModelGo Attribution-OpenSource License 2.0</th></tr></thead><tbody><tr><td>Short Identifier</td><td>MG-BY-OS-2.0</td></tr><tr><td>Tags</td><td>Copyleft, Disclose Source, Sublicensable, Irrevocable</td></tr><tr><td>Who Owns Derivative Works</td><td>Licensee</td></tr><tr><td>Purposes</td><td>Publishing models with the requirement to open-source model weights, architectures, training and testing code/scripts, etc. (excluding data, system library, and open-source software) for all copies and subsequent derivatives.</td></tr></tbody></table>
+<table><thead><tr><th width="192">License Full Name</th><th>ModelGo Attribution-ShareAlike License 2.0</th></tr></thead><tbody><tr><td>Short Identifier</td><td>MG-BY-SA-2.0</td></tr><tr><td>Tags</td><td>Copyleft, Disclose Source, Non-Sublicensable, Irrevocable</td></tr><tr><td>Who Owns Derivative Works</td><td>Licensee</td></tr><tr><td>Purposes</td><td>Publishing models with the requirement to open-source model weights, architectures, training and testing code/scripts, etc. (excluding data, system library, and open-source software) for all copies and subsequent derivatives.</td></tr></tbody></table>
 
 {% embed url="https://github.com/Xtra-Computing/ModelGo/blob/main/MG_licenses/V2/MG-BY-OS-2.0.txt" %}
 👆Get the Full Text of this License
@@ -80,7 +80,7 @@ These licenses include some <mark style="color:purple;">copyleft-style terms</ma
 ```
 ### Model License:
 
-This model is licensed under the ModelGo Attribution-OpenSource License, Version 2.0 (MG-BY-OS-2.0);
+This model is licensed under the ModelGo Attribution-ShareAlike License, Version 2.0 (MG-BY-SA-2.0);
 you may use this model only in compliance with the License.
 You may obtain a copy of the License at
 
@@ -92,7 +92,7 @@ https://ids.nus.edu.sg/docs/modelgo/MG-BY-OS-2.0.txt
 {% endtab %}
 
 {% tab title="MG-BY-RAI" %}
-<table><thead><tr><th width="192">License Full Name</th><th>ModelGo Attribution-ResponsibleAI License 2.0</th></tr></thead><tbody><tr><td>Short Identifier</td><td>MG-BY-RAI-2.0</td></tr><tr><td>Tags</td><td>Weak Copyleft, Responsible AI, Sublicensable, GPL-Incompatible, <mark style="color:purple;"><strong>Revocable</strong></mark></td></tr><tr><td>Who Owns Derivative Works</td><td>Licensee</td></tr><tr><td>Purposes</td><td>Publishing models with the responsible use of AI terms (Annex B), which has been advocated by <a href="https://www.licenses.ai">RAIL</a>. Note that, by applying this license, all copies and subsequent derivatives will be restricted by these use-based restriction terms.</td></tr></tbody></table>
+<table><thead><tr><th width="192">License Full Name</th><th>ModelGo Attribution-ResponsibleAI License 2.0</th></tr></thead><tbody><tr><td>Short Identifier</td><td>MG-BY-RAI-2.0</td></tr><tr><td>Tags</td><td>Weak Copyleft, Responsible AI, Non-Sublicensable, <mark style="color:purple;"><strong>Revocable</strong></mark>, GPL-Incompatible</td></tr><tr><td>Who Owns Derivative Works</td><td>Licensee</td></tr><tr><td>Purposes</td><td>Publishing models with the responsible use of AI terms (Annex B), which has been advocated by <a href="https://www.licenses.ai">RAIL</a>. Note that, by applying this license, all copies and subsequent derivatives will be restricted by these use-based restriction terms.</td></tr></tbody></table>
 
 {% embed url="https://github.com/Xtra-Computing/ModelGo/blob/main/MG_licenses/V2/MG-BY-RAI-2.0.txt" %}
 👆Get the Full Text of this License
@@ -236,7 +236,7 @@ https://ids.nus.edu.sg/docs/modelgo/MG-BY-NC-ND-2.0.txt
 
 {% stepper %}
 {% step %}
-### Upload MG License File
+### Add MG License File
 
 #### Download the license text file from the link above, rename it to <mark style="color:purple;">**LICENSE**</mark>, place it in your Hugging Face project directory.
 {% endstep %}
@@ -244,12 +244,12 @@ https://ids.nus.edu.sg/docs/modelgo/MG-BY-NC-ND-2.0.txt
 {% step %}
 ### &#x20;Declare MG License
 
-#### Paste the license declaration as shown above into your README or Model Card..
+#### Paste the license declaration as shown above into your README or Model Card.
+{% endstep %}
+
+{% step %}
+### Use Model Sheet to Improve Understanding (Optional)
+
+Paste the corresponding [Model Sheet](how-to-choose.md#with-the-help-of-model-sheet) in your README or Model Card to help downstream users understand the granted rights and restrictions of your model.
 {% endstep %}
 {% endstepper %}
-
-{% hint style="warning" %}
-### Disclaimer of Warranty
-
-We are not a law firm and do not provide legal services or legal advice. Distribution of ModelGo licenses does not establish a lawyer-client or any other relationship. We make our licenses and related information available on an "as-is" basis. We provide no warranties regarding our licenses, any material licensed under their terms and conditions, or any related information. We disclaim all liability for damages resulting from their use to the fullest extent possible.
-{% endhint %}

@@ -21,7 +21,7 @@ Model Sheet:
 <summary>MG0-2.0</summary>
 
 ```
-Model Sheet MG0-2.0
+### Model Sheet MG0-2.0
 +--------------+-------------------------------------------------+---+
 |              | Use, Reproduce, Distribute Licensed Materials   | ✓ |
 |              +-------------------------------------------------+---+

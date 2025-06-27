@@ -13,5 +13,5 @@
 * [📖 Understanding ModelGo](learn-more/understanding-modelgo.md)
 * [📖 Understanding ModelGo](learn-more/understanding-modelgo-1.md)
 * [📪 FAQ](learn-more/faq.md)
-* [📌 Disclaimer from NUS](learn-more/disclaimer-from-nus.md)
+* [📌 Disclaimer](learn-more/disclaimer.md)
 * [📪 FAQ](learn-more/faq-1.md)

@@ -1,4 +1,4 @@
-# 📌 Disclaimer from NUS
+# 📌 Disclaimer
 
 
 
@@ -13,3 +13,13 @@ By accessing this website and/or using the model licence provided herein, you ag
 &#x20;           a.  in no event shall NUS, its affiliates, officers, directors, employees, agents, and any other related parties be liable to you or any other persons for any and all claims, liabilities, damages, losses, costs, or expenses (including legal costs) arising out of or related to your access of this website, use of the model licence or reliance on any information provided on this website (“**Losses**”); and&#x20;
 
 &#x20;           b. you shall indemnify, defend, and hold harmless NUS, its affiliates, officers, directors, employees, agents, and any other related parties from and against any and all Losses.
+
+{% hint style="warning" %}
+### Disclaimer of Warranty
+
+We are not a law firm and do not provide legal services or legal advice. Distribution of ModelGo licenses does not establish a lawyer-client or any other relationship. We make our licenses and related information available on an "as-is" basis. We provide no warranties regarding our licenses, any material licensed under their terms and conditions, or any related information. We disclaim all liability for damages resulting from their use to the fullest extent possible.
+{% endhint %}
+
+{% hint style="info" %}
+
+{% endhint %}

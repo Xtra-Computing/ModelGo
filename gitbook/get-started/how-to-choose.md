@@ -14,7 +14,7 @@ This diif view provides an overview understanding of different MG licenses. Howe
 
 Agreeing with [IBM AI Factsheet](https://aifs360.res.ibm.com) and [Montreal Data License](https://arxiv.org/abs/1903.12262),  we believe that transparency is crucial to increasing trust and standardization in AI. ModelGo licenses use a <mark style="color:purple;">**Model Sheet**</mark> to assist model users in understanding the granted rights and restrictions in the license terms. It also helps model developers find the most suitable MG licenses.
 
-You can find the ModelSheet in <mark style="color:purple;">**Annex A**</mark> of every MG license, and we also list them here:
+Model Sheet:
 
 <details>
 
@@ -428,16 +428,8 @@ Model Sheet MG0-2.0
 
 Here are some useful tips for selecting suitable MG licenses:
 
+* If you just want to share your model freely and without any conditions, MG0 is the option for you.
 * Choose the options that most closely match your publishing needs.
 * Choose revocable licenses if you haven't finalized your decision yet.
-* Do not choose MG-∗-RAI if your project incorporates or is expected to incorporate any GPL /AGPL code or ML components.
-* If your project already contains any components under MG licenses with OS option, you must license your entire project with the same OS option.
-* If you just want to share your model freely and without any conditions, MG0 is the option for you.
-
-
-
-{% hint style="warning" %}
-### Disclaimer of Warranty
-
-We are not a law firm and do not provide legal services or legal advice. Distribution of ModelGo licenses does not establish a lawyer-client or any other relationship. We make our licenses and related information available on an "as-is" basis. We provide no warranties regarding our licenses, any material licensed under their terms and conditions, or any related information. We disclaim all liability for damages resulting from their use to the fullest extent possible.
-{% endhint %}
+* Do not choose MG-∗-RAI if your project incorporates or is expected to incorporate any GPL /AGPL/CCs  code or ML components.
+* If your project already contains any components under MG licenses with SA option, you must license your entire project with the same SA option.

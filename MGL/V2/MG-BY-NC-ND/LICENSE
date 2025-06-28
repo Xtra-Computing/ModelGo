@@ -1,4 +1,4 @@
-﻿ModelGo Attribution-NonCommercial-NoDerivatives License
+ModelGo Attribution-NonCommercial-NoDerivatives License
 Version 2.0, May 2025
 
 By exercising the rights granted in Section 2.1, You acknowledge and agree that You have 
@@ -36,15 +36,15 @@ include any datasets used for pretraining, training, adapting, or evaluating the
 under this License, including any checkpoints, learned weights, parameters (including optimizer 
 states) and the model architecture.
 
+"NonCommercial" means not primarily intended for or directed towards commercial advantage 
+or monetary compensation.
+
 "Output" means any information, data, and/or content, including but not limited to images, text, 
 text effects, audio files, and/or video files, generated through operation of the Model, or through 
 operation of any new model developed by transferring patterns from the Model.
 
 "You" (or "Your") means you, or any other person or entity you are entering into this license on 
 behalf of, provided you have the legal authority to bind such person or entity.
-
-"NonCommercial" means not primarily intended for or directed towards commercial advantage 
-or monetary compensation.
 
 2.	LICENSE RIGHTS
 

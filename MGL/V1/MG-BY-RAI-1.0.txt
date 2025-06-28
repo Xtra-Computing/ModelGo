@@ -1,0 +1,257 @@
+﻿ModelGo Attribution ResponsibleAI License
+Version 1.0, Apr 2024, https://modelgo.gitbook.io/licenses
+
+
+BEGIN TERMS AND CONDITIONS
+
+1. Definitions.
+- "License" means the terms and conditions for use, reproduction, 
+distribution and modification set forth herein.
+- "Licensor" shall mean the copyright owner or entity authorized by the 
+copyright owner that is granting the License.
+- "Licensee" or "You" (or "Your") means you, or your employer or any other 
+person or entity (if you are entering into this License on such person or 
+entity's behalf), of the age required under applicable laws, rules or 
+regulations to provide legal consent and that has legal authority to bind 
+your employer or such other person or entity if you are entering in this 
+License on their behalf.
+- "Third Parties" means individuals or legal entities that are not under 
+common control with Licensor or You.
+- "Data" means a collection of information and/or content extracted from 
+the dataset used with the Model, including to train, pretrain, or otherwise 
+evaluate the Model. The Data is not licensed under this License.
+- "Output" means the results of operating a Model as embodied in 
+informational content resulting therefrom.
+- "Model" means any accompanying machine-learning-based assemblies 
+(including checkpoints) made available by the Licensor under this License, 
+consisting of learned weights, parameters (including optimizer states), 
+corresponding to the model architecture as embodied in the Complementary 
+Materials, that have been trained or tuned, in whole or in part on the 
+Data, using the Complementary Materials.
+- "Derivatives of the Model" means all modifications to the Model, works 
+based on the Model, or any other model created or initialized by 
+transferring patterns of the weights, parameters, activations, or output of 
+the Model, to the other model, intending to cause the other model to 
+perform similarly to the Model, including - but not limited to - 
+distillation methods entailing the use of intermediate data representations 
+or methods based on the generation of synthetic data by the Model for 
+training the other model.
+- "Complementary Materials" means the accompanying source code and scripts 
+used to define, run, load, benchmark or evaluate the Model, and used to 
+prepare data for training or evaluation, if any. This includes any 
+accompanying documentation, tutorials, examples, etc, if any.
+- "Licensed Materials" means, collectively, the Model and Complementary 
+Materials (and any portion thereof) made available under this License.
+- "Distribution" (or "Distribute") means any transmission, reproduction, 
+publication or other sharing of the Licensed Materials or Derivatives of 
+the Model (and any Output thereof) to a Third Party, including providing 
+the Model as a hosted service made available by electronic or other remote 
+means - e.g., API-based or web access.
+- "Open Source Software" means any software distributed under a license 
+approved by the Open Source Initiative (OSI).
+
+2. License Rights and Redistribution.
+By exercising the Licensed Rights (defined below) or by using the Licensed 
+Materials, You accept and agree to be bound by the terms and conditions of 
+this ModelGo Attribution-ResponsibleAI License. If You disagree with this 
+License, then no rights are granted to You for the use of the Licensed 
+Materials, and You must cease using them immediately.
+a. Grant of Patent and Copyright Licenses. Subject to the terms and 
+conditions of this License, the Licensor hereby grants You a worldwide, 
+non-exclusive, non-transferable, sublicensable, revocable, royalty-free 
+limited license under patent and copyright claims owned or controlled by 
+the Licensor that are embodied in the Model as furnished by the Licensor, 
+for the duration of intellectual property rights protection, to make, have 
+made, use, Distribute, copy, reproduce, prepare, publicly display, publicly 
+perform, create derivative works of, and make modifications to the Licensed 
+Materials, in whole or in part.
+b. Distribution and Redistribution. You may host for Third Party remote 
+access purposes (e.g., software-as-a-service), reproduce and Distribute 
+copies of the Licensed Materials or Derivatives of the Model thereof in any 
+medium, with or without modifications, provided that You meet the following 
+conditions:
+i. If You Distribute or make the Licensed Materials, or Derivatives of the 
+Model, available to a Third Party, You shall provide a copy of this License 
+to such Third Party.
+ii. You must cause any modified files to carry prominent notices stating 
+that You changed the files and giving a relevant date.
+iii. You must retain all copyright, patent, trademark, and attribution 
+notices excluding those notices that do not pertain to any part of the 
+Model, and Derivatives of the Model.
+vi. You must retain, in the Derivatives of the Model that You create, all 
+copyright, patent, and trademark notices from the Licensed Materials, as 
+well as any notices of licensing and any descriptive text identified 
+therein as an "Attribution Notice". 
+v. Your use of the Licensed Materials must comply with applicable laws and 
+regulations (including trade compliance laws and regulations).
+vi. Use-based restrictions as referenced in Attachment B must be included 
+as an enforceable provision by You in any type of legal agreement (e.g., a 
+license) governing the use of the Model or Derivatives of the Model, and 
+You shall give notice to recipients You Distribute to, that the Model or 
+Derivatives of the Model are subject to Attachment B. This provision does 
+not apply to the use of Complementary Materials.
+c. The Output You Generate. You are accountable for the Output You generate 
+and its subsequent uses. If You Distribute the Output created by You with 
+the Model (or Derivatives of the Model), You must acknowledge that the 
+Output contains AI-generated content created by You using the Model (or 
+Derivatives of the Model). No use of the output can contravene any 
+provision as stated in the License.
+d. Responsible Use of AI. Compliance with the restrictions in Attachment B 
+is a condition to the grants in this License. If You use the Model or 
+Derivatives of the Model, You agree not to use it for the specified 
+restricted uses set forth in Attachment B.
+e. Exclusions From License Grant. Neither the names of the Licensor nor any 
+of their trademarks or service marks may be used to endorse or promote 
+products derived from this Licensed Materials without express prior 
+permission of the Licensor. Except as expressly stated herein, nothing in 
+this License grants any license to Licensor's trademarks, copyrights, 
+patents, trade secrets, or any other intellectual property. No patent 
+license is granted to make, have made, use, sell, offer for sale, or import 
+embodiments of any patent claims other than the licensed claims defined in 
+this Section. No license is granted to the trademarks of the Licensor, even 
+if such marks are included in the Licensed Materials.
+
+3. Disclaimer of Warranty
+UNLESS REQUIRED BY APPLICABLE LAW, THE LICENSOR PROVIDES THE LICENSED 
+MATERIALS AND ANY OUTPUT AND RESULTS THEREFROM ON AN "AS IS" BASIS, WITHOUT 
+WARRANTIES OR CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING, 
+WITHOUT LIMITATION, ANY WARRANTIES OR CONDITIONS OF TITLE, NON-
+INFRINGEMENT, MERCHANTABILITY, OR FITNESS FOR A PARTICULAR PURPOSE. YOU ARE 
+SOLELY RESPONSIBLE FOR DETERMINING THE APPROPRIATENESS OF USING OR 
+REDISTRIBUTING THE LICENSED MATERIALS AND ASSUME ANY RISKS ASSOCIATED WITH 
+YOUR USE OF THE LICENSED MATERIALS AND ANY OUTPUT AND RESULTS.
+
+4. Limitation of Liability
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT WILL THE 
+LICENSOR BE LIABLE TO YOU ON ANY LEGAL THEORY (INCLUDING, WITHOUT 
+LIMITATION, CONTRACT, TORT, NEGLIGENCE, PRODUCTS LIABILITY) OR OTHERWISE 
+FOR ANY DIRECT, SPECIAL, INDIRECT, INCIDENTAL, CONSEQUENTIAL, PUNITIVE, 
+EXEMPLARY, OR OTHER LOSSES, COSTS, EXPENSES, OR DAMAGES ARISING OUT OF THIS 
+LICENSE OR USE OF THE LICENSED MATERIAL, EVEN IF THE LICENSOR HAS BEEN 
+ADVISED OF THE POSSIBILITY OF SUCH LOSSES, COSTS, EXPENSES, OR DAMAGES.
+
+5. Termination for Patent Action
+This License shall terminate automatically and You may no longer exercise 
+any of the rights granted to You by this License as of the date You 
+commence an action, including a cross-claim or counterclaim, against 
+Licensor or any Licensee alleging that the Licensed Materials infringe a 
+patent. This termination provision shall not apply for an action alleging 
+patent infringement by combinations of the Licensed Materials with other 
+software or hardware.
+
+6. Third-Party Materials
+The Licensed Materials may contain software or datasets from Third Parties 
+(including Open Source Software and free-content works), collectively 
+termed "Third-Party Materials", which are subject to the license terms of 
+the respective Third-Party licensors. Any interactions, transactions, or 
+communications with Third Parties, as well as Your utilization or 
+engagement with any Third-Party Materials, are conducted exclusively 
+between You and the Third Party. The Licensor neither oversees nor endorses 
+and disclaims any representations or warranties regarding Third-Party 
+Materials. Your choice to access and use such Third-Party Materials is 
+entirely at Your discretion and responsibility.
+
+7. Modification of This License
+This License is Copyright © 2024 Moming Duan. Permission is granted to 
+copy, distribute, or communicate this License without modification. Nothing 
+in this License permits You to modify this License as applied to the 
+Licensed Materials or to Derivatives of the Model. However, You may modify 
+the text of this License and copy, distribute or communicate Your modified 
+version and apply it to other original works of authorship, provided that 
+You furnish a readable notice describing Your modifications to this 
+license.
+
+8. Interpretation of Sections 3 and 4.
+In the event that the disclaimer of warranty and limitation of liability, 
+as provided above, cannot be granted local legal effect in accordance with 
+their terms, these provisions then solely restrict our responsibilities to 
+the maximum extent permissible in Your country of residence. Reviewing 
+courts shall, in such cases, apply local law that most closely approximates 
+an absolute waiver of all civil liability in connection with the Licensed 
+Materials and any Output and results thereof.
+
+END TERMS AND CONDITIONS
+
+
+Attachment A
+                           Model Sheet
++-------------------------------+---+-----------------+---+
+| Use & Modify                  | ✓ | Irrevocable     | ✗ |
++-------------------------------+---+-----------------+---+
+| Create Derivatives            | ✓ | Trademark Use   | ✗ |
++-------------------------------+---+-----------------+---+
+| Share Verbatim Copy           | ✓ | Disclose Source | ✗ |
++-------------------------------+---+-----------------+---+
+| Share Derivatives             | ✓ | GPL-Compliant   | ✗ |
++-------------------------------+---+-----------------+---+
+| Share Output                  | ✓ |                 |   |
++-------------------------------+---+-----------------+---+
+| Patent Use                    | ✓ |                 |   |
++-------------------------------+---+-----------------+---+
+| Copyright Use                 | ✓ |                 |   |
++-------------------------------+---+-----------------+---+
+| Commercial Use of Model       | ✓ |                 |   |
++-------------------------------+---+-----------------+---+
+| Commercial Use of Output      | ✓ |                 |   |
++-------------------------------+---+-----------------+---+
+| Commercial Use of Derivatives | ✓ |                 |   |
++-------------------------------+---+-----------------+---+
+| Commercial Use of Code & Docs | ✓ |                 |   |
++-------------------------------+---+-----------------+---+
+| Retain Original Attribution   | ✓ |                 |   |
++-------------------------------+---+-----------------+---+
+| Retain Original License       | ✓ |                 |   |
++-------------------------------+---+-----------------+---+
+| Retain All Notices            | ✓ |                 |   |
++-------------------------------+---+-----------------+---+
+| Responsible AI Restrictions   | ✓ |                 |   |
++-------------------------------+---+-----------------+---+
+| Disclaimer of Warranty        | ✓ |                 |   |
++-------------------------------+---+-----------------+---+
+| Limitation of Liability       | ✓ |                 |   |
++-------------------------------+---+-----------------+---+
+| Sublicensing                  | ✓ |                 |   |
++-------------------------------+---+-----------------+---+
+
+
+Attachment B
+                           Use Restrictions
+You agree not to Use the Model or Derivatives of the Model:
+(a) In any way that violates any applicable national, federal, state, local, 
+or international law or regulation;
+(b) For the purpose of exploiting, harming, or attempting to exploit or 
+harm minors in any way;
+(c) To generate and/or disseminate malware (including - but not limited to 
+- ransomware) or any other content to be used for the purpose of Harming 
+electronic systems;
+(d) To generate or disseminate verifiably false information and/or content 
+with the purpose of Harming others;
+(e) To generate or disseminate personally identifiable information with the 
+purpose of Harming others;
+(f) To generate or disseminate information (including - but not limited to 
+- images, code, posts, articles), and place the information in any public 
+context (including - but not limited to - bot generating tweets) without 
+expressly and intelligibly disclaiming that the information and/or content 
+is machine generated;
+(g) To intentionally defame, disparage, or otherwise harass others;
+(h) To impersonate or attempt to impersonate human beings for purposes of 
+deception;
+(i) For fully automated decision-making that adversely impacts an 
+individual’s legal rights or otherwise creates or modifies a binding, 
+enforceable obligation without expressly and intelligibly disclaiming that 
+the creation or modification of the obligation is machine generated;
+(j) For any Use intended to discriminate against or Harm individuals or 
+groups based on online or offline social behavior or known or predicted 
+personal or personality characteristics;
+(k) To intentionally exploit any of the vulnerabilities of a specific group 
+of persons based on their age, social, physical, or mental characteristics, 
+in order to materially distort the behavior of a person pertaining to that 
+group in a manner that causes or is likely to cause that person or another 
+person physical or psychological harm;
+(l) For any Use intended to discriminate against individuals or groups 
+based on legally protected characteristics or categories;
+(m) To provide medical advice or medical results interpretation that is 
+intended to be a substitute for professional medical advice, diagnosis, or 
+treatment;
+(n) For fully automated decision-making in the administration of justice, 
+law enforcement, immigration, or asylum processes.

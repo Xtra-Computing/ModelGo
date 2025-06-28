@@ -10,7 +10,7 @@ These licenses are sublicensable and irrevocable, with <mark style="color:purple
 {% tab title="MG0" %}
 <table><thead><tr><th width="192">License Full Name</th><th>ModelGo Zero License 2.0</th></tr></thead><tbody><tr><td>Short Identifier</td><td>MG0-2.0</td></tr><tr><td>Tags</td><td>Permissive, Sublicensable, Irrevocable</td></tr><tr><td>Purposes</td><td>Publishing models with almost no restrictions except for the terms regarding Warranty, Liability, and Termination. Recipients may remove your attribution and license file.</td></tr></tbody></table>
 
-{% embed url="https://github.com/Xtra-Computing/ModelGo/blob/main/MG_licenses/V2/MG0-2.0.txt" %}
+{% embed url="https://github.com/Xtra-Computing/ModelGo/blob/main/MGL/V2/MG0/LICENSE" %}
 👆Get the Full Text of this License
 {% endembed %}
 
@@ -59,6 +59,8 @@ https://ids.nus.edu.sg/docs/modelgo/MG-BY-2.0.txt
 </details>
 {% endtab %}
 {% endtabs %}
+
+###
 
 ### Conditional Permissive
 

@@ -96,7 +96,7 @@ In the first scenario, where the two models remain separable from each other, su
 
 In the second scenario, where the remixing process results in an inseparable outcome (for example, weight averaging, model fusion, layer concatenation, etc.), it is necessary to check the compatibility between the two original licenses of the base models before remixing. There is a one-way compatibility in MG licenses from Permissive to Conditional to Stringent. This means that the remixing result can be licensed under MG with stricter options, but fewer options are not permitted. We provide you a compatibility table to demonstrate this rule:
 
-<div data-full-width="false"><figure><img src="../.gitbook/assets/compati.jpg" alt=""><figcaption><p>MG Compatibility Table</p></figcaption></figure></div>
+<div data-full-width="false"><figure><img src="broken-reference" alt=""><figcaption><p>MG Compatibility Table</p></figcaption></figure></div>
 
 Choose two models' licenses you want to remix from the rows and columns. The ✅ mark means you can remix the two models, and there is a feasible licensing solution for relicensing your remix results; ⚠️ mark means due to the terms of NoDerivatives, you can't share your remix results, which leads to you being unable to apply any license to the results; ❌ mark means there isn't a feasible licensing solution for such remixing, so you should follow the terms regarding derivatives of original licenses but can't relicense your remix results.
 

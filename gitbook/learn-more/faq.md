@@ -2,7 +2,7 @@
 
 ## Q: Why we need ModelGo licenses?
 
-ModelGo licenses offer flexible options to fulfill your specific licensing needs about using and distributing your deep learning models while protecting your Intellectual Property (IP).
+ModelGo licenses offer flexible licensing elements to fulfill your specific licensing needs about using and distributing your ML models.
 
 <mark style="color:purple;">**Why not use Llama or Gemma Licenses?**</mark> Llama and Gemma licenses are proprietary licenses and assert copyright ownership by Meta and Google. If your project builds on Llama or Gemma, you have no choice but to comply with their original licenses. However, if you own your model and want to publish it while retaining your copyright attribution, you may prefer a public-use license like ModelGo Licenses.
 
@@ -30,23 +30,23 @@ It's worth mentioning that AI2 ImpACT contains copyleft-style use-based restrict
 
 ## Q: What is the scope of ModelGo licenses governing?
 
-MG licenses only apply to the Model, but their terms govern the <mark style="color:purple;">use and distribution of the Model and its derivatives, as well as outputs thereof, and complementary code and scripts</mark>. We classify these objects into three categories to define the scope of terms: Licensed Materials, Derivative Materials, and Output, each with different restriction terms and using policies. For example, according to the terms of MG-BY-ND-2.0, sharing the verbatim copy of Licensed Materials is allowed while sharing any Derivative Materials and Outputs is prohibited.
+MG licenses only apply to the Model, but their terms govern the <mark style="color:purple;">use and distribution of the Model and its derivatives, as well as outputs thereof, and complementary code and scripts</mark>. We classify these objects into three categories to define the scope of terms: Licensed Materials, Derivative Materials, and Output, each with different restriction terms and using policies. For example, according to the terms of MG-BY-ND-2.0, sharing the verbatim copy of Licensed Materials is allowed while sharing any Derivative Materials is prohibited.
 
-MG licenses should not apply to Third-Party Materials (e.g., open-source software and free-content artifacts), system libraries, and datasets (e.g., training set, validation set, test set). This implies that choosing MG with OS does not mandate open-sourcing the data used to develop the model. Due to data privacy concerns and the fact that these datasets or the data samples therein already have free-content licenses (typically CCs), we consider datasets to be outside the scope of MG licenses.
+MG licenses should not apply to Third-Party Materials (e.g., open-source software and free-content artifacts), system libraries, and datasets (e.g., training set, validation set, test set). This implies that choosing MG with SA does not mandate open-sourcing the data used to develop the model. Due to data privacy concerns and the fact that these datasets or the data samples therein already have free-content licenses (typically CCs), we consider datasets to be outside the scope of MG licenses.
 
 <figure><img src="../.gitbook/assets/scope.jpg" alt=""><figcaption><p>MG Governing Scope</p></figcaption></figure>
 
 ## Q: Should I continue using ModelGo Licenses V1?
 
-<mark style="color:purple;">**We suggest not**</mark>. V1 is a remix of existing license texts and may contain unforeseen copyright issues. Additionally, V2 is more comprehensive and includes clauses that better address IP rights in derivatives. We strongly recommend using V2 instead.
+<mark style="color:purple;">**We suggest not.**</mark> V1 is a remix of existing license texts and may contain unforeseen copyright issues. Additionally, V2 is more comprehensive and includes clauses that better address IP rights in derivatives. We strongly recommend using V2 instead.
 
 ## Q: May I distribute the generated content?
 
-<mark style="color:purple;">**It depends.**</mark> You can share the generated content (including the output of the Model and the output of the Derivatives of the Model) only if the <mark style="color:purple;">ND option is not being used</mark>. MG licenses will not be proliferated to the generated content and do not claim copyright over them. However, MG licenses require users to acknowledge that the output contains AI-generated content created by the users using the model. Please refer to the Clause "<mark style="color:purple;">2.4 Output</mark>" for more information.
+<mark style="color:purple;">**Of course yes.**</mark> MG licenses will not be proliferated to the generated content and do not claim copyright over them. However, MG with NC and ND require users to include a notice of the provenance model used to generate this content if they are collected and published as a dataset. Please refer to the Clause "<mark style="color:purple;">2.2 Conditions (b)</mark>" for more information.
 
 ## Q: Should I retain the attribution information in the generated content?
 
-<mark style="color:purple;">**No.**</mark> The BY options in MG only apply to the model and its derivatives (excluding code and scripts which may already be covered by separate OSS licenses). MG licenses only require users to acknowledge that the output contains AI-generated content created by the users using the model.
+<mark style="color:purple;">**It depends.**</mark> The BY options in MG only apply to the model and its derivatives (excluding code and scripts which may already be covered by separate OSS licenses). But MG with NC and ND require users to include a notice of the provenance model used to generate this content if they are collected and published as a dataset.
 
 ## Q: Revocable vs. Irrevocable;  Sublicensable vs. Non-sublicensable.
 
@@ -60,25 +60,25 @@ Intellectual Property (IP) encompasses patents, copyrights, and trademarks.  Mos
 
 <table><thead><tr><th width="331">License Name</th><th width="200">Revocable?</th><th>Sublicensable?</th></tr></thead><tbody><tr><td>Apache-2.0</td><td>No</td><td>Yes</td></tr><tr><td>CodeML-OpenRAIL-M</td><td>No</td><td>Yes</td></tr><tr><td>CreativeML-OpenRAIL-M</td><td>No</td><td>Yes</td></tr><tr><td>GPL-3.0 (Copyleft)</td><td>No</td><td>Auto Licensing</td></tr><tr><td>CC-BY-4.0</td><td>No</td><td>Auto Licensing</td></tr><tr><td>Llama License Agreement</td><td>Yes</td><td>No ✤</td></tr><tr><td>SEER License Agreement</td><td>Yes</td><td>No ✤</td></tr><tr><td>AFL-3.0</td><td><mark style="color:orange;">Not Stated</mark></td><td>Yes</td></tr><tr><td>Llama2 Community License</td><td><mark style="color:orange;">Not Stated</mark></td><td><mark style="color:orange;">Not Stated</mark></td></tr><tr><td>AI2 ImpACT License (LR, MR, HR)</td><td><mark style="color:orange;">Not Stated</mark></td><td><mark style="color:orange;">Not Stated</mark></td></tr></tbody></table>
 
-**NOTE:** CC licenses are designed to grant copyright licenses for content, so the granting of patent use is not applicable. <mark style="color:orange;">Not Stated:</mark> a license does not explicitly state its revocability, it is generally understood to be implicitly revocable. ✤: These licenses implicitly include automatic licensing clauses. Auto Licensing means the recipient automatically receives a license from the original licensors whilie sublicensing is not allowed and unnecessary.
+**NOTE:** CC licenses are designed to grant copyright licenses for content, so the granting of patent use is not applicable. <mark style="color:orange;">Not Stated:</mark> a license does not explicitly state its revocability, it is generally understood to be implicitly revocable. ✤: These licenses implicitly include automatic licensing clauses. Auto Licensing means the recipient automatically receives a license from the original licensors whilie sublicensing is  unnecessary.
 
 
 
-ModelGo licenses determine revocability and sublicensing with careful consideration of their target scenarios (see table below). For NC and ND, our aim is to maximize licensee control and ensure all licenses can be revoked. Therefore, we adopt an automated licensing mechanism (with no sublicensor in this case, all licenses will be terminated if the head license is revoked) instead of sublicensing. The exception is OS, we also prioritize protecting the benefits of contributors, making OS licenses irrevocable and [copyleft](https://en.wikipedia.org/wiki/Copyleft). As for other very permissive licenses like MG0 and MG-BY, which encourage sharing and free use, they are irrevocable and allow sublicensing.
+ModelGo licenses determine revocability and sublicensing with careful consideration of their target scenarios (see table below). For NC and ND, our aim is to maximize licensee control and ensure all licenses can be revoked. Therefore, we adopt an automated licensing mechanism (with no sublicensor in this case, all licenses will be terminated if the head license is revoked) instead of sublicensing. The exception is SA, we also prioritize protecting the benefits of contributors, making SA licenses irrevocable and [copyleft](https://en.wikipedia.org/wiki/Copyleft). As for other very permissive licenses like MG0 and MG-BY, which encourage sharing and free use, they are irrevocable and allow sublicensing.
 
 <mark style="color:purple;">**Grant of patent and copyright licenses in ModelGo:**</mark>
 
-<table><thead><tr><th width="331">License Name</th><th width="200">Revocable?</th><th>Sublicensable?</th></tr></thead><tbody><tr><td>MG0</td><td>No</td><td>Yes</td></tr><tr><td>MG-BY</td><td>No</td><td>Yes</td></tr><tr><td>MG-BY-OS (Copyleft)</td><td>No</td><td>Yes</td></tr><tr><td>MG-BY-NC-OS (Copyleft)</td><td>No</td><td>Auto Licensing</td></tr><tr><td>MG-BY-RAI</td><td>Yes</td><td>Yes</td></tr><tr><td>MG-BY-NC</td><td>Yes</td><td>Auto Licensing</td></tr><tr><td>MG-BY-ND</td><td>Yes</td><td>Auto Licensing</td></tr><tr><td>MG-BY-NC-ND</td><td>Yes</td><td>Auto Licensing</td></tr><tr><td>MG-BY-NC-RAI</td><td>Yes</td><td>Auto Licensing</td></tr></tbody></table>
+<table><thead><tr><th width="331">License Name</th><th width="200">Revocable?</th><th>Sublicensable?</th></tr></thead><tbody><tr><td>MG0</td><td>No</td><td>Yes</td></tr><tr><td>MG-BY</td><td>No</td><td>Yes</td></tr><tr><td>MG-BY-SA (Copyleft)</td><td>No</td><td>No</td></tr><tr><td>MG-BY-RAI</td><td>Yes</td><td>No</td></tr><tr><td>MG-BY-NC</td><td>Yes</td><td>No</td></tr><tr><td>MG-BY-ND</td><td>Yes</td><td>No</td></tr><tr><td>MG-BY-NC-ND</td><td>Yes</td><td>No</td></tr><tr><td>MG-BY-NC-RAI</td><td>Yes</td><td>No</td></tr></tbody></table>
 
 ModelGo licenses explicitly state whether they grant or do not grant licensee patent and copyright licenses. This clarity ensures that model users understand their rights and potential risks when reusing and contributing models.
 
-## Q: Are MG licenses with OS considered Open Source licenses?
+## Q: Are MG-BY-SA considered Open Source licenses?
 
-<mark style="color:purple;">**No.**</mark> ModelGo licenses are not approved by the Open Source Initiative (OSI). However, we aim for MG-BY-OS-2.0 and MG-BY-NC-OS-2.0 licenses to keep the model "open." It's also worth mentioning that the meaning of "open" may differ between software and models. In ModelGo licenses, OS means the availability of **Licensed Materials** and **Derivative Materials**, excluding the openness of the dataset (as we consider it outside the governing scope of MG licenses).
+<mark style="color:purple;">**Currently, no.**</mark> None of the variants of the ModelGo licenses have been approved by the Open Source Initiative (OSI) yet. However, we aim for MG-BY-SA-2.0 to keep the model "open." It's also worth mentioning that the meaning of "open" may differ between software and models. In ModelGo licenses, SA means the availability of **Licensed Materials** and **Derivative Materials**, excluding the openness of the dataset (as we consider it outside the governing scope of MG licenses).
 
-## Q: May I close source my models licensed under MG with OS?
+## Q: May I close source my models licensed under MG with SA?
 
-<mark style="color:purple;">**No.**</mark> This applies to its derivatives as well. MG-BY-OS-2.0 and MG-BY-NC-OS-2.0 are copyleft licenses, meaning all derivative works must also be covered by the same license. You also can't revoke MG-BY-OS-2.0 and MG-BY-NC-OS-2.0, unlike GPL-3.0, which doesn't explicitly claim the granted patent license is irrevocable.
+<mark style="color:purple;">**No.**</mark> This applies to its derivatives as well. MG-BY-SA-2.0 is a copyleft license, meaning all derivative works must also be covered by the same license. You also can't revoke MG-BY-SA-2.0, unlike GPL-3.0, which doesn't explicitly claim the granted patent license is irrevocable.
 
 ## Q: Will ModelGo licenses support more licensing options?
 
@@ -86,7 +86,7 @@ ModelGo licenses explicitly state whether they grant or do not grant licensee pa
 
 ## Q: May I reuse ModelGo licenses text to make my own licenses?
 
-<mark style="color:purple;">**Yes, you can.**</mark> ModelGo licenses explicitly allow you to do so as stated in Section 7, provided that you furnish a readable notice describing your modifications to the original ModelGo licenses. However, we encourage using the licensing options most appropriate for your publishing scenario to facilitate standardization in model licensing and simplify license analysis in ML projects.
+<mark style="color:purple;">**Yes, you can.**</mark> ModelGo licenses explicitly allow you to do so as stated in Section "MODIFICATION OF THIS LICENSE", provided that you furnish a readable notice describing your modifications to the original ModelGo licenses. However, we encourage using the licensing options most appropriate for your publishing scenario to facilitate standardization in model licensing and simplify license analysis in ML projects.
 
 ## Q: Will my modification to Model Sheet take effect?
 
@@ -104,13 +104,13 @@ In the second scenario, where the remixing process results in an inseparable out
 
 Choose two models' licenses you want to remix from the rows and columns. The ✅ mark means you can remix the two models, and there is a feasible licensing solution for relicensing your remix results; ⚠️ mark means due to the terms of NoDerivatives, you can't share your remix results, which leads to you being unable to apply any license to the results; ❌ mark means there isn't a feasible licensing solution for such remixing, so you should follow the terms regarding derivatives of original licenses but can't relicense your remix results.
 
-For example, if we remix two models licensed under MG-BY-NC and MG-BY-OS, respectively, we can relicense the remix results to MG-BY-NC-OS. If we want to remix models with MG-BY and MG-BY-ND, even though it seems feasible to apply MG-BY-ND to the remixing results, following the NoDerivatives terms of MG-BY-ND, we can't share such remixing, which leads to no license being applicable. If we want to remix MG-BY-OS and MG-BY-RAI, the problem is there are no feasible licensing solutions for the remix results, so such remix is not supported by ModelGo licenses.
+For example, if we remix two models licensed under MG-BY-NC and MG-BY-SA respectively, we can relicense the remix results to MG-BY-NC-SA. If we want to remix models with MG-BY and MG-BY-ND, even though it seems feasible to apply MG-BY-ND to the remixing results, following the NoDerivatives terms of MG-BY-ND, we can't share such remixing, which leads to no license being applicable. If we want to remix MG-BY-OS and MG-BY-RAI, the problem is there are no feasible licensing solutions for the remix results, so such remix is not supported by ModelGo licenses.
 
 Overall, in most cases, you can freely remix permissive MG licensed models into your model without conflicts, and remix conditional MG licensed models into your model if following the same restrictions, but it's difficult to remix stringent MG licensed models and impossible to remix MG with ND licensed models.
 
-## Q: Why do ModelGo licenses not support OS with RAI?
+## Q: Why do ModelGo licenses not support SA with RAI?
 
-Following our previous [ML license analysis study](https://github.com/Xtra-Computing/ModelGo), the copyleft-style use-based restrictions in RAI licenses are incompatible with the terms regarding further restrictions in Section 10 of GPL-3.0. Therefore, with concerns that the RAI kind restrictions are out of the spirit of Open Source and potentially lead to closed source (Ref. Greenbaum, E. (2015). The Non-Discrimination Principle in Open Source Licensing. Cardozo L. Rev., 37, 1297), we didn't draft the MG-BY-OS-RAI license.
+Following our previous [ML license analysis study](https://github.com/Xtra-Computing/ModelGo), the copyleft-style use-based restrictions in RAI licenses are incompatible with the terms regarding further restrictions in Section 10 of GPL-3.0. Therefore, with concerns that the RAI kind restrictions are out of the spirit of Open Source and potentially lead to closed source (Ref. Greenbaum, E. (2015). The Non-Discrimination Principle in Open Source Licensing. Cardozo L. Rev., 37, 1297), we didn't draft the MG-BY-SA-RAI license.
 
 > ### GPL-3.0 Section 10
 >

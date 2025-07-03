@@ -2,20 +2,6 @@
 description: Welcome to ModelGo Licenses - A standard way to publish your AI models.
 cover: .gitbook/assets/banner.png
 coverY: 0
-layout:
-  cover:
-    visible: true
-    size: full
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # 👋 A Standard Way for Model Publishing
@@ -30,9 +16,7 @@ layout:
 
 #### **ModelGo licenses** provide CreativeCommons-style licensing solutions to meet your specific needs in publishing AI models. The goal of ModelGo is to facilitate <mark style="color:purple;">managed sharing</mark> of  models while <mark style="color:purple;">protecting Intellectual Property</mark>, striking a balance between openness and control.
 
-
-
-{% embed url="https://drive.google.com/file/d/1Bq_PCpiXBw_BNReHSJ9WJKWAr6e2RLID/view?usp=sharing" %}
+{% embed url="https://drive.google.com/file/d/1BWLXb523KuWWZneGpvOjdsEuECsy4_4l/view?usp=drive_link" %}
 ModelGo Introduction Video (AI Avatar from [HeyGen](https://www.heygen.com))
 {% endembed %}
 

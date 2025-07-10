@@ -1,4 +1,4 @@
-﻿ModelGo Attribution-ResponsibleAI License
+ModelGo Attribution-ResponsibleAI License
 Version 2.0, May 2025
 
 By exercising the rights granted in Section 2.1, You acknowledge and agree that You have 
@@ -29,8 +29,9 @@ hosted service or remotely accessible service, such as API-based access or web a
 "Licensor" means the rights owner that is granting the License.
 
 "Licensed Materials" means the Model and Complementary Materials that are Distributed by 
-the Licensor under this License. For the avoidance of doubt, the Licensed Materials do not 
-include any datasets used for pretraining, training, adapting, or evaluating the Model.
+the Licensor under this License. The Licensed Materials do not include any datasets used for 
+pretraining, training, adapting, or evaluating the Model, which may or may not be made 
+available under a separate license.
 
 "Model" means the machine-learning constructs and/or assemblies licensed by the Licensor 
 under this License, including any checkpoints, learned weights, parameters (including optimizer 

@@ -12,8 +12,9 @@ Model Sheet:
 
 <summary>MG0-2.0</summary>
 
-```
+````
 ### Model Sheet MG0-2.0
+```
 +--------------+-------------------------------------------------+---+
 |              | Use, Reproduce, Distribute Licensed Materials   | ✓ |
 |              +-------------------------------------------------+---+
@@ -56,6 +57,7 @@ Model Sheet:
 |              | Distributing Output as Dataset                  |   |
 +--------------+-------------------------------------------------+---+
 ```
+````
 
 </details>
 
@@ -63,8 +65,9 @@ Model Sheet:
 
 <summary>MG-BY-2.0</summary>
 
-```
+````
 ### Model Sheet MG-BY-2.0
+```
 +--------------+-------------------------------------------------+---+
 |              | Use, Reproduce, Distribute Licensed Materials   | ✓ |
 |              +-------------------------------------------------+---+
@@ -107,6 +110,7 @@ Model Sheet:
 |              | Distributing Output as Dataset                  |   |
 +--------------+-------------------------------------------------+---+
 ```
+````
 
 </details>
 
@@ -114,8 +118,9 @@ Model Sheet:
 
 <summary>MG-BY-SA-2.0</summary>
 
-```
+````
 ### Model Sheet MG-BY-SA-2.0
+```
 +--------------+-------------------------------------------------+---+
 |              | Use, Reproduce, Distribute Licensed Materials   | ✓ |
 |              +-------------------------------------------------+---+
@@ -158,6 +163,7 @@ Model Sheet:
 |              | Distributing Output as Dataset                  |   |
 +--------------+-------------------------------------------------+---+
 ```
+````
 
 </details>
 
@@ -165,8 +171,9 @@ Model Sheet:
 
 <summary>MG-BY-RAI-2.0</summary>
 
-```
+````
 ### Model Sheet MG-BY-RAI-2.0
+```
 +--------------+-------------------------------------------------+---+
 |              | Use, Reproduce, Distribute Licensed Materials   | ✓ |
 |              +-------------------------------------------------+---+
@@ -209,6 +216,7 @@ Model Sheet:
 |              | Distributing Output as Dataset                  |   |
 +--------------+-------------------------------------------------+---+
 ```
+````
 
 </details>
 
@@ -216,8 +224,9 @@ Model Sheet:
 
 <summary>MG-BY-NC-2.0</summary>
 
-```
+````
 ### Model Sheet MG-BY-NC-2.0
+```
 +--------------+-------------------------------------------------+---+
 |              | Use, Reproduce, Distribute Licensed Materials   | ✓ |
 |              +-------------------------------------------------+---+
@@ -260,6 +269,7 @@ Model Sheet:
 |              | Distributing Output as Dataset                  |   |
 +--------------+-------------------------------------------------+---+
 ```
+````
 
 </details>
 
@@ -267,8 +277,9 @@ Model Sheet:
 
 <summary>MG-BY-NC-RAI-2.0</summary>
 
-```
+````
 ### Model Sheet MG-BY-NC-RAI-2.0
+```
 +--------------+-------------------------------------------------+---+
 |              | Use, Reproduce, Distribute Licensed Materials   | ✓ |
 |              +-------------------------------------------------+---+
@@ -311,6 +322,7 @@ Model Sheet:
 |              | Distributing Output as Dataset                  |   |
 +--------------+-------------------------------------------------+---+
 ```
+````
 
 </details>
 
@@ -318,8 +330,9 @@ Model Sheet:
 
 <summary>MG-BY-ND-2.0</summary>
 
-```
+````
 ### Model Sheet MG-BY-ND-2.0
+```
 +--------------+-------------------------------------------------+---+
 |              | Use, Reproduce, Distribute Licensed Materials   | ✓ |
 |              +-------------------------------------------------+---+
@@ -362,6 +375,7 @@ Model Sheet:
 |              | Distributing Output as Dataset                  |   |
 +--------------+-------------------------------------------------+---+
 ```
+````
 
 </details>
 
@@ -369,8 +383,9 @@ Model Sheet:
 
 <summary>MG-BY-NC-ND-2.0</summary>
 
-```
+````
 ### Model Sheet MG-BY-NC-ND-2.0
+```
 +--------------+-------------------------------------------------+---+
 |              | Use, Reproduce, Distribute Licensed Materials   | ✓ |
 |              +-------------------------------------------------+---+
@@ -413,6 +428,7 @@ Model Sheet:
 |              | Distributing Output as Dataset                  |   |
 +--------------+-------------------------------------------------+---+
 ```
+````
 
 </details>
 

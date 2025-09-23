@@ -1,18 +1,10 @@
 # ✨ How to Choose
 
-## Diff View of ModelGo Licenses
-
-If you are familiar with the [Creative Commons Licenses](https://creativecommons.org/share-your-work/cclicenses/), it will not be a tricky task to understand the meanings of licensing options in ModelGo, which follow the same philosophy to make licensing flexible and easy-to-use.
-
-To enhance understanding and increase transparency of ModelGo licenses, we offer a diff view here:
-
-<figure><img src="../.gitbook/assets/diffview.jpg" alt=""><figcaption><p>Diff View of ModelGo Licenses. ✚ Added terms, <strong>⧵</strong> Removed terms.</p></figcaption></figure>
-
-This diif view provides an overview understanding of different MG licenses. However, if you're still unsure which license will meet your needs, our Model Sheet can be helpful.
-
 ## 📋 With the Help of Model Sheet
 
 Agreeing with [IBM AI Factsheet](https://aifs360.res.ibm.com) and [Montreal Data License](https://arxiv.org/abs/1903.12262),  we believe that transparency is crucial to increasing trust and standardization in AI. ModelGo licenses use a <mark style="color:purple;">**Model Sheet**</mark> to assist model users in understanding the granted rights and restrictions in the license terms. It also helps model developers find the most suitable MG licenses.
+
+We also recommend providing the Model Sheet to help downstream users better understand and comply with the license requirements.
 
 Model Sheet:
 
@@ -423,6 +415,16 @@ Model Sheet:
 ```
 
 </details>
+
+## Diff View of ModelGo Licenses
+
+If you are familiar with the [Creative Commons Licenses](https://creativecommons.org/share-your-work/cclicenses/), it will not be a tricky task to understand the meanings of licensing options in ModelGo, which follow the same philosophy to make licensing flexible and easy-to-use.
+
+To enhance understanding and increase transparency of ModelGo licenses, we offer a diff view here:
+
+<figure><img src="../.gitbook/assets/diffview.jpg" alt=""><figcaption><p>Diff View of ModelGo Licenses. ✚ Added terms, <strong>⧵</strong> Removed terms.</p></figcaption></figure>
+
+This diif view provides an overview understanding of different MG licenses. However, if you're still unsure which license will meet your needs, our Model Sheet can be helpful.
 
 ## 💡Tips
 

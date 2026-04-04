@@ -89,7 +89,7 @@ For detailed guidance, visit [modelgo.li/get-started/how-to-choose](https://www.
 ## 📖 Resources
 
 - **Website**: [modelgo.li](https://www.modelgo.li)
-- **Documentation**: [modelgo.li/docs](https://www.modelgo.li/docs)
+- **FAQ**: [modelgo.li/learn-more/faq](https://www.modelgo.li/learn-more/faq)
 - **GitHub**: [github.com/Xtra-Computing/ModelGo](https://github.com/Xtra-Computing/ModelGo)
 
 ## 📄 License

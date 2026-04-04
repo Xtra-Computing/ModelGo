@@ -13,10 +13,10 @@
 |              | Create Extracted Models (e.g., by distillation) | ✓ |
 |              +-------------------------------------------------+---+
 |              | Distribute Derivative Materials                 | ✓ |
-|              +-------------------------------------------------+---+
-|              | Distribute Extracted Models                     | ✓ |
 | Grant of     +-------------------------------------------------+---+
-| Rights       | Sublicensable License                           | ✓ |
+| Rights       | Distribute Extracted Models                     | ✓ |
+|              +-------------------------------------------------+---+
+|              | Sublicensable License                           | ✓ |
 |              +-------------------------------------------------+---+
 |              | Revocable License                               | ✗ |
 |              +-------------------------------------------------+---+
@@ -30,19 +30,20 @@
 |              | Distributing Licensed Materials                 |   |
 |              +-------------------------------------------------+---+
 |              | Provide a Copy of Original License when         | ✗ |
-| Requirements | Distributing Derivative Materials               |   |
-| Relating to  +-------------------------------------------------+---+
-| Distribution | Retain Original Attribution Notice when         | ✗ |
-| of Licensed  | Distributing Licensed Materials                 |   |
-| Materials    +-------------------------------------------------+---+
-| and          | Retain Original Attribution Notice when         | ✗ |
-| Derivative   | Distributing Derivative Materials               |   |
-| Materials    +-------------------------------------------------+---+
-|              | Indicate Modifications when Distributing        | ✗ |
+|              | Distributing Derivative Materials               |   |
+| Requirements +-------------------------------------------------+---+
+| Relating to  | Retain Original Attribution Notice when         | ✗ |
+| Distribution | Distributing Licensed Materials                 |   |
+| of Licensed  +-------------------------------------------------+---+
+| Materials    | Retain Original Attribution Notice when         | ✗ |
+| and          | Distributing Derivative Materials               |   |
+| Derivative   +-------------------------------------------------+---+
+| Materials    | Indicate Modifications when Distributing        | ✗ |
 |              | Derivative Materials                            |   |
 |              +-------------------------------------------------+---+
-|              | Disclosure of Distributed Licensed Materials    | ✗ |
-|              | and/or Derivative Materials in Source Code Form |   |
+|              | Disclosure of Distributed Licensed Materials    |   |
+|              | and/or Derivative Materials in Preferred        | ✗ |
+|              | Adaptable Form                                  |   |
 |              +-------------------------------------------------+---+
 |              | Licensing Distributed Derivative Materials      | ✗ |
 |              | on Same Terms as License                        |   |
@@ -71,10 +72,10 @@
 |              | Create Extracted Models (e.g., by distillation) | ✓ |
 |              +-------------------------------------------------+---+
 |              | Distribute Derivative Materials                 | ✓ |
-|              +-------------------------------------------------+---+
-|              | Distribute Extracted Models                     | ✓ |
 | Grant of     +-------------------------------------------------+---+
-| Rights       | Sublicensable License                           | ✓ |
+| Rights       | Distribute Extracted Models                     | ✓ |
+|              +-------------------------------------------------+---+
+|              | Sublicensable License                           | ✓ |
 |              +-------------------------------------------------+---+
 |              | Revocable License                               | ✗ |
 |              +-------------------------------------------------+---+
@@ -88,19 +89,20 @@
 |              | Distributing Licensed Materials                 |   |
 |              +-------------------------------------------------+---+
 |              | Provide a Copy of Original License when         | ✓ |
-| Requirements | Distributing Derivative Materials               |   |
-| Relating to  +-------------------------------------------------+---+
-| Distribution | Retain Original Attribution Notice when         | ✓ |
-| of Licensed  | Distributing Licensed Materials                 |   |
-| Materials    +-------------------------------------------------+---+
-| and          | Retain Original Attribution Notice when         | ✓ |
-| Derivative   | Distributing Derivative Materials               |   |
-| Materials    +-------------------------------------------------+---+
-|              | Indicate Modifications when Distributing        | ✓ |
+|              | Distributing Derivative Materials               |   |
+| Requirements +-------------------------------------------------+---+
+| Relating to  | Retain Original Attribution Notice when         | ✓ |
+| Distribution | Distributing Licensed Materials                 |   |
+| of Licensed  +-------------------------------------------------+---+
+| Materials    | Retain Original Attribution Notice when         | ✓ |
+| and          | Distributing Derivative Materials               |   |
+| Derivative   +-------------------------------------------------+---+
+| Materials    | Indicate Modifications when Distributing        | ✓ |
 |              | Derivative Materials                            |   |
 |              +-------------------------------------------------+---+
-|              | Disclosure of Distributed Licensed Materials    | ✗ |
-|              | and/or Derivative Materials in Source Code Form |   |
+|              | Disclosure of Distributed Licensed Materials    |   |
+|              | and/or Derivative Materials in Preferred        | ✗ |
+|              | Adaptable Form                                  |   |
 |              +-------------------------------------------------+---+
 |              | Licensing Distributed Derivative Materials      | ✗ |
 |              | on Same Terms as License                        |   |
@@ -146,19 +148,20 @@
 |              | Distributing Licensed Materials                 |   |
 |              +-------------------------------------------------+---+
 |              | Provide a Copy of Original License when         | ✓ |
-| Requirements | Distributing Derivative Materials               |   |
-| Relating to  +-------------------------------------------------+---+
-| Distribution | Retain Original Attribution Notice when         | ✓ |
-| of Licensed  | Distributing Licensed Materials                 |   |
-| Materials    +-------------------------------------------------+---+
-| and          | Retain Original Attribution Notice when         | ✓ |
-| Derivative   | Distributing Derivative Materials               |   |
-| Materials    +-------------------------------------------------+---+
-|              | Indicate Modifications when Distributing        | ✓ |
+|              | Distributing Derivative Materials               |   |
+| Requirements +-------------------------------------------------+---+
+| Relating to  | Retain Original Attribution Notice when         | ✓ |
+| Distribution | Distributing Licensed Materials                 |   |
+| of Licensed  +-------------------------------------------------+---+
+| Materials    | Retain Original Attribution Notice when         | ✓ |
+| and          | Distributing Derivative Materials               |   |
+| Derivative   +-------------------------------------------------+---+
+| Materials    | Indicate Modifications when Distributing        | ✓ |
 |              | Derivative Materials                            |   |
 |              +-------------------------------------------------+---+
-|              | Disclosure of Distributed Licensed Materials    | ✗ |
-|              | and/or Derivative Materials in Source Code Form |   |
+|              | Disclosure of Distributed Licensed Materials    |   |
+|              | and/or Derivative Materials in Preferred        | ✗ |
+|              | Adaptable Form                                  |   |
 |              +-------------------------------------------------+---+
 |              | Licensing Distributed Derivative Materials      | ✗ |
 |              | on Same Terms as License                        |   |
@@ -204,19 +207,20 @@
 |              | Distributing Licensed Materials                 |   |
 |              +-------------------------------------------------+---+
 |              | Provide a Copy of Original License when         | ✓ |
-| Requirements | Distributing Derivative Materials               |   |
-| Relating to  +-------------------------------------------------+---+
-| Distribution | Retain Original Attribution Notice when         | ✓ |
-| of Licensed  | Distributing Licensed Materials                 |   |
-| Materials    +-------------------------------------------------+---+
-| and          | Retain Original Attribution Notice when         | ✓ |
-| Derivative   | Distributing Derivative Materials               |   |
-| Materials    +-------------------------------------------------+---+
-|              | Indicate Modifications when Distributing        | ✓ |
+|              | Distributing Derivative Materials               |   |
+| Requirements +-------------------------------------------------+---+
+| Relating to  | Retain Original Attribution Notice when         | ✓ |
+| Distribution | Distributing Licensed Materials                 |   |
+| of Licensed  +-------------------------------------------------+---+
+| Materials    | Retain Original Attribution Notice when         | ✓ |
+| and          | Distributing Derivative Materials               |   |
+| Derivative   +-------------------------------------------------+---+
+| Materials    | Indicate Modifications when Distributing        | ✓ |
 |              | Derivative Materials                            |   |
 |              +-------------------------------------------------+---+
 |              | Disclosure of Distributed Licensed Materials    | ✓ |
-|              | and/or Derivative Materials in Source Code Form |   |
+|              | and/or Derivative Materials in Preferred        |   |
+|              | Adaptable Form                                  |   |
 |              +-------------------------------------------------+---+
 |              | Licensing Distributed Derivative Materials      | ✓ |
 |              | on Same Terms as License                        |   |
@@ -262,19 +266,20 @@
 |              | Distributing Licensed Materials                 |   |
 |              +-------------------------------------------------+---+
 |              | Provide a Copy of Original License when         | ✓ |
-| Requirements | Distributing Derivative Materials               |   |
-| Relating to  +-------------------------------------------------+---+
-| Distribution | Retain Original Attribution Notice when         | ✓ |
-| of Licensed  | Distributing Licensed Materials                 |   |
-| Materials    +-------------------------------------------------+---+
-| and          | Retain Original Attribution Notice when         | ✓ |
-| Derivative   | Distributing Derivative Materials               |   |
-| Materials    +-------------------------------------------------+---+
-|              | Indicate Modifications when Distributing        | ✓ |
+|              | Distributing Derivative Materials               |   |
+| Requirements +-------------------------------------------------+---+
+| Relating to  | Retain Original Attribution Notice when         | ✓ |
+| Distribution | Distributing Licensed Materials                 |   |
+| of Licensed  +-------------------------------------------------+---+
+| Materials    | Retain Original Attribution Notice when         | ✓ |
+| and          | Distributing Derivative Materials               |   |
+| Derivative   +-------------------------------------------------+---+
+| Materials    | Indicate Modifications when Distributing        | ✓ |
 |              | Derivative Materials                            |   |
 |              +-------------------------------------------------+---+
-|              | Disclosure of Distributed Licensed Materials    | ✗ |
-|              | and/or Derivative Materials in Source Code Form |   |
+|              | Disclosure of Distributed Licensed Materials    |   |
+|              | and/or Derivative Materials in Preferred        | ✗ |
+|              | Adaptable Form                                  |   |
 |              +-------------------------------------------------+---+
 |              | Licensing Distributed Derivative Materials      | ✗ |
 |              | on Same Terms as License                        |   |
@@ -320,19 +325,20 @@
 |              | Distributing Licensed Materials                 |   |
 |              +-------------------------------------------------+---+
 |              | Provide a Copy of Original License when         | ✓ |
-| Requirements | Distributing Derivative Materials               |   |
-| Relating to  +-------------------------------------------------+---+
-| Distribution | Retain Original Attribution Notice when         | ✓ |
-| of Licensed  | Distributing Licensed Materials                 |   |
-| Materials    +-------------------------------------------------+---+
-| and          | Retain Original Attribution Notice when         | ✓ |
-| Derivative   | Distributing Derivative Materials               |   |
-| Materials    +-------------------------------------------------+---+
-|              | Indicate Modifications when Distributing        | ✓ |
+|              | Distributing Derivative Materials               |   |
+| Requirements +-------------------------------------------------+---+
+| Relating to  | Retain Original Attribution Notice when         | ✓ |
+| Distribution | Distributing Licensed Materials                 |   |
+| of Licensed  +-------------------------------------------------+---+
+| Materials    | Retain Original Attribution Notice when         | ✓ |
+| and          | Distributing Derivative Materials               |   |
+| Derivative   +-------------------------------------------------+---+
+| Materials    | Indicate Modifications when Distributing        | ✓ |
 |              | Derivative Materials                            |   |
 |              +-------------------------------------------------+---+
-|              | Disclosure of Distributed Licensed Materials    | ✗ |
-|              | and/or Derivative Materials in Source Code Form |   |
+|              | Disclosure of Distributed Licensed Materials    |   |
+|              | and/or Derivative Materials in Preferred        | ✗ |
+|              | Adaptable Form                                  |   |
 |              +-------------------------------------------------+---+
 |              | Licensing Distributed Derivative Materials      | ✗ |
 |              | on Same Terms as License                        |   |
@@ -377,19 +383,20 @@
 |              | Distributing Licensed Materials                 |   |
 |              +-------------------------------------------------+---+
 |              | Provide a Copy of Original License when         | ✗ |
-| Requirements | Distributing Derivative Materials               |   |
-| Relating to  +-------------------------------------------------+---+
-| Distribution | Retain Original Attribution Notice when         | ✓ |
-| of Licensed  | Distributing Licensed Materials                 |   |
-| Materials    +-------------------------------------------------+---+
-| and          | Retain Original Attribution Notice when         | ✗ |
-| Derivative   | Distributing Derivative Materials               |   |
-| Materials    +-------------------------------------------------+---+
-|              | Indicate Modifications when Distributing        | ✗ |
-|              | Derivative Materials                            |   |
+|              | Distributing Derivative Materials               |   |
 |              +-------------------------------------------------+---+
-|              | Disclosure of Distributed Licensed Materials    | ✗ |
-|              | and/or Derivative Materials in Source Code Form |   |
+| Requirements | Retain Original Attribution Notice when         | ✓ |
+| Relating to  | Distributing Licensed Materials                 |   |
+| Distribution +-------------------------------------------------+---+
+| of Licensed  | Retain Original Attribution Notice when         | ✗ |
+| Materials    | Distributing Derivative Materials               |   |
+| and          +-------------------------------------------------+---+
+| Derivative   | Indicate Modifications when Distributing        | ✗ |
+| Materials    | Derivative Materials                            |   |
+|              +-------------------------------------------------+---+
+|              | Disclosure of Distributed Licensed Materials    |   |
+|              | and/or Derivative Materials in Preferred        | ✗ |
+|              | Adaptable Form                                  |   |
 |              +-------------------------------------------------+---+
 |              | Licensing Distributed Derivative Materials      | ✗ |
 |              | on Same Terms as License                        |   |
@@ -434,19 +441,20 @@
 |              | Distributing Licensed Materials                 |   |
 |              +-------------------------------------------------+---+
 |              | Provide a Copy of Original License when         | ✗ |
-| Requirements | Distributing Derivative Materials               |   |
-| Relating to  +-------------------------------------------------+---+
-| Distribution | Retain Original Attribution Notice when         | ✓ |
-| of Licensed  | Distributing Licensed Materials                 |   |
-| Materials    +-------------------------------------------------+---+
-| and          | Retain Original Attribution Notice when         | ✗ |
-| Derivative   | Distributing Derivative Materials               |   |
-| Materials    +-------------------------------------------------+---+
-|              | Indicate Modifications when Distributing        | ✗ |
-|              | Derivative Materials                            |   |
+|              | Distributing Derivative Materials               |   |
 |              +-------------------------------------------------+---+
-|              | Disclosure of Distributed Licensed Materials    | ✗ |
-|              | and/or Derivative Materials in Source Code Form |   |
+| Requirements | Retain Original Attribution Notice when         | ✓ |
+| Relating to  | Distributing Licensed Materials                 |   |
+| Distribution +-------------------------------------------------+---+
+| of Licensed  | Retain Original Attribution Notice when         | ✗ |
+| Materials    | Distributing Derivative Materials               |   |
+| and          +-------------------------------------------------+---+
+| Derivative   | Indicate Modifications when Distributing        | ✗ |
+| Materials    | Derivative Materials                            |   |
+|              +-------------------------------------------------+---+
+|              | Disclosure of Distributed Licensed Materials    |   |
+|              | and/or Derivative Materials in Preferred        | ✗ |
+|              | Adaptable Form                                  |   |
 |              +-------------------------------------------------+---+
 |              | Licensing Distributed Derivative Materials      | ✗ |
 |              | on Same Terms as License                        |   |

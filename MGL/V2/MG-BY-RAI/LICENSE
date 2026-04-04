@@ -1,5 +1,5 @@
-ModelGo Attribution-ResponsibleAI License
-Version 2.0, May 2025
+﻿ModelGo Attribution-ResponsibleAI License
+Version 2.0, Dec 2025
 
 By exercising the rights granted in Section 2.1, You acknowledge and agree that You have 
 read, understood, and agree to be bound by the terms and conditions of this License. If You 
@@ -15,14 +15,18 @@ and/or documentation that guide users in using, operating, implementing and/or c
 the Model.
 
 "Derivative Materials" means all improvements, modifications or derivative works to the 
-Licensed Material or any part thereof, which are created or developed by You (either by 
-Yourself or jointly with other third parties), including any derivative model developed by 
-transferring patterns of weights, parameters, activations and/or Output from the Model, such as 
+Licensed Materials or any part thereof that are created or developed by You (either by Yourself 
+or jointly with other third parties). The Derivative Materials do not include any model 
+developed by transferring patterns from Output, such as through distillation methods or 
+synthetic data generation techniques.
+
+"Extracted Models" means any model created or developed by You (either by Yourself or 
+jointly with other third parties) by transferring patterns from Output of the Model, such as 
 through distillation methods or synthetic data generation techniques, in order to replicate, 
 approximate, or otherwise achieve functional behavior that is similar to the Model.
 
-"Distribution" (or "Distribute") means any transmission, publication, public performance, 
-sharing, or other methods of making the Licensed Materials, Derivative Materials and/or Output 
+"Distribution" (or "Distribute") means any transmission, publication, sharing, or other methods 
+of making the Licensed Materials, Derivative Materials, Extracted Models and/or Output 
 available to a third party, including providing the Licensed Materials or any part thereof as a 
 hosted service or remotely accessible service, such as API-based access or web access.
 
@@ -38,8 +42,7 @@ under this License, including any checkpoints, learned weights, parameters (incl
 states) and the model architecture.
 
 "Output" means any information, data, and/or content, including but not limited to images, text, 
-text effects, audio files, and/or video files, generated through operation of the Model, or through 
-operation of any new model developed by transferring patterns from the Model.
+text effects, audio files, and/or video files, generated through operation of the Model.
 
 "You" (or "Your") means you, or any other person or entity you are entering into this license on 
 behalf of, provided you have the legal authority to bind such person or entity.
@@ -53,29 +56,37 @@ You a non-exclusive, non-sublicensable, revocable, royalty-free, worldwide licen
 the relevant copyrights, patent rights, database rights, and any other intellectual property 
 rights to:
 
-(i)	make, have made, use, reproduce, sell, offer to sell, import and Distribute the 
-Licensed Materials;
+(i)	make, have made, use, reproduce, sell, offer to sell, import, publicly display, 
+publicly perform, and Distribute the Licensed Materials;
 
-(ii)	use the Licensed Materials to create Derivative Materials; and
+(ii)	use the Licensed Materials to create Derivative Materials and Extracted Models; 
+and
 
-(iii)	make, have made, use, reproduce, sell, offer to sell, import and Distribute 
-Derivative Materials.
+(iii)	make, have made, use, reproduce, sell, offer to sell, import, publicly display, 
+publicly perform, and Distribute Derivative Materials and Extracted Models.
 
 2.2	Conditions
 
-(a)	If You Distribute any of the Licensed Materials or Derivative Materials, You shall:
+(a)	If You Distribute any of the Licensed Materials, Derivative Materials, or Extracted Models, 
+You shall:
 
-(i)	provide a copy of this License with the Licensed Material or Derivative Materials;
+(i)	provide a copy of this License with the Licensed Materials, Derivative Materials, or 
+Extracted Models;
 
 (ii)	in the case of Distributing Derivative Materials, provide as part of the Distribution, 
 prominent notices stating that You have modified the Licensed Materials and the 
 relevant date of such modification;
 
-(iii)	retain as part of the Distribution any existing copyright notice, attribution notice, 
+(iii)	in the case of Distributing Extracted Models, provide as part of the Distribution, 
+prominent notices stating that the Extracted Models are created from Output of the 
+Model provided under this License;
+
+(iv)	retain as part of the Distribution any existing copyright notice, attribution notice, 
 and/or any notice identifying the authors of the Licensed Materials and any 
 Derivative Materials.
 
-(b)	You agree not to use the Licensed Materials or any Derivative Materials:
+(b)	You agree not to use any of the Licensed Materials, Derivative Materials, or Extracted 
+Models:
 
 (i)	for any illegal or unlawful purposes, including in any way that violates any 
 applicable national, federal, state, local, or international law or regulation;
@@ -89,6 +100,7 @@ intended or known to be harmful, destructive, disabling or which assists in or
 enables theft, alteration, denial of service, unauthorised disclosure or destruction 
 or corruption of data, including viruses, worms, spyware, adware, keyloggers, 
 trojans, ransomware and any other type of threats;
+
 (iv)	for any fraudulent purpose, such as generating, transmitting and/or disseminating 
 verifiably false information and/or content;
 
@@ -139,20 +151,24 @@ consent.
 
 3.	DISCLAIMER
 
-To the maximum extent permissible under applicable law, the Licensed Materials are provided 
-on an "as is" and "as available" basis without any representation or warranty of any kind 
-(whether express, implied, statutory or otherwise), including of merchantability, satisfactory 
-quality, fitness for a particular purpose, title, accuracy, correctness, absence of error, reliability, 
-timeliness, non-infringement of or compliance with any laws, regulations and/or third-party 
-rights, all of which are expressly disclaimed by the Licensor.
+TO THE MAXIMUM EXTENT PERMISSIBLE UNDER APPLICABLE LAW, THE LICENSED 
+MATERIALS ARE PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS WITHOUT ANY 
+REPRESENTATION OR WARRANTY OF ANY KIND (WHETHER EXPRESS, IMPLIED, 
+STATUTORY OR OTHERWISE), INCLUDING OF MERCHANTABILITY, SATISFACTORY 
+QUALITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, ACCURACY, CORRECTNESS, 
+ABSENCE OF ERROR, RELIABILITY, TIMELINESS, NON-INFRINGEMENT OF OR 
+COMPLIANCE WITH ANY LAWS, REGULATIONS AND/OR THIRD-PARTY RIGHTS, ALL OF 
+WHICH ARE EXPRESSLY DISCLAIMED BY THE LICENSOR.
 
 4.	LIMITATION OF LIABILITY
 
-To the maximum extent permissible under applicable law, the Licensor shall not be liable for 
-any claims, damages, or any other liabilities, in any way arising out of or in connection with the 
-Licensed Materials, Derivative Materials, and/or Output, whether on an action or claim in 
-contract, tort (including negligence), breach of statutory duty or otherwise, even if the Licensor 
-has been advised of the possibility of such damages.
+TO THE MAXIMUM EXTENT PERMISSIBLE UNDER APPLICABLE LAW, THE LICENSOR 
+SHALL NOT BE LIABLE FOR ANY CLAIMS, DAMAGES, OR ANY OTHER LIABILITIES, IN 
+ANY WAY ARISING OUT OF OR IN CONNECTION WITH THE LICENSED MATERIALS, 
+DERIVATIVE MATERIALS, AND/OR OUTPUT, WHETHER ON AN ACTION OR CLAIM IN 
+CONTRACT, TORT (INCLUDING NEGLIGENCE), BREACH OF STATUTORY DUTY OR 
+OTHERWISE, EVEN IF THE LICENSOR HAS BEEN ADVISED OF THE POSSIBILITY OF 
+SUCH DAMAGES.
 
 5.	TERMINATION
 
@@ -163,7 +179,7 @@ survive the termination of this License.
 
 6.	MODIFICATION OF THIS LICENSE
 
-This License is Copyright © 2024 National University of Singapore. Permission is granted to 
+This License is Copyright © 2025 National University of Singapore. Permission is granted to 
 copy, distribute, or communicate this License without modification. Nothing in this License 
 permits You to modify this License as applied to the Licensed Materials. However, You may 
 modify the text of this License and copy, distribute or communicate Your modified version and 

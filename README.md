@@ -8,15 +8,15 @@
 📌 [Download this Paper](https://dl.acm.org/doi/abs/10.1145/3589334.3645520)
 
 # ModelGo Licenses Set
-### ✨Recent Update: We are happy to annocence our [ModelGo Licenses Set](https://www.modelgo.li)! 🤗
-#### ModelGo Licenses provide flexible, free, and user-friendly licensing solutions to meet your specific needs in publishing deep learning models. We offer you five publishing options (similar to Creative Commons):
+### ✨Recent Update: We are happy to announce our [ModelGo Licenses Set V2.0](https://www.modelgo.li)! 🤗
+#### ModelGo Licenses provide flexible, free, and user-friendly licensing solutions to meet your specific needs in publishing deep learning models. We offer you multiple publishing options (similar to Creative Commons):
 
 
 * **BY** - Downstream model users must give credit to you, retain your attribution information, keep the original license and notice in their shared copies and modifications.
 * **NC** - Downstream model users must run and distribute your models, derivatives of your models, and generated content of your models for Non-Commercial purposes only.
-* **ND** - Downstream model users may Not Distribute any modified works or generated content based on your models.
-* **RAI** - Downstream model users must ensure that their use and distribution of your models and derivatives of your models comply with the terms of Responsible use of AI.
-* **OS** - Downstream model users must keep their distributed copies and derivatives Open Source to the public and apply the same license to their derivative work when publishing (Copyleft).
+* **ND** - Downstream model users may Not Distribute any modified works or extracted models based on your models (but can create and use them privately).
+* **SA** - Downstream model users must keep their distributed derivatives ShareAlike by applying the same license to their derivative work when publishing (Copyleft).
+* **RAI** - Downstream model users must ensure that their use and distribution of your models and derivatives of your models comply with the terms of Responsible use of AI (14 prohibited uses).
 
 #### Why we need ModelGo Licenses Set?
 > To facilitate managed sharing of models while protecting your Intellectual Property. ModelGo licenses offer flexible options to fulfill your specific licensing needs about using and distributing your deep learning models while protecting your Intellectual Property (IP). Traditional open-source software (OSS) licenses lack clear definitions regarding machine learning concepts, such as Models, Output, and Derivatives created through knowledge transfer. This lack of compatibility can result in certain ML activities (e.g., Distillation, Mix-of-Expert) being beyond the control of the model owner and potentially compromising their IP rights.
